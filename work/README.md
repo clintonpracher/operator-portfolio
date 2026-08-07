@@ -1,53 +1,53 @@
-# Work: AI Systems Portfolio
+# Work
 
-I build decision systems, not just products. These case studies show how I apply the same operating logic at enterprise scale (13-product AI portfolio, 100+ markets) and solo-operator scale (65 skills, 28 automations, one Chief of Staff agent).
+Enterprise product leadership and operator proof for **Platform / Data / AI** roles.
 
-**Portfolio narrative:** I don't collect AI tools. I built an Operator Control Plane.
-
----
-
-## Case studies
-
-### [Operator Control Plane](control-plane.md)
-
-The ownership layer that assigns write authority across models, tools, and schedules. One Active Writer per task. Identity, execution, and audit separated.
-
-**Best for:** AI platform, data product, transformation roles
+Execution breaks when decision systems fail to keep up with scale. The case studies below show diagnosis, rebuild, and measurable outcomes at enterprise scale. The operator proof shows the same architecture running live under governed AI ops.
 
 ---
 
-### [Job Search OS](job-search-os.md)
+## Enterprise case studies
 
-A governed decision system applied to my own career search: 0-9 scoring rubric, Role Radar intake, LinkedIn-first discovery, 6-application weekly cap.
-
-**Best for:** Product ops, transformation, platform governance roles
-
----
-
-### [Automation Fleet](automation-fleet.md)
-
-28 Cursor automations with Active Writer governance and fleet-health self-healing. Six waves of cutover with explicit ownership transfer.
-
-**Best for:** Platform ops, AI infrastructure, product operations
+| Case study | Proof points |
+|------------|--------------|
+| [From Data Chaos to Confident Decisions](case-studies/enterprise/data-unification.md) | Platform Architecture, Decision Systems, Martech / Data |
+| [Turning Retention Decisions Into Sustainable Growth](case-studies/enterprise/subscription-retention.md) | Decision Systems, Operating Model |
+| [Scaling AI Products With Clear Decision Boundaries](case-studies/enterprise/ai-regulated-markets.md) | Platform Architecture, Martech / Data, Operating Model |
+| [Multi-Market Digital Platform Growth](case-studies/enterprise/platform-growth.md) | Platform Architecture, Decision Systems |
+| [The Product System Stabilization](case-studies/enterprise/product-system-stabilization.md) | Operating Model, Decision Systems, Platform Architecture |
 
 ---
 
-### [Governance Audit Cycle](governance-audit.md)
+## Proof at a glance
 
-Three-night certification: Read-Only audit → approved remediation → post-fix verification.
+Short teasers. [Read more](case-studies/) for full narratives.
 
-**Best for:** Enterprise governance, compliance-adjacent platform roles
+**Enterprise**
+
+- [Data Unification](proof/data-unification.md)
+- [Subscription Retention](proof/subscription-retention.md)
+- [AI Regulated Markets](proof/ai-regulated-markets.md)
+- [Platform Growth](proof/platform-growth.md)
+- [Product System Stabilization](proof/product-system-stabilization.md)
+
+**Operator**
+
+- [Operator Control Plane](proof/control-plane.md)
+- [Automation Fleet](proof/automation-fleet.md)
+- [Governance Audit](proof/governance-audit.md)
+- [Job Search OS](proof/job-search-os.md)
 
 ---
 
-## Thought leadership
+## Operator proof (in depth)
 
-- [Operator Control Plane case study](control-plane.md)
-- [Writing index](../writing/README.md)
-- [Clint's Call (Substack)](https://clintscall.substack.com)
+| Case study | Focus |
+|------------|-------|
+| [Operator Control Plane](case-studies/operator/control-plane.md) | Multi-model governance, Active Writer |
+| [Automation Fleet](case-studies/operator/automation-fleet.md) | Scheduled execution at scale |
+| [Governance Audit Cycle](case-studies/operator/governance-audit.md) | Certification rhythm |
+| [Job Search OS](case-studies/operator/job-search-os.md) | Governed career pipeline |
 
----
-
-![Operating architecture](../assets/architecture-one-glance.png)
+[Skills: AI platforms + technical literacy](skills.md) · [Architecture diagram](../assets/architecture-one-glance.svg)
 
 [← Back to home](../README.md)

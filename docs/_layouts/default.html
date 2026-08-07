@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/imperious/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+</head>
+<body class="portfolio-body">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="{{ '/' | relative_url }}">Clinton Pracher</a>
+      <nav class="site-nav">
+        <a href="{{ '/work/' | relative_url }}">Work</a>
+        <a href="{{ '/work/skills.html' | relative_url }}">Skills</a>
+        <a href="{{ '/writing/' | relative_url }}">Writing</a>
+        <a href="{{ '/resume/' | relative_url }}">Resume</a>
+      </nav>
+    </div>
+  </header>
+  <main class="site-main">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <p>Platform · Data · AI product leadership · Remote US</p>
+  </footer>
+</body>
+</html>

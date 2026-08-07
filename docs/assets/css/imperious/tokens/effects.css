@@ -1,0 +1,39 @@
+/* Effects — gradients, shadows, motion. Imperious Flow™ + Imperious Motion Rules™. */
+:root {
+  /* ---- Gradients: Imperious Flow™ ---- */
+  /* Hero: Imperious Depth — depth → grounding */
+  --gradient-depth: radial-gradient(95% 95% at 100% 100%, #6A4D9A 0%, #3C245F 26%, #1A1533 52%, #0C1226 92%); /* @kind color */ /* matches cpproductadvisory.com hero: violet bloom bottom-right on near-midnight */
+  /* Breakthrough: Clarity Strike — for CTAs / truth-telling */
+  --gradient-clarity-strike: linear-gradient(145deg, #51357A 0%, #2D7BFF 100%); /* @kind color */
+  /* Soft Clarity: Calm Alignment — cards, frameworks, subtle UI */
+  --gradient-calm-alignment: linear-gradient(120deg, #6A4D9A 0%, #2F3D52 100%); /* @kind color */
+
+  /* ---- Shadows ---- */
+  --shadow-elegant: 0 2px 20px rgba(60,36,95,0.18);
+  --shadow-hover: 0 8px 30px rgba(60,36,95,0.25);
+  --shadow-accent: 0 4px 24px rgba(45,123,255,0.25);
+  /* On dark surfaces, depth reads through darker ambient shadow */
+  --shadow-ambient: 0 8px 40px rgba(0,0,0,0.45);
+
+  /* ---- Motion: Imperious Motion Rules™ ---- */
+  --ease-primary: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ease-presence: cubic-bezier(0.2, 0, 0.1, 1); /* @kind other */
+  --ease-truth: cubic-bezier(0.34, 1.56, 0.64, 1); /* @kind other */
+
+  --dur-ui: 240ms; /* @kind other */
+  --dur-reveal: 340ms; /* @kind other */
+  --dur-truth: 160ms; /* @kind other */
+  --dur-exit: 220ms; /* @kind other */
+
+  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --transition-lift: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); /* @kind other */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-ui: 0ms; /* @kind other */
+    --dur-reveal: 0ms; /* @kind other */
+    --dur-truth: 0ms; /* @kind other */
+    --dur-exit: 0ms; /* @kind other */
+  }
+}

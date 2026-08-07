@@ -1,0 +1,88 @@
+/* Imperious shell hooks for operator-portfolio */
+.portfolio-body {
+  margin: 0;
+  background: var(--surface-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: var(--lh-normal);
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 1rem 1.5rem;
+  background: var(--surface-raised);
+}
+
+.site-header__inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.site-logo {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: var(--fs-h5);
+}
+
+.site-nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin-left: 1.25rem;
+  font-size: var(--fs-body-sm);
+}
+
+.site-nav a:hover {
+  color: var(--accent-truth);
+}
+
+.site-main {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.site-main h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  letter-spacing: var(--ls-tight);
+  margin-top: 0;
+}
+
+.site-main h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h4);
+  margin-top: 2rem;
+  color: var(--insight-violet);
+}
+
+.site-main a {
+  color: var(--link);
+}
+
+.site-main table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-body-sm);
+}
+
+.site-main th,
+.site-main td {
+  border: 1px solid var(--border-subtle);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border-subtle);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: var(--fs-body-sm);
+}

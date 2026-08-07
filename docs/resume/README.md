@@ -1,7 +1,7 @@
 # Resume
 
 **Target lane:** Platform / Data / AI · Principal-Director  
-**Status:** Draft for Clint lock: PDF publishes after approval
+**Status:** Markdown live on site; PDF publishes after lock + resume-builder run
 
 ---
 

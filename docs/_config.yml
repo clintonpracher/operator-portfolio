@@ -1,6 +1,13 @@
-title: Clinton Pracher: Operator Portfolio
-description: Product leader who builds decision systems.
+title: Clinton Pracher
+description: Product leader who builds decision systems, not just products. Operator Control Plane, governed AI ops, platform/data/AI. Principal / Director · Remote US
 baseurl: "/operator-portfolio"
 url: "https://clintonpracher.github.io"
-theme: minima
 markdown: kramdown
+plugins: []
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - PUBLISH.md

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/case-study.css' | relative_url }}">
+</head>
+<body class="case-study-body">
+  <header class="cs-header">
+    <a href="{{ '/work/' | relative_url }}" class="cs-back">← Work</a>
+    <p class="cs-eyebrow">Case study</p>
+    <h1 class="cs-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="cs-subtitle">{{ page.subtitle }}</p>{% endif %}
+    {% if page.at_a_glance %}
+    <ul class="cs-glance">
+      {% for item in page.at_a_glance %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if page.decision_shift %}
+    <p class="cs-shift"><strong>Decision shift:</strong> {{ page.decision_shift }}</p>
+    {% endif %}
+  </header>
+  <article class="cs-prose">
+    {{ content }}
+  </article>
+</body>
+</html>

@@ -17,7 +17,7 @@ Specializes in diagnosing the decision systems, governance gaps, and execution c
 
 The pattern across every environment: execution breaks when decision systems fail to keep up with scale. I diagnose the constraint, rebuild the infrastructure, and embed systems teams can run without constant reinvention.
 
-**Operator proof:** Built and run a live Operator Control Plane: 65 skills, 28 governed automations, single Active Writer per task, applying the same decision architecture at solo-operator scale.
+**Operator proof:** Built and run a live Operator Control Plane: 30 skills, 29 governed automations, 36 scheduled tasks, single Active Writer per task, applying the same decision architecture at solo-operator scale.
 
 ---
 
@@ -29,6 +29,14 @@ The pattern across every environment: execution breaks when decision systems fai
 - KPI Frameworks & Decision Systems
 - Cross-Functional Governance in Complex Organizations
 - Budget Ownership & Investment Prioritization ($8M portfolio budget)
+
+---
+
+## Technical capabilities
+
+**AI platforms:** Cursor (primary execution, Automations, MCP), Claude (audit and deep reasoning), ChatGPT (connector-island cutover), Codex (agentic development). Multi-model operator under single Active Writer rules, not tool collection.
+
+**Technical literacy:** Python (governance and portfolio build scripts), HTML/CSS (Jekyll, design systems), SQL (Snowflake certified), JavaScript (build tooling). Diagrams: Mermaid, Lucid.
 
 ---
 
@@ -56,7 +64,3 @@ Stabilized underperforming subscription business, reduced churn from 75% to unde
 ## Certifications
 
 Certified Scrum Master · Snowflake Technical Sales Professional · McKinsey Connected Leaders Academy
-
----
-
-*Draft. Platform_Data_AI variant. Source: resume-advisor V2_2 retarget. Lock before PDF publish.*

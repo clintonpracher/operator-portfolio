@@ -1,0 +1,109 @@
+/* Blue-Slate case study presentation (cp-document-builder lane) */
+:root {
+  --cs-hero-a: #0f172a;
+  --cs-hero-b: #1e293b;
+  --cs-accent: #3b82f6;
+  --cs-body: #334155;
+  --cs-ink: #0f172a;
+  --cs-muted: #64748b;
+  --cs-divider: #e2e8f0;
+  --cs-font-display: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --cs-font-body: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+.case-study-body {
+  margin: 0;
+  font-family: var(--cs-font-body);
+  color: var(--cs-body);
+  background: #fff;
+}
+
+.cs-header {
+  background: linear-gradient(135deg, var(--cs-hero-a), var(--cs-hero-b));
+  color: #fff;
+  padding: 3rem 1.5rem 2.5rem;
+}
+
+.cs-back {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.cs-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  color: #93c5fd;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.cs-title {
+  font-family: var(--cs-font-display);
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0;
+  max-width: 42rem;
+}
+
+.cs-subtitle {
+  font-size: 1.125rem;
+  opacity: 0.9;
+  max-width: 40rem;
+  margin-top: 1rem;
+}
+
+.cs-glance {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  gap: 0.5rem;
+  max-width: 40rem;
+}
+
+.cs-glance li {
+  padding-left: 1rem;
+  border-left: 3px solid var(--cs-accent);
+  font-size: 0.95rem;
+}
+
+.cs-shift {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: rgba(59, 130, 246, 0.15);
+  border-radius: 8px;
+  max-width: 40rem;
+}
+
+.cs-prose {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.cs-prose h2 {
+  font-family: var(--cs-font-display);
+  color: var(--cs-ink);
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.cs-prose strong {
+  color: var(--cs-ink);
+}
+
+.cs-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.cs-prose th,
+.cs-prose td {
+  border: 1px solid var(--cs-divider);
+  padding: 0.5rem;
+}

@@ -17,7 +17,7 @@ Product leadership essays on decision systems, AI operations, and operating mode
 | **AI as an Operating Constraint, Not a Feature** | [clintscall.substack.com/p/ai-as-an-operating-constraint-not](https://clintscall.substack.com/p/ai-as-an-operating-constraint-not) | Systems thinking on AI adoption |
 | **Decision Architecture Over Delivery** | [clintscall.substack.com/p/decision-architecture-over-delivery](https://clintscall.substack.com/p/decision-architecture-over-delivery) | Human-in-the-loop decision rights |
 
-**Operator Control Plane** depth lives in the [case study](../work/control-plane.md), not a separate essay link here. The long-form essay is not yet on Substack.
+**Operator Control Plane** depth lives in the [case study](../work/case-studies/operator/control-plane.md), not a separate essay link here. The long-form essay is not yet on Substack.
 
 ---
 

@@ -1,12 +1,19 @@
+---
+layout: default
+title: Home
+---
+
 # Clinton Pracher: Operator Portfolio
 
-**Product leader · Decision architect · Operator Control Plane builder**
+**Product leader who builds decision systems, not just products.** Operator Control Plane, governed AI ops, platform/data/AI. Principal / Director · Remote US
 
-I don't collect AI tools. I built an [Operator Control Plane](work/control-plane.md) that assigns ownership across models, schedules, and agents so judgment stays human and systems stay coherent.
+---
 
-At enterprise scale, I owned a 13-product AI/data portfolio across 100+ markets: $8M budget, 60+ team. Today I apply the same decision architecture at solo-operator scale: 65 skills, 28 governed automations, and a Chief of Staff agent orchestrating business and personal life on one operating logic.
+## Systems thinker
 
-**Noise is cheap. Judgment is deciding what becomes true.**
+Execution breaks when decision systems fail to keep up with scale. I diagnose the constraint, rebuild the infrastructure, and leave a system that sustains itself. That pattern holds across a $600M media data platform, a 13-product AI portfolio, and a live Operator Control Plane I run today.
+
+At enterprise scale: 13 AI and data products, 100+ markets, $8M budget, 60+ team. At solo-operator scale: governed multi-model stack (Cursor, Claude, ChatGPT, Codex) under single Active Writer rules: 30 skills, 29 automations, 36 scheduled tasks.
 
 ---
 
@@ -14,33 +21,36 @@ At enterprise scale, I owned a 13-product AI/data portfolio across 100+ markets:
 
 | Section | What's there |
 |---------|----------------|
-| [**Work**](work/README.md) | Case studies: Operator Control Plane, Job Search OS, automation fleet, governance audit |
-| [**Writing**](writing/README.md) | Essays and posts on decision systems, AI ops, and product leadership |
-| [**Resume**](resume/README.md) | Platform / Data / AI resume (PDF) |
+| [**Work**](work/README.md) | Enterprise case studies, proof sketches, operator proof |
+| [**Skills**](work/skills.md) | AI platforms, Agent OS, technical literacy |
+| [**Writing**](writing/README.md) | Essays on decision systems and product leadership |
+| [**Resume**](resume/resume.md) | Platform / Data / AI resume |
 
 ---
 
-## What I do
+## Proof points
 
-- **Diagnose** broken decision systems in complex product organizations
-- **Rebuild** operating models, governance forums, and portfolio prioritization
-- **Scale** AI capacity without multiplying chaos, through ownership rather than model collection
-- **Sustain** operating models that keep performing after launch
+| Pillar | Start here |
+|--------|------------|
+| Platform Architecture | [Data Unification](work/case-studies/enterprise/data-unification.md) |
+| Decision Systems | [Data Unification](work/case-studies/enterprise/data-unification.md) |
+| Operating Model | [Product System Stabilization](work/case-studies/enterprise/product-system-stabilization.md) |
+| Martech / Data Platform | [AI Regulated Markets](work/case-studies/enterprise/ai-regulated-markets.md) |
+| Control Plane | [Operator Control Plane](work/case-studies/operator/control-plane.md) |
 
 ---
 
 ## Target roles
 
-Director of Product / Senior Director of Product / Principal Product Manager / Staff Product Manager / Group Product Manager: Platform architecture, Data, AI, Product Ops, Transformation
+Director / Principal / Senior Director of Product: **Platform, Data, AI**  
+VP Product (platform, data, AI, transformation) where portfolio scale warrants it.
 
-Product management roles, not project management.
-
-Remote US · Las Vegas-based
+Product management roles, not project management. Remote US · Las Vegas-based.
 
 ---
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/clinton-pracher) · [Clint's Call (Substack)](https://clintscall.substack.com) · clintonpracher@gmail.com
+[LinkedIn](https://www.linkedin.com/in/clinton-pracher) · [GitHub](https://github.com/clintonpracher/operator-portfolio) · [Clint's Call (Substack)](https://clintscall.substack.com) · clintonpracher@gmail.com
 
-**Site:** [clintonpracher.github.io/operator-portfolio](https://clintonpracher.github.io/operator-portfolio/) (GitHub Pages)
+**Site:** [clintonpracher.github.io/operator-portfolio](https://clintonpracher.github.io/operator-portfolio/)
