@@ -1,4 +1,6 @@
 /* Blue-Slate case study presentation (cp-document-builder lane) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap');
+
 :root {
   --cs-hero-a: #0f172a;
   --cs-hero-b: #1e293b;
@@ -18,10 +20,16 @@
   background: #fff;
 }
 
+.case-study-body .site-header {
+  position: relative;
+  z-index: 2;
+}
+
 .cs-header {
   background: linear-gradient(135deg, var(--cs-hero-a), var(--cs-hero-b));
   color: #fff;
-  padding: 3rem 1.5rem 2.5rem;
+  padding: 2.5rem 1.5rem 2.5rem;
+  margin-top: 0;
 }
 
 .cs-back {
@@ -102,8 +110,18 @@
   font-size: 0.9rem;
 }
 
-.cs-prose th,
-.cs-prose td {
-  border: 1px solid var(--cs-divider);
-  padding: 0.5rem;
+.cs-prose a {
+  color: var(--cs-accent);
+}
+
+.case-study-body .site-footer {
+  background: var(--surface-base, #0a0a0f);
+  color: var(--text-muted, #9ca3af);
+  border-top: 1px solid var(--border-subtle, #2a2a35);
+}
+
+.resume-body .site-footer {
+  background: #f8fafc;
+  color: var(--cs-muted);
+  border-top: 1px solid var(--cs-divider);
 }

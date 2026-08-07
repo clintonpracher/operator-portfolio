@@ -4,11 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume · {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/imperious/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}">
 </head>
-<body class="resume-body">
+<body class="portfolio-body resume-body">
+  {% include site-header.html %}
   <main class="resume-main">
     {{ content }}
   </main>
+  {% include site-footer.html %}
 </body>
 </html>

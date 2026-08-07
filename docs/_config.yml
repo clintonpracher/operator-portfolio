@@ -3,11 +3,28 @@ description: Product leader who builds decision systems, not just products. Oper
 baseurl: "/operator-portfolio"
 url: "https://clintonpracher.github.io"
 markdown: kramdown
+permalink: pretty
 plugins: []
 defaults:
+  - scope:
+      path: "index.md"
+    values:
+      layout: default
+      title: Home
+  - scope:
+      path: "work/case-studies"
+    values:
+      layout: case-study
+  - scope:
+      path: "resume/resume.md"
+    values:
+      layout: resume
+      title: Resume
   - scope:
       path: ""
     values:
       layout: default
 exclude:
   - PUBLISH.md
+  - Gemfile
+  - Gemfile.lock

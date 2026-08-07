@@ -4,9 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="{{ '/assets/css/imperious/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/case-study.css' | relative_url }}">
 </head>
-<body class="case-study-body">
+<body class="portfolio-body case-study-body">
+  {% include site-header.html %}
   <header class="cs-header">
     <a href="{{ '/work/' | relative_url }}" class="cs-back">← Work</a>
     <p class="cs-eyebrow">Case study</p>
@@ -26,5 +30,6 @@
   <article class="cs-prose">
     {{ content }}
   </article>
+  {% include site-footer.html %}
 </body>
 </html>

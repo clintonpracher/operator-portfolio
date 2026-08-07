@@ -1,8 +1,3 @@
----
-layout: resume
-title: Resume
----
-
 # Clinton J. Pracher
 
 **DIRECTOR · PLATFORM, DATA & AI PRODUCT**

@@ -1,8 +1,3 @@
----
-layout: default
-title: Home
----
-
 # Clinton Pracher: Operator Portfolio
 
 **Product leader who builds decision systems, not just products.** Operator Control Plane, governed AI ops, platform/data/AI. Principal / Director · Remote US
