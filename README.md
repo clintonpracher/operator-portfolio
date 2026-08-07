@@ -25,7 +25,7 @@ At enterprise scale, I owned a 13-product AI/data portfolio across 100+ markets:
 - **Diagnose** broken decision systems in complex product organizations
 - **Rebuild** operating models, governance forums, and portfolio prioritization
 - **Scale** AI capacity without multiplying chaos, through ownership rather than model collection
-- **Exit** once the system sustains itself
+- **Sustain** operating models that keep performing after launch
 
 ---
 

@@ -42,7 +42,7 @@ Three-night certification: Read-Only audit → approved remediation → post-fix
 
 ## Thought leadership
 
-- [Operator Control Plane essay](https://cpproductadvisory.com/blog/operator-control-plane)
+- [Operator Control Plane case study](control-plane.md)
 - [Writing index](../writing/README.md)
 - [Clint's Call (Substack)](https://clintscall.substack.com)
 

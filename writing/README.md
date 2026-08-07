@@ -1,8 +1,8 @@
 # Writing
 
-Product leadership essays on decision systems, AI operations, and operating model design. Career-forward reading, not advisory sales.
+Product leadership essays on decision systems, AI operations, and operating model design. Career-forward reading on [Clint's Call (Substack)](https://clintscall.substack.com).
 
-**Primary archive:** [Clint's Call on Substack](https://clintscall.substack.com) · [Archive](https://clintscall.substack.com/archive)
+**Primary archive:** [clintscall.substack.com](https://clintscall.substack.com) · [Archive](https://clintscall.substack.com/archive)
 
 ---
 
@@ -10,13 +10,14 @@ Product leadership essays on decision systems, AI operations, and operating mode
 
 | Title | Where to read | Theme |
 |-------|---------------|-------|
-| **Operator Control Plane** | [cpproductadvisory.com/blog/operator-control-plane](https://cpproductadvisory.com/blog/operator-control-plane) | Scaling AI via ownership, not model collection |
-| **The Stakeholder Buffet** | [cpproductadvisory.com/post/the-stakeholder-buffet](https://cpproductadvisory.com/post/the-stakeholder-buffet) | Roadmap judgment: who walks away unhappy |
-| **The Shadow Roadmap** | [Substack archive](https://clintscall.substack.com/archive) | Visible activity without durable outcomes |
-| **The AI Deployment-Trust Gap** | [Substack archive](https://clintscall.substack.com/archive) | AI governance and trust at scale |
-| **Where Judgment Has to Stay Human** | [Substack archive](https://clintscall.substack.com/archive) | Human-in-the-loop decision rights |
-| **AI Is an Amplifier, Not a Strategy** | [Substack archive](https://clintscall.substack.com/archive) | Systems thinking on AI adoption |
-| **Why AI Hasn't Replaced Your Engineers** | [Substack archive](https://clintscall.substack.com/archive) | Org design over hype |
+| **The Shadow Roadmap: Why Strategy Fails** | [clintscall.substack.com/p/the-shadow-roadmap-why-strategy-fails](https://clintscall.substack.com/p/the-shadow-roadmap-why-strategy-fails) | Visible activity without durable outcomes |
+| **The Stakeholder Buffet** | [clintscall.substack.com/p/the-stakeholder-buffet](https://clintscall.substack.com/p/the-stakeholder-buffet) | Decision rights on the roadmap, not consensus theater |
+| **Nobody Decided to Trust the Agent** | [clintscall.substack.com/p/nobody-decided-to-trust-the-agent](https://clintscall.substack.com/p/nobody-decided-to-trust-the-agent) | AI governance and trust at scale |
+| **Agents Don't Replace Your Team. They Expose Your Judgment.** | [clintscall.substack.com/p/agents-dont-replace-your-team-they](https://clintscall.substack.com/p/agents-dont-replace-your-team-they) | Org design and human judgment over hype |
+| **AI as an Operating Constraint, Not a Feature** | [clintscall.substack.com/p/ai-as-an-operating-constraint-not](https://clintscall.substack.com/p/ai-as-an-operating-constraint-not) | Systems thinking on AI adoption |
+| **Decision Architecture Over Delivery** | [clintscall.substack.com/p/decision-architecture-over-delivery](https://clintscall.substack.com/p/decision-architecture-over-delivery) | Human-in-the-loop decision rights |
+
+**Operator Control Plane** depth lives in the [case study](../work/control-plane.md), not a separate essay link here. The long-form essay is not yet on Substack.
 
 ---
 

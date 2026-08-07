@@ -15,7 +15,7 @@ Track record of building the systems underneath the product: KPI frameworks, dec
 
 Specializes in diagnosing the decision systems, governance gaps, and execution constraints that slow scaling organizations, and rebuilding the operating infrastructure that allows them to move faster without adding complexity.
 
-The pattern across every environment: execution breaks when decision systems fail to keep up with scale. Each engagement follows the same arc, diagnose the constraint, rebuild the infrastructure, and leave behind a system that sustains itself.
+The pattern across every environment: execution breaks when decision systems fail to keep up with scale. I diagnose the constraint, rebuild the infrastructure, and embed systems teams can run without constant reinvention.
 
 **Operator proof:** Built and run a live Operator Control Plane: 65 skills, 28 governed automations, single Active Writer per task, applying the same decision architecture at solo-operator scale.
 

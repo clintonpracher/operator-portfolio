@@ -38,7 +38,7 @@ See also: [Public spec excerpt](control-plane-spec.md)
 | Scale | Evidence |
 |-------|----------|
 | **Enterprise** | 13-product AI/data portfolio across 100+ markets; $8M budget; 60+ team |
-| **Solo operator** | Same decision architecture running advisory practice + job search + personal admin |
+| **Solo operator** | Same decision architecture running product practice, job search, and personal admin on one operating logic |
 | **Throughput** | Overnight automations produce morning brief, queue sweeps, governance scans |
 | **Trust** | Adding a model feels like opening capacity, not opening a second brain |
 
@@ -50,4 +50,4 @@ See also: [Public spec excerpt](control-plane-spec.md)
 
 ---
 
-[← Back to Work](README.md) · [Read the essay](https://cpproductadvisory.com/blog/operator-control-plane)
+[← Back to Work](README.md) · [Writing index](../writing/README.md)
