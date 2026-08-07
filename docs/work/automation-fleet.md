@@ -1,6 +1,6 @@
 # Automation Fleet + Fleet Health
 
-**Problem type:** FIX-SCALE — governed scheduled execution at scale
+**Problem type:** FIX-SCALE: governed scheduled execution at scale
 
 ---
 
@@ -15,10 +15,10 @@ I needed a fleet that could self-report health, admit gaps, and escalate only wh
 ## What I built
 
 - **28 Cursor automations** across six waves: CRM sync, career, governance chain, fleet health, content, morning brief
-- **Active Writer governance** — each job registered; non-owners skip with `SKIPPED_NOT_OWNER`
-- **Fleet health monitor** — daily 6:25 AM scan; admits gaps to Governance Operations
-- **Governance chain** — three-night audit cycle, governance operations scan
-- **Wave-based cutover** — ChatGPT tasks migrated to Cursor with explicit ownership transfer
+- **Active Writer governance**, each job registered; non-owners skip with `SKIPPED_NOT_OWNER`
+- **Fleet health monitor**, daily 6:25 AM scan; admits gaps to Governance Operations
+- **Governance chain**, three-night audit cycle, governance operations scan
+- **Wave-based cutover**. ChatGPT tasks migrated to Cursor with explicit ownership transfer
 
 | Category | Examples | Cadence |
 |----------|----------|---------|
@@ -33,7 +33,7 @@ I needed a fleet that could self-report health, admit gaps, and escalate only wh
 
 - Morning brief shows fleet status every day
 - Fleet health admits gaps before I see stale data
-- Disabling a job is explicit — no ghost schedules
+- Disabling a job is explicit, no ghost schedules
 - Six waves of migration with ownership transfer, not duplication
 
 ---

@@ -1,7 +1,7 @@
 # Resume
 
-**Target lane:** Platform / Data / AI · Principal–Director  
-**Status:** Draft for Clint lock — PDF publishes after approval
+**Target lane:** Platform / Data / AI · Principal-Director  
+**Status:** Draft for Clint lock: PDF publishes after approval
 
 ---
 
@@ -16,9 +16,9 @@
 
 ## Variant
 
-`Platform_Data_AI` — based on Product Leadership V2_2, retargeted from MarTech-default to Platform, Data, and AI product leadership. Metrics preserved: 13-product portfolio, 100+ markets, $8M budget, 60+ team, $600M systems.
+`Platform_Data_AI`: based on Product Leadership V2_2, retargeted from MarTech-default to Platform, Data, and AI product leadership. Metrics preserved: 13-product portfolio, 100+ markets, $8M budget, 60+ team, $600M systems.
 
-**Source of truth (private):** CP Product Advisory `resume-advisor` skill — public copy is a published snapshot synced on lock.
+**Source of truth (private):** CP Product Advisory `resume-advisor` skill, public copy is a published snapshot synced on lock.
 
 ---
 

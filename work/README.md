@@ -1,6 +1,6 @@
-# Work — AI Systems Portfolio
+# Work: AI Systems Portfolio
 
-I build decision systems — not just products. These case studies show how I apply the same operating logic at enterprise scale (13-product AI portfolio, 100+ markets) and solo-operator scale (65 skills, 28 automations, one Chief of Staff agent).
+I build decision systems, not just products. These case studies show how I apply the same operating logic at enterprise scale (13-product AI portfolio, 100+ markets) and solo-operator scale (65 skills, 28 automations, one Chief of Staff agent).
 
 **Portfolio narrative:** I don't collect AI tools. I built an Operator Control Plane.
 
@@ -18,7 +18,7 @@ The ownership layer that assigns write authority across models, tools, and sched
 
 ### [Job Search OS](job-search-os.md)
 
-A governed decision system applied to my own career search — 0-9 scoring rubric, Role Radar intake, LinkedIn-first discovery, 6-application weekly cap.
+A governed decision system applied to my own career search: 0-9 scoring rubric, Role Radar intake, LinkedIn-first discovery, 6-application weekly cap.
 
 **Best for:** Product ops, transformation, platform governance roles
 

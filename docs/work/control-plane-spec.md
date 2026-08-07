@@ -1,4 +1,4 @@
-# Operator Control Plane — Public Spec Excerpt
+# Operator Control Plane: Public Spec Excerpt
 
 **Audience:** Hiring managers, product leaders, portfolio visitors
 
@@ -6,7 +6,7 @@
 
 ## One-line recommendation
 
-**Notion owns identity; Cursor owns human ops and preferred schedule execution; Claude owns shadow audit.** Scale by adding registered agents and automations — not by inventing a parallel agent system.
+**Notion owns identity; Cursor owns human ops and preferred schedule execution; Claude owns shadow audit.** Scale by adding registered agents and automations: not by inventing a parallel agent system.
 
 ---
 
