@@ -48,4 +48,4 @@ Product management roles, not project management. Remote US · Las Vegas-based.
 
 [LinkedIn](https://www.linkedin.com/in/clinton-pracher) · [GitHub](https://github.com/clintonpracher/operator-portfolio) · [Clint's Call (Substack)](https://clintscall.substack.com) · clintonpracher@gmail.com
 
-**Site:** [clintonpracher.github.io/operator-portfolio](https://clintonpracher.github.io/operator-portfolio/)
+**Site:** [clintonpracher.com](https://clintonpracher.com/)

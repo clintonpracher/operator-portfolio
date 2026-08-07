@@ -3,7 +3,7 @@
 **DIRECTOR · PLATFORM, DATA & AI PRODUCT**
 
 Las Vegas, NV · Remote US  
-clintonpracher@gmail.com · [linkedin.com/in/clinton-pracher](https://www.linkedin.com/in/clinton-pracher) · [Portfolio](https://clintonpracher.github.io/operator-portfolio/)
+clintonpracher@gmail.com · [linkedin.com/in/clinton-pracher](https://www.linkedin.com/in/clinton-pracher) · [Portfolio](https://clintonpracher.com/)
 
 ---
 
