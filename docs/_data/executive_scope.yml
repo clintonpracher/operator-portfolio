@@ -1,0 +1,17 @@
+items:
+  - label: Enterprise Platform and Portfolio Strategy
+    icon: strategy
+  - label: Data Products and Decision Infrastructure
+    icon: data-layers
+  - label: AI Product Strategy and Governance
+    icon: ai-governance
+  - label: Platform Modernization and Integration
+    icon: platform
+  - label: KPI Frameworks and Operating Models
+    icon: kpi
+  - label: Product Organization and PM Development
+    icon: org
+  - label: Executive and Cross-Functional Alignment
+    icon: alignment
+  - label: Budget Ownership and Investment Prioritization
+    icon: budget

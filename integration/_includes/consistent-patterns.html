@@ -1,0 +1,12 @@
+{% assign patterns = site.data.patterns %}
+<ul class="pattern-grid" aria-label="{{ patterns.heading }}">
+  {% for item in patterns.items %}
+  <li class="deck-card pattern-card">
+    <span class="pattern-card__icon" aria-hidden="true">
+      {% include proof-icon.html icon=item.icon %}
+    </span>
+    <h3 class="deck-card__title">{{ item.title }}</h3>
+    <p class="deck-card__body">{{ item.description }}</p>
+  </li>
+  {% endfor %}
+</ul>

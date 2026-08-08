@@ -1,0 +1,27 @@
+{% assign edu = site.data.education %}
+{% assign contact = site.data.site_settings %}
+<section class="resume-education" aria-label="Education and credentials">
+  <h2>{{ edu.heading }}</h2>
+
+  <h3>Education</h3>
+  {% for item in edu.education %}
+  <div class="resume-education__block">
+    <strong>{{ item.school }}</strong><br>
+    {{ item.degree }}
+  </div>
+  {% endfor %}
+
+  <h3>Certifications</h3>
+  <ul class="resume-education__certs">
+    {% for cert in edu.certifications %}
+    <li><span class="deck-chip">{{ cert }}</span></li>
+    {% endfor %}
+  </ul>
+
+  <h3>Connect</h3>
+  <p>
+    {% include linkedin-pill.html %}
+    · <a href="{{ site.url }}">clintonpracher.com</a>
+    · <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+  </p>
+</section>

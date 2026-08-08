@@ -1,6 +1,12 @@
-# About
+---
+layout: sectioned
+title: About
+permalink: /about/
+---
 
-**I'm Clint Pracher. I build product systems for scaling organizations when growth and complexity start breaking the systems that used to work.**
+# About Clint Pracher
+
+**Hi, I'm Clint. I build product systems for scaling organizations when growth and complexity start breaking the systems that used to work.**
 
 Most teams I step into are not failing. They're overloaded. Priorities have fragmented, execution feels inconsistent, and leaders carry more of the decision weight than they should. On the surface, that looks like an execution problem. It is usually a decision system that has not kept up with scale.
 
@@ -17,6 +23,18 @@ When priorities are unclear, ownership is diffused, and tradeoffs stay unresolve
 I work on that layer first. Strategy, operating models, and execution only work when decision rights are explicit, the evidence is trusted, and the team knows which constraints actually matter.
 
 The goal is not more output. It is better judgment at scale.
+
+---
+
+## On the ground, not just the platform
+
+<div class="on-the-ground">
+
+<p>I build for real operations, not abstract roadmaps. The best product decisions come from standing with the people who run the work and the customers who depend on it: hearing what actually breaks, what they need next, and what tradeoffs they live with every day.</p>
+
+<p>That discipline matters most in industries where being on the ground is non-negotiable: retail, hospitality and gaming, healthcare, education and campus environments, and point-of-sale systems like Micros on opening day. Onsite is the advantage, not the cost. I have done it from behind the counter and beside the people running the operation.</p>
+
+</div>
 
 ---
 
@@ -60,8 +78,10 @@ I am looking for a full-time Director, Principal, or Senior Director of Product 
 
 The right role has real product ownership, consequential decisions, and enough complexity to make systems thinking useful.
 
-Remote US · Based in Las Vegas.
+Remote US · Based in Las Vegas · Open to Local Hybrid.
 
-[**Connect on LinkedIn**](https://www.linkedin.com/in/clinton-pracher/) · [Read my work](../work/README.md) · [View my resume](../resume/resume.md)
+{% include social-icons.html %}
+
+[Read my work](../work/README.md) · [View my resume](../resume/resume.md)
 
 [← Back to home](../)

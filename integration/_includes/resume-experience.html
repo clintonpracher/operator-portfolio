@@ -1,0 +1,48 @@
+{% assign exp = site.data.experience %}
+<section class="resume-experience" aria-label="Professional experience">
+  <h2 class="resume-experience__section-title">Experience</h2>
+  {% for role in exp.recent %}
+  <article class="resume-role">
+    <div class="resume-role__top">
+      <h4 class="resume-role__heading">
+        {{ role.title }}
+        <span class="resume-role__company">· {{ role.company }}</span>
+      </h4>
+      <div class="resume-role__aside">
+        <div class="resume-role__dates">{{ role.dates }}</div>
+        {% for chip in role.chips %}
+        <span class="resume-role__chip">{{ chip }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <ul class="resume-role__bullets">
+      {% for bullet in role.bullets %}
+      <li>{{ bullet }}</li>
+      {% endfor %}
+    </ul>
+  </article>
+  {% endfor %}
+
+  <h3 class="resume-experience__section-title">Earlier experience</h3>
+  {% for role in exp.earlier %}
+  <article class="resume-role resume-role--earlier">
+    <div class="resume-role__top">
+      <h4 class="resume-role__heading">
+        {{ role.title }}
+        <span class="resume-role__company">· {{ role.company }}</span>
+      </h4>
+      <div class="resume-role__aside">
+        <div class="resume-role__dates">{{ role.dates }}</div>
+        {% for chip in role.chips %}
+        <span class="resume-role__chip">{{ chip }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    <ul class="resume-role__bullets">
+      {% for bullet in role.bullets %}
+      <li>{{ bullet }}</li>
+      {% endfor %}
+    </ul>
+  </article>
+  {% endfor %}
+</section>

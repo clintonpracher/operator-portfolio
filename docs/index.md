@@ -1,3 +1,8 @@
+---
+layout: home
+title: Home
+---
+
 # Clinton Pracher: Operator Portfolio
 
 **I build the decision systems underneath products, so teams can move faster without losing control.** Platform, data, AI, and governed operations. Principal / Director · Remote US
@@ -21,9 +26,9 @@ The tools handle the noise. I keep the judgment.
 | Section | What's there |
 |---------|----------------|
 | [**About**](about/README.md) | The person and operating philosophy behind the work |
-| [**Work**](work/README.md) | Enterprise case studies and the operator systems behind the claims |
-| [**Skills**](work/skills.md) | How I work across AI platforms, Agent OS, and technical tooling |
-| [**Writing**](writing/README.md) | Essays on decision systems, AI operations, and product leadership |
+| [**My Work**](work/README.md) | Enterprise case studies and the operator systems behind the claims |
+| [**Skills**](/work/skills/) | Launches, technical capabilities, and Agent OS proof |
+| [**Thought Leadership**](thought-leadership/) | Essays on decision systems, AI operations, and product leadership |
 | [**Resume**](resume/resume.md) | My full Platform / Data / AI career record |
 
 ---
@@ -34,24 +39,18 @@ The tools handle the noise. I keep the judgment.
 |--------|------------|
 | Platform Architecture | [Data Unification](work/case-studies/enterprise/data-unification.md) |
 | Decision Systems | [Data Unification](work/case-studies/enterprise/data-unification.md) |
-| Operating Model | [Product System Stabilization](work/case-studies/enterprise/product-system-stabilization.md) |
-| Martech / Data Platform | [AI Regulated Markets](work/case-studies/enterprise/ai-regulated-markets.md) |
-| Control Plane | [Operator Control Plane](work/case-studies/operator/control-plane.md) |
+| Operating Models | [The Product System Stabilization Framework](work/case-studies/enterprise/product-system-stabilization.md) |
+| Martech & Data Platforms | [AI Regulated Markets](work/case-studies/enterprise/ai-regulated-markets.md) |
+| Control Planes | [Operator Control Plane](work/case-studies/operator/control-plane.md) |
 
 ---
 
 ## Target roles
 
-Director, Principal, or Senior Director of Product roles in **Platform, Data, and AI**.
-
-VP Product roles where the portfolio scope warrants it.
-
-Product leadership, not project management. Remote US · Based in Las Vegas.
+{% include target-roles.html %}
 
 ---
 
-## Contact
+## Get in touch with me
 
-[LinkedIn](https://www.linkedin.com/in/clinton-pracher) · [GitHub](https://github.com/clintonpracher/operator-portfolio) · [Clint's Call (Substack)](https://clintscall.substack.com) · clintonpracher@gmail.com
-
-**Site:** [clintonpracher.com](https://clintonpracher.com/)
+{% include home-contact.html %}

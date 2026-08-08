@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
+  <title>{{ site.title }} · Product leader for Platform, Data, and AI</title>
+  <meta name="description" content="{{ site.description }}">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="{{ '/assets/css/imperious/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+</head>
+<body class="portfolio-body page-home">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  {% include site-header.html %}
+  {% assign sections = content | split: '<hr />' %}
+  <main class="home-main" id="main-content">
+    <section class="home-hero">
+      <div class="home-hero__copy">
+        <p class="page-eyebrow">Product leadership · Platform · Data · AI</p>
+        {{ sections[0] }}
+        <div class="home-hero__actions">
+          <a class="button button--primary" href="{{ '/work/' | relative_url }}">See my work</a>
+          <a class="button button--secondary" href="{{ '/resume/resume/' | relative_url }}">View my resume</a>
+        </div>
+      </div>
+      <div class="home-hero__visual" aria-hidden="true">
+        <div class="decision-map">
+          <div class="decision-map__orbit decision-map__orbit--outer"></div>
+          <div class="decision-map__orbit decision-map__orbit--inner"></div>
+          <div class="decision-map__node decision-map__node--platform">Platform</div>
+          <div class="decision-map__node decision-map__node--data">Data</div>
+          <div class="decision-map__node decision-map__node--ai">AI</div>
+          <div class="decision-map__core">Judgment</div>
+        </div>
+      </div>
+    </section>
+    {% for section in sections offset:1 %}
+    <section class="home-section home-section--{{ forloop.index }}">
+      <div class="home-section__inner">{{ section }}</div>
+    </section>
+    {% endfor %}
+  </main>
+  {% include site-footer.html %}
+  <script src="{{ '/assets/js/portfolio.js' | relative_url }}" defer></script>
+</body>
+</html>

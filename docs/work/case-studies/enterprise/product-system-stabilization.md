@@ -1,6 +1,6 @@
 ---
 layout: case-study
-title: "The Product System Stabilization"
+title: "The Product System Stabilization Framework"
 subtitle: "How a $120M connected-hardware line stopped renegotiating its own commitments, in 30 days"
 proof_points:
   - "Operating Model"

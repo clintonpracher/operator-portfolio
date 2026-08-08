@@ -1,0 +1,37 @@
+flowchart TB
+  CLINT["Clinton Pracher<br/>Judgment · ownership · one writer per task"]
+
+  subgraph PILLARS[" "]
+    direction LR
+
+    subgraph BIZ["CP Product Advisory"]
+      B1["Advisory delivery"]
+      B2["Demand / content"]
+      B3["Pipeline / CRM"]
+      B4["Marketplace"]
+      B5["Practice governance"]
+    end
+
+    subgraph PER["Personal"]
+      P1["Job Search OS"]
+      P2["Personal admin"]
+      P3["Personal governance"]
+    end
+  end
+
+  subgraph SHARED["Shared operating substrate"]
+    direction LR
+    AUGUST["August Reeve · Chief of Staff"]
+    PLANE["Control plane<br/>Notion identity · Cursor Automations · Claude Shadow"]
+    SPEC["Specialist agents · on-call"]
+  end
+
+  CLINT --> BIZ
+  CLINT --> PER
+  CLINT --> AUGUST
+  AUGUST --> PLANE
+  AUGUST --> SPEC
+  BIZ --> PLANE
+  PER --> PLANE
+  SPEC --> BIZ
+  SPEC --> PER

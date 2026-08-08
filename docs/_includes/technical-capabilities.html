@@ -1,0 +1,31 @@
+{% assign cap = site.data.capabilities %}
+<section class="technical-capabilities" aria-label="Launches and technical capabilities">
+  <div class="skills-deck">
+    <div class="skills-deck__column skills-deck__column--launches">
+      <p class="skills-deck__eyebrow">{{ cap.launches_heading }}</p>
+      <div class="skills-deck__stack">
+        {% for item in cap.launches %}
+        <article class="deck-card skills-deck-card skills-deck-card--launch">
+          <h3 class="deck-card__title">
+            {{ item.title }}
+            <span class="skills-deck-card__meta">{{ item.meta }}</span>
+          </h3>
+          <p class="deck-card__body">{{ item.body }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="skills-deck__column skills-deck__column--capabilities">
+      <p class="skills-deck__eyebrow">{{ cap.capabilities_heading }}</p>
+      <div class="skills-deck__stack">
+        {% for item in cap.capabilities %}
+        <article class="deck-card skills-deck-card skills-deck-card--capability">
+          <h3 class="deck-card__title">{{ item.title }}</h3>
+          <p class="deck-card__body">{{ item.body }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

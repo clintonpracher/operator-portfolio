@@ -1,0 +1,42 @@
+{% assign proof = site.data.proof_cards %}
+<section class="proof-at-a-glance" aria-label="Proof at a glance">
+  <p class="proof-at-a-glance__intro">{{ proof.intro }}</p>
+
+  <div class="proof-at-a-glance__group">
+    <h3>Enterprise</h3>
+    <div class="proof-cards-wrap">
+      <ul class="proof-cards proof-cards--enterprise">
+        {% for card in proof.enterprise %}
+        <li class="deck-card proof-card">
+          <a href="{{ card.url | relative_url }}">
+            <h3 class="deck-card__title">
+              {{ card.title }}
+              <span class="deck-card__arrow" aria-hidden="true">↗</span>
+            </h3>
+            <p class="deck-card__body">{{ card.description }}</p>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="proof-at-a-glance__group">
+    <h3>Operator</h3>
+    <div class="proof-cards-wrap">
+      <ul class="proof-cards proof-cards--operator">
+        {% for card in proof.operator %}
+        <li class="deck-card proof-card">
+          <a href="{{ card.url | relative_url }}">
+            <h3 class="deck-card__title">
+              {{ card.title }}
+              <span class="deck-card__arrow" aria-hidden="true">↗</span>
+            </h3>
+            <p class="deck-card__body">{{ card.description }}</p>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

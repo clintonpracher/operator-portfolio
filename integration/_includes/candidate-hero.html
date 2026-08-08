@@ -1,0 +1,31 @@
+{% assign c = site.data.candidate %}
+{% assign contact = site.data.site_settings %}
+<div class="candidate-hero">
+  <figure class="candidate-hero__photo-frame">
+    <img
+      class="candidate-hero__photo"
+      src="{{ '/assets/clint-pracher-profile.jpg' | relative_url }}"
+      alt="Clinton J. Pracher"
+      width="560"
+      height="700"
+      loading="eager"
+    >
+  </figure>
+  <div class="candidate-hero__content">
+    <p class="candidate-hero__eyebrow">{{ c.eyebrow }}</p>
+    <h1 class="candidate-hero__name">{{ c.name }}</h1>
+    <p class="candidate-hero__positioning">{{ c.positioning }}</p>
+    <div class="candidate-hero__contact">
+      <span>{{ c.location }}</span>
+      <span class="candidate-hero__contact-sep" aria-hidden="true">·</span>
+      <a href="tel:{{ contact.phone_href }}">{{ contact.phone_display }}</a>
+      <span class="candidate-hero__contact-sep" aria-hidden="true">·</span>
+      <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+      <span class="candidate-hero__contact-sep" aria-hidden="true">·</span>
+      {% include linkedin-pill.html %}
+      <span class="candidate-hero__contact-sep" aria-hidden="true">·</span>
+      <a href="{{ site.url }}">clintonpracher.com</a>
+    </div>
+    {% include metric-tiles.html %}
+  </div>
+</div>

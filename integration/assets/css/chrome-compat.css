@@ -1,0 +1,36 @@
+/* Chrome + resume header compatibility — integration overlay */
+
+.resume-body .resume-header-block h1 {
+  text-align: center;
+}
+
+.resume-body .resume-tagline {
+  text-align: center;
+}
+
+.resume-body .resume-contact-row {
+  text-align: center;
+}
+
+.home-metrics {
+  width: min(100% - 3rem, var(--portfolio-container, 72rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 3rem;
+}
+
+.home-metrics__inner {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.home-metrics .metric-tiles {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 52rem) {
+  .home-metrics {
+    width: min(100% - 2rem, var(--portfolio-container, 72rem));
+    padding: 2rem 0 2.5rem;
+  }
+}

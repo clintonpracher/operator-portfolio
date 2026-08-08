@@ -13,7 +13,6 @@ This is the public resume for Clinton J. Pracher, a product and platform executi
 ## Formats
 
 - [PDF resume](clinton-pracher-platform-data-ai-resume.pdf)
-- [Word resume](clinton-pracher-platform-data-ai-resume.docx)
-- [Web resume](resume.md)
+- [Web resume](resume.md) (Career Profile)
 
-The Word and PDF files preserve the existing resume design. The Markdown version is optimized for GitHub reading and search.
+The PDF preserves the existing resume design. The web resume uses deck-tested copy and layout optimized for recruiters and search.

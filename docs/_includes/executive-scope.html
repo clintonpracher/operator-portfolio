@@ -1,0 +1,11 @@
+{% assign scope = site.data.executive_scope %}
+<ul class="scope-grid" aria-label="Executive scope">
+  {% for item in scope.items %}
+  <li class="scope-item">
+    <span class="scope-item__icon" aria-hidden="true">
+      {% include proof-icon.html icon=item.icon %}
+    </span>
+    <span class="scope-item__label">{{ item.label }}</span>
+  </li>
+  {% endfor %}
+</ul>

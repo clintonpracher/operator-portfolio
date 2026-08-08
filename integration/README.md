@@ -1,6 +1,6 @@
 # Portfolio integration overlay
 
-Files here **overlay** the locked design kit at `design-kit/portfolio-design-kit-2026-08-08/` during `apply-portfolio-design-kit.sh`. Do not edit the design kit folder directly.
+Files here **overlay** the locked design kit at `design-kit/site/` during `apply-portfolio-design-kit.sh`. Do not edit the design kit folder directly.
 
 | Path | Role |
 |------|------|

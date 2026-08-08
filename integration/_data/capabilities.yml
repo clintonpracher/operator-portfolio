@@ -1,0 +1,23 @@
+launches_heading: Select product launches
+launches:
+  - title: Enterprise AI Product Suite
+    meta: Dentsu, 2024 to 2025
+    body: 13 AI products across 100 plus markets, enabling privacy safe data connections at enterprise scale.
+  - title: Media360 Unified Reporting
+    meta: Merkle, 2023
+    body: Consolidated 95 percent of a $600M budget across 140 markets into unified full funnel reporting.
+  - title: V Shred Mobile App
+    meta: "2018"
+    body: Consumer fitness app that hit 100K downloads in its first 24 hours, with sustained engagement gains.
+capabilities_heading: Technical capabilities
+capabilities:
+  - title: Data and analytics
+    body: Snowflake, Databricks, SQL, SQL Server, Looker, Tableau, Google Analytics, ETL, Airflow
+  - title: AI and machine learning
+    body: AI product strategy, ML integration, generative AI products, privacy safe data architecture
+  - title: Cloud and infrastructure
+    body: AWS, Google Cloud, Azure, GitHub
+  - title: Enterprise systems and platforms
+    body: CRM, Salesforce (Platinum Partner ecosystem), point-of-sale (Micros), PIM/DAM, NetSuite, Contentful, e commerce platforms
+  - title: Product and delivery
+    body: Jira, Confluence, ProductBoard, Miro, Figma, Aha!, Agile, SCRUM, SAFe, Kanban

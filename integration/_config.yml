@@ -21,17 +21,17 @@ defaults:
       path: "work/README.md"
     values:
       layout: sectioned
-      title: Work
+      title: My Work
   - scope:
       path: "work/skills.md"
     values:
       layout: sectioned
       title: Skills
   - scope:
-      path: "writing/README.md"
+      path: "thought-leadership/README.md"
     values:
       layout: sectioned
-      title: Writing
+      title: Thought Leadership
   - scope:
       path: "work/case-studies"
     values:
@@ -53,3 +53,8 @@ exclude:
   - design-kit
   - integration
   - content
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .gitignore

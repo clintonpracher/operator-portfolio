@@ -1,0 +1,12 @@
+{% assign roles = site.data.target_roles %}
+<ul class="role-cards" aria-label="Target roles">
+  {% for role in roles.items %}
+  <li class="deck-card role-card">
+    <span class="role-card__icon" aria-hidden="true">
+      {% include proof-icon.html icon=role.icon %}
+    </span>
+    <h3 class="deck-card__title">{{ role.title }}</h3>
+    <p class="deck-card__body">{{ role.body }}</p>
+  </li>
+  {% endfor %}
+</ul>

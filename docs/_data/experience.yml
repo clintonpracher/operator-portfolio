@@ -1,0 +1,68 @@
+recent:
+  - title: Founder and Principal Advisor
+    company: CP Product Advisory
+    dates: Jul 2025 to Present
+    chips:
+      - "Product & Technology Advisory"
+    bullets:
+      - Turn fragmented technology and operating models into integrated systems that scale, rebuilding decision infrastructure, governance, and delivery workflows
+      - Cut requirements cycles from two weeks to two days and rework from 40% to zero in a 60 person engineering org within 30 days; the model is still in use
+  - title: Director, Product Management
+    company: Dentsu Inc.
+    dates: Oct 2024 to Oct 2025
+    chips:
+      - "Marketing & Advertising"
+    bullets:
+      - Owned an enterprise portfolio of 13 products, an $8M budget, and 60+ engineers and analysts across 100+ global markets
+      - Gave leadership its first single source of truth for investment prioritization, ending recurring escalation cycles across product, data, and finance
+  - title: Senior Product Manager
+    company: Merkle, a Dentsu Company
+    dates: May 2022 to Oct 2024
+    chips:
+      - "Data & CRM"
+    bullets:
+      - Built the framework behind $600M in annual investment decisions across 140 markets, consolidating 95% of that spend into a single unified view
+      - Consolidated 45+ fragmented data sources into one platform, cutting investment decision latency by ~40%
+earlier:
+  - title: Senior Technical Project Manager, Data Group
+    company: Business Insider
+    dates: Oct 2021 to May 2022
+    chips:
+      - "Media & Publishing"
+    bullets:
+      - Led end to end delivery of the AWS to Snowflake data platform migration, on scope, timeline, and budget through a high growth period.
+  - title: Product Manager
+    company: Fulcrum Digital
+    dates: Sep 2020 to Oct 2021
+    chips:
+      - Technology Services
+    bullets:
+      - Owned delivery across enterprise e commerce implementations, rebuilding client workflows to accelerate release velocity.
+  - title: Digital Experience Product Manager
+    company: Academy Sports and Outdoors
+    dates: Nov 2019 to Jul 2020
+    chips:
+      - "Retail & eCommerce"
+    bullets:
+      - Drove $60M in incremental revenue, a 29% revenue lift, and 331% YoY organic growth in 12 months through catalog and SEO driven architecture.
+  - title: Senior Business Analyst and Product Owner
+    company: William Hill US (Caesars Entertainment)
+    dates: Aug 2019 to Nov 2019
+    chips:
+      - "Hospitality & Gaming"
+    bullets:
+      - Launched the Deposit Terminal wagering interface and led delivery across 5 new US state markets during the Caesars transformation.
+  - title: Head of Product Management
+    company: V Shred
+    dates: May 2018 to Aug 2019
+    chips:
+      - "Health & Fitness"
+    bullets:
+      - Hit 100K downloads in 24 hours; inherited a 24 product portfolio and built a team of 5 PMs.
+  - title: Product Manager
+    company: Advance Auto Parts
+    dates: 2014 to 2018
+    chips:
+      - "Retail & Automotive"
+    bullets:
+      - Turned around a subscription platform by reducing annual cancellation from 75% to under 30%, then sustained 10% to 12% annual growth for three years.
