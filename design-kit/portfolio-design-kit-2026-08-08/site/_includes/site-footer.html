@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  {% assign contact = site.data.site_settings %}
+  <div class="site-footer__inner">
+    <div>
+      <p class="site-footer__eyebrow">Platform · Data · AI</p>
+      <p class="site-footer__statement">Product leadership built around better decisions.</p>
+    </div>
+    <nav class="site-footer__links" aria-label="Contact links">
+      <a href="{{ contact.linkedin }}">LinkedIn</a>
+      <a href="{{ contact.github }}">GitHub</a>
+      <a href="mailto:{{ contact.email }}">Email</a>
+      <a href="tel:{{ contact.phone_href }}">{{ contact.phone_display }}</a>
+    </nav>
+  </div>
+</footer>

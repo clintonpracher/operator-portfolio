@@ -1,0 +1,76 @@
+/* Imperious Luxury Spectrum™ — color tokens.
+   Dark-mode-first identity. Ratio: 70% neutral / 20% primary / 10% accent.
+   Insight Electric Blue ("Truth Spike") ≤ 3% usage — it must feel earned. */
+:root {
+  /* ---- Primary Identity: Purples ---- */
+  --imperious-purple: #3C245F;   /* Primary 01 — signature authority */
+  --regal-violet: #51357A;       /* Primary 02 — UI, backgrounds, gradients */
+  --insight-violet: #6A4D9A;     /* Primary 03 — soft highlights, quiet emphasis */
+
+  /* ---- Authority Blues (grounding layer) ---- */
+  --midnight-authority: #0C1226; /* Blue 01 — near-black anchor */
+  --deep-nocturne: #111A33;      /* Blue 02 — dark sections, overlays */
+
+  /* ---- Clarity Blues (analytical layer) ---- */
+  --slate-clarity: #2F3D52;      /* Blue 03 — diagrams, frameworks, secondary UI */
+  --cool-intelligence: #4B5E78;  /* Blue 04 — content sections, subtle accents */
+
+  /* ---- Accent: Truth Spike ---- */
+  --insight-electric-blue: #2D7BFF; /* Accent 01 — CTAs, breakthroughs, ≤3% */
+
+  /* ---- Neutral Luxury System ---- */
+  --absolute-white: #FFFFFF;     /* BG 01 — primary canvas */
+  --premium-off-white: #F7F7F7;  /* BG 02 — soft section background */
+  --luxe-stone: #EDEDED;         /* BG 03 — cards, modules */
+  --authority-charcoal: #0F172A; /* Text 01 — primary text */
+  --soft-ink: #4A4F58;           /* Text 02 — muted / supporting text */
+  --executive-divider: #D6D6D6;  /* Border — subtle delineation */
+
+  /* ======================================================================
+     Semantic aliases — dark-mode-first defaults.
+     These are what components consume; the raw palette above is the source.
+     ====================================================================== */
+  --surface-base: var(--midnight-authority);      /* page canvas (dark-first) */
+  --surface-raised: var(--deep-nocturne);         /* raised sections/overlays */
+  --surface-card: var(--slate-clarity);           /* cards, modules */
+  --surface-inset: rgba(255,255,255,0.04);        /* inset wells on dark */
+
+  --text-primary: var(--absolute-white);          /* on dark surfaces */
+  --text-secondary: rgba(247,247,247,0.72);       /* muted on dark */
+  --text-muted: var(--cool-intelligence);         /* footnotes, captions */
+  --text-inverse: var(--authority-charcoal);      /* on light surfaces */
+  --text-inverse-muted: var(--soft-ink);
+
+  --border-subtle: rgba(214,214,214,0.14);        /* divider on dark */
+  --border-strong: rgba(214,214,214,0.28);
+  --border-light: var(--executive-divider);       /* divider on light */
+
+  --brand-primary: var(--imperious-purple);
+  --brand-primary-hover: var(--regal-violet);
+  --brand-secondary: var(--slate-clarity);
+  --accent-truth: var(--insight-electric-blue);
+
+  --link: var(--insight-electric-blue);
+  --link-hover: var(--insight-violet);
+
+  --focus-ring: rgba(45,123,255,0.55);
+}
+
+/* Light adaptation — secondary context (documents, print, accessible).
+   Apply on any subtree with [data-theme="light"]. */
+[data-theme="light"] {
+  --surface-base: var(--absolute-white);
+  --surface-raised: var(--premium-off-white);
+  --surface-card: var(--absolute-white);
+  --surface-inset: var(--luxe-stone);
+
+  --text-primary: var(--authority-charcoal);
+  --text-secondary: var(--soft-ink);
+  --text-muted: var(--soft-ink);
+  --text-inverse: var(--absolute-white);
+  --text-inverse-muted: rgba(247,247,247,0.72);
+
+  --border-subtle: var(--executive-divider);
+  --border-strong: #C4C4C4;
+  --border-light: var(--executive-divider);
+}

@@ -1,0 +1,63 @@
+{% assign architecture = site.data.site_settings.architecture %}
+<figure class="architecture-view">
+  <div class="architecture-view__header">
+    <div>
+      <p class="architecture-view__eyebrow">Public architecture</p>
+      <h3>Judgment stays human. The system carries the work.</h3>
+    </div>
+    <span class="architecture-view__status">Current state</span>
+  </div>
+
+  {% if architecture.image != "" %}
+  <img class="architecture-view__image" src="{{ architecture.image | relative_url }}" alt="{{ architecture.alt }}">
+  {% else %}
+  <div class="architecture-map" role="img" aria-label="Human judgment directs a governed control plane, which coordinates execution roles and produces evidence in systems of record.">
+    <div class="architecture-node architecture-node--human">
+      <span class="architecture-node__label">Human direction</span>
+      <strong>Judgment and ownership</strong>
+      <small>Priorities, tradeoffs, final decisions</small>
+    </div>
+
+    <div class="architecture-map__connector" aria-hidden="true"></div>
+
+    <div class="architecture-node architecture-node--plane">
+      <span class="architecture-node__label">Governed control plane</span>
+      <strong>Authority, coordination, guardrails</strong>
+      <small>One accountable writer for each active task</small>
+    </div>
+
+    <div class="architecture-map__connector architecture-map__connector--split" aria-hidden="true"></div>
+
+    <div class="architecture-map__roles">
+      <div class="architecture-node">
+        <span class="architecture-node__label">Execution</span>
+        <strong>Primary work</strong>
+        <small>Build, operate, publish</small>
+      </div>
+      <div class="architecture-node">
+        <span class="architecture-node__label">Review</span>
+        <strong>Independent audit</strong>
+        <small>Test, challenge, report</small>
+      </div>
+      <div class="architecture-node">
+        <span class="architecture-node__label">Specialists</span>
+        <strong>On-call capacity</strong>
+        <small>Scoped expertise when needed</small>
+      </div>
+    </div>
+
+    <div class="architecture-map__connector architecture-map__connector--merge" aria-hidden="true"></div>
+
+    <div class="architecture-node architecture-node--evidence">
+      <span class="architecture-node__label">Evidence layer</span>
+      <strong>Systems of record and outcome receipts</strong>
+      <small>Decisions, work history, versioned procedures</small>
+    </div>
+  </div>
+  {% endif %}
+
+  <figcaption>
+    This public view shows the operating logic without exposing internal workflows, agent identities, prompts, or implementation details.
+    {% if architecture.source_url != "" %}<a href="{{ architecture.source_url }}">Open the live diagram</a>.{% endif %}
+  </figcaption>
+</figure>

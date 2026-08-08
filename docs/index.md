@@ -1,14 +1,18 @@
 # Clinton Pracher: Operator Portfolio
 
-**Product leader who builds decision systems, not just products.** Operator Control Plane, governed AI ops, platform/data/AI. Principal / Director · Remote US
+**I build the decision systems underneath products, so teams can move faster without losing control.** Platform, data, AI, and governed operations. Principal / Director · Remote US
 
 ---
 
-## Systems thinker
+## What I actually build
 
-Execution breaks when decision systems fail to keep up with scale. I diagnose the constraint, rebuild the infrastructure, and leave a system that sustains itself. That pattern holds across a $600M media data platform, a 13-product AI portfolio, and a live Operator Control Plane I run today.
+Most execution problems are not execution problems. They are decision problems wearing an execution costume.
 
-At enterprise scale: 13 AI and data products, 100+ markets, $8M budget, 60+ team. At solo-operator scale: governed multi-model stack (Cursor, Claude, ChatGPT, Codex) under single Active Writer rules: 30 skills, 29 automations, 36 scheduled tasks.
+I find the constraint, name who owns the call, rebuild the operating model, and leave behind a system the team can run without me. I have done that across a $600M media data platform, a 13-product AI portfolio, and the live Operator Control Plane I run today.
+
+At enterprise scale, that meant 13 AI and data products across 100+ markets, an $8M budget, and a 60+ person team. At solo-operator scale, it means Cursor, Claude, ChatGPT, and Codex working under one decision architecture with a single Active Writer for every task: 30 skills, 29 automations, and 36 scheduled tasks.
+
+The tools handle the noise. I keep the judgment.
 
 ---
 
@@ -16,10 +20,11 @@ At enterprise scale: 13 AI and data products, 100+ markets, $8M budget, 60+ team
 
 | Section | What's there |
 |---------|----------------|
-| [**Work**](work/README.md) | Enterprise case studies, proof sketches, operator proof |
-| [**Skills**](work/skills.md) | AI platforms, Agent OS, technical literacy |
-| [**Writing**](writing/README.md) | Essays on decision systems and product leadership |
-| [**Resume**](resume/resume.md) | Platform / Data / AI resume |
+| [**About**](about/README.md) | The person and operating philosophy behind the work |
+| [**Work**](work/README.md) | Enterprise case studies and the operator systems behind the claims |
+| [**Skills**](work/skills.md) | How I work across AI platforms, Agent OS, and technical tooling |
+| [**Writing**](writing/README.md) | Essays on decision systems, AI operations, and product leadership |
+| [**Resume**](resume/resume.md) | My full Platform / Data / AI career record |
 
 ---
 
@@ -37,10 +42,11 @@ At enterprise scale: 13 AI and data products, 100+ markets, $8M budget, 60+ team
 
 ## Target roles
 
-Director / Principal / Senior Director of Product: **Platform, Data, AI**  
-VP Product (platform, data, AI, transformation) where portfolio scale warrants it.
+Director, Principal, or Senior Director of Product roles in **Platform, Data, and AI**.
 
-Product management roles, not project management. Remote US · Las Vegas-based.
+VP Product roles where the portfolio scope warrants it.
+
+Product leadership, not project management. Remote US · Based in Las Vegas.
 
 ---
 

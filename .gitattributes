@@ -1,0 +1,14 @@
+# Demote diagram sources so they do not dominate the language bar
+*.mmd linguist-documentation=true
+docs/_generated/** linguist-generated=true
+
+# Ensure site stack is detectable
+*.html linguist-language=HTML linguist-detectable=true
+*.css linguist-language=CSS linguist-detectable=true
+*.js linguist-language=JavaScript linguist-detectable=true
+*.py linguist-language=Python linguist-detectable=true
+
+# Build-only folders are not site content
+design-kit/** linguist-vendored=true
+integration/** linguist-vendored=true
+content/** linguist-documentation=true

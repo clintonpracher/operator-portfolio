@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
   <title>Resume · {{ site.title }}</title>
+  <meta name="description" content="Clinton Pracher's resume for product leadership roles across Platform, Data, and AI.">
+  <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="{{ '/assets/css/imperious/styles.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/footer-icons.css' | relative_url }}">
 </head>
 <body class="portfolio-body resume-body">
+  <a class="skip-link" href="#main-content">Skip to content</a>
   {% include site-header.html %}
-  <main class="resume-main">
+  <main class="resume-main" id="main-content">
     {{ content }}
   </main>
   {% include site-footer.html %}
+  <script src="{{ '/assets/js/portfolio.js' | relative_url }}" defer></script>
 </body>
 </html>

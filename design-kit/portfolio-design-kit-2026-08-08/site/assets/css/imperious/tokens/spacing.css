@@ -1,0 +1,34 @@
+/* Spacing, radii, layout — Quiet Authority Structure. 4pt base grid. */
+:root {
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* Radii (from layout system) */
+  --radius-sm: 6px;   /* small — inputs, chips */
+  --radius-md: 8px;   /* medium — buttons, controls */
+  --radius-lg: 12px;  /* large — cards, modules, dialogs */
+  --radius-pill: 999px;
+  --radius-full: 9999px;
+
+  /* Control heights (button system) */
+  --control-h-sm: 36px;
+  --control-h-md: 44px;   /* default */
+  --control-h-lg: 56px;
+  --control-pad-sm: 16px;
+  --control-pad-md: 24px;
+  --control-pad-lg: 40px;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-narrow: 720px; /* long-form reading measure */
+  --section-gap: var(--space-9);
+}

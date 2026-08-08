@@ -1,0 +1,4 @@
+/* Imperious Luxury typefaces — Outfit (display/headings) + DM Sans (body).
+   Both are Google Fonts; loaded via Google's hosted @font-face CSS.
+   If you need self-hosted binaries, drop them in assets/fonts/ and replace this @import. */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap');

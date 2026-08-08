@@ -1,25 +1,19 @@
 # Resume
 
-**Target lane:** Platform / Data / AI · Principal-Director  
-**Status:** Markdown live on site; PDF publishes after lock + resume-builder run
+This is the public resume for Clinton J. Pracher, a product and platform executive focused on enterprise platforms, data products, AI portfolios, and FIX-SCALE product environments.
 
----
+## Target roles
 
-## Download
+- VP Product
+- Head of Product
+- Senior Director, Product Management
+- VP or Head of Platform Product
+- VP or Head of Data and AI Product
 
-| Format | Link |
-|--------|------|
-| **PDF** | [clinton-pracher-resume.pdf](clinton-pracher-resume.pdf) *(available after lock + resume-builder run)* |
-| **Markdown** | [resume.md](resume.md) |
+## Formats
 
----
+- [PDF resume](clinton-pracher-platform-data-ai-resume.pdf)
+- [Word resume](clinton-pracher-platform-data-ai-resume.docx)
+- [Web resume](resume.md)
 
-## Variant
-
-`Platform_Data_AI`: based on Product Leadership V2_2, retargeted from MarTech-default to Platform, Data, and AI product leadership. Metrics preserved: 13-product portfolio, 100+ markets, $8M budget, 60+ team, $600M systems.
-
-**Source of truth (private):** CP Product Advisory `resume-advisor` skill, public copy is a published snapshot synced on lock.
-
----
-
-[← Back to home](../README.md)
+The Word and PDF files preserve the existing resume design. The Markdown version is optimized for GitHub reading and search.
