@@ -2,7 +2,7 @@
 
 Enterprise product leadership and operator proof for **Platform / Data / AI** roles.
 
-Execution breaks when decision systems fail to keep up with scale. The case studies below show diagnosis, rebuild, and measurable outcomes at enterprise scale. The operator proof shows the same architecture running live under governed AI ops.
+Execution breaks when the decision system cannot keep up with scale. These case studies follow the same pattern: find the constraint, rebuild what governs the work, and measure what changed. The operator examples use that same logic across the AI systems I run every day.
 
 ---
 
@@ -20,7 +20,7 @@ Execution breaks when decision systems fail to keep up with scale. The case stud
 
 ## Proof at a glance
 
-Short teasers. [Read more](case-studies/) for full narratives.
+If you want the short version, start here. The full stories live in the [case study library](case-studies/).
 
 **Enterprise**
 
@@ -39,7 +39,7 @@ Short teasers. [Read more](case-studies/) for full narratives.
 
 ---
 
-## Operator proof (in depth)
+## Operator proof, in depth
 
 | Case study | Focus |
 |------------|-------|

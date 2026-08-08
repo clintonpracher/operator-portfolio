@@ -1,7 +1,7 @@
 # Resume
 
-**Target lane:** Platform / Data / AI · Principal-Director  
-**Status:** Markdown live on site; PDF publishes after lock + resume-builder run
+**Target:** Platform / Data / AI · Principal or Director  
+**Current state:** Markdown is live on the site. The PDF publishes after the content lock and resume-builder run.
 
 ---
 
@@ -9,16 +9,18 @@
 
 | Format | Link |
 |--------|------|
-| **PDF** | [clinton-pracher-resume.pdf](clinton-pracher-resume.pdf) *(available after lock + resume-builder run)* |
+| **PDF** | [clinton-pracher-resume.pdf](clinton-pracher-resume.pdf) *(available after content lock and resume-builder run)* |
 | **Markdown** | [resume.md](resume.md) |
 
 ---
 
-## Variant
+## Current variant
 
-`Platform_Data_AI`: based on Product Leadership V2_2, retargeted from MarTech-default to Platform, Data, and AI product leadership. Metrics preserved: 13-product portfolio, 100+ markets, $8M budget, 60+ team, $600M systems.
+`Platform_Data_AI` is based on Product Leadership V2_2 and retargeted from a MarTech default to Platform, Data, and AI product leadership.
 
-**Source of truth (private):** CP Product Advisory `resume-advisor` skill, public copy is a published snapshot synced on lock.
+The proof stayed intact: 13-product portfolio, 100+ markets, $8M budget, 60+ team, and systems governing $600M in annual spend.
+
+**Private source of truth:** The CP Product Advisory `resume-advisor` skill. This public version is a published snapshot that updates after content lock.
 
 ---
 
