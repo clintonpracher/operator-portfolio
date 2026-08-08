@@ -1,5 +1,5 @@
 # Case studies
 
-These are the longer stories behind the proof: enterprise work imported from Notion, plus the operating systems I run at solo scale.
+Longform narratives imported from Notion (enterprise) and operator proof (solo scale).
 
 [← Back to Work](../README.md)
