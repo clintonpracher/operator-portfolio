@@ -17,9 +17,12 @@ defaults:
     values:
       layout: case-study
   - scope:
-      path: "resume/resume.md"
+      path: "resume"
     values:
       layout: resume
+  - scope:
+      path: "resume/resume.md"
+    values:
       title: Resume
   - scope:
       path: ""

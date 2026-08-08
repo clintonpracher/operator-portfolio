@@ -1,36 +1,69 @@
-/* resume-builder visual spec: Century Gothic lane, navy header */
+/* resume-builder visual spec: Century Gothic lane, navy header (#084B81) */
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
 :root {
   --resume-navy: #084b81;
   --resume-border: #e3d7da;
   --resume-body: #231f20;
-  --resume-font: 'Century Gothic', 'Segoe UI', Calibri, sans-serif;
+  --resume-muted: #4a4f58;
+  --resume-font: 'Didact Gothic', 'Century Gothic', 'Segoe UI', Calibri, sans-serif;
 }
 
-.resume-body {
+/* Override Imperious shell tokens on resume lane pages */
+.portfolio-body.resume-body {
   margin: 0;
   background: #fff;
   color: var(--resume-body);
   font-family: var(--resume-font);
   font-size: 11pt;
   line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.portfolio-body.resume-body .site-header {
+  background: var(--resume-navy);
+  border-bottom: none;
+}
+
+.portfolio-body.resume-body .site-logo,
+.portfolio-body.resume-body .site-nav a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.portfolio-body.resume-body .site-nav a:hover {
+  color: #fff;
+}
+
+.portfolio-body.resume-body .site-footer {
+  background: #f8fafc;
+  color: var(--resume-muted);
+  border-top: 1px solid var(--resume-border);
+  font-family: var(--resume-font);
 }
 
 .resume-main {
   max-width: 8.5in;
   margin: 0 auto;
-  padding: 0.75in 0.85in;
+  padding: 0.75in 0.85in 1.25in;
+  font-family: var(--resume-font);
+  color: var(--resume-body);
 }
 
 .resume-main h1 {
   color: var(--resume-navy);
+  font-family: var(--resume-font);
   font-size: 22pt;
   margin: 0 0 0.25rem;
   font-weight: 700;
+  letter-spacing: normal;
 }
 
 .resume-main h2 {
   color: var(--resume-navy);
+  font-family: var(--resume-font);
   font-size: 11pt;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-bottom: 2px solid var(--resume-border);
@@ -38,11 +71,73 @@
   margin: 1.25rem 0 0.5rem;
 }
 
+.resume-main h3 {
+  color: var(--resume-navy);
+  font-family: var(--resume-font);
+  font-size: 11pt;
+  font-weight: 700;
+  margin: 1rem 0 0.35rem;
+}
+
 .resume-main p,
 .resume-main li {
   margin: 0.35rem 0;
+  font-family: var(--resume-font);
+}
+
+.resume-main strong {
+  color: var(--resume-body);
+  font-weight: 700;
 }
 
 .resume-main a {
   color: var(--resume-navy);
+}
+
+.resume-main hr {
+  border: none;
+  border-top: 1px solid var(--resume-border);
+  margin: 1.25rem 0;
+}
+
+.resume-main table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--resume-font);
+  font-size: 10.5pt;
+  margin: 0.75rem 0 1rem;
+}
+
+.resume-main th,
+.resume-main td {
+  border: 1px solid var(--resume-border);
+  padding: 0.45rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.resume-main th {
+  color: var(--resume-navy);
+  font-weight: 700;
+  background: #faf8f9;
+}
+
+.resume-main code {
+  font-family: var(--resume-font);
+  font-size: 0.95em;
+  color: var(--resume-body);
+  background: #f4f4f5;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+.resume-main pre,
+.resume-main pre code {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: #f4f4f5;
+}
+
+.resume-main em {
+  color: var(--resume-muted);
 }

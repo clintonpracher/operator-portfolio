@@ -133,9 +133,3 @@
   color: rgba(255, 255, 255, 0.65);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
-
-.resume-body .site-footer {
-  background: #f8fafc;
-  color: var(--cs-muted);
-  border-top: 1px solid var(--cs-divider);
-}
