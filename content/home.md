@@ -3,9 +3,9 @@ layout: home
 title: Home
 ---
 
-# Clinton Pracher: Operator Portfolio
+# Clinton Pracher: Enterprise Product Leader
 
-**I build the decision systems underneath products, so teams can move faster without losing control.** Platform, data, AI, and governed operations. Principal / Director · Remote US
+**I build the decision systems underneath products, so teams can move faster without losing control.**
 
 ---
 
