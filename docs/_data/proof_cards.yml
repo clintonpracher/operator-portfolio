@@ -26,7 +26,7 @@ operator:
   - title: Operator Control Plane
     url: /work/proof/control-plane/
     icon: control-plane
-    description: Built the ownership layer that assigns one Active Writer per task across Cursor, Claude, ChatGPT, and Notion at solo-operator scale.
+    description: Built the ownership layer that assigns one Active Writer per task across registry, agentic execution host, audit layer, and connector islands at solo-operator scale.
   - title: Automation Fleet
     url: /work/proof/automation-fleet/
     icon: automation

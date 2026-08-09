@@ -9,7 +9,7 @@ proof_points:
 decision_shift: "From which model is best to which model owns this write today."
 at_a_glance:
   - Multi-model stack under single Active Writer rules
-  - Notion identity, Cursor execution, Claude audit
+  - Registry & identity, agentic control layer, audit layer
   - Governed skills library and automation fleet
   - Same decision architecture at enterprise and solo-operator scale
 ---
@@ -20,7 +20,7 @@ Most product leaders scaling AI hit the same wall: more models, more agents, mor
 
 The failure mode is not weak intelligence. It is conflicting state, duplicate writes, and eroded trust in the system of record.
 
-At enterprise scale I owned a 13-product AI and data portfolio across 100+ markets: $8M budget, 60+ team, systems governing $600M in annual spend. Today I run the same decision logic at solo-operator scale: a versioned skills library, governed Cursor automations, and a Chief of Staff agent orchestrating business and personal operations on one architecture.
+At enterprise scale I owned a 13-product AI and data portfolio across 100+ markets: $8M budget, 60+ team, systems governing $600M in annual spend. Today I run the same decision logic at solo-operator scale: a versioned skills library, governed automations on an agentic control layer, and an orchestration agent coordinating business and personal operations on one architecture.
 
 ## The diagnostic
 
@@ -38,13 +38,13 @@ This was not a tooling problem. It was a decision-architecture problem wearing a
 
 **Three-layer separation:**
 
-- **Identity (Notion):** agent registry, task registry, decisions, handoffs
-- **Execution (Cursor):** Agents Window, Automations, preferred schedule host
-- **Audit (Claude Shadow):** read-only verification and render
+- **Registry & identity:** agent registry, task registry, decisions, handoffs
+- **Agentic control layer:** interactive ops surface, scheduled execution host
+- **Audit layer:** read-only verification and render
 
-**Multi-MCP stack** unified under single-writer rules: Notion, Gmail, Calendar, Fathom, GoHighLevel, Apify.
+**Connector integrations** unified under single-writer rules across registry, communications, calendar, meetings, CRM, and research tools.
 
-**AI platforms in production:** Cursor, Claude, ChatGPT, Codex. Each registered with a role, not a popularity contest.
+**Registered execution surfaces:** Orchestration, control layer, audit layer, and connector island each hold an explicit role, not a popularity contest.
 
 ## What changed
 
@@ -61,4 +61,4 @@ Models are excellent at noise, drafts, options, and scans. Judgment is deciding 
 
 That is the difference between collecting AI tools and running governed AI ops.
 
-[Architecture diagram](/assets/diagrams/architecture-one-glance.svg) · [Spec excerpt](/work/control-plane-spec/)
+[Architecture diagram](/assets/diagrams/architecture-one-glance.svg) · [Operating Model for Multi-Agent AI](/work/control-plane-spec/)

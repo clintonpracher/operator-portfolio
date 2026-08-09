@@ -1,10 +1,10 @@
 flowchart TB
-  CLINT["Clinton Pracher<br/>Judgment · ownership · one writer per task"]
+  DM["Decision maker<br/>Judgment · ownership · one writer per task"]
 
   subgraph PILLARS[" "]
     direction LR
 
-    subgraph BIZ["CP Product Advisory"]
+    subgraph BIZ["Business operations"]
       B1["Advisory delivery"]
       B2["Demand / content"]
       B3["Pipeline / CRM"]
@@ -12,8 +12,8 @@ flowchart TB
       B5["Practice governance"]
     end
 
-    subgraph PER["Personal"]
-      P1["Job Search OS"]
+    subgraph PER["Personal domain"]
+      P1["Job search OS"]
       P2["Personal admin"]
       P3["Personal governance"]
     end
@@ -21,16 +21,16 @@ flowchart TB
 
   subgraph SHARED["Shared operating substrate"]
     direction LR
-    AUGUST["August Reeve · Chief of Staff"]
-    PLANE["Control plane<br/>Notion identity · Cursor Automations · Claude Shadow"]
+    ORCH["Orchestration agent"]
+    PLANE["Control plane<br/>Registry & identity · Agentic control layer · Audit layer"]
     SPEC["Specialist agents · on-call"]
   end
 
-  CLINT --> BIZ
-  CLINT --> PER
-  CLINT --> AUGUST
-  AUGUST --> PLANE
-  AUGUST --> SPEC
+  DM --> BIZ
+  DM --> PER
+  DM --> ORCH
+  ORCH --> PLANE
+  ORCH --> SPEC
   BIZ --> PLANE
   PER --> PLANE
   SPEC --> BIZ

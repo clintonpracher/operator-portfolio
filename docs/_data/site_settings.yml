@@ -9,4 +9,4 @@ substack: "https://clintscall.substack.com"
 architecture:
   image: ""
   source_url: ""
-  alt: "Public view of Clinton Pracher's product and AI control plane architecture"
+  alt: "Enterprise operating architecture: decision maker, business and personal domains, orchestration agent, and control plane with registry, agentic control layer, and audit layer"
