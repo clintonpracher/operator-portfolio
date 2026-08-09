@@ -4,9 +4,9 @@
     <h2 class="skills-deck__heading">{{ cap.launches_heading }}</h2>
     <ul class="deck-card-grid deck-card-grid--cols-3-fixed skills-deck-grid" aria-label="{{ cap.launches_heading }}">
       {% for item in cap.launches %}
-      <li class="deck-card deck-card--horizontal skills-deck-card skills-deck-card--launch">
+      <li class="deck-card deck-card--horizontal skills-deck-card skills-deck-card--launch deck-card--static">
         <div class="deck-card__row deck-card__row--title">
-          <h3 class="deck-card__title">{{ item.title }}</h3>
+          {% include deck-card-static-title.html icon=item.icon title=item.title %}
           <p class="skills-deck-card__meta">{{ item.meta }}</p>
         </div>
         <div class="deck-card__row deck-card__row--meta">
@@ -21,11 +21,9 @@
     <h2 class="skills-deck__heading">{{ cap.capabilities_heading }}</h2>
     <ul class="deck-card-grid deck-card-grid--cols-3-fixed skills-deck-grid" aria-label="{{ cap.capabilities_heading }}">
       {% for item in cap.capabilities %}
-      <li class="deck-card deck-card--horizontal skills-deck-card skills-deck-card--capability">
+      <li class="deck-card deck-card--horizontal skills-deck-card skills-deck-card--capability deck-card--static">
         <div class="deck-card__row deck-card__row--title">
-          <h3 class="deck-card__title">
-            <span class="deck-card__title-text">{{ item.title }}</span>
-          </h3>
+          {% include deck-card-static-title.html icon=item.icon title=item.title %}
         </div>
         <div class="deck-card__row deck-card__row--meta">
           <p class="deck-card__body">{{ item.body }}</p>

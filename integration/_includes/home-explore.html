@@ -1,0 +1,15 @@
+{% assign explore = site.data.explore_sections %}
+<ul class="deck-card-grid explore-cards" aria-label="Explore the portfolio">
+  {% for item in explore.items %}
+  <li class="deck-card deck-card--horizontal proof-card explore-card">
+    <a href="{{ item.url | relative_url }}">
+      <div class="deck-card__row deck-card__row--title">
+        {% include deck-card-linked-title.html icon=item.icon title=item.title %}
+      </div>
+      <div class="deck-card__row deck-card__row--meta">
+        <p class="deck-card__body">{{ item.description }}</p>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

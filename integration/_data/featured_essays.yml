@@ -1,0 +1,25 @@
+items:
+  - title: "The Shadow Roadmap: Why Strategy Fails"
+    url: https://clintscall.substack.com/p/the-shadow-roadmap-why-strategy-fails
+    icon: motion
+    meta: Visible activity without durable outcomes
+  - title: The Stakeholder Buffet
+    url: https://clintscall.substack.com/p/the-stakeholder-buffet
+    icon: alignment
+    meta: Decision rights on the roadmap, not consensus theater
+  - title: Nobody Decided to Trust the Agent
+    url: https://clintscall.substack.com/p/nobody-decided-to-trust-the-agent
+    icon: ai-governance
+    meta: AI governance and trust at scale
+  - title: Agents Don't Replace Your Team. They Expose Your Judgment.
+    url: https://clintscall.substack.com/p/agents-dont-replace-your-team-they
+    icon: leadership
+    meta: Org design and human judgment over hype
+  - title: AI as an Operating Constraint, Not a Feature
+    url: https://clintscall.substack.com/p/ai-as-an-operating-constraint-not
+    icon: platform
+    meta: Systems thinking on AI adoption
+  - title: Decision Architecture Over Delivery
+    url: https://clintscall.substack.com/p/decision-architecture-over-delivery
+    icon: architecture
+    meta: Human-in-the-loop decision rights

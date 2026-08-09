@@ -1,0 +1,7 @@
+<h3 class="deck-card__title">
+  {% if include.icon %}
+  <span class="deck-card__icon" aria-hidden="true">{% include proof-icon.html icon=include.icon %}</span>
+  {% endif %}
+  <span class="deck-card__title-text">{{ include.title }}</span>
+  <span class="deck-card__arrow" aria-hidden="true">↗</span>
+</h3>

@@ -1,0 +1,17 @@
+items:
+  - title: Operator Control Plane
+    url: /work/case-studies/operator/control-plane/
+    icon: control-plane
+    meta: Multi-model governance, Active Writer
+  - title: Automation Fleet
+    url: /work/case-studies/operator/automation-fleet/
+    icon: automation
+    meta: Scheduled execution at scale
+  - title: Governance Audit Cycle
+    url: /work/case-studies/operator/governance-audit/
+    icon: audit
+    meta: Certification rhythm
+  - title: Job Search OS
+    url: /work/case-studies/operator/job-search-os/
+    icon: career
+    meta: Governed career pipeline

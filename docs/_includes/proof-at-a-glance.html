@@ -9,10 +9,7 @@
       <li class="deck-card deck-card--horizontal proof-card">
         <a href="{{ card.url | relative_url }}">
           <div class="deck-card__row deck-card__row--title">
-            <h3 class="deck-card__title">
-              <span class="deck-card__title-text">{{ card.title }}</span>
-              <span class="deck-card__arrow" aria-hidden="true">↗</span>
-            </h3>
+            {% include deck-card-linked-title.html icon=card.icon title=card.title %}
           </div>
           <div class="deck-card__row deck-card__row--meta">
             <p class="deck-card__body">{{ card.description }}</p>
@@ -30,10 +27,7 @@
       <li class="deck-card deck-card--horizontal proof-card">
         <a href="{{ card.url | relative_url }}">
           <div class="deck-card__row deck-card__row--title">
-            <h3 class="deck-card__title">
-              <span class="deck-card__title-text">{{ card.title }}</span>
-              <span class="deck-card__arrow" aria-hidden="true">↗</span>
-            </h3>
+            {% include deck-card-linked-title.html icon=card.icon title=card.title %}
           </div>
           <div class="deck-card__row deck-card__row--meta">
             <p class="deck-card__body">{{ card.description }}</p>

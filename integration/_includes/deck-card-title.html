@@ -1,0 +1,5 @@
+{% if include.url != blank %}
+{% include deck-card-linked-title.html icon=include.icon title=include.title %}
+{% else %}
+{% include deck-card-static-title.html icon=include.icon title=include.title %}
+{% endif %}

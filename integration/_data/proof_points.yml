@@ -1,0 +1,21 @@
+items:
+  - title: Platform Architecture
+    url: /work/case-studies/enterprise/data-unification/
+    icon: platform
+    meta: Data Unification
+  - title: Decision Systems
+    url: /work/case-studies/enterprise/data-unification/
+    icon: architecture
+    meta: Data Unification
+  - title: Operating Models
+    url: /work/case-studies/enterprise/product-system-stabilization/
+    icon: strategy
+    meta: The Product System Stabilization Framework
+  - title: Martech & Data Platforms
+    url: /work/case-studies/enterprise/ai-regulated-markets/
+    icon: data-layers
+    meta: AI Regulated Markets
+  - title: Control Planes
+    url: /work/case-studies/operator/control-plane/
+    icon: control-plane
+    meta: Operator Control Plane

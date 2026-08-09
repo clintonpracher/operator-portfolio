@@ -27,23 +27,12 @@ permalink: /work/
 
 ## Enterprise case studies
 
-| Case study | Proof points |
-|------------|--------------|
-| [From Data Chaos to Confident Decisions](case-studies/enterprise/data-unification/) | Platform Architecture, Decision Systems, Martech / Data |
-| [Turning Retention Decisions Into Sustainable Growth](case-studies/enterprise/subscription-retention/) | Decision Systems, Operating Model |
-| [Scaling AI Products With Clear Decision Boundaries](case-studies/enterprise/ai-regulated-markets/) | Platform Architecture, Martech / Data, Operating Model |
-| [Multi-Market Digital Platform Growth](case-studies/enterprise/platform-growth/) | Platform Architecture, Decision Systems |
-| [The Product System Stabilization Framework](case-studies/enterprise/product-system-stabilization/) | Operating Model, Decision Systems, Platform Architecture |
+{% include enterprise-case-studies.html %}
 
 ---
 
 ## Operator case studies
 
-| Case study | Focus |
-|------------|-------|
-| [Operator Control Plane](case-studies/operator/control-plane/) | Multi-model governance, Active Writer |
-| [Automation Fleet](case-studies/operator/automation-fleet/) | Scheduled execution at scale |
-| [Governance Audit Cycle](case-studies/operator/governance-audit/) | Certification rhythm |
-| [Job Search OS](case-studies/operator/job-search-os/) | Governed career pipeline |
+{% include operator-case-studies.html %}
 
 <p class="deck-followup">View the <a href="/assets/diagrams/architecture-one-glance.svg">architecture diagram</a>.</p>

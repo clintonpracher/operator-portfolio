@@ -1,11 +1,9 @@
 {% assign roles = site.data.target_roles %}
 <ul class="deck-card-grid deck-card-grid--roles role-cards" aria-label="Target roles">
   {% for role in roles.items %}
-  <li class="deck-card deck-card--horizontal role-card">
+  <li class="deck-card deck-card--horizontal role-card deck-card--static">
     <div class="deck-card__row deck-card__row--title">
-      <h3 class="deck-card__title">
-        <span class="deck-card__title-text">{{ role.title }}</span>
-      </h3>
+      {% include deck-card-static-title.html icon=role.icon title=role.title %}
     </div>
     <div class="deck-card__row deck-card__row--meta">
       <p class="deck-card__body">{{ role.body }}</p>

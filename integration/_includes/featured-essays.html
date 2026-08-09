@@ -1,0 +1,15 @@
+{% assign essays = site.data.featured_essays %}
+<ul class="deck-card-grid featured-essay-cards" aria-label="Featured essays">
+  {% for item in essays.items %}
+  <li class="deck-card deck-card--horizontal proof-card featured-essay-card">
+    <a href="{{ item.url }}" rel="noopener noreferrer" target="_blank">
+      <div class="deck-card__row deck-card__row--title">
+        {% include deck-card-linked-title.html icon=item.icon title=item.title %}
+      </div>
+      <div class="deck-card__row deck-card__row--meta">
+        <p class="deck-card__body">{{ item.meta }}</p>
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,21 @@
+items:
+  - title: About
+    url: /about/
+    icon: leadership
+    description: The person and operating philosophy behind the work
+  - title: My Work
+    url: /work/
+    icon: portfolio
+    description: Enterprise case studies and the operator systems behind the claims
+  - title: Skills
+    url: /work/skills/
+    icon: platform
+    description: Launches, technical capabilities, and Agent OS proof
+  - title: Thought Leadership
+    url: /thought-leadership/
+    icon: architecture
+    description: Essays on decision systems, AI operations, and product leadership
+  - title: Resume
+    url: /resume/resume/
+    icon: career
+    description: My full Platform / Data / AI career record

@@ -23,25 +23,13 @@ The tools handle the noise. I keep the judgment.
 
 ## Explore
 
-| Section | What's there |
-|---------|----------------|
-| [**About**](/about/) | The person and operating philosophy behind the work |
-| [**My Work**](/work/) | Enterprise case studies and the operator systems behind the claims |
-| [**Skills**](/work/skills/) | Launches, technical capabilities, and Agent OS proof |
-| [**Thought Leadership**](/thought-leadership/) | Essays on decision systems, AI operations, and product leadership |
-| [**Resume**](/resume/resume/) | My full Platform / Data / AI career record |
+{% include home-explore.html %}
 
 ---
 
 ## Proof points
 
-| Pillar | Start here |
-|--------|------------|
-| Platform Architecture | [Data Unification](work/case-studies/enterprise/data-unification/) |
-| Decision Systems | [Data Unification](work/case-studies/enterprise/data-unification/) |
-| Operating Models | [The Product System Stabilization Framework](work/case-studies/enterprise/product-system-stabilization/) |
-| Martech & Data Platforms | [AI Regulated Markets](work/case-studies/enterprise/ai-regulated-markets/) |
-| Control Planes | [Operator Control Plane](work/case-studies/operator/control-plane/) |
+{% include home-proof-points.html %}
 
 ---
 

@@ -46,10 +46,12 @@
 
 .proof-card .deck-card__title {
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 0.5rem;
 }
 
 .pattern-card.deck-card--static .deck-card__title,
+.pattern-card.proof-card .deck-card__title,
 .deck-card--static .deck-card__title {
   justify-content: flex-start;
   gap: 0.5rem;
@@ -206,6 +208,23 @@ a.deck-card.proof-card:hover {
 .metric-tile--accent {
   background: rgba(45, 123, 255, 0.1);
   border-color: rgba(45, 123, 255, 0.35);
+}
+
+.metric-tile__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--deck-arrow-color);
+}
+
+.metric-tile__icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .metric-tile__value {

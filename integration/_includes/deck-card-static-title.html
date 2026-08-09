@@ -1,0 +1,7 @@
+<h3 class="deck-card__title">
+  {% assign card_icon = include.icon %}
+  {% if card_icon != blank %}
+  <span class="deck-card__icon" aria-hidden="true">{% include proof-icon.html icon=card_icon %}</span>
+  {% endif %}
+  <span class="deck-card__title-text">{{ include.title }}</span>
+</h3>

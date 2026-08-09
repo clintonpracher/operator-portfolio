@@ -1,0 +1,21 @@
+items:
+  - title: From Data Chaos to Confident Decisions
+    url: /work/case-studies/enterprise/data-unification/
+    icon: data-layers
+    meta: Platform Architecture, Decision Systems, Martech / Data
+  - title: Turning Retention Decisions Into Sustainable Growth
+    url: /work/case-studies/enterprise/subscription-retention/
+    icon: retention
+    meta: Decision Systems, Operating Model
+  - title: Scaling AI Products With Clear Decision Boundaries
+    url: /work/case-studies/enterprise/ai-regulated-markets/
+    icon: ai-governance
+    meta: Platform Architecture, Martech / Data, Operating Model
+  - title: Multi-Market Digital Platform Growth
+    url: /work/case-studies/enterprise/platform-growth/
+    icon: growth
+    meta: Platform Architecture, Decision Systems
+  - title: The Product System Stabilization Framework
+    url: /work/case-studies/enterprise/product-system-stabilization/
+    icon: portfolio
+    meta: Operating Model, Decision Systems, Platform Architecture
