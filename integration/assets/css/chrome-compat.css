@@ -1,6 +1,7 @@
 /* Chrome + resume header compatibility — integration overlay */
 
-.resume-body .resume-header-block h1 {
+.resume-body .resume-header-block h1,
+.resume-body .resume-header__title {
   text-align: center;
 }
 

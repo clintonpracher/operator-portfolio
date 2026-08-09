@@ -39,8 +39,34 @@
   text-transform: uppercase;
 }
 
-.resume-main > h1:first-child {
-  max-width: 54rem;
+.resume-header-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.resume-header-block p,
+.resume-header-block .resume-contact-row,
+.resume-header-block .resume-header__cta {
+  max-width: 100%;
+  width: 100%;
+}
+
+.resume-header-block .resume-tagline {
+  text-align: center;
+}
+
+.resume-header-block .resume-contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.resume-header-block .resume-header__title {
   margin: 0 0 1.25rem;
   color: var(--resume-copy);
   font-family: var(--font-display);
@@ -48,16 +74,10 @@
   font-weight: var(--fw-black);
   letter-spacing: var(--ls-tight);
   line-height: 1.04;
+  text-align: center;
 }
 
-.resume-main > h1:first-child + p {
-  max-width: 48rem;
-  margin-bottom: 3.5rem;
-  color: var(--resume-copy-soft);
-  font-size: clamp(1.05rem, 2vw, 1.22rem);
-}
-
-.resume-main h1:not(:first-child) {
+.resume-main h1:not(.resume-header__title) {
   margin: 0 0 1.2rem;
   color: var(--resume-copy);
   font-family: var(--font-display);
@@ -94,9 +114,15 @@
   max-width: var(--portfolio-reading);
 }
 
-.resume-main .deck-card-grid,
-.resume-main .scope-grid {
+.resume-main .deck-card-grid {
   max-width: 100%;
+  width: 100%;
+}
+
+.resume-main .scope-grid {
+  max-width: min(100%, 50rem);
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 
@@ -111,6 +137,12 @@
 
 .resume-main p {
   margin: 0 0 1rem;
+}
+
+.resume-main .resume-summary {
+  max-width: 100%;
+  width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .resume-main li {
@@ -221,8 +253,23 @@
     padding: 5rem 0;
   }
 
-  .resume-main > h1:first-child + p {
-    margin-bottom: 2.75rem;
+  .resume-header-block {
+    align-items: center;
+    text-align: center;
+  }
+
+  .resume-header-block .resume-header__title {
+    margin-bottom: 1rem;
+  }
+
+  .resume-header-block .resume-tagline {
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+
+  .resume-header-block .resume-contact-row {
+    justify-content: center;
+    text-align: center;
   }
 
   .resume-main table {

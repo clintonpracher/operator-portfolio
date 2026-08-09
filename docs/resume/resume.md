@@ -4,9 +4,9 @@ title: Resume
 permalink: /resume/resume/
 ---
 
-# Clinton J. Pracher
-
 <div class="resume-header-block">
+
+<h1 class="resume-header__title">Clinton J. Pracher</h1>
 
 <p class="resume-tagline"><strong>PRODUCT &amp; PLATFORM EXECUTIVE</strong><br><strong>DATA, AI &amp; ENTERPRISE TRANSFORMATION</strong></p>
 
@@ -24,7 +24,7 @@ Las Vegas, NV · Remote US · <a href="mailto:clintonpracher@gmail.com">clintonp
 ## Summary
 
 {% assign c = site.data.candidate %}
-{{ c.positioning }}
+<p class="resume-summary">{{ c.positioning }}</p>
 
 ## Executive scope
 
