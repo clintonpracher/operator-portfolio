@@ -16,10 +16,10 @@ capabilities:
   - title: AI and machine learning
     body: AI product strategy, ML integration, generative AI products, privacy safe data architecture
   - title: Cloud and infrastructure
-    body: AWS, Google Cloud, Azure, GitHub
+    body: AWS, Google Cloud, Azure, GitHub, Python, JavaScript, Node, React
   - title: Enterprise systems and platforms
     body: CRM, Salesforce (Platinum Partner ecosystem), point-of-sale (Micros), PIM/DAM, NetSuite, Contentful, e commerce platforms
   - title: Product and delivery
     body: Jira, Confluence, ProductBoard, Miro, Figma, Aha!, Agile, SCRUM, SAFe, Kanban
   - title: AI native
-    body: Rapid prototyping with Claude, ChatGPT, Cursor, Claude Code, n8n, Base44, and Lovable
+    body: Rapid prototyping with Claude, ChatGPT, Cursor, Claude Code, HTML, CSS, n8n, Base44, and Lovable
