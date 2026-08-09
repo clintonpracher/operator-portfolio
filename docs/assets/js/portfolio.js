@@ -21,20 +21,3 @@ if (toggle && navigation) {
     if (event.key === 'Escape') closeNavigation();
   });
 }
-
-const roleCardsPanel = document.querySelector('.role-cards-panel');
-if (roleCardsPanel) {
-  const mobileRolesQuery = window.matchMedia('(max-width: 40rem)');
-
-  const syncRoleCardsPanel = () => {
-    if (mobileRolesQuery.matches) {
-      roleCardsPanel.removeAttribute('open');
-      return;
-    }
-
-    roleCardsPanel.setAttribute('open', '');
-  };
-
-  syncRoleCardsPanel();
-  mobileRolesQuery.addEventListener('change', syncRoleCardsPanel);
-}

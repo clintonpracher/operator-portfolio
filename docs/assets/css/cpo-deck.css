@@ -180,41 +180,6 @@ a.deck-card.proof-card:hover {
   max-width: 100%;
 }
 
-.role-cards-panel {
-  margin: 0;
-  border: 0;
-}
-
-.role-cards-panel__summary {
-  display: none;
-  cursor: pointer;
-  list-style: none;
-  margin: 0 0 1rem;
-  color: var(--portfolio-copy);
-  font-family: var(--font-display, "Outfit", sans-serif);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: var(--fw-bold, 700);
-  letter-spacing: var(--ls-tight, -0.02em);
-  line-height: var(--lh-snug, 1.2);
-}
-
-.role-cards-panel__summary::-webkit-details-marker {
-  display: none;
-}
-
-.role-cards-panel__summary::after {
-  content: "+";
-  float: right;
-  color: var(--portfolio-blue, #2d7bff);
-  font-size: 1.5rem;
-  font-weight: var(--fw-semibold, 600);
-  line-height: 1.2;
-}
-
-.role-cards-panel[open] .role-cards-panel__summary::after {
-  content: "−";
-}
-
 .agent-os__proof.deck-card-grid {
   grid-template-columns: 1fr;
   margin: 0;
@@ -674,14 +639,6 @@ a.deck-card.proof-card:hover {
   .deck-card-grid--roles,
   .role-cards.deck-card-grid {
     grid-template-columns: 1fr;
-  }
-
-  .role-cards-panel__summary {
-    display: list-item;
-  }
-
-  .home-section:has(.role-cards-panel) > .home-section__inner > h2 {
-    display: none;
   }
 }
 

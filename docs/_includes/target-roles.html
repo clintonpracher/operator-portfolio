@@ -1,18 +1,15 @@
 {% assign roles = site.data.target_roles %}
-<details class="role-cards-panel">
-  <summary class="role-cards-panel__summary">Target roles</summary>
-  <ul class="deck-card-grid deck-card-grid--roles role-cards" aria-label="Target roles">
-    {% for role in roles.items %}
-    <li class="deck-card deck-card--horizontal role-card">
-      <div class="deck-card__row deck-card__row--title">
-        <h3 class="deck-card__title">
-          <span class="deck-card__title-text">{{ role.title }}</span>
-        </h3>
-      </div>
-      <div class="deck-card__row deck-card__row--meta">
-        <p class="deck-card__body">{{ role.body }}</p>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</details>
+<ul class="deck-card-grid deck-card-grid--roles role-cards" aria-label="Target roles">
+  {% for role in roles.items %}
+  <li class="deck-card deck-card--horizontal role-card">
+    <div class="deck-card__row deck-card__row--title">
+      <h3 class="deck-card__title">
+        <span class="deck-card__title-text">{{ role.title }}</span>
+      </h3>
+    </div>
+    <div class="deck-card__row deck-card__row--meta">
+      <p class="deck-card__body">{{ role.body }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
