@@ -9,4 +9,4 @@ A global marketing organization was making $600M in annual media decisions acros
 
 **Best for:** Platform / Data / AI product leadership, enterprise decision systems
 
-[Read the full case study](../case-studies/enterprise/data-unification/)
+[Read the full case study](/work/case-studies/enterprise/data-unification/)

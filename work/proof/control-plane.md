@@ -10,4 +10,4 @@ One Active Writer per task across a governed multi-model stack: Notion for ident
 **Proof points:** Control Plane, Operating Model  
 **Best for:** Platform / Data / AI product leadership, AI governance, transformation
 
-[Read the full case study](../case-studies/operator/control-plane/)
+[Read the full case study](/work/case-studies/operator/control-plane/)

@@ -25,11 +25,11 @@ The tools handle the noise. I keep the judgment.
 
 | Section | What's there |
 |---------|----------------|
-| [**About**](about/README.md) | The person and operating philosophy behind the work |
-| [**My Work**](work/README.md) | Enterprise case studies and the operator systems behind the claims |
+| [**About**](/about/) | The person and operating philosophy behind the work |
+| [**My Work**](/work/) | Enterprise case studies and the operator systems behind the claims |
 | [**Skills**](/work/skills/) | Launches, technical capabilities, and Agent OS proof |
-| [**Thought Leadership**](thought-leadership/) | Essays on decision systems, AI operations, and product leadership |
-| [**Resume**](resume/resume.md) | My full Platform / Data / AI career record |
+| [**Thought Leadership**](/thought-leadership/) | Essays on decision systems, AI operations, and product leadership |
+| [**Resume**](/resume/resume/) | My full Platform / Data / AI career record |
 
 ---
 

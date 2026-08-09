@@ -9,4 +9,4 @@ A B2B subscription platform serving thousands of repair shops was losing 75% of 
 
 **Best for:** B2B subscription product leadership, retention and activation strategy
 
-[Read the full case study](../case-studies/enterprise/subscription-retention/)
+[Read the full case study](/work/case-studies/enterprise/subscription-retention/)

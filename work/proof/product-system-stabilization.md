@@ -9,4 +9,4 @@ A $120M connected-hardware line was losing its season to its own roadmap. Six lo
 
 **Best for:** Product operations leadership, operating model and decision architecture
 
-[Read the full case study](../case-studies/enterprise/product-system-stabilization/)
+[Read the full case study](/work/case-studies/enterprise/product-system-stabilization/)

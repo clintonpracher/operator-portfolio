@@ -9,4 +9,4 @@ A retailer with 10M+ customers and a 600,000 SKU catalog had flat growth and was
 
 **Best for:** Digital commerce product leadership, catalog architecture and growth
 
-[Read the full case study](../case-studies/enterprise/platform-growth/)
+[Read the full case study](/work/case-studies/enterprise/platform-growth/)

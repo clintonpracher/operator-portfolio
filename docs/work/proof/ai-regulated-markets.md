@@ -9,4 +9,4 @@ An $8B enterprise had 13 AI products that worked and could not ship. An $8M port
 
 **Best for:** AI product leadership in regulated markets, platform and compliance architecture
 
-[Read the full case study](../case-studies/enterprise/ai-regulated-markets/)
+[Read the full case study](/work/case-studies/enterprise/ai-regulated-markets/)

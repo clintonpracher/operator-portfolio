@@ -10,4 +10,4 @@ Three-night certification: read-only audit, approved remediation, post-fix verif
 **Proof points:** Control Plane, Decision Systems  
 **Best for:** Enterprise governance, compliance-adjacent platform roles
 
-[Read the full case study](../case-studies/operator/governance-audit/)
+[Read the full case study](/work/case-studies/operator/governance-audit/)

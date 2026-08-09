@@ -1,3 +1,9 @@
+---
+layout: sectioned
+title: Operator Control Plane Spec
+permalink: /work/control-plane-spec/
+---
+
 # Operator Control Plane: Public Spec Excerpt
 
 **Audience:** Hiring managers, product leaders, portfolio visitors
