@@ -25,7 +25,7 @@ The public architecture shows how judgment, authority, execution, and evidence f
 
 {% include architecture-public.html %}
 
-[Read the public Control Plane spec](control-plane-spec.md)
+[Read the public Control Plane spec](/work/control-plane-spec/)
 
 ---
 

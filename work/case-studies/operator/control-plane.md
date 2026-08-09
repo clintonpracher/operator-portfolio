@@ -61,4 +61,4 @@ Models are excellent at noise, drafts, options, and scans. Judgment is deciding 
 
 That is the difference between collecting AI tools and running governed AI ops.
 
-[Architecture diagram](/assets/diagrams/architecture-one-glance.svg) · [Spec excerpt](../control-plane-spec.md)
+[Architecture diagram](/assets/diagrams/architecture-one-glance.svg) · [Spec excerpt](/work/control-plane-spec/)

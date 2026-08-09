@@ -46,4 +46,4 @@
 
 ---
 
-[← Back to Operator Control Plane](control-plane.md)
+[← Back to Operator Control Plane](/work/case-studies/operator/control-plane/)
