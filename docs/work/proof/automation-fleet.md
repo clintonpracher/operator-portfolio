@@ -1,3 +1,8 @@
+---
+layout: sectioned
+title: Automation Fleet
+---
+
 # Automation Fleet
 
 Twenty-eight Cursor automations with Active Writer governance and fleet-health self-healing. Six waves of cutover moved scheduled work from connector islands onto one governed execution host without duplicate writes.

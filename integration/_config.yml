@@ -37,6 +37,10 @@ defaults:
     values:
       layout: case-study
   - scope:
+      path: "work/proof"
+    values:
+      layout: sectioned
+  - scope:
       path: "resume"
     values:
       layout: resume

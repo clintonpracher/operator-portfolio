@@ -1,3 +1,8 @@
+---
+layout: sectioned
+title: Governance Audit Cycle
+---
+
 # Governance Audit Cycle
 
 Three-night certification: read-only audit, approved remediation, post-fix verification. The pattern that keeps a growing agent fleet honest without turning governance into theater.

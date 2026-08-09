@@ -1,3 +1,8 @@
+---
+layout: sectioned
+title: Operator Control Plane
+---
+
 # Operator Control Plane
 
 One Active Writer per task across a governed multi-model stack: Notion for identity, Cursor for execution, Claude for audit. The ownership layer that stops conflicting AI writes before they erode trust in the system of record.

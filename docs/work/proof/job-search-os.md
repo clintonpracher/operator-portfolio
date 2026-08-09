@@ -1,3 +1,8 @@
+---
+layout: sectioned
+title: Job Search OS
+---
+
 # Job Search OS
 
 A governed decision system applied to career search: scoring rubric, Role Radar intake, LinkedIn-first discovery, and a weekly application cap. The same operating logic I use at enterprise scale, run on my own pipeline.
