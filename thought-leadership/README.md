@@ -9,7 +9,7 @@ permalink: /thought-leadership/
     <h1>Thought Leadership</h1>
     <p>Product leadership essays on decision systems, AI operations, and operating model design. Career-forward reading on Clint's Call on Substack.</p>
     <div class="cta-row">
-      <a class="button button--primary" href="../work/">Read my work</a>
+      <a class="button button--primary" href="{{ site.data.site_settings.substack }}" rel="noopener noreferrer" target="_blank">Read my work</a>
     </div>
   </div>
   <div class="page-hero__visual" aria-hidden="true">

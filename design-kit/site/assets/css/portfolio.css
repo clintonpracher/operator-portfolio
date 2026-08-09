@@ -629,11 +629,19 @@ a {
 .page-sectioned table td:first-child a {
   color: var(--portfolio-copy);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
 }
 
 .page-home table td:first-child a::after,
 .page-sectioned table td:first-child a::after {
-  content: " ↗";
+  content: "↗";
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+  font-size: 0.85em;
   color: var(--deck-arrow-color, var(--portfolio-blue));
 }
 

@@ -49,7 +49,7 @@
   justify-content: space-between;
 }
 
-.pattern-card .deck-card__title,
+.pattern-card.deck-card--static .deck-card__title,
 .deck-card--static .deck-card__title {
   justify-content: flex-start;
   gap: 0.5rem;

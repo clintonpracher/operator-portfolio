@@ -6,8 +6,8 @@
     <a href="{{ item.url | relative_url }}">
       <div class="deck-card__row deck-card__row--title">
         <h3 class="deck-card__title">
-          <span class="deck-card__icon" aria-hidden="true">{% include proof-icon.html icon=item.icon %}</span>
           <span class="deck-card__title-text">{{ item.title }}</span>
+          <span class="deck-card__arrow" aria-hidden="true">↗</span>
         </h3>
       </div>
       <div class="deck-card__row deck-card__row--meta">
