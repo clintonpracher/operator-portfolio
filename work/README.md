@@ -17,6 +17,14 @@ permalink: /work/
 
 ---
 
+## Proof at a glance
+
+{% include proof-at-a-glance.html %}
+
+[Read more](case-studies/) for full narratives and case studies.
+
+---
+
 ## Enterprise case studies
 
 | Case study | Proof points |
@@ -29,15 +37,7 @@ permalink: /work/
 
 ---
 
-## Proof at a glance
-
-{% include proof-at-a-glance.html %}
-
-[Read more](case-studies/) for full narratives and case studies.
-
----
-
-## Operator proof
+## Operator case studies
 
 | Case study | Focus |
 |------------|-------|
