@@ -1,6 +1,7 @@
 ---
 layout: sectioned
 title: Governance Audit Cycle
+permalink: /work/proof/governance-audit/
 ---
 
 # Governance Audit Cycle

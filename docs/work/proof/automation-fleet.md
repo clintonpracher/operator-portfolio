@@ -1,6 +1,7 @@
 ---
 layout: sectioned
 title: Automation Fleet
+permalink: /work/proof/automation-fleet/
 ---
 
 # Automation Fleet

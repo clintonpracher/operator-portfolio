@@ -1,6 +1,7 @@
 ---
 layout: sectioned
 title: Scaling AI Products With Clear Decision Boundaries for Privacy and Risk
+permalink: /work/proof/ai-regulated-markets/
 ---
 
 # Scaling AI Products With Clear Decision Boundaries for Privacy and Risk

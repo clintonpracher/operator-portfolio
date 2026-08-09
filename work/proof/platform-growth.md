@@ -1,6 +1,7 @@
 ---
 layout: sectioned
 title: Multi-Market Digital Platform Growth
+permalink: /work/proof/platform-growth/
 ---
 
 # Multi-Market Digital Platform Growth

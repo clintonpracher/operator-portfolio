@@ -1,6 +1,7 @@
 ---
 layout: sectioned
 title: From Data Chaos to Confident Decisions
+permalink: /work/proof/data-unification/
 ---
 
 # From Data Chaos to Confident Decisions

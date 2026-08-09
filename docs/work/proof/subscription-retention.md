@@ -1,6 +1,7 @@
 ---
 layout: sectioned
 title: Turning Retention Decisions Into Sustainable Growth
+permalink: /work/proof/subscription-retention/
 ---
 
 # Turning Retention Decisions Into Sustainable Growth

@@ -1,6 +1,7 @@
 ---
 layout: sectioned
 title: The Product System Stabilization Framework
+permalink: /work/proof/product-system-stabilization/
 ---
 
 # The Product System Stabilization Framework

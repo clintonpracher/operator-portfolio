@@ -1,6 +1,7 @@
 ---
 layout: sectioned
 title: Job Search OS
+permalink: /work/proof/job-search-os/
 ---
 
 # Job Search OS

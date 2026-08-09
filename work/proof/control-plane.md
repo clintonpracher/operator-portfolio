@@ -1,6 +1,7 @@
 ---
 layout: sectioned
 title: Operator Control Plane
+permalink: /work/proof/control-plane/
 ---
 
 # Operator Control Plane
