@@ -1,15 +1,16 @@
 {% assign proof = site.data.leadership_proof %}
-<ul class="leadership-proof-grid" aria-label="Selected leadership proof">
+<ul class="deck-card-grid deck-card-grid--five" aria-label="Selected leadership proof">
   {% for card in proof.items %}
-  <li class="deck-card leadership-proof-card">
-    <span class="leadership-proof-card__icon" aria-hidden="true">
-      {% include proof-icon.html icon=card.icon %}
-    </span>
-    <h3 class="deck-card__title">
-      {{ card.title }}
-      <span class="deck-card__arrow" aria-hidden="true">↗</span>
-    </h3>
-    <p class="deck-card__body">{{ card.body }}</p>
+  <li class="deck-card deck-card--horizontal deck-card--static">
+    <div class="deck-card__row deck-card__row--title">
+      <h3 class="deck-card__title">
+        <span class="deck-card__icon" aria-hidden="true">{% include proof-icon.html icon=card.icon %}</span>
+        <span class="deck-card__title-text">{{ card.title }}</span>
+      </h3>
+    </div>
+    <div class="deck-card__row deck-card__row--meta">
+      <p class="deck-card__body">{{ card.body }}</p>
+    </div>
   </li>
   {% endfor %}
 </ul>

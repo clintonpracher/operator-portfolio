@@ -1,3 +1,4 @@
+{% assign contact = site.data.site_settings %}
 <header class="site-header">
   <div class="site-header__inner">
     <a class="site-logo" href="{{ '/' | relative_url }}" aria-label="Clinton Pracher, home">
@@ -13,6 +14,8 @@
       <a href="{{ '/work/' | relative_url }}"{% if page.url == '/work/' or page.url contains '/work/case-studies/' %} aria-current="page"{% endif %}>My Work</a>
       <a href="{{ '/work/skills/' | relative_url }}"{% if page.url contains '/work/skills/' %} aria-current="page"{% endif %}>Skills</a>
       <a href="{{ '/thought-leadership/' | relative_url }}"{% if page.url contains '/thought-leadership/' %} aria-current="page"{% endif %}>Thought Leadership</a>
+      <a href="{{ contact.linkedin }}" rel="noopener noreferrer" target="_blank">Connect on LinkedIn</a>
+      <a href="mailto:{{ contact.email }}">Contact me</a>
       <a class="site-nav__resume" href="{{ '/resume/resume/' | relative_url }}"{% if page.url contains '/resume/' %} aria-current="page"{% endif %}>Resume</a>
     </nav>
   </div>

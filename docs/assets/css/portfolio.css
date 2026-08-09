@@ -267,6 +267,19 @@ a {
   box-shadow: var(--shadow-hover);
 }
 
+.button--with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.button--with-icon svg {
+  width: 0.95em;
+  height: 0.95em;
+  flex-shrink: 0;
+  display: block;
+}
+
 /* Home */
 .home-main {
   overflow: hidden;
@@ -342,6 +355,13 @@ a {
   flex-wrap: wrap;
   gap: 0.9rem;
   margin-top: 2.25rem;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-top: 1.25rem;
 }
 
 .home-hero__visual {
@@ -483,6 +503,12 @@ a {
   color: var(--portfolio-copy-soft);
 }
 
+.home-section .role-cards-panel,
+.home-section .role-cards.deck-card-grid {
+  max-width: 100%;
+  width: 100%;
+}
+
 .home-section p,
 .page-section p,
 .site-main p {
@@ -521,10 +547,44 @@ a {
 }
 
 .page-home table tbody,
-.page-sectioned table tbody {
+.page-sectioned table tbody,
+.deck-card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.page-section .deck-card-grid {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 0;
+  list-style: none;
+}
+
+.page-section .deck-card-grid > li {
+  margin: 0;
+}
+
+/* 5-card sets: 3 + 2 on desktop, equal card widths via 6-col span */
+.deck-card-grid--five {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.deck-card-grid--five > li {
+  grid-column: span 2;
+}
+
+.proof-at-a-glance + p,
+.agent-os__proof + p,
+.page-section__inner > p.deck-followup,
+.deck-followup {
+  margin-top: 1.5rem;
+}
+
+.page-skills .technical-capabilities,
+.page-skills .agent-os {
+  width: 100%;
+  max-width: var(--portfolio-container);
 }
 
 .page-home table tr,
@@ -657,7 +717,7 @@ a {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.page-work .page-section:nth-child(3) ul:not(.proof-cards) {
+.page-work .page-section:nth-child(3) ul:not(.deck-card-grid) {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.65rem 1rem;
@@ -785,11 +845,19 @@ a {
   min-height: 24rem;
 }
 
-.page-section:first-child:has(.page-hero) h1 {
+.page-hero__illustration {
+  width: min(100%, 28rem);
+  height: auto;
+  border-radius: 1rem;
+  border: 1px solid var(--portfolio-border);
+  box-shadow: var(--shadow-ambient);
+}
+
+.page-section:first-child:has(.page-hero) > .page-section__inner > h1 {
   display: none;
 }
 
-.page-section:first-child:has(.page-hero) > .page-section__inner > p {
+.page-section:first-child:has(.page-hero) > .page-section__inner > p:not(:has(*)) {
   display: none;
 }
 
@@ -1167,6 +1235,16 @@ a {
   }
 }
 
+@media (max-width: 56rem) {
+  .deck-card-grid--five {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .deck-card-grid--five > li {
+    grid-column: span 1;
+  }
+}
+
 @media (max-width: 52rem) {
   .site-header__inner {
     min-height: 4.25rem;
@@ -1290,8 +1368,39 @@ a {
   .page-sectioned table tbody,
   .page-thought-leadership table tbody,
   .page-skills .page-section:nth-child(2) table tbody,
-  .page-work .page-section:nth-child(3) ul:not(.proof-cards) {
+  .deck-card-grid,
+  .page-work .page-section:nth-child(3) ul:not(.deck-card-grid) {
     grid-template-columns: 1fr;
+  }
+
+  .deck-card-grid--five {
+    grid-template-columns: 1fr;
+  }
+
+  .deck-card-grid--five > li {
+    grid-column: auto;
+  }
+
+  .page-hero__visual {
+    min-height: 16rem;
+  }
+
+  .decision-map__node,
+  .decision-map__core {
+    font-size: 0.8rem;
+    width: auto !important;
+    min-width: 0;
+    max-width: 7rem;
+    padding: 0 0.5rem;
+    height: auto;
+    min-height: 2.2rem;
+  }
+
+  .decision-map__core {
+    width: 5.5rem !important;
+    height: 5.5rem !important;
+    max-width: none;
+    font-size: 0.95rem;
   }
 
   .architecture-view__header {

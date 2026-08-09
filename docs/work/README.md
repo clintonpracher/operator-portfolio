@@ -7,7 +7,7 @@ permalink: /work/
 <div class="page-hero">
   <div class="page-hero__copy">
     <h1>My Work</h1>
-    <p>Enterprise product leadership and operator proof for <strong>Platform / Data / AI</strong> roles.</p>
+    <p>Enterprise product leadership and operator proof for Platform, Data, and AI roles.</p>
     <p>Execution breaks when decision systems fail to keep up with scale. The case studies below show diagnosis, rebuild, and measurable outcomes at enterprise scale. The operator proof shows the same architecture running live under governed AI ops.</p>
   </div>
   <div class="page-hero__visual" aria-hidden="true">
@@ -21,11 +21,11 @@ permalink: /work/
 
 | Case study | Proof points |
 |------------|--------------|
-| [From Data Chaos to Confident Decisions](case-studies/enterprise/data-unification.md) | Platform Architecture, Decision Systems, Martech / Data |
-| [Turning Retention Decisions Into Sustainable Growth](case-studies/enterprise/subscription-retention.md) | Decision Systems, Operating Model |
-| [Scaling AI Products With Clear Decision Boundaries](case-studies/enterprise/ai-regulated-markets.md) | Platform Architecture, Martech / Data, Operating Model |
-| [Multi-Market Digital Platform Growth](case-studies/enterprise/platform-growth.md) | Platform Architecture, Decision Systems |
-| [The Product System Stabilization Framework](case-studies/enterprise/product-system-stabilization.md) | Operating Model, Decision Systems, Platform Architecture |
+| [From Data Chaos to Confident Decisions](case-studies/enterprise/data-unification/) | Platform Architecture, Decision Systems, Martech / Data |
+| [Turning Retention Decisions Into Sustainable Growth](case-studies/enterprise/subscription-retention/) | Decision Systems, Operating Model |
+| [Scaling AI Products With Clear Decision Boundaries](case-studies/enterprise/ai-regulated-markets/) | Platform Architecture, Martech / Data, Operating Model |
+| [Multi-Market Digital Platform Growth](case-studies/enterprise/platform-growth/) | Platform Architecture, Decision Systems |
+| [The Product System Stabilization Framework](case-studies/enterprise/product-system-stabilization/) | Operating Model, Decision Systems, Platform Architecture |
 
 ---
 
@@ -33,7 +33,7 @@ permalink: /work/
 
 {% include proof-at-a-glance.html %}
 
-[Read more](case-studies/) for full narratives.
+[Read more](case-studies/) for full narratives and case studies.
 
 ---
 
@@ -41,11 +41,9 @@ permalink: /work/
 
 | Case study | Focus |
 |------------|-------|
-| [Operator Control Plane](case-studies/operator/control-plane.md) | Multi-model governance, Active Writer |
-| [Automation Fleet](case-studies/operator/automation-fleet.md) | Scheduled execution at scale |
-| [Governance Audit Cycle](case-studies/operator/governance-audit.md) | Certification rhythm |
-| [Job Search OS](case-studies/operator/job-search-os.md) | Governed career pipeline |
+| [Operator Control Plane](case-studies/operator/control-plane/) | Multi-model governance, Active Writer |
+| [Automation Fleet](case-studies/operator/automation-fleet/) | Scheduled execution at scale |
+| [Governance Audit Cycle](case-studies/operator/governance-audit/) | Certification rhythm |
+| [Job Search OS](case-studies/operator/job-search-os/) | Governed career pipeline |
 
-[Skills](skills.md) · [Architecture diagram](/assets/diagrams/architecture-one-glance.svg)
-
-[← Back to home](../README.md)
+<p class="deck-followup">View the <a href="/assets/diagrams/architecture-one-glance.svg">architecture diagram</a>.</p>

@@ -39,10 +39,76 @@
   flex-wrap: wrap;
 }
 
+.deck-card__title-text {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.proof-card .deck-card__title {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.pattern-card .deck-card__title,
+.deck-card--static .deck-card__title {
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.proof-card .deck-card__arrow {
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.deck-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--deck-arrow-color);
+}
+
+a.deck-card.proof-card {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.deck-card.proof-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(45, 123, 255, 0.35);
+  box-shadow: var(--shadow-hover, 0 12px 32px rgba(0, 0, 0, 0.25));
+}
+
 .deck-card__arrow {
   font-size: 0.85em;
   color: var(--deck-arrow-color);
   flex-shrink: 0;
+}
+
+.deck-card__icon {
+  display: inline-flex;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  color: var(--deck-arrow-color);
+}
+
+.deck-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.deck-card--static .deck-card__title {
+  flex-wrap: nowrap;
+}
+
+.resume-main h2 + .deck-card-grid {
+  margin-top: 1rem;
 }
 
 .deck-card__body {
@@ -50,6 +116,110 @@
   line-height: 1.45;
   color: var(--deck-card-body-color);
   margin: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Unified horizontal card grid (matches Enterprise case study tables) */
+.deck-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.deck-card--horizontal {
+  min-height: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.deck-card--horizontal .deck-card__title {
+  margin: 0;
+}
+
+.deck-card--horizontal .deck-card__row--meta {
+  color: var(--deck-card-body-color);
+  font-size: var(--fs-body, 1rem);
+}
+
+.proof-card > a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.proof-card > a:hover {
+  transform: translateY(-3px);
+}
+
+.proof-card:hover {
+  border-color: rgba(45, 123, 255, 0.35);
+  box-shadow: var(--shadow-hover, 0 12px 32px rgba(0, 0, 0, 0.25));
+}
+
+.proof-at-a-glance__group .deck-card-grid {
+  margin-top: 0;
+}
+
+.pattern-grid.deck-card-grid,
+.role-cards.deck-card-grid {
+  margin: 1rem 0 2rem;
+}
+
+.deck-card-grid--roles,
+.role-cards.deck-card-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 100%;
+  max-width: 100%;
+}
+
+.role-cards-panel {
+  margin: 0;
+  border: 0;
+}
+
+.role-cards-panel__summary {
+  display: none;
+  cursor: pointer;
+  list-style: none;
+  margin: 0 0 1rem;
+  color: var(--portfolio-copy);
+  font-family: var(--font-display, "Outfit", sans-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: var(--fw-bold, 700);
+  letter-spacing: var(--ls-tight, -0.02em);
+  line-height: var(--lh-snug, 1.2);
+}
+
+.role-cards-panel__summary::-webkit-details-marker {
+  display: none;
+}
+
+.role-cards-panel__summary::after {
+  content: "+";
+  float: right;
+  color: var(--portfolio-blue, #2d7bff);
+  font-size: 1.5rem;
+  font-weight: var(--fw-semibold, 600);
+  line-height: 1.2;
+}
+
+.role-cards-panel[open] .role-cards-panel__summary::after {
+  content: "−";
+}
+
+.agent-os__proof.deck-card-grid {
+  grid-template-columns: 1fr;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
 }
 
 .metric-tiles {
@@ -140,54 +310,9 @@
   color: rgba(230, 228, 244, 0.82);
 }
 
-/* Leadership proof cards */
-.leadership-proof-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1.25rem;
-  margin: 1rem auto 2rem;
-  max-width: var(--portfolio-container, 72rem);
-  padding: 0;
-  list-style: none;
-  grid-auto-rows: 1fr;
-}
-
-.leadership-proof-card {
-  grid-column: span 2;
-}
-
-.leadership-proof-card:nth-child(4) {
-  grid-column: 2 / span 2;
-}
-
-.leadership-proof-card:nth-child(5) {
-  grid-column: 4 / span 2;
-}
-
-.leadership-proof-card__icon {
-  display: block;
-  width: 1.75rem;
-  height: 1.75rem;
-  margin-bottom: 0.75rem;
-  color: #b79ae6;
-}
-
-.leadership-proof-card__icon svg {
-  width: 100%;
-  height: 100%;
-}
-
-/* Experience — deck format */
+/* Resume experience */
 .resume-experience {
   margin: 2rem 0;
-}
-
-.resume-experience__section-title {
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #b79ae6;
-  margin: 2rem 0 1rem;
 }
 
 .resume-role {
@@ -281,22 +406,71 @@
   margin: 0;
 }
 
-.skills-deck {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+.skills-deck-section {
+  margin-bottom: 2.5rem;
 }
 
-.skills-deck__column {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+.skills-deck-section:last-child {
+  margin-bottom: 0;
 }
 
-.skills-deck__stack {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+.skills-deck-section .deck-card-grid {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.skills-deck-section .deck-card-grid:last-child {
+  margin-bottom: 0;
+}
+
+.deck-card-grid.deck-card-grid--cols-3,
+.deck-card-grid.deck-card-grid--cols-3-fixed {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.deck-card-grid.deck-card-grid--cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.deck-card-grid.deck-card-grid--pair {
+  max-width: calc(66.666% + 0.67rem);
+  margin-inline: auto;
+}
+
+/* 5-card sets: 3 + 2 on desktop, equal card widths via 6-col span */
+.deck-card-grid--five {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.deck-card-grid--five > li {
+  grid-column: span 2;
+}
+
+.deck-section-gap {
+  margin-bottom: var(--deck-section-gap, 2.5rem);
+}
+
+.deck-heading {
+  margin: 0 0 1rem;
+}
+
+.deck-followup {
+  margin-top: 1.5rem;
+}
+
+.skills-deck-card.deck-card {
+  min-height: auto;
+  height: auto;
+}
+
+.skills-deck__heading {
+  margin: 0 0 1rem;
+  color: var(--portfolio-copy, #f7f7f7);
+  font-family: var(--font-display, "Outfit", sans-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: var(--fw-bold, 700);
+  letter-spacing: var(--ls-tight, -0.02em);
+  line-height: var(--lh-snug, 1.2);
 }
 
 .skills-deck__eyebrow {
@@ -309,15 +483,10 @@
 }
 
 .skills-deck-card--launch .skills-deck-card__meta {
+  margin: 0 0 0.5rem;
   font-size: 0.8rem;
   font-weight: 400;
   color: var(--deck-card-body-color);
-}
-
-.skills-deck-card--launch .skills-deck-card__meta::before {
-  content: "·";
-  margin: 0 0.35rem;
-  color: rgba(230, 228, 244, 0.45);
 }
 
 /* Agent OS */
@@ -333,33 +502,17 @@
   line-height: 1.55;
 }
 
-.agent-os__stats {
-  max-width: 42rem;
-  min-height: auto;
-}
-
-.agent-os__stats p {
+.agent-os__proof .deck-card__body p {
   margin: 0;
 }
 
-.agent-os__link {
-  margin-top: 1rem;
+.agent-os__diagram {
+  max-width: 100%;
+  color: var(--deck-card-body-color);
+  font-size: 0.95rem;
 }
 
-.agent-os__link a {
-  color: var(--deck-arrow-color);
-  text-decoration: none;
-}
-
-.agent-os__link a:hover {
-  text-decoration: underline;
-}
-
-.agent-os__back {
-  margin-top: 1.5rem;
-}
-
-/* Proof at a glance */
+/* Proof at a glance section labels */
 .proof-at-a-glance__intro {
   max-width: var(--portfolio-reading, 46rem);
   margin: 0 0 2rem;
@@ -379,116 +532,13 @@
   color: var(--deck-card-title-color);
 }
 
-.proof-cards-wrap {
-  max-width: 100%;
-  margin: 0;
+.proof-at-a-glance__group .deck-card-grid {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-.proof-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin: 0;
-  list-style: none;
-  padding: 0;
-  grid-auto-rows: 1fr;
-}
-
-.proof-cards--enterprise {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.proof-cards--enterprise .proof-card {
-  grid-column: span 2;
-}
-
-.proof-cards--enterprise .proof-card:nth-child(4) {
-  grid-column: 2 / span 2;
-}
-
-.proof-cards--enterprise .proof-card:nth-child(5) {
-  grid-column: 4 / span 2;
-}
-
-.proof-cards--operator {
-  grid-template-columns: repeat(6, 1fr);
-}
-
-.proof-cards--operator .proof-card {
-  grid-column: span 2;
-}
-
-.proof-cards--operator .proof-card:nth-child(4) {
-  grid-column: 3 / span 2;
-}
-
-.proof-card {
-  list-style: none;
-  padding: 0;
-}
-
-.proof-card a {
-  display: block;
-  height: 100%;
-  text-decoration: none;
-  color: inherit;
-}
-
-.proof-card a:hover {
-  transform: translateY(-3px);
-}
-
-.proof-card:hover {
-  border-color: rgba(45, 123, 255, 0.35);
-  box-shadow: var(--shadow-hover, 0 12px 32px rgba(0, 0, 0, 0.25));
-}
-
-/* Pattern cards (Writing) */
-.pattern-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
-  margin: 1rem 0 2rem;
-  padding: 0;
-  list-style: none;
-  grid-auto-rows: 1fr;
-}
-
-.pattern-card__icon {
-  display: block;
-  width: 1.75rem;
-  height: 1.75rem;
-  margin-bottom: 0.75rem;
-  color: #b79ae6;
-}
-
-.pattern-card__icon svg {
-  width: 100%;
-  height: 100%;
-}
-
-/* Target role cards (Home) */
-.role-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
-  margin: 1rem 0 0;
-  padding: 0;
-  list-style: none;
-  grid-auto-rows: 1fr;
-}
-
-.role-card__icon {
-  display: block;
-  width: 1.75rem;
-  height: 1.75rem;
-  margin-bottom: 0.75rem;
-  color: #b79ae6;
-}
-
-.role-card__icon svg {
-  width: 100%;
-  height: 100%;
+.proof-at-a-glance__group .deck-card-grid:last-child {
+  margin-bottom: 0;
 }
 
 .link-pill {
@@ -512,6 +562,29 @@
   width: 16px;
   height: 16px;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-pill__icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.linkedin-cta {
+  margin: 0.75rem 0 1rem;
+}
+
+.linkedin-connect {
+  max-width: var(--portfolio-reading, 46rem);
+}
+
+.linkedin-connect__intro {
+  margin: 0 0 1.25rem;
+  color: var(--deck-card-body-color);
+  line-height: 1.6;
 }
 
 .resume-header-block {
@@ -559,32 +632,63 @@
   margin-top: 0;
 }
 
+@media (max-width: 56rem) {
+  .deck-card-grid.deck-card-grid--cols-3:not(.deck-card-grid--cols-3-fixed) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .deck-card-grid.deck-card-grid--pair {
+    max-width: 100%;
+    margin-inline: 0;
+  }
+
+  .deck-card-grid--five {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .deck-card-grid--five > li {
+    grid-column: span 1;
+  }
+
+  .deck-card-grid--roles,
+  .role-cards.deck-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 40rem) {
+  .deck-card-grid.deck-card-grid--cols-3,
+  .deck-card-grid.deck-card-grid--cols-3-fixed,
+  .deck-card-grid.deck-card-grid--cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .deck-card-grid--five {
+    grid-template-columns: 1fr;
+  }
+
+  .deck-card-grid--five > li {
+    grid-column: auto;
+  }
+
+  .deck-card-grid--roles,
+  .role-cards.deck-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .role-cards-panel__summary {
+    display: list-item;
+  }
+
+  .home-section:has(.role-cards-panel) > .home-section__inner > h2 {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
-  .skills-deck {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
   .metric-tiles,
-  .proof-cards,
-  .proof-cards--enterprise,
-  .proof-cards--operator,
-  .leadership-proof-grid,
-  .scope-grid,
-  .pattern-grid,
-  .role-cards {
+  .scope-grid {
     grid-template-columns: 1fr;
-  }
-
-  .proof-cards--enterprise .proof-card,
-  .proof-cards--operator .proof-card {
-    grid-column: auto;
-  }
-
-  .leadership-proof-card,
-  .leadership-proof-card:nth-child(4),
-  .leadership-proof-card:nth-child(5) {
-    grid-column: auto;
   }
 
   .resume-role__top {
@@ -598,7 +702,11 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 40rem) {
+  .deck-card-grid {
+    grid-template-columns: 1fr;
+  }
+
   .metric-tiles {
     grid-template-columns: 1fr;
   }
@@ -607,16 +715,5 @@
 @media (min-width: 901px) and (max-width: 1100px) {
   .metric-tiles {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .proof-cards,
-  .proof-cards--enterprise,
-  .proof-cards--operator {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .proof-cards--enterprise .proof-card,
-  .proof-cards--operator .proof-card {
-    grid-column: auto;
   }
 }

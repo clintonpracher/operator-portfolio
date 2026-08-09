@@ -78,10 +78,7 @@ I am looking for a full-time Director, Principal, or Senior Director of Product 
 
 The right role has real product ownership, consequential decisions, and enough complexity to make systems thinking useful.
 
-Remote US · Based in Las Vegas · Open to Local Hybrid.
-
-{% include social-icons.html %}
-
-[Read my work](../work/README.md) · [View my resume](../resume/resume.md)
-
-[← Back to home](../)
+<div class="cta-row">
+  <a class="button button--primary" href="../resume/resume/">View my resume</a>
+  {% include linkedin-button.html %}
+</div>

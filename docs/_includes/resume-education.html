@@ -19,9 +19,9 @@
   </ul>
 
   <h3>Connect</h3>
-  <p>
-    {% include linkedin-pill.html %}
-    · <a href="{{ site.url }}">clintonpracher.com</a>
-    · <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
-  </p>
+  {% include resume-connect-icons.html %}
+  <div class="cta-row resume-connect__cta">
+    <a class="button button--primary" href="{{ site.data.site_settings.resume_pdf | relative_url }}" download>Download my resume</a>
+    {% include linkedin-button.html %}
+  </div>
 </section>

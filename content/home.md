@@ -37,11 +37,11 @@ The tools handle the noise. I keep the judgment.
 
 | Pillar | Start here |
 |--------|------------|
-| Platform Architecture | [Data Unification](work/case-studies/enterprise/data-unification.md) |
-| Decision Systems | [Data Unification](work/case-studies/enterprise/data-unification.md) |
-| Operating Models | [The Product System Stabilization Framework](work/case-studies/enterprise/product-system-stabilization.md) |
-| Martech & Data Platforms | [AI Regulated Markets](work/case-studies/enterprise/ai-regulated-markets.md) |
-| Control Planes | [Operator Control Plane](work/case-studies/operator/control-plane.md) |
+| Platform Architecture | [Data Unification](work/case-studies/enterprise/data-unification/) |
+| Decision Systems | [Data Unification](work/case-studies/enterprise/data-unification/) |
+| Operating Models | [The Product System Stabilization Framework](work/case-studies/enterprise/product-system-stabilization/) |
+| Martech & Data Platforms | [AI Regulated Markets](work/case-studies/enterprise/ai-regulated-markets/) |
+| Control Planes | [Operator Control Plane](work/case-studies/operator/control-plane/) |
 
 ---
 
@@ -52,5 +52,7 @@ The tools handle the noise. I keep the judgment.
 ---
 
 ## Get in touch with me
+
+I help product leaders in complex organizations unblock execution by fixing the decision architecture behind delivery, so the roadmap you committed to ships without another quarter of explanation.
 
 {% include home-contact.html %}

@@ -1,9 +1,25 @@
 <section class="agent-os" aria-label="Agent OS">
   <h2>Agent OS</h2>
   <p class="agent-os__intro">Live proof that the same decision architecture runs at solo-operator scale: governed skills, automations, and scheduled tasks with a single Active Writer per task.</p>
-  <div class="deck-card agent-os__stats">
-    {% include stats-snippet.html %}
-    <p class="agent-os__link"><a href="{{ '/work/proof/control-plane/' | relative_url }}">Operator Control Plane proof</a></p>
-  </div>
-  <p class="agent-os__back"><a href="{{ '/work/' | relative_url }}">← Back to My Work</a></p>
+  <ul class="deck-card-grid agent-os__proof">
+    <li class="deck-card deck-card--horizontal proof-card">
+      <a href="{{ '/work/case-studies/operator/control-plane/' | relative_url }}">
+        <div class="deck-card__row deck-card__row--title">
+          <h3 class="deck-card__title">
+            <span class="deck-card__title-text">Operator Control Plane</span>
+            <span class="deck-card__arrow" aria-hidden="true">↗</span>
+          </h3>
+        </div>
+        <div class="deck-card__row deck-card__row--meta">
+          <div class="deck-card__body">
+            {% include stats-snippet.html %}
+          </div>
+          <span class="deck-card__cta">Read the case study</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <p class="agent-os__diagram deck-followup">
+    View the <a href="{{ '/assets/diagrams/architecture-one-glance.svg' | relative_url }}">architecture diagram</a>.
+  </p>
 </section>

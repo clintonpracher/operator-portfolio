@@ -1,12 +1,31 @@
 {% assign patterns = site.data.patterns %}
-<ul class="pattern-grid" aria-label="{{ patterns.heading }}">
+<ul class="deck-card-grid pattern-grid" aria-label="{{ patterns.heading }}">
   {% for item in patterns.items %}
-  <li class="deck-card pattern-card">
-    <span class="pattern-card__icon" aria-hidden="true">
-      {% include proof-icon.html icon=item.icon %}
-    </span>
-    <h3 class="deck-card__title">{{ item.title }}</h3>
-    <p class="deck-card__body">{{ item.description }}</p>
+  <li class="deck-card deck-card--horizontal pattern-card{% if item.url %} proof-card{% else %} deck-card--static{% endif %}">
+    {% if item.url %}
+    <a href="{{ item.url | relative_url }}">
+      <div class="deck-card__row deck-card__row--title">
+        <h3 class="deck-card__title">
+          <span class="deck-card__icon" aria-hidden="true">{% include proof-icon.html icon=item.icon %}</span>
+          <span class="deck-card__title-text">{{ item.title }}</span>
+        </h3>
+      </div>
+      <div class="deck-card__row deck-card__row--meta">
+        <p class="deck-card__body">{{ item.description }}</p>
+        {% if item.cta %}<span class="deck-card__cta">{{ item.cta }}</span>{% endif %}
+      </div>
+    </a>
+    {% else %}
+    <div class="deck-card__row deck-card__row--title">
+      <h3 class="deck-card__title">
+        <span class="deck-card__icon" aria-hidden="true">{% include proof-icon.html icon=item.icon %}</span>
+        <span class="deck-card__title-text">{{ item.title }}</span>
+      </h3>
+    </div>
+    <div class="deck-card__row deck-card__row--meta">
+      <p class="deck-card__body">{{ item.description }}</p>
+    </div>
+    {% endif %}
   </li>
   {% endfor %}
 </ul>

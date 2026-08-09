@@ -4,39 +4,43 @@
 
   <div class="proof-at-a-glance__group">
     <h3>Enterprise</h3>
-    <div class="proof-cards-wrap">
-      <ul class="proof-cards proof-cards--enterprise">
-        {% for card in proof.enterprise %}
-        <li class="deck-card proof-card">
-          <a href="{{ card.url | relative_url }}">
+    <ul class="deck-card-grid deck-card-grid--five proof-cards proof-cards--enterprise">
+      {% for card in proof.enterprise %}
+      <li class="deck-card deck-card--horizontal proof-card">
+        <a href="{{ card.url | relative_url }}">
+          <div class="deck-card__row deck-card__row--title">
             <h3 class="deck-card__title">
-              {{ card.title }}
+              <span class="deck-card__title-text">{{ card.title }}</span>
               <span class="deck-card__arrow" aria-hidden="true">↗</span>
             </h3>
+          </div>
+          <div class="deck-card__row deck-card__row--meta">
             <p class="deck-card__body">{{ card.description }}</p>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 
   <div class="proof-at-a-glance__group">
     <h3>Operator</h3>
-    <div class="proof-cards-wrap">
-      <ul class="proof-cards proof-cards--operator">
-        {% for card in proof.operator %}
-        <li class="deck-card proof-card">
-          <a href="{{ card.url | relative_url }}">
+    <ul class="deck-card-grid proof-cards proof-cards--operator">
+      {% for card in proof.operator %}
+      <li class="deck-card deck-card--horizontal proof-card">
+        <a href="{{ card.url | relative_url }}">
+          <div class="deck-card__row deck-card__row--title">
             <h3 class="deck-card__title">
-              {{ card.title }}
+              <span class="deck-card__title-text">{{ card.title }}</span>
               <span class="deck-card__arrow" aria-hidden="true">↗</span>
             </h3>
+          </div>
+          <div class="deck-card__row deck-card__row--meta">
             <p class="deck-card__body">{{ card.description }}</p>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>

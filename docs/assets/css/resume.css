@@ -94,6 +94,16 @@
   max-width: var(--portfolio-reading);
 }
 
+.resume-main .deck-card-grid,
+.resume-main .scope-grid {
+  max-width: 100%;
+  width: 100%;
+}
+
+.resume-main .deck-card-grid > li {
+  margin: 0;
+}
+
 .resume-main p,
 .resume-main li {
   color: var(--resume-copy-soft);
@@ -179,6 +189,30 @@
 
 .resume-body .site-footer {
   background: #090e1d;
+}
+
+.resume-header__cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1rem;
+  margin-top: 1.25rem;
+}
+
+.resume-connect__icons {
+  margin: 0 0 1rem;
+}
+
+.resume-connect__icons .social-icons__list {
+  justify-content: flex-start;
+}
+
+.resume-connect__cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1rem;
+  margin: 1.25rem 0 1.5rem;
 }
 
 @media (max-width: 48rem) {

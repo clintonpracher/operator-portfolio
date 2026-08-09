@@ -1,3 +1,10 @@
+{% assign contact = site.data.site_settings %}
 <div class="home-contact">
-  {% include social-icons.html %}
+  <p class="home-contact__cta">
+    If you need help executing a complex roadmap,
+    <a href="tel:{{ contact.phone_href }}">call me</a>
+    or
+    <a href="mailto:{{ contact.email }}">email me</a>
+    to see if I can help.
+  </p>
 </div>

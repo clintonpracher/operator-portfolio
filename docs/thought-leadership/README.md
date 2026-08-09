@@ -7,7 +7,10 @@ permalink: /thought-leadership/
 <div class="page-hero">
   <div class="page-hero__copy">
     <h1>Thought Leadership</h1>
-    <p>Product leadership essays on decision systems, AI operations, and operating model design. Career-forward reading on <a href="https://clintscall.substack.com">Clint's Call on Substack</a>.</p>
+    <p>Product leadership essays on decision systems, AI operations, and operating model design. Career-forward reading on Clint's Call on Substack.</p>
+    <div class="cta-row">
+      <a class="button button--primary" href="../work/">Read my work</a>
+    </div>
   </div>
   <div class="page-hero__visual" aria-hidden="true">
     {% include hero-visual-writing.html %}
@@ -27,24 +30,14 @@ permalink: /thought-leadership/
 | **AI as an Operating Constraint, Not a Feature** | [Read on Substack](https://clintscall.substack.com/p/ai-as-an-operating-constraint-not) | Systems thinking on AI adoption |
 | **Decision Architecture Over Delivery** | [Read on Substack](https://clintscall.substack.com/p/decision-architecture-over-delivery) | Human-in-the-loop decision rights |
 
-**Operator Control Plane** depth lives in the [case study](../work/case-studies/operator/control-plane.md), not a separate essay link here. The long-form essay is not yet on Substack.
-
 ---
 
-## Consistent Patterns I've seen
+## Consistent patterns I've seen
 
 {% include consistent-patterns.html %}
 
 ---
 
-## LinkedIn
+## Connect with me on LinkedIn
 
-{% include social-icons.html %}
-
-Recent proof-of-work and essay companions live on [LinkedIn](https://www.linkedin.com/in/clinton-pracher/recent-activity/all/).
-
-When an essay has a companion post, start with the essay for depth, then check LinkedIn for the conversation.
-
----
-
-[← Back to home](../README.md)
+{% include linkedin-connect.html %}

@@ -1,31 +1,37 @@
 {% assign cap = site.data.capabilities %}
 <section class="technical-capabilities" aria-label="Launches and technical capabilities">
-  <div class="skills-deck">
-    <div class="skills-deck__column skills-deck__column--launches">
-      <p class="skills-deck__eyebrow">{{ cap.launches_heading }}</p>
-      <div class="skills-deck__stack">
-        {% for item in cap.launches %}
-        <article class="deck-card skills-deck-card skills-deck-card--launch">
-          <h3 class="deck-card__title">
-            {{ item.title }}
-            <span class="skills-deck-card__meta">{{ item.meta }}</span>
-          </h3>
-          <p class="deck-card__body">{{ item.body }}</p>
-        </article>
-        {% endfor %}
-      </div>
-    </div>
-
-    <div class="skills-deck__column skills-deck__column--capabilities">
-      <p class="skills-deck__eyebrow">{{ cap.capabilities_heading }}</p>
-      <div class="skills-deck__stack">
-        {% for item in cap.capabilities %}
-        <article class="deck-card skills-deck-card skills-deck-card--capability">
+  <section class="skills-deck-section">
+    <h2 class="skills-deck__heading">{{ cap.launches_heading }}</h2>
+    <ul class="deck-card-grid deck-card-grid--cols-3-fixed skills-deck-grid" aria-label="{{ cap.launches_heading }}">
+      {% for item in cap.launches %}
+      <li class="deck-card deck-card--horizontal skills-deck-card skills-deck-card--launch">
+        <div class="deck-card__row deck-card__row--title">
           <h3 class="deck-card__title">{{ item.title }}</h3>
+          <p class="skills-deck-card__meta">{{ item.meta }}</p>
+        </div>
+        <div class="deck-card__row deck-card__row--meta">
           <p class="deck-card__body">{{ item.body }}</p>
-        </article>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="skills-deck-section">
+    <h2 class="skills-deck__heading">{{ cap.capabilities_heading }}</h2>
+    <ul class="deck-card-grid deck-card-grid--cols-3-fixed skills-deck-grid" aria-label="{{ cap.capabilities_heading }}">
+      {% for item in cap.capabilities %}
+      <li class="deck-card deck-card--horizontal skills-deck-card skills-deck-card--capability">
+        <div class="deck-card__row deck-card__row--title">
+          <h3 class="deck-card__title">
+            <span class="deck-card__title-text">{{ item.title }}</span>
+          </h3>
+        </div>
+        <div class="deck-card__row deck-card__row--meta">
+          <p class="deck-card__body">{{ item.body }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
 </section>

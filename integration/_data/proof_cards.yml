@@ -3,39 +3,39 @@ intro: >-
   I have applied the same decision-system principles across multiple industries and in the systems I run every day.
 enterprise:
   - title: Data Unification
-    url: /work/proof/data-unification/
+    url: /work/case-studies/enterprise/data-unification/
     icon: data-layers
     description: Unified 45+ fragmented data sources into one decision layer governing $600M in global marketing spend and faster investment calls.
   - title: Subscription Retention
-    url: /work/proof/subscription-retention/
+    url: /work/case-studies/enterprise/subscription-retention/
     icon: retention
     description: Reduced annual subscription cancellation from 75% to under 30% by fixing decision rights on retention, not shipping more features.
   - title: AI Regulated Markets
-    url: /work/proof/ai-regulated-markets/
+    url: /work/case-studies/enterprise/ai-regulated-markets/
     icon: ai-governance
     description: Scaled 13 AI products across 100+ markets with governance frameworks that turned legal review from a blocker into a design constraint.
   - title: Platform Growth
-    url: /work/proof/platform-growth/
+    url: /work/case-studies/enterprise/platform-growth/
     icon: growth
     description: Delivered $60M incremental revenue and 331% YoY organic growth through catalog, SEO, and platform architecture decisions.
   - title: The Product System Stabilization Framework
-    url: /work/proof/product-system-stabilization/
+    url: /work/case-studies/enterprise/product-system-stabilization/
     icon: portfolio
     description: Rebuilt portfolio governance across 13 products so roadmaps, ownership, and investment calls stopped conflicting.
 operator:
   - title: Operator Control Plane
-    url: /work/proof/control-plane/
+    url: /work/case-studies/operator/control-plane/
     icon: control-plane
     description: Built the ownership layer that assigns one Active Writer per task across Cursor, Claude, ChatGPT, and Notion at solo-operator scale.
   - title: Automation Fleet
-    url: /work/proof/automation-fleet/
+    url: /work/case-studies/operator/automation-fleet/
     icon: automation
     description: Runs 28+ governed scheduled automations with explicit task ownership, so overnight work produces morning signal without duplicate writes.
   - title: Governance Audit
-    url: /work/proof/governance-audit/
+    url: /work/case-studies/operator/governance-audit/
     icon: audit
     description: Certification rhythm that keeps skills, automations, and registry entries current as the system grows.
   - title: Job Search OS
-    url: /work/proof/job-search-os/
+    url: /work/case-studies/operator/job-search-os/
     icon: career
     description: "Same decision architecture applied to career search: one pipeline, explicit ownership, measurable proof artifacts."

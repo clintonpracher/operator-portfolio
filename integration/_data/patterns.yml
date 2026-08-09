@@ -1,14 +1,16 @@
-heading: "Consistent Patterns I've seen"
+heading: "Consistent patterns I've seen"
 items:
   - title: Decision Architecture
-    description: how organizations decide what becomes true
+    description: How organizations decide what becomes true when multiple systems, teams, and models each claim authority.
     icon: architecture
   - title: Coordination Tax
-    description: cost of alignment without ownership
+    description: The hidden cost of alignment meetings and status updates when nobody owns the write.
     icon: coordination
   - title: Motion Without Outcomes
-    description: activity without durable results
+    description: Activity that looks productive but does not change what the organization can decide or defend.
     icon: motion
   - title: Operator Control Plane
-    description: ownership layer for multi-model AI ops
+    description: The ownership layer that assigns one Active Writer per task across models, tools, and schedules.
     icon: control-plane
+    url: /work/case-studies/operator/control-plane/
+    cta: Read the case study
