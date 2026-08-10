@@ -3,7 +3,7 @@ default_audience: director_vp
 audience_order:
   - director_vp
   - senior_ic
-  - advisory
+  - operator
 
 launches_heading: Selected Product Launches
 launches:
@@ -22,7 +22,7 @@ launches:
 
 audiences:
   director_vp:
-    label: Director / VP
+    label: Director & VP
     layout: layout-2x2
     hero:
       eyebrow: Platform · Data · AI leadership
@@ -67,7 +67,7 @@ audiences:
         stack: Portfolio forums, KPI frameworks, operating model design
 
   senior_ic:
-    label: Principal / Senior IC
+    label: Principal & Senior IC
     layout: layout-2x2
     hero:
       eyebrow: Full-stack product · Data · AI
@@ -111,21 +111,21 @@ audiences:
           - Agile, Scrum, and SAFe at scale
         stack: Jira, ProductBoard, Figma, Salesforce, Contentful, SAFe
 
-  advisory:
-    label: Advisory / Operator
+  operator:
+    label: Operator
     layout: layout-2x2
     hero:
-      eyebrow: Operator practice · Governed AI
+      eyebrow: Operator systems · Governed AI
       paragraphs:
         - "I run a live operator control plane: skills, automations, scheduled tasks, and registry discipline with one Active Writer per task across models and tools."
-        - "Advisory work applies the same decision architecture at solo-operator scale: explicit ownership, measurable proof, and systems that stay current through certification rhythm."
-    capabilities_heading: Operator and AI-native practice
-    capabilities_intro: How I design, govern, and run agentic workflows as an operating layer, not a pile of disconnected tools.
+        - "The same decision architecture I use in enterprise product leadership runs at operator scale: explicit ownership, measurable proof, and systems that stay current through certification rhythm."
+    capabilities_heading: Operator systems and AI-native practice
+    capabilities_intro: How I design, govern, and run agentic workflows as an operating layer for product delivery, not a pile of disconnected tools.
     show_agent_os: true
     capabilities:
       - title: Governed operator systems
         icon: control-plane
-        judgment: Assigns one Active Writer per task across registry, execution host, audit layer, and connector islands at solo-operator scale.
+        judgment: Assigns one Active Writer per task across registry, execution host, audit layer, and connector islands at operator scale.
         highlights:
           - Operator Control Plane design and operation
           - Registry and task ownership discipline
@@ -147,11 +147,11 @@ audiences:
           - Workflow automation with n8n and agents
           - HTML/CSS surfaces for proof artifacts
         stack: Claude, ChatGPT, Cursor, n8n, Lovable
-      - title: Decision architecture practice
+      - title: Decision systems and proof
         icon: architecture
-        judgment: "Applies enterprise decision-system patterns to advisory work: one pipeline, explicit ownership, and proof artifacts hiring managers can verify."
+        judgment: "Builds decision systems with one pipeline, explicit ownership, and proof artifacts that show how product and platform choices hold up under scrutiny."
         highlights:
-          - Job Search OS and career pipeline governance
+          - Decision architecture for product and platform work
           - Proof portfolios tied to operating model
           - Cross-session memory and continuity discipline
         stack: Decision architecture, proof-at-a-glance systems

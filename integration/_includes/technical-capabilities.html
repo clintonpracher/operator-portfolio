@@ -20,14 +20,27 @@
 
   {% for key in cap.audience_order %}
   {% assign audience = cap.audiences[key] %}
-  {% assign layout_class = audience.layout | default: "layout-2x2" %}
   <section
-    class="skills-deck-section skills-audience-panel skills-capabilities-panel"
+    class="skills-deck-section skills-audience-panel skills-capabilities-heading-panel"
     data-audience="{{ key }}"
     aria-label="{{ audience.capabilities_heading }}"
     {% if key != default_audience %}hidden{% endif %}
   >
     <h2 class="skills-deck__heading">{{ audience.capabilities_heading }}</h2>
+  </section>
+  {% endfor %}
+
+  {% include skills-audience-toggle.html variant="capabilities" %}
+
+  {% for key in cap.audience_order %}
+  {% assign audience = cap.audiences[key] %}
+  {% assign layout_class = audience.layout | default: "layout-2x2" %}
+  <section
+    class="skills-deck-section skills-audience-panel skills-capabilities-body-panel"
+    data-audience="{{ key }}"
+    aria-label="{{ audience.capabilities_heading }}"
+    {% if key != default_audience %}hidden{% endif %}
+  >
     {% if audience.capabilities_intro %}
     <p class="skills-deck__intro">{{ audience.capabilities_intro }}</p>
     {% endif %}

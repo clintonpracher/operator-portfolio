@@ -618,8 +618,15 @@ a.deck-card.proof-card:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin: 0 0 2rem;
   max-width: var(--portfolio-container, 72rem);
+}
+
+.skills-audience-toggle--hero {
+  margin: 0 0 2rem;
+}
+
+.skills-audience-toggle--capabilities {
+  margin: 1rem 0;
 }
 
 .skills-audience-toggle__pill {
@@ -656,8 +663,16 @@ a.deck-card.proof-card:hover {
   line-height: 1.5;
 }
 
-.skills-deck-card--capability .skills-deck__bullets {
-  margin-top: 0.5rem;
+.skills-deck-card--capability .deck-card__row--meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skills-deck-card--capability .deck-card__body,
+.skills-deck-card--capability .skills-deck__bullets,
+.skills-deck-card--capability .deck-card__stack {
+  margin: 0;
 }
 
 .skills-deck-card--capability .skills-deck__bullets li:last-child {
@@ -665,10 +680,25 @@ a.deck-card.proof-card:hover {
 }
 
 .deck-card__stack {
-  margin: 1rem 0 0;
   font-size: 0.8rem;
   line-height: 1.4;
   color: rgba(230, 228, 244, 0.55);
+}
+
+.skills-capabilities-heading-panel {
+  margin-bottom: 0;
+}
+
+.skills-capabilities-heading-panel .skills-deck__heading {
+  margin-bottom: 0;
+}
+
+.skills-capabilities-body-panel {
+  margin-top: 0;
+}
+
+.skills-capabilities-body-panel .skills-deck__intro {
+  margin-top: 0;
 }
 
 /* Agent OS */

@@ -1,7 +1,8 @@
 {% assign caps = site.data.capabilities %}
 {% assign default_audience = caps.default_audience | default: "director_vp" %}
+{% assign toggle_variant = include.variant | default: "hero" %}
 <div
-  class="skills-audience-toggle"
+  class="skills-audience-toggle skills-audience-toggle--{{ toggle_variant }}"
   role="tablist"
   aria-label="Skills audience"
   data-default-audience="{{ default_audience }}"
@@ -18,5 +19,7 @@
     {{ audience.label }}
   </button>
   {% endfor %}
+  {% if toggle_variant == "hero" %}
   <p class="skills-audience-toggle__status visually-hidden" aria-live="polite"></p>
+  {% endif %}
 </div>

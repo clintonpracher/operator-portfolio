@@ -22,21 +22,23 @@ if (toggle && navigation) {
   });
 }
 
-const skillsToggle = document.querySelector('.skills-audience-toggle');
+const skillsToggles = document.querySelectorAll('.skills-audience-toggle');
 
-if (skillsToggle) {
+if (skillsToggles.length) {
   const defaultAudience =
-    skillsToggle.dataset.defaultAudience || 'director_vp';
+    skillsToggles[0].dataset.defaultAudience || 'director_vp';
   const panels = document.querySelectorAll('.skills-audience-panel');
-  const pills = [...skillsToggle.querySelectorAll('.skills-audience-toggle__pill')];
-  const status = skillsToggle.querySelector('.skills-audience-toggle__status');
   const storageKey = 'skillsAudience';
 
+  const allPills = () =>
+    [...document.querySelectorAll('.skills-audience-toggle__pill')];
+
   const isValidAudience = (audienceId) =>
-    pills.some((pill) => pill.dataset.audience === audienceId);
+    allPills().some((pill) => pill.dataset.audience === audienceId);
 
   const setAudience = (audienceId, persist = true) => {
     const audience = isValidAudience(audienceId) ? audienceId : defaultAudience;
+    const pills = allPills();
 
     panels.forEach((panel) => {
       const match = panel.dataset.audience === audience;
@@ -49,6 +51,9 @@ if (skillsToggle) {
       pill.classList.toggle('skills-audience-toggle__pill--selected', selected);
     });
 
+    const status = document.querySelector(
+      '.skills-audience-toggle__status'
+    );
     if (status) {
       const label = pills.find((pill) => pill.dataset.audience === audience)?.textContent?.trim();
       if (label) status.textContent = `Viewing skills for ${label}.`;
@@ -73,21 +78,25 @@ if (skillsToggle) {
 
   try {
     storedAudience = localStorage.getItem(storageKey);
+    if (storedAudience === 'advisory') storedAudience = 'operator';
   } catch (_error) {
     storedAudience = null;
   }
 
   const initialAudience = isValidAudience(queryAudience)
-    ? queryAudience
+    ? queryAudience === 'advisory' ? 'operator' : queryAudience
     : isValidAudience(storedAudience)
       ? storedAudience
       : defaultAudience;
 
   setAudience(initialAudience, false);
 
-  pills.forEach((pill) => {
-    pill.addEventListener('click', () => {
+  const skillsPage = document.querySelector('.page-skills');
+  if (skillsPage) {
+    skillsPage.addEventListener('click', (event) => {
+      const pill = event.target.closest('.skills-audience-toggle__pill');
+      if (!pill) return;
       setAudience(pill.dataset.audience || defaultAudience);
     });
-  });
+  }
 }
