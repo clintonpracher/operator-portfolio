@@ -1,11 +1,17 @@
-<div class="page-hero">
+{% assign caps = site.data.capabilities %}
+{% assign default_audience = caps.default_audience | default: "director_vp" %}
+{% for key in caps.audience_order %}
+{% assign audience = caps.audiences[key] %}
+<div class="page-hero skills-audience-panel" data-audience="{{ key }}"{% if key != default_audience %} hidden{% endif %}>
   <div class="page-hero__copy">
-    <p class="page-eyebrow">Full-stack product · Data · AI</p>
+    <p class="page-eyebrow">{{ audience.hero.eyebrow }}</p>
     <h1>Skills</h1>
-    <p>My skills span industries with a focus on data and AI. I believe product owns the full experience, from integrations through UX, and serves every stakeholder. These are representative capabilities, not an exhaustive list. I am a full-stack product management professional.</p>
-    <p>The tools are not the point. Fluency across all of them is what lets me recommend and build the right infrastructure and architecture for the business, driven by its actual requirements rather than vendor defaults.</p>
+    {% for paragraph in audience.hero.paragraphs %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
   </div>
   <div class="page-hero__visual" aria-hidden="true">
     {% include hero-visual-skills.html %}
   </div>
 </div>
+{% endfor %}

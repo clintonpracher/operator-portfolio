@@ -1,5 +1,5 @@
 {% assign explore = site.data.explore_sections %}
-<ul class="deck-card-grid explore-cards" aria-label="Explore the portfolio">
+<ul class="deck-card-grid deck-card-grid--layout-auto explore-cards" aria-label="Explore the portfolio">
   {% for item in explore.items %}
   <li class="deck-card deck-card--horizontal proof-card explore-card">
     <a href="{{ item.url | relative_url }}">

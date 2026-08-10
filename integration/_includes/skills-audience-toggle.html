@@ -1,0 +1,22 @@
+{% assign caps = site.data.capabilities %}
+{% assign default_audience = caps.default_audience | default: "director_vp" %}
+<div
+  class="skills-audience-toggle"
+  role="tablist"
+  aria-label="Skills audience"
+  data-default-audience="{{ default_audience }}"
+>
+  {% for key in caps.audience_order %}
+  {% assign audience = caps.audiences[key] %}
+  <button
+    type="button"
+    class="skills-audience-toggle__pill"
+    role="tab"
+    data-audience="{{ key }}"
+    aria-selected="{% if key == default_audience %}true{% else %}false{% endif %}"
+  >
+    {{ audience.label }}
+  </button>
+  {% endfor %}
+  <p class="skills-audience-toggle__status visually-hidden" aria-live="polite"></p>
+</div>

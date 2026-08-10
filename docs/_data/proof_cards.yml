@@ -26,7 +26,7 @@ operator:
   - title: Operator Control Plane
     url: /work/proof/control-plane/
     icon: control-plane
-    description: Built the ownership layer that assigns one Active Writer per task across registry, agentic execution host, audit layer, and connector islands at solo-operator scale.
+    description: Built the ownership layer that assigns one Active Writer per task across registry, execution host, audit layer, and connectors at solo-operator scale.
   - title: Automation Fleet
     url: /work/proof/automation-fleet/
     icon: automation
@@ -34,8 +34,8 @@ operator:
   - title: Governance Audit
     url: /work/proof/governance-audit/
     icon: audit
-    description: Certification rhythm that keeps skills, automations, and registry entries current as the system grows.
+    description: Keeps skills, automations, and registry entries current through a recurring certification rhythm as the operator system grows.
   - title: Job Search OS
     url: /work/proof/job-search-os/
     icon: career
-    description: "Same decision architecture applied to career search: one pipeline, explicit ownership, measurable proof artifacts."
+    description: "Applying Decision Architecture applied to career search: one pipeline, explicit ownership, and measurable proof artifacts."

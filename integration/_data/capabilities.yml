@@ -1,3 +1,10 @@
+default_audience: director_vp
+
+audience_order:
+  - director_vp
+  - senior_ic
+  - advisory
+
 launches_heading: Selected Product Launches
 launches:
   - title: Enterprise AI Product Suite
@@ -12,23 +19,139 @@ launches:
     meta: V Shred, 2018
     icon: growth
     body: Consumer fitness app that hit 100K downloads in its first 24 hours, with sustained engagement gains.
-capabilities_heading: Technical Capabilities
-capabilities:
-  - title: Data and analytics
-    icon: data-layers
-    body: Snowflake, Databricks, SQL, SQL Server, Looker, Tableau, Google Analytics, ETL, Airflow
-  - title: AI and machine learning
-    icon: ai-governance
-    body: AI product strategy, ML integration, generative AI products, privacy safe data architecture
-  - title: Cloud and infrastructure
-    icon: platform
-    body: AWS, Google Cloud, Azure, GitHub, Python, JavaScript, Node, React
-  - title: Enterprise systems and platforms
-    icon: org
-    body: CRM, Salesforce (Platinum Partner ecosystem), point-of-sale (Micros), PIM/DAM, NetSuite, Contentful, e commerce platforms
-  - title: Product and delivery
-    icon: strategy
-    body: Jira, Confluence, ProductBoard, Miro, Figma, Aha!, Agile, SCRUM, SAFe, Kanban
-  - title: AI native
-    icon: automation
-    body: Rapid prototyping with Claude, ChatGPT, Cursor, Claude Code, HTML, CSS, n8n, Base44, and Lovable
+
+audiences:
+  director_vp:
+    label: Director / VP
+    layout: layout-2x2
+    hero:
+      eyebrow: Platform · Data · AI leadership
+      paragraphs:
+        - Product leadership at portfolio scale across platform, data, and AI. I own decision infrastructure, investment prioritization, and the operating models that make roadmaps defensible.
+        - The tools are not the point. Fluency across the stack is what lets me recommend and govern the right architecture for the business, not vendor defaults.
+    capabilities_heading: Platform and data fluency
+    capabilities_intro: Judgment areas where I set direction, investment, and governance across complex global portfolios.
+    show_agent_os: false
+    capabilities:
+      - title: Data and decision infrastructure
+        icon: data-layers
+        judgment: Unifies fragmented data estates into one decision layer that leadership can trust for investment and reporting calls.
+        highlights:
+          - Single source of truth across markets and divisions
+          - Investment latency and escalation reduction
+          - Semantic ownership with data engineering partners
+        stack: Snowflake, Databricks, Looker, Airflow
+      - title: AI product strategy and governance
+        icon: ai-governance
+        judgment: Scales AI portfolios in regulated markets by designing governance as a product constraint, not a late-stage review gate.
+        highlights:
+          - Privacy-safe data architecture at global scale
+          - Legal and policy as design inputs
+          - Portfolio coherence across 13+ AI products
+        stack: Enterprise AI suites, regulated-market launch patterns
+      - title: Enterprise platform and integration
+        icon: platform
+        judgment: Modernizes martech and enterprise platforms so catalog, identity, and integration decisions support growth without fragmenting ownership.
+        highlights:
+          - Multi-market platform and catalog architecture
+          - Martech and CRM ecosystem integration
+          - Vendor strategy aligned to decision rights
+        stack: Salesforce ecosystem, Contentful, global martech stacks
+      - title: Product organization and investment
+        icon: strategy
+        judgment: Builds portfolio governance, KPI frameworks, and PM operating models so teams ship against one investment narrative.
+        highlights:
+          - Budget ownership and prioritization forums
+          - Cross-functional alignment without consensus theater
+          - PM development and delivery accountability
+        stack: Portfolio forums, KPI frameworks, operating model design
+
+  senior_ic:
+    label: Principal / Senior IC
+    layout: layout-2x2
+    hero:
+      eyebrow: Full-stack product · Data · AI
+      paragraphs:
+        - My skills span industries with a focus on data and AI. I own the full experience from integrations through UX and serve every stakeholder in the chain.
+        - These are representative capabilities, not an exhaustive list. I am a full-stack product management professional who can spec, partner, and ship with engineering and data teams.
+    capabilities_heading: Technical capabilities
+    capabilities_intro: Hands-on fluency across data, AI, cloud, and delivery systems I use to spec and ship with engineering partners.
+    show_agent_os: false
+    capabilities:
+      - title: Data and analytics
+        icon: data-layers
+        judgment: Builds and specs pipelines, semantic layers, and reporting products that turn fragmented sources into decisions product and finance can act on.
+        highlights:
+          - SQL and warehouse-centric analytics design
+          - Looker and Tableau product surfaces
+          - ETL and orchestration with data engineering
+        stack: Snowflake, Databricks, SQL, Looker, Tableau, Airflow
+      - title: AI and machine learning
+        icon: ai-governance
+        judgment: Ships generative and ML-backed products with clear data boundaries, evaluation criteria, and integration paths into existing workflows.
+        highlights:
+          - AI product strategy and ML integration
+          - Privacy-safe data architecture
+          - Generative AI product patterns
+        stack: AI product strategy, ML integration, generative AI products
+      - title: Cloud and application stack
+        icon: platform
+        judgment: Partners with engineering on cloud-native delivery, APIs, and front-end surfaces when the product requires direct technical depth.
+        highlights:
+          - AWS, GCP, and Azure deployment patterns
+          - API and service integration design
+          - Prototyping with modern web stacks
+        stack: AWS, Google Cloud, Azure, Python, JavaScript, React, Node
+      - title: Product delivery and enterprise systems
+        icon: strategy
+        judgment: Runs delivery across Agile frameworks and enterprise systems so roadmaps, backlogs, and client platforms stay aligned to outcomes.
+        highlights:
+          - Jira, Confluence, ProductBoard, Figma
+          - CRM, PIM, and commerce platform integrations
+          - Agile, Scrum, and SAFe at scale
+        stack: Jira, ProductBoard, Figma, Salesforce, Contentful, SAFe
+
+  advisory:
+    label: Advisory / Operator
+    layout: layout-2x2
+    hero:
+      eyebrow: Operator practice · Governed AI
+      paragraphs:
+        - "I run a live operator control plane: skills, automations, scheduled tasks, and registry discipline with one Active Writer per task across models and tools."
+        - "Advisory work applies the same decision architecture at solo-operator scale: explicit ownership, measurable proof, and systems that stay current through certification rhythm."
+    capabilities_heading: Operator and AI-native practice
+    capabilities_intro: How I design, govern, and run agentic workflows as an operating layer, not a pile of disconnected tools.
+    show_agent_os: true
+    capabilities:
+      - title: Governed operator systems
+        icon: control-plane
+        judgment: Assigns one Active Writer per task across registry, execution host, audit layer, and connector islands at solo-operator scale.
+        highlights:
+          - Operator Control Plane design and operation
+          - Registry and task ownership discipline
+          - Connector islands without duplicate writes
+        stack: Cursor, Claude, governed automation registry
+      - title: Automation fleet and certification
+        icon: automation
+        judgment: Runs 28+ scheduled automations with explicit ownership so overnight work produces morning signal without conflicting writes.
+        highlights:
+          - Scheduled execution at governed scale
+          - Certification rhythm for skills and automations
+          - Audit cycles that keep the system current
+        stack: Cursor Automations, scheduled task registry
+      - title: AI-native prototyping
+        icon: ai-governance
+        judgment: Prototypes products and workflows with AI-native tools while keeping production boundaries and governance explicit.
+        highlights:
+          - Rapid prototyping with Claude and Cursor
+          - Workflow automation with n8n and agents
+          - HTML/CSS surfaces for proof artifacts
+        stack: Claude, ChatGPT, Cursor, n8n, Lovable
+      - title: Decision architecture practice
+        icon: architecture
+        judgment: "Applies enterprise decision-system patterns to advisory work: one pipeline, explicit ownership, and proof artifacts hiring managers can verify."
+        highlights:
+          - Job Search OS and career pipeline governance
+          - Proof portfolios tied to operating model
+          - Cross-session memory and continuity discipline
+        stack: Decision architecture, proof-at-a-glance systems

@@ -1,5 +1,5 @@
 {% assign points = site.data.proof_points %}
-<ul class="deck-card-grid proof-point-cards" aria-label="Proof points">
+<ul class="deck-card-grid deck-card-grid--layout-auto proof-point-cards" aria-label="Proof points">
   {% for item in points.items %}
   <li class="deck-card deck-card--horizontal proof-card proof-point-card">
     <a href="{{ item.url | relative_url }}">

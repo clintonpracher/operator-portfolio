@@ -1,5 +1,5 @@
 {% assign patterns = site.data.patterns %}
-<ul class="deck-card-grid pattern-grid" aria-label="{{ patterns.heading }}">
+<ul class="deck-card-grid deck-card-grid--layout-2x2 pattern-grid" aria-label="{{ patterns.heading }}">
   {% for item in patterns.items %}
   <li class="deck-card deck-card--horizontal pattern-card{% if item.url %} proof-card{% else %} deck-card--static{% endif %}">
     {% if item.url %}

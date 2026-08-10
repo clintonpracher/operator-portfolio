@@ -33,34 +33,38 @@
   color: var(--deck-card-title-color);
   margin: 0 0 0.5rem;
   line-height: 1.3;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 0.5rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .deck-card__title-text {
   min-width: 0;
-  flex: 1 1 auto;
+  grid-column: 2;
 }
 
-.proof-card .deck-card__title {
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  gap: 0.5rem;
-}
-
-.pattern-card.deck-card--static .deck-card__title,
-.pattern-card.proof-card .deck-card__title,
-.deck-card--static .deck-card__title {
-  justify-content: flex-start;
-  gap: 0.5rem;
-}
-
-.proof-card .deck-card__arrow {
+.deck-card__icon {
+  display: inline-flex;
+  width: 1.25rem;
+  height: 1.25rem;
   flex-shrink: 0;
-  margin-left: 0.5rem;
+  color: var(--deck-arrow-color);
+  grid-column: 1;
+  grid-row: 1;
 }
+
+.deck-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.deck-card__title:not(:has(.deck-card__icon)) .deck-card__title-text {
+  grid-column: 1;
+}
+
 
 .deck-card__cta {
   display: inline-flex;
@@ -92,21 +96,21 @@ a.deck-card.proof-card:hover {
   flex-shrink: 0;
 }
 
-.deck-card__icon {
-  display: inline-flex;
-  width: 1.25rem;
-  height: 1.25rem;
-  flex-shrink: 0;
-  color: var(--deck-arrow-color);
-}
-
-.deck-card__icon svg {
+.deck-card__row--title {
   width: 100%;
-  height: 100%;
+  min-width: 0;
 }
 
-.deck-card--static .deck-card__title {
-  flex-wrap: nowrap;
+.deck-card__row--title:has(.deck-card__arrow) {
+  position: relative;
+  padding-right: 1.75rem;
+}
+
+.deck-card__row--title .deck-card__arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
 }
 
 .resume-main h2 + .deck-card-grid {
@@ -118,73 +122,103 @@ a.deck-card.proof-card:hover {
   line-height: 1.45;
   color: var(--deck-card-body-color);
   margin: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 /*
  * Deck card grid contract
- * Width: 100% of section container (portfolio-reading does not apply to deck-card-grid).
- * Default layout (count-aware, desktop):
- *   1 → left-aligned ⅓ width | 2 → 1×2 | 3 → 1×3 | 4 → 2×2 | 5 → 3+2 centered | 6 → 3×2
- * Breakpoints: ≤56rem → 2 columns; ≤40rem → 1 column.
- * Opt-outs: --roles (4 col row), agent-os__proof (1 card ⅓ left), --cols-3-fixed, --cols-2.
- * Legacy aliases --five / --cols-3-centered match default.
+ * Layout modifiers (explicit on every UL):
+ *   --layout-3 / --cols-3-fixed  → 3 per row desktop
+ *   --layout-2x2                 → 2×2 desktop
+ *   --layout-auto                → 3+2 centered (5-item)
+ *   --layout-single              → one card, same width as --layout-3 cards (⅓ → ½ → full)
+ *   --roles                      → 4 → 2 → 1
+ * Breakpoints: ≤56rem → 2 columns; ≤40rem → 1 column (all grids).
  */
 .deck-card-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin: 2.25rem 0 0;
   padding: 0;
   list-style: none;
   width: 100%;
   max-width: 100%;
+  align-items: stretch;
 }
 
-.deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2) > li,
-.deck-card-grid--cols-3-centered > li,
-.deck-card-grid--five > li {
-  grid-column: span 2;
+.deck-card-grid > li {
+  display: flex;
+  min-width: 0;
 }
 
-.deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2) > li:nth-child(3n + 1):nth-last-child(1),
-.deck-card-grid--cols-3-centered > li:nth-child(3n + 1):nth-last-child(1),
-.deck-card-grid--five > li:nth-child(3n + 1):nth-last-child(1) {
-  grid-column: 3 / span 2;
+.deck-card-grid > li > .deck-card {
+  width: 100%;
+  min-width: 0;
 }
 
-.deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2) > li:nth-child(3n + 1):nth-last-child(2),
-.deck-card-grid--cols-3-centered > li:nth-child(3n + 1):nth-last-child(2),
-.deck-card-grid--five > li:nth-child(3n + 1):nth-last-child(2) {
-  grid-column: 2 / span 2;
+/* --layout-3 (alias: --cols-3-fixed, --cols-3) */
+.deck-card-grid--layout-3,
+.deck-card-grid--cols-3-fixed,
+.deck-card-grid--cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2) > li:nth-child(3n + 2):nth-last-child(1),
-.deck-card-grid--cols-3-centered > li:nth-child(3n + 2):nth-last-child(1),
-.deck-card-grid--five > li:nth-child(3n + 2):nth-last-child(1) {
-  grid-column: 4 / span 2;
-}
-
-/* Count-aware rows (4→2×2, 2→1×2) */
-.deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2):has(> :nth-child(4):last-child) {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2):has(> :nth-child(4):last-child) > li {
+.deck-card-grid--layout-3 > li,
+.deck-card-grid--cols-3-fixed > li,
+.deck-card-grid--cols-3 > li {
   grid-column: auto;
 }
 
-.deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2):has(> :nth-child(2):last-child) {
+/* --layout-2x2 */
+.deck-card-grid--layout-2x2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2):has(> :nth-child(2):last-child) > li {
+.deck-card-grid--layout-2x2 > li {
   grid-column: auto;
 }
 
-/* Single card: left-aligned ⅓ width (one Skills-card column) */
-.deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2):has(> :only-child) > li {
-  grid-column: 1 / span 2;
+/* --layout-auto: 5-item 3+2 centered (alias: --five, --cols-3-centered) */
+.deck-card-grid--layout-auto,
+.deck-card-grid--five,
+.deck-card-grid--cols-3-centered {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.deck-card-grid--layout-auto > li,
+.deck-card-grid--five > li,
+.deck-card-grid--cols-3-centered > li {
+  grid-column: span 2;
+}
+
+.deck-card-grid--layout-auto > li:nth-child(3n + 1):nth-last-child(1),
+.deck-card-grid--five > li:nth-child(3n + 1):nth-last-child(1),
+.deck-card-grid--cols-3-centered > li:nth-child(3n + 1):nth-last-child(1) {
+  grid-column: 3 / span 2;
+}
+
+.deck-card-grid--layout-auto > li:nth-child(3n + 1):nth-last-child(2),
+.deck-card-grid--five > li:nth-child(3n + 1):nth-last-child(2),
+.deck-card-grid--cols-3-centered > li:nth-child(3n + 1):nth-last-child(2) {
+  grid-column: 2 / span 2;
+}
+
+.deck-card-grid--layout-auto > li:nth-child(3n + 2):nth-last-child(1),
+.deck-card-grid--five > li:nth-child(3n + 2):nth-last-child(1),
+.deck-card-grid--cols-3-centered > li:nth-child(3n + 2):nth-last-child(1) {
+  grid-column: 4 / span 2;
+}
+
+/* --layout-single: one card, same column width as --layout-3 */
+.deck-card-grid--layout-single {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.deck-card-grid--layout-single > li {
+  grid-column: 1;
+  width: 100%;
 }
 
 .deck-card--horizontal {
@@ -204,10 +238,19 @@ a.deck-card.proof-card:hover {
   font-size: var(--fs-body, 1rem);
 }
 
+.deck-card--horizontal.proof-card,
+.deck-card--horizontal.case-study-card,
+.deck-card--horizontal.featured-essay-card {
+  min-height: var(--deck-card-min-height);
+  flex: 1;
+}
+
 .proof-card > a {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  width: 100%;
+  min-width: 0;
   height: 100%;
   text-decoration: none;
   color: inherit;
@@ -244,14 +287,9 @@ a.deck-card.proof-card:hover {
 }
 
 .agent-os__proof.deck-card-grid {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
   margin: 0;
   max-width: 100%;
   width: 100%;
-}
-
-.agent-os__proof.deck-card-grid > li {
-  grid-column: 1 / span 2;
 }
 
 .metric-tiles {
@@ -487,16 +525,6 @@ a.deck-card.proof-card:hover {
   margin-bottom: 0;
 }
 
-.deck-card-grid.deck-card-grid--cols-3,
-.deck-card-grid.deck-card-grid--cols-3-fixed {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.deck-card-grid.deck-card-grid--cols-3 > li,
-.deck-card-grid.deck-card-grid--cols-3-fixed > li {
-  grid-column: auto;
-}
-
 .deck-card-grid.deck-card-grid--cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -510,7 +538,7 @@ a.deck-card.proof-card:hover {
   margin-inline: auto;
 }
 
-/* Legacy aliases: --five / --cols-3-centered match default centered 3-column grid */
+/* Legacy aliases: --five / --cols-3-centered match --layout-auto */
 
 .deck-section-gap {
   margin-bottom: var(--deck-section-gap, 2.5rem);
@@ -524,9 +552,35 @@ a.deck-card.proof-card:hover {
   margin-top: 1.5rem;
 }
 
-.skills-deck-card.deck-card {
-  min-height: auto;
-  height: auto;
+.skills-deck-card.deck-card--horizontal {
+  min-height: var(--deck-card-min-height);
+  flex: 1;
+}
+
+.skills-deck__bullets {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-deck__bullets li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: var(--deck-card-body-color);
+}
+
+.skills-deck__bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 1px;
+  background: #b79ae6;
 }
 
 .skills-deck__heading {
@@ -553,6 +607,68 @@ a.deck-card.proof-card:hover {
   font-size: 0.8rem;
   font-weight: 400;
   color: var(--deck-card-body-color);
+}
+
+/* Skills audience tuning */
+.skills-audience-panel[hidden] {
+  display: none !important;
+}
+
+.skills-audience-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 2rem;
+  max-width: var(--portfolio-container, 72rem);
+}
+
+.skills-audience-toggle__pill {
+  appearance: none;
+  border: 1px solid rgba(214, 214, 214, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--portfolio-copy-soft, rgba(247, 247, 247, 0.76));
+  font-family: var(--font-display, "Outfit", sans-serif);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.45rem 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.skills-audience-toggle__pill:hover {
+  border-color: rgba(45, 123, 255, 0.45);
+  color: var(--portfolio-copy, #f7f7f7);
+}
+
+.skills-audience-toggle__pill--selected,
+.skills-audience-toggle__pill[aria-selected="true"] {
+  border-color: rgba(45, 123, 255, 0.55);
+  background: rgba(45, 123, 255, 0.12);
+  color: var(--portfolio-copy, #f7f7f7);
+}
+
+.skills-deck__intro {
+  margin: 0 0 1rem;
+  max-width: var(--portfolio-reading, 46rem);
+  color: var(--deck-card-body-color);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.skills-deck-card--capability .skills-deck__bullets {
+  margin-top: 0.5rem;
+}
+
+.skills-deck-card--capability .skills-deck__bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.deck-card__stack {
+  margin: 1rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: rgba(230, 228, 244, 0.55);
 }
 
 /* Agent OS */
@@ -699,39 +815,28 @@ a.deck-card.proof-card:hover {
 }
 
 @media (max-width: 56rem) {
-  .deck-card-grid {
+  .deck-card-grid,
+  .deck-card-grid--layout-3,
+  .deck-card-grid--cols-3-fixed,
+  .deck-card-grid--cols-3,
+  .deck-card-grid--layout-2x2,
+  .deck-card-grid--layout-single {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2) > li,
+  .deck-card-grid--layout-auto > li,
+  .deck-card-grid--five > li,
   .deck-card-grid--cols-3-centered > li,
-  .deck-card-grid--five > li {
-    grid-column: span 1;
-  }
-
-  .deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2) > li:nth-child(3n + 1):nth-last-child(1),
-  .deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2) > li:nth-child(3n + 1):nth-last-child(2),
-  .deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2) > li:nth-child(3n + 2):nth-last-child(1),
-  .deck-card-grid--cols-3-centered > li:nth-child(3n + 1):nth-last-child(1),
-  .deck-card-grid--cols-3-centered > li:nth-child(3n + 1):nth-last-child(2),
-  .deck-card-grid--cols-3-centered > li:nth-child(3n + 2):nth-last-child(1),
+  .deck-card-grid--layout-auto > li:nth-child(3n + 1):nth-last-child(1),
   .deck-card-grid--five > li:nth-child(3n + 1):nth-last-child(1),
+  .deck-card-grid--cols-3-centered > li:nth-child(3n + 1):nth-last-child(1),
+  .deck-card-grid--layout-auto > li:nth-child(3n + 1):nth-last-child(2),
   .deck-card-grid--five > li:nth-child(3n + 1):nth-last-child(2),
-  .deck-card-grid--five > li:nth-child(3n + 2):nth-last-child(1) {
-    grid-column: span 1;
-  }
-
-  .deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2):has(> :nth-child(4):last-child) > li,
-  .deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2):has(> :nth-child(2):last-child) > li {
+  .deck-card-grid--cols-3-centered > li:nth-child(3n + 1):nth-last-child(2),
+  .deck-card-grid--layout-auto > li:nth-child(3n + 2):nth-last-child(1),
+  .deck-card-grid--five > li:nth-child(3n + 2):nth-last-child(1),
+  .deck-card-grid--cols-3-centered > li:nth-child(3n + 2):nth-last-child(1) {
     grid-column: auto;
-  }
-
-  .agent-os__proof.deck-card-grid > li {
-    grid-column: span 1;
-  }
-
-  .deck-card-grid.deck-card-grid--cols-3:not(.deck-card-grid--cols-3-fixed) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .deck-card-grid.deck-card-grid--pair {
@@ -746,26 +851,27 @@ a.deck-card.proof-card:hover {
 }
 
 @media (max-width: 40rem) {
-  .deck-card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .deck-card-grid:not(.deck-card-grid--roles):not(.role-cards):not(.agent-os__proof):not(.deck-card-grid--cols-3-fixed):not(.deck-card-grid--cols-2) > li,
-  .deck-card-grid--cols-3-centered > li,
-  .deck-card-grid--five > li,
-  .agent-os__proof.deck-card-grid > li {
-    grid-column: auto;
-  }
-
-  .deck-card-grid.deck-card-grid--cols-3,
-  .deck-card-grid.deck-card-grid--cols-3-fixed,
-  .deck-card-grid.deck-card-grid--cols-2 {
-    grid-template-columns: 1fr;
-  }
-
+  .deck-card-grid,
+  .deck-card-grid--layout-3,
+  .deck-card-grid--cols-3-fixed,
+  .deck-card-grid--cols-3,
+  .deck-card-grid--layout-2x2,
+  .deck-card-grid--layout-auto,
+  .deck-card-grid--five,
+  .deck-card-grid--cols-3-centered,
+  .deck-card-grid--layout-single,
+  .deck-card-grid.deck-card-grid--cols-2,
   .deck-card-grid--roles,
   .role-cards.deck-card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .deck-card-grid > li,
+  .deck-card-grid--layout-auto > li,
+  .deck-card-grid--five > li,
+  .deck-card-grid--cols-3-centered > li,
+  .deck-card-grid--layout-single > li {
+    grid-column: auto;
   }
 
   .metric-tiles {

@@ -871,6 +871,30 @@ a {
   max-width: var(--portfolio-container);
 }
 
+.page-skills .skills-audience-toggle {
+  width: 100%;
+  max-width: var(--portfolio-container);
+}
+
+.page-skills .skills-audience-toggle__pill--selected,
+.page-skills .skills-audience-toggle__pill[aria-selected="true"] {
+  border-color: rgba(45, 123, 255, 0.55);
+  background: rgba(45, 123, 255, 0.12);
+  color: var(--portfolio-copy, #f7f7f7);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Decision-map hero variants */
 .decision-map--skills .decision-map__node--integrations {
   top: 11%;
@@ -1240,12 +1264,6 @@ a {
   }
 }
 
-@media (max-width: 56rem) {
-  .deck-card-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 52rem) {
   .site-header__inner {
     min-height: 4.25rem;
@@ -1370,10 +1388,6 @@ a {
   .page-thought-leadership table tbody,
   .page-skills .page-section:nth-child(2) table tbody,
   .page-work .page-section:nth-child(3) ul:not(.deck-card-grid) {
-    grid-template-columns: 1fr;
-  }
-
-  .deck-card-grid {
     grid-template-columns: 1fr;
   }
 

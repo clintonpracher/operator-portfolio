@@ -1,8 +1,9 @@
 {% assign cap = site.data.capabilities %}
+{% assign default_audience = cap.default_audience | default: "director_vp" %}
 <section class="technical-capabilities" aria-label="Launches and technical capabilities">
   <section class="skills-deck-section">
     <h2 class="skills-deck__heading">{{ cap.launches_heading }}</h2>
-    <ul class="deck-card-grid deck-card-grid--cols-3-fixed skills-deck-grid" aria-label="{{ cap.launches_heading }}">
+    <ul class="deck-card-grid deck-card-grid--layout-3 deck-card-grid--cols-3-fixed skills-deck-grid" aria-label="{{ cap.launches_heading }}">
       {% for item in cap.launches %}
       <li class="deck-card deck-card--horizontal skills-deck-card skills-deck-card--launch deck-card--static">
         <div class="deck-card__row deck-card__row--title">
@@ -17,19 +18,41 @@
     </ul>
   </section>
 
-  <section class="skills-deck-section">
-    <h2 class="skills-deck__heading">{{ cap.capabilities_heading }}</h2>
-    <ul class="deck-card-grid deck-card-grid--cols-3-fixed skills-deck-grid" aria-label="{{ cap.capabilities_heading }}">
-      {% for item in cap.capabilities %}
+  {% for key in cap.audience_order %}
+  {% assign audience = cap.audiences[key] %}
+  {% assign layout_class = audience.layout | default: "layout-2x2" %}
+  <section
+    class="skills-deck-section skills-audience-panel skills-capabilities-panel"
+    data-audience="{{ key }}"
+    aria-label="{{ audience.capabilities_heading }}"
+    {% if key != default_audience %}hidden{% endif %}
+  >
+    <h2 class="skills-deck__heading">{{ audience.capabilities_heading }}</h2>
+    {% if audience.capabilities_intro %}
+    <p class="skills-deck__intro">{{ audience.capabilities_intro }}</p>
+    {% endif %}
+    <ul class="deck-card-grid deck-card-grid--{{ layout_class }} skills-deck-grid" aria-label="{{ audience.capabilities_heading }}">
+      {% for item in audience.capabilities %}
       <li class="deck-card deck-card--horizontal skills-deck-card skills-deck-card--capability deck-card--static">
         <div class="deck-card__row deck-card__row--title">
           {% include deck-card-static-title.html icon=item.icon title=item.title %}
         </div>
         <div class="deck-card__row deck-card__row--meta">
-          <p class="deck-card__body">{{ item.body }}</p>
+          <p class="deck-card__body">{{ item.judgment }}</p>
+          {% if item.highlights %}
+          <ul class="skills-deck__bullets">
+            {% for highlight in item.highlights %}
+            <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+          {% if item.stack %}
+          <p class="deck-card__stack">Representative: {{ item.stack }}</p>
+          {% endif %}
         </div>
       </li>
       {% endfor %}
     </ul>
   </section>
+  {% endfor %}
 </section>

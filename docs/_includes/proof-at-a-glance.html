@@ -4,7 +4,7 @@
 
   <div class="proof-at-a-glance__group">
     <h3>Enterprise</h3>
-    <ul class="deck-card-grid proof-cards proof-cards--enterprise">
+    <ul class="deck-card-grid deck-card-grid--layout-auto proof-cards proof-cards--enterprise">
       {% for card in proof.enterprise %}
       <li class="deck-card deck-card--horizontal proof-card">
         <a href="{{ card.url | relative_url }}">
@@ -22,7 +22,7 @@
 
   <div class="proof-at-a-glance__group">
     <h3>Operator</h3>
-    <ul class="deck-card-grid proof-cards proof-cards--operator">
+    <ul class="deck-card-grid deck-card-grid--layout-2x2 proof-cards proof-cards--operator">
       {% for card in proof.operator %}
       <li class="deck-card deck-card--horizontal proof-card">
         <a href="{{ card.url | relative_url }}">

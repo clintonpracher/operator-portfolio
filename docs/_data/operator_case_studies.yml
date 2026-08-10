@@ -3,15 +3,19 @@ items:
     url: /work/case-studies/operator/control-plane/
     icon: control-plane
     meta: Multi-model governance, Active Writer
+    description: Built the ownership layer that assigns one Active Writer per task across registry, execution host, audit layer, and connectors at solo-operator scale.
   - title: Automation Fleet
     url: /work/case-studies/operator/automation-fleet/
     icon: automation
     meta: Scheduled execution at scale
+    description: Runs 28+ governed scheduled automations with explicit task ownership, so overnight work produces morning signal without duplicate writes.
   - title: Governance Audit Cycle
     url: /work/case-studies/operator/governance-audit/
     icon: audit
     meta: Certification rhythm
+    description: Keeps skills, automations, and registry entries current through a recurring certification rhythm as the operator system grows.
   - title: Job Search OS
     url: /work/case-studies/operator/job-search-os/
     icon: career
     meta: Governed career pipeline
+    description: "Applying Decision Architecture applied to career search: one pipeline, explicit ownership, and measurable proof artifacts."

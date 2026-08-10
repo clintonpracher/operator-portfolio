@@ -3,19 +3,24 @@ items:
     url: /work/case-studies/enterprise/data-unification/
     icon: data-layers
     meta: Platform Architecture, Decision Systems, Martech / Data
+    description: Unified 45+ fragmented data sources into one decision layer governing $600M in global marketing spend and faster investment calls.
   - title: Turning Retention Decisions Into Sustainable Growth
     url: /work/case-studies/enterprise/subscription-retention/
     icon: retention
     meta: Decision Systems, Operating Model
+    description: Reduced annual subscription cancellation from 75% to under 30% by fixing decision rights on retention, not shipping more features.
   - title: Scaling AI Products With Clear Decision Boundaries
     url: /work/case-studies/enterprise/ai-regulated-markets/
     icon: ai-governance
     meta: Platform Architecture, Martech / Data, Operating Model
+    description: Scaled 13 AI products across 100+ markets with governance frameworks that turned legal review from a blocker into a design constraint.
   - title: Multi-Market Digital Platform Growth
     url: /work/case-studies/enterprise/platform-growth/
     icon: growth
     meta: Platform Architecture, Decision Systems
+    description: Delivered $60M incremental revenue and 331% YoY organic growth through catalog, SEO, and platform architecture decisions.
   - title: The Product System Stabilization Framework
     url: /work/case-studies/enterprise/product-system-stabilization/
     icon: portfolio
     meta: Operating Model, Decision Systems, Platform Architecture
+    description: Rebuilt portfolio governance across 13 products so roadmaps, ownership, and investment calls stopped conflicting.
