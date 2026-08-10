@@ -3,9 +3,11 @@
 <ul class="metric-tiles" aria-label="Career scope metrics">
   {% for m in c.metrics %}
   <li class="metric-tile{% if m.accent %} metric-tile--accent{% endif %}">
-    <span class="metric-tile__icon" aria-hidden="true">{% include proof-icon.html icon=m.icon %}</span>
     <span class="metric-tile__value">{{ m.value }}</span>
-    <span class="metric-tile__label">{{ m.label }}</span>
+    <span class="metric-tile__label">
+      <span class="metric-tile__icon" aria-hidden="true">{% include proof-icon.html icon=m.icon %}</span>
+      <span class="metric-tile__label-text">{{ m.label }}</span>
+    </span>
   </li>
   {% endfor %}
 </ul>
