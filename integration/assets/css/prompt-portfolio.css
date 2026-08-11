@@ -1,0 +1,167 @@
+/* Prompt Portfolio — Imperious Luxury overlays (code panels + decision map variant) */
+
+/* Decision-map hero: Prompt Portfolio (4 nodes, equal spacing — matches skills orbit layout) */
+.decision-map--prompts .decision-map__node--spec {
+  top: 11%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  width: 5.6rem;
+  height: 2.7rem;
+  transform: translateX(-50%);
+}
+
+.decision-map--prompts .decision-map__node--schema {
+  top: 50%;
+  right: 7%;
+  bottom: auto;
+  left: auto;
+  width: 6.2rem;
+  height: 2.7rem;
+  transform: translateY(-50%);
+}
+
+.decision-map--prompts .decision-map__node--inputs {
+  bottom: 11%;
+  left: 50%;
+  top: auto;
+  right: auto;
+  width: 5.8rem;
+  height: 2.7rem;
+  transform: translateX(-50%);
+}
+
+.decision-map--prompts .decision-map__node--contracts {
+  top: 50%;
+  left: 7%;
+  right: auto;
+  bottom: auto;
+  width: 7.4rem;
+  height: 2.7rem;
+  transform: translateY(-50%);
+}
+
+.prompt-portfolio-card__preview {
+  margin: 0.75rem 0 0;
+  padding: 0.75rem;
+  border-radius: var(--radius-md, 0.5rem);
+  border: 1px solid var(--portfolio-border, rgba(255, 255, 255, 0.08));
+  background: rgba(12, 18, 38, 0.65);
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
+  font-size: 0.6875rem;
+  line-height: 1.45;
+  color: var(--portfolio-copy-soft, #b8bcc4);
+  max-height: 7rem;
+  overflow: hidden;
+}
+
+.prompt-portfolio-card__preview code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.page-prompt-library .pp-code-panel,
+.page-prompt-library .pp-code-panel__pre,
+.page-prompt-library .pp-code-panel__pre code,
+.page-prompt-library .prompt-portfolio-card__preview,
+.page-prompt-library .prompt-portfolio-card__preview code {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.prompt-spec-section {
+  width: 100%;
+  max-width: var(--portfolio-container, 72rem);
+}
+
+.prompt-spec-section + .prompt-spec-section {
+  margin-top: 2.5rem;
+}
+
+.prompt-spec-section__title {
+  margin: 0 0 1.5rem;
+  color: var(--portfolio-copy, #f7f7f7);
+  font-family: var(--font-display, "Outfit", sans-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: var(--fw-bold, 700);
+  letter-spacing: var(--ls-tight, -0.02em);
+  line-height: var(--lh-snug, 1.2);
+}
+
+.prompt-code-panel {
+  border: 1px solid var(--portfolio-border, rgba(255, 255, 255, 0.1));
+  border-radius: var(--radius-lg, 1rem);
+  overflow: hidden;
+  background: rgba(12, 18, 38, 0.92);
+  box-shadow: var(--shadow-ambient, 0 1rem 2rem rgba(0, 0, 0, 0.25));
+}
+
+.prompt-code-panel__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: rgba(8, 10, 18, 0.95);
+  border-bottom: 1px solid var(--portfolio-border, rgba(255, 255, 255, 0.08));
+}
+
+.prompt-code-panel__dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+}
+
+.prompt-code-panel__dot:nth-child(1) { background: #ff5f57; }
+.prompt-code-panel__dot:nth-child(2) { background: #febc2e; }
+.prompt-code-panel__dot:nth-child(3) { background: #28c840; }
+
+.prompt-code-panel__filename {
+  margin-left: 0.5rem;
+  flex: 1;
+  font-family: ui-monospace, monospace;
+  font-size: var(--fs-body-sm, 0.8125rem);
+  color: var(--portfolio-copy-soft, #9aa0a6);
+}
+
+.prompt-code-panel__pre {
+  margin: 0;
+  padding: 1.25rem;
+  overflow-x: auto;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+}
+
+.prompt-code-panel__pre code {
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
+}
+
+.prompt-spec-schema {
+  display: grid;
+  gap: 0.75rem 1.5rem;
+  grid-template-columns: minmax(8rem, 12rem) 1fr;
+  margin: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--portfolio-border, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-lg, 1rem);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.prompt-spec-schema dt {
+  margin: 0;
+  font-family: ui-monospace, monospace;
+  font-size: var(--fs-body-sm, 0.8125rem);
+  color: var(--insight-violet, #9d7bd8);
+}
+
+.prompt-spec-schema dd {
+  margin: 0;
+  color: var(--portfolio-copy-soft, #b8bcc4);
+  line-height: 1.45;
+}
+
+@media (max-width: 640px) {
+  .prompt-spec-schema {
+    grid-template-columns: 1fr;
+  }
+}

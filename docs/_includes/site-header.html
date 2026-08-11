@@ -10,9 +10,10 @@
       <span class="nav-toggle__icon" aria-hidden="true"></span>
     </button>
     <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
-      <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about/' %} aria-current="page"{% endif %}>About</a>
+      <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about/' %} aria-current="page"{% endif %}>About Me</a>
       <a href="{{ '/work/' | relative_url }}"{% if page.url == '/work/' or page.url contains '/work/case-studies/' %} aria-current="page"{% endif %}>My Work</a>
       <a href="{{ '/work/skills/' | relative_url }}"{% if page.url contains '/work/skills/' %} aria-current="page"{% endif %}>Skills</a>
+      <a href="{{ '/prompt-library/' | relative_url }}"{% if page.url contains '/prompt-library/' %} aria-current="page"{% endif %}>Prompt Library</a>
       <a href="{{ '/thought-leadership/' | relative_url }}"{% if page.url contains '/thought-leadership/' %} aria-current="page"{% endif %}>Thought Leadership</a>
       <a href="{{ contact.linkedin }}" rel="noopener noreferrer" target="_blank">Connect on LinkedIn</a>
       <a href="mailto:{{ contact.email }}">Contact me</a>

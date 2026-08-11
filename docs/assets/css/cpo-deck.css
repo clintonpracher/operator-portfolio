@@ -365,6 +365,165 @@ a.deck-card.proof-card:hover {
   stroke-width: 1.5;
 }
 
+/* Proof strip — compact metric cards + subtle employer footer in section heroes */
+.proof-strip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  margin: 0;
+}
+
+.metric-tiles--hero-proof {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+  width: min(100%, 44rem);
+  margin: 0 auto;
+}
+
+.metric-tiles--count-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(100%, 34rem);
+}
+
+.metric-tiles--count-2,
+.proof-strip--compact .metric-tiles--hero-proof.metric-tiles--count-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(100%, 22rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-hero-proof-panel {
+  width: 100%;
+}
+
+.proof-strip .metric-tile {
+  gap: 0.2rem;
+  padding: 0.65rem 0.8rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(214, 214, 214, 0.1);
+}
+
+.proof-strip .metric-tile__value {
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.proof-strip .metric-tile__label {
+  font-size: 0.72rem;
+  color: rgba(230, 228, 244, 0.58);
+  gap: 0.35rem;
+}
+
+.proof-strip .metric-tile__icon {
+  width: 0.8rem;
+  height: 0.8rem;
+  min-width: 0.8rem;
+  min-height: 0.8rem;
+  opacity: 0.75;
+}
+
+.page-section:first-child .proof-strip .proof-strip__footer,
+.page-hero__proof .proof-strip__footer,
+.proof-strip .proof-strip__footer {
+  display: block;
+  margin: 0.4rem 0 0;
+  max-width: 100%;
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0;
+  text-align: center;
+  color: rgba(230, 228, 244, 0.58);
+}
+
+/* Hero + proof footer shell */
+.home-hero--with-proof {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2.5rem;
+  grid-template-columns: unset;
+}
+
+.home-hero__main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(19rem, 0.8fr);
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.home-hero__proof {
+  width: 100%;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(214, 214, 214, 0.1);
+}
+
+.page-hero--with-proof {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.page-hero__main {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(19rem, 0.8fr);
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.page-hero--skills .page-hero__main {
+  display: block;
+}
+
+.page-hero__proof {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(214, 214, 214, 0.1);
+}
+
+.page-hero--about .page-hero__visual {
+  min-height: auto;
+}
+
+.page-hero--about .page-hero__illustration {
+  width: min(100%, 22rem);
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+@media (max-width: 52rem) {
+  .home-hero__main,
+  .page-hero__main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .metric-tiles--hero-proof,
+  .proof-strip--compact .metric-tiles--hero-proof,
+  .metric-tiles--count-3,
+  .metric-tiles--count-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .metric-tiles--count-3 .metric-tile:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 0.325rem);
+    justify-self: center;
+  }
+}
+
 .deck-chip {
   display: inline-block;
   background: rgba(60, 36, 95, 0.42);
@@ -593,6 +752,12 @@ a.deck-card.proof-card:hover {
   line-height: var(--lh-snug, 1.2);
 }
 
+@media (min-width: 53rem) {
+  .skills-deck__heading {
+    white-space: nowrap;
+  }
+}
+
 .skills-deck__eyebrow {
   font-size: 0.7rem;
   font-weight: 700;
@@ -653,6 +818,27 @@ a.deck-card.proof-card:hover {
   border-color: rgba(45, 123, 255, 0.55);
   background: rgba(45, 123, 255, 0.12);
   color: var(--portfolio-copy, #f7f7f7);
+}
+
+.skills-audience-toggle__pill--static {
+  cursor: default;
+  pointer-events: none;
+  border-color: rgba(45, 123, 255, 0.55);
+  background: rgba(45, 123, 255, 0.12);
+  color: var(--portfolio-copy, #f7f7f7);
+}
+
+.skills-audience-toggle__pill--static:hover {
+  border-color: rgba(45, 123, 255, 0.55);
+  color: var(--portfolio-copy, #f7f7f7);
+}
+
+.prompt-library-category {
+  margin: 0 0 0.5rem;
+}
+
+.prompt-library-category--hero {
+  margin: 0 0 1.25rem;
 }
 
 .skills-deck__intro {
@@ -841,7 +1027,20 @@ a.deck-card.proof-card:hover {
 }
 
 .on-the-ground h2 {
-  margin-top: 0;
+  margin: 0 0 1rem;
+  color: var(--portfolio-copy, #f7f7f7);
+  font-family: var(--font-display, "Outfit", sans-serif);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: var(--fw-bold, 700);
+  letter-spacing: var(--ls-tight, -0.02em);
+  line-height: var(--lh-snug, 1.2);
+}
+
+.page-about .page-section:first-child .page-section__inner:has(.page-hero) {
+  display: block;
+  grid-template-columns: unset;
+  grid-template-rows: unset;
+  gap: 0;
 }
 
 @media (max-width: 56rem) {

@@ -1,0 +1,15 @@
+{% assign items = site.data.leadership_proof.items | slice: 0, 3 %}
+<section class="proof-results" aria-label="Selected results">
+  <h2 class="proof-results__heading">Results at a glance</h2>
+  <ul class="proof-results__list">
+    {% for item in items %}
+    <li class="proof-results__item">
+      <span class="proof-results__icon" aria-hidden="true">{% include proof-icon.html icon=item.icon %}</span>
+      <div class="proof-results__copy">
+        <p class="proof-results__title">{{ item.title }}</p>
+        <p class="proof-results__body">{{ item.body }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

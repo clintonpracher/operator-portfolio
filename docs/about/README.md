@@ -1,16 +1,25 @@
 ---
 layout: sectioned
-title: About
+title: About Me
+page_class: about
 permalink: /about/
 ---
 
-# About Clint Pracher
-
-**Hi, I'm Clint. I build product systems for scaling organizations when growth and complexity start breaking the systems that used to work.**
-
-Most teams I step into are not failing. They're overloaded. Priorities have fragmented, execution feels inconsistent, and leaders carry more of the decision weight than they should. On the surface, that looks like an execution problem. It is usually a decision system that has not kept up with scale.
-
-![Clint Pracher](/assets/clint-pracher-profile.jpg)
+<div class="page-hero page-hero--with-proof page-hero--about">
+  <div class="page-hero__main">
+    <div class="page-hero__copy">
+      <h1>About Clint Pracher</h1>
+      <p><strong>Hi, I'm Clint. I build product systems for scaling organizations when growth and complexity start breaking the systems that used to work.</strong></p>
+      <p>Most teams I step into are not failing. They're overloaded. Priorities have fragmented, execution feels inconsistent, and leaders carry more of the decision weight than they should. On the surface, that looks like an execution problem. It is usually a decision system that has not kept up with scale.</p>
+    </div>
+    <div class="page-hero__visual">
+      <img class="page-hero__illustration" src="/assets/clint-pracher-profile.jpg" alt="Clint Pracher" width="448" height="448">
+    </div>
+  </div>
+  <div class="page-hero__proof">
+    {% include proof-strip.html %}
+  </div>
+</div>
 
 ---
 
@@ -26,9 +35,9 @@ The goal is not more output. It is better judgment at scale.
 
 ---
 
-## On the ground, not just the platform
-
 <div class="on-the-ground">
+
+<h2>On the ground, not just the platform</h2>
 
 <p>I build for real operations, not abstract roadmaps. The best product decisions come from standing with the people who run the work and the customers who depend on it: hearing what actually breaks, what they need next, and what tradeoffs they live with every day.</p>
 

@@ -6,15 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{% if page.intent %}{{ page.intent }}{% else %}{{ site.description }}{% endif %}">
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="{{ '/assets/css/imperious/styles.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/chrome-compat.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/cpo-deck.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/footer-icons.css' | relative_url }}">
+  {% if page.url contains '/prompt-library/' %}
+  <link rel="stylesheet" href="{{ '/assets/css/prompt-portfolio.css' | relative_url }}">
+  {% endif %}
+  {% if page.slug %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+  {% endif %}
 </head>
-<body class="portfolio-body page-sectioned page-{{ page.title | downcase | replace: ' ', '-' }}">
+<body class="portfolio-body page-sectioned page-{% if page.page_class %}{{ page.page_class }}{% else %}{{ page.title | downcase | replace: ' ', '-' }}{% endif %}{% if page.url contains '/prompt-library/' %} page-prompt-library{% endif %}">
   <a class="skip-link" href="#main-content">Skip to content</a>
   {% include site-header.html %}
   {% assign sections = content | split: '<hr />' %}
@@ -26,6 +32,13 @@
     {% endfor %}
   </main>
   {% include site-footer.html %}
+  {% if page.url contains '/prompt-library/' %}
+  <script src="{{ '/assets/js/prompt-portfolio.js' | relative_url }}" defer></script>
+  {% endif %}
+  {% if page.slug %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+  {% endif %}
   <script src="{{ '/assets/js/portfolio.js' | relative_url }}" defer></script>
 </body>
 </html>

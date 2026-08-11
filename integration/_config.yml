@@ -16,7 +16,7 @@ defaults:
       path: "about"
     values:
       layout: sectioned
-      title: About
+      title: About Me
   - scope:
       path: "work/README.md"
     values:
@@ -27,6 +27,10 @@ defaults:
     values:
       layout: sectioned
       title: Skills
+  - scope:
+      path: "prompt-library"
+    values:
+      layout: sectioned
   - scope:
       path: "thought-leadership/README.md"
     values:
@@ -57,6 +61,7 @@ exclude:
   - design-kit
   - integration
   - content
+  - prompt_library
   - Gemfile
   - Gemfile.lock
   - vendor

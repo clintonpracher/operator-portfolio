@@ -29,6 +29,17 @@ audiences:
       paragraphs:
         - Product leadership at portfolio scale across platform, data, and AI. I own decision infrastructure, investment prioritization, and the operating models that make roadmaps defensible.
         - The tools are not the point. Fluency across the stack is what lets me recommend and govern the right architecture for the business, not vendor defaults.
+    proof_footer: Platform · Data · AI across Dentsu · Merkle · Business Insider · V Shred
+    proof_metrics:
+      - value: "$600M"
+        label: Investment governed
+        icon: data-layers
+      - value: "$8M"
+        label: Portfolio budget
+        icon: budget
+      - value: "13"
+        label: AI & data products
+        icon: portfolio
     capabilities_heading: Platform and data fluency
     capabilities_intro: Judgment areas where I set direction, investment, and governance across complex global portfolios.
     show_agent_os: false
@@ -74,6 +85,17 @@ audiences:
       paragraphs:
         - My skills span industries with a focus on data and AI. I own the full experience from integrations through UX and serve every stakeholder in the chain.
         - These are representative capabilities, not an exhaustive list. I am a full-stack product management professional who can spec, partner, and ship with engineering and data teams.
+    proof_footer: Full-stack Product Management · Data · Platform · AI
+    proof_metrics:
+      - value: "13"
+        label: AI & data products
+        icon: portfolio
+      - value: "100K"
+        label: Downloads in 24h
+        icon: growth
+      - value: "95%"
+        label: Budget consolidated
+        icon: data-layers
     capabilities_heading: Technical capabilities
     capabilities_intro: Hands-on fluency across data, AI, cloud, and delivery systems I use to spec and ship with engineering partners.
     show_agent_os: false
@@ -119,6 +141,8 @@ audiences:
       paragraphs:
         - "I run a live operator control plane: skills, automations, scheduled tasks, and registry discipline with one Active Writer per task across models and tools."
         - "The same decision architecture I use in enterprise product leadership runs at operator scale: explicit ownership, measurable proof, and systems that stay current through certification rhythm."
+    proof_footer: Multi-model operator control plane · single-writer governance
+    proof_use_stats: true
     capabilities_heading: Operator systems and AI-native practice
     capabilities_intro: How I design, govern, and run agentic workflows as an operating layer for product delivery, not a pile of disconnected tools.
     show_agent_os: true
