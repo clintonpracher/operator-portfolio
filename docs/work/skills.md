@@ -4,15 +4,9 @@ title: Skills
 permalink: /work/skills/
 ---
 
-<div class="page-hero page-hero--with-proof page-hero--skills">
-  <div class="page-hero__main">
-    {% include skills-hero.html %}
-    {% include skills-audience-toggle.html %}
-  </div>
-  <div class="page-hero__proof">
-    {% include skills-hero-proof.html %}
-  </div>
-</div>
+{% include skills-hero.html %}
+
+{% include skills-audience-toggle.html %}
 
 ---
 

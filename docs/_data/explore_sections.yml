@@ -1,5 +1,5 @@
 items:
-  - title: About Me
+  - title: About
     url: /about/
     icon: leadership
     description: The person and operating philosophy behind the work.
@@ -11,10 +11,6 @@ items:
     url: /work/skills/
     icon: platform
     description: Launches, technical capabilities, and Agent OS proof.
-  - title: Prompt Library
-    url: /prompt-library/
-    icon: architecture
-    description: Enterprise product prompts as typed specs for decision-ready AI workflows.
   - title: Thought Leadership
     url: /thought-leadership/
     icon: architecture
