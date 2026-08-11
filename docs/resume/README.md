@@ -15,4 +15,6 @@ This is the public resume for Clinton J. Pracher, a product and platform executi
 - [PDF resume](clinton-pracher-platform-data-ai-resume.pdf)
 - [Web resume](resume.md) (Career Profile)
 
-The PDF preserves the existing resume design. The web resume uses deck-tested copy and layout optimized for recruiters and search.
+The PDF is a **static approved Word export**. The Download button serves this file directly; publish does not regenerate it. Replace the `.pdf` in this folder (and mirror under `docs/product/2026-08/portfolio/resume/`) when Clint supplies a new export, then run `./scripts/publish-portfolio.sh`.
+
+The web resume uses deck-tested copy and layout optimized for recruiters and search.
