@@ -30,7 +30,8 @@ operator:
   - title: Automation Fleet
     url: /work/proof/automation-fleet/
     icon: automation
-    description: Runs 28+ governed scheduled automations with explicit task ownership, so overnight work produces morning signal without duplicate writes.
+    stats_metric: cursor_automations
+    description: governed scheduled automations with explicit task ownership, so overnight work produces morning signal without duplicate writes.
   - title: Governance Audit
     url: /work/proof/governance-audit/
     icon: audit

@@ -7,7 +7,13 @@
         {% include deck-card-linked-title.html icon=item.icon title=item.title %}
       </div>
       <div class="deck-card__row deck-card__row--meta">
-        <p class="deck-card__body">{{ item.description }}</p>
+        <p class="deck-card__body">
+          {%- if item.stats_metric -%}
+          Runs {{ site.data.stats[item.stats_metric] }} {{ item.description }}
+          {%- else -%}
+          {{ item.description }}
+          {%- endif -%}
+        </p>
       </div>
     </a>
   </li>

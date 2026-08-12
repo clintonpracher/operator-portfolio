@@ -6,7 +6,7 @@ permalink: /work/proof/automation-fleet/
 
 # Automation Fleet
 
-Twenty-eight Cursor automations with Active Writer governance and fleet-health self-healing. Six waves of cutover moved scheduled work from connector islands onto one governed execution host without duplicate writes.
+{{ site.data.stats.cursor_automations }} Cursor automations with Active Writer governance and fleet-health self-healing. Six waves of cutover moved scheduled work from connector islands onto one governed execution host without duplicate writes.
 
 **Proof points:** Control Plane, Operating Model  
 **Best for:** Platform ops, AI infrastructure, product operations

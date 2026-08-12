@@ -12,7 +12,13 @@
             {% include deck-card-linked-title.html icon=card.icon title=card.title %}
           </div>
           <div class="deck-card__row deck-card__row--meta">
-            <p class="deck-card__body">{{ card.description }}</p>
+            <p class="deck-card__body">
+              {%- if card.stats_metric -%}
+              Runs {{ site.data.stats[card.stats_metric] }} {{ card.description }}
+              {%- else -%}
+              {{ card.description }}
+              {%- endif -%}
+            </p>
           </div>
         </a>
       </li>
@@ -30,7 +36,13 @@
             {% include deck-card-linked-title.html icon=card.icon title=card.title %}
           </div>
           <div class="deck-card__row deck-card__row--meta">
-            <p class="deck-card__body">{{ card.description }}</p>
+            <p class="deck-card__body">
+              {%- if card.stats_metric -%}
+              Runs {{ site.data.stats[card.stats_metric] }} {{ card.description }}
+              {%- else -%}
+              {{ card.description }}
+              {%- endif -%}
+            </p>
           </div>
         </a>
       </li>

@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: "Governed Automation at Fleet Scale"
-subtitle: "Twenty-eight scheduled jobs, one Active Writer, and a fleet that reports its own health"
+subtitle: "Governed scheduled jobs, one Active Writer, and a fleet that reports its own health"
 proof_points:
   - Control Plane
   - Operating Model
@@ -15,7 +15,7 @@ at_a_glance:
 
 ## The ops failure mode nobody schedules for
 
-Running twenty-eight scheduled automations creates a classic failure mode: something stops running, nobody notices until the morning brief is stale or a CRM sync drifts.
+Running {{ site.data.stats.cursor_automations }} scheduled automations creates a classic failure mode: something stops running, nobody notices until the morning brief is stale or a CRM sync drifts.
 
 I needed a fleet that could self-report health, admit gaps, and escalate only what requires human judgment.
 
@@ -29,7 +29,7 @@ Scheduled work without ownership is indistinguishable from scheduled work that f
 
 ## What got built
 
-**Twenty-eight Cursor automations** across six waves: CRM sync, career pipeline, governance chain, fleet health, content radar, morning brief.
+**{{ site.data.stats.cursor_automations }} Cursor automations** across six waves: CRM sync, career pipeline, governance chain, fleet health, content radar, morning brief.
 
 **Active Writer governance.** Each job registered. Non-owners skip with `SKIPPED_NOT_OWNER`. No parallel heroic runs.
 

@@ -51,7 +51,13 @@
           {% include deck-card-static-title.html icon=item.icon title=item.title %}
         </div>
         <div class="deck-card__row deck-card__row--meta">
-          <p class="deck-card__body">{{ item.judgment }}</p>
+          <p class="deck-card__body">
+            {%- if item.stats_metric -%}
+            Runs {{ site.data.stats[item.stats_metric] }} {{ item.judgment }}
+            {%- else -%}
+            {{ item.judgment }}
+            {%- endif -%}
+          </p>
           {% if item.highlights %}
           <ul class="skills-deck__bullets">
             {% for highlight in item.highlights %}

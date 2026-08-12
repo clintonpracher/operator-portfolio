@@ -9,7 +9,14 @@
       </h3>
     </div>
     <div class="deck-card__row deck-card__row--meta">
-      <p class="deck-card__body">{{ card.body }}</p>
+      <p class="deck-card__body">
+        {%- if card.use_live_stats -%}
+        Built and operate an AI-enabled control plane with {{ site.data.stats.skills }} specialized skills and {{ site.data.stats.cursor_automations }} governed automations.
+        {{ card.body }}
+        {%- else -%}
+        {{ card.body }}
+        {%- endif -%}
+      </p>
     </div>
   </li>
   {% endfor %}

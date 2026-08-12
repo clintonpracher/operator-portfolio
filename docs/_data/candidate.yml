@@ -7,6 +7,41 @@ positioning: >-
   organizations. A transformation operator known for building scalable operating layers that
   bridge the gap between digital strategy and physical execution.
 location: Las Vegas, NV · Remote US
+proof_strip:
+  employers:
+    - Dentsu
+    - Merkle
+    - Business Insider
+    - V Shred
+  metrics:
+    - value: "$600M"
+      label: Investment governed
+      icon: data-layers
+    - value: "$8M"
+      label: Portfolio budget
+      icon: budget
+    - value: "13"
+      label: AI & data products
+      icon: portfolio
+    - value: "100+"
+      label: Global markets
+      icon: growth
+proof_strip_compact:
+  metrics:
+    - value: "$600M"
+      label: Investment governed
+      icon: data-layers
+    - value: "$8M"
+      label: Portfolio budget
+      icon: budget
+    - value: "13"
+      label: AI & data products
+      icon: portfolio
+  employers:
+    - Dentsu
+    - Merkle
+    - Business Insider
+    - V Shred
 metrics:
   - value: "13"
     label: AI & Data Products Portfolio

@@ -8,7 +8,8 @@ items:
     url: /work/case-studies/operator/automation-fleet/
     icon: automation
     meta: Scheduled execution at scale
-    description: Runs 28+ governed scheduled automations with explicit task ownership, so overnight work produces morning signal without duplicate writes.
+    stats_metric: cursor_automations
+    description: governed scheduled automations with explicit task ownership, so overnight work produces morning signal without duplicate writes.
   - title: Governance Audit Cycle
     url: /work/case-studies/operator/governance-audit/
     icon: audit

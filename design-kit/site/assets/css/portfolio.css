@@ -738,11 +738,12 @@ a {
   padding: 0.85rem 1rem;
 }
 
-.page-about .page-section:nth-child(2) .page-section__inner,
-.page-about .page-section:nth-child(3) .page-section__inner,
-.page-about .page-section:nth-child(4) .page-section__inner,
-.page-about .page-section:nth-child(5) .page-section__inner {
+.page-about .page-section:not(:first-child) .page-section__inner {
   width: min(100%, var(--portfolio-reading));
+}
+
+.page-about .page-section:has(.about-selected-results) .page-section__inner {
+  width: min(100%, var(--portfolio-container));
 }
 
 .page-about .page-section:first-child .page-section__inner {

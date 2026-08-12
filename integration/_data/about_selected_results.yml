@@ -1,0 +1,23 @@
+heading: Same patterns. Different industries.
+panel_subtitle: What the same success patterns produced in different operating contexts.
+pattern: I've applied the same success patterns in different domains to produce measurable results across industries and operating contexts.
+outcomes_summary: View outcomes by domain
+categories:
+  - title: Marketing & Advertising
+    outcomes:
+      - "$600M investment governed"
+      - "13 AI products for 100+ markets"
+      - "~40% lower decision latency"
+  - title: Retail & E-commerce
+    outcomes:
+      - "331% year-over-year organic revenue increase"
+      - "29% year-over-year organic traffic increase"
+      - "$60M incremental revenue increase in 12 months"
+  - title: Customer & Subscription
+    outcomes:
+      - "45% customer churn reduction"
+      - "12% annual growth for 3 consecutive years"
+  - title: Teams & Talent
+    outcomes:
+      - "Built and managed a 5-member product management team"
+      - "Coached 4 Business Analysts to Senior Product Manager"

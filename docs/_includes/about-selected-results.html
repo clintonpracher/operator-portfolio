@@ -1,0 +1,61 @@
+{% assign block = site.data.about_selected_results %}
+<section class="about-selected-results" aria-label="{{ block.heading }}">
+  <h2 class="about-selected-results__heading">{{ block.heading }}</h2>
+
+  <div class="about-selected-results__panel">
+    {% if block.panel_eyebrow %}
+    <p class="about-selected-results__panel-eyebrow">{{ block.panel_eyebrow }}</p>
+    {% endif %}
+    {% if block.panel_subtitle %}
+    <p class="about-selected-results__panel-subtitle">{{ block.panel_subtitle }}</p>
+    {% endif %}
+
+    <ul class="about-selected-results__row">
+      {% for item in block.categories %}
+      <li class="about-selected-results__card">
+        <p class="about-selected-results__category">{{ item.title }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="about-selected-results__stem" aria-hidden="true"></div>
+
+    <aside class="about-selected-results__pattern" aria-label="Pattern">
+      <p class="about-selected-results__pattern-body">{{ block.pattern }}</p>
+    </aside>
+
+    <details class="about-selected-results__outcomes-wrap" open>
+      <summary class="about-selected-results__outcomes-summary">
+        {{ block.outcomes_summary | default: "View outcomes by domain" }}
+      </summary>
+      <div class="about-selected-results__details" aria-label="Selected result outcomes">
+        {% for item in block.categories %}
+        <div class="about-selected-results__detail">
+          <p class="about-selected-results__detail-title">{{ item.title }}</p>
+          {% if item.outcomes %}
+          <ul class="about-selected-results__outcomes">
+            {% for outcome in item.outcomes %}
+            <li>{{ outcome }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </details>
+    <script>
+      (function () {
+        var wrap = document.currentScript && document.currentScript.previousElementSibling;
+        if (!wrap || !wrap.classList.contains("about-selected-results__outcomes-wrap")) return;
+        var mq = window.matchMedia("(min-width: 48.01rem)");
+        function syncOpen() {
+          if (mq.matches) wrap.setAttribute("open", "");
+          else wrap.removeAttribute("open");
+        }
+        syncOpen();
+        if (typeof mq.addEventListener === "function") mq.addEventListener("change", syncOpen);
+        else if (typeof mq.addListener === "function") mq.addListener(syncOpen);
+      })();
+    </script>
+  </div>
+</section>
