@@ -11,7 +11,7 @@ at_a_glance:
   - Role Radar + Job Search Tracker admission templates (template_id on every create)
   - Full pipeline: outreach log, contacts, rubric baseline through debrief
   - Six-application weekly cap with OS-Driven cohort tracking
-  - Nine integrated skills in one Job Search OS
+  - "@stats:job_search_os_skills integrated skills in one Job Search OS"
 ---
 
 ## Career search fails the same way product orgs fail
@@ -33,7 +33,7 @@ The constraint was not effort. It was **ungoverned intake and broken handoffs**.
 - **Admission templates**: Role Radar and Job Search Tracker rows require `template_id` + read-back verify; tracker template carries OS-Driven apply checklist
 - **Full apply pipeline**: tracker → Pre-Interview Rubric baseline → application-outreach (Outreach Log + Contacts) → interview-debrief post-round rows
 - **Six-application weekly cap** with OS-Driven Net-New / Re-Apply cohort
-- **Nine integrated skills** plus daily sweep (Notion + Apify; Gmail drafts retired)
+- **{{ site.data.stats.job_search_os_skills }} integrated skills** plus daily sweep (Notion + Apify; Gmail drafts retired)
 
 **Overnight automation** at 6 AM runs lane-aware discovery. Clint dispositions Role Radar at desk; brief surfaces queue with lane + resume fit.
 

@@ -31,7 +31,21 @@
         {% if page.at_a_glance %}
         <ul class="cs-glance">
           {% for item in page.at_a_glance %}
-          <li>{{ item }}</li>
+          <li>
+            {%- if item contains '@stats:' -%}
+              {%- assign stat_rest = item | split: '@stats:' | last | strip -%}
+              {%- assign stat_parts = stat_rest | split: ' ' -%}
+              {%- assign stat_key = stat_parts | first -%}
+              {%- capture stat_label -%}
+                {%- for part in stat_parts offset: 1 -%}
+                  {{ part }}{% unless forloop.last %} {% endunless %}
+                {%- endfor -%}
+              {%- endcapture -%}
+              {{ site.data.stats[stat_key] }} {{ stat_label | strip }}
+            {%- else -%}
+              {{ item }}
+            {%- endif -%}
+          </li>
           {% endfor %}
         </ul>
         {% endif %}

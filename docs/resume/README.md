@@ -12,9 +12,20 @@ This is the public resume for Clinton J. Pracher, a product and platform executi
 
 ## Formats
 
-- [PDF resume](clinton-pracher-platform-data-ai-resume.pdf)
-- [Web resume](resume.md) (Career Profile)
+| Surface | URL / file | Fleet numbers |
+|---------|------------|---------------|
+| **Web resume** | [resume.md](resume.md) → `/resume/resume/` | **Live** at Jekyll build via `site.data.stats` (skills, automations, scheduled tasks) |
+| **PDF download** | [clinton-pracher-platform-data-ai-resume.pdf](clinton-pracher-platform-data-ai-resume.pdf) | **Static** approved Word export until Clint replaces the file |
+| **Plain text** | `clinton-pracher-platform-data-ai-resume.txt` | **Static** companion to the PDF export (not the web resume) |
 
-The PDF is a **static approved Word export**. The Download button serves this file directly; publish does not regenerate it. Replace the `.pdf` in this folder (and mirror under `docs/product/2026-08/portfolio/resume/`) when Clint supplies a new export, then run `./scripts/publish-portfolio.sh`.
+The **Download my resume** button on the web resume serves the **PDF only**. Publish does not regenerate the PDF or `.txt`.
 
-The web resume uses deck-tested copy and layout optimized for recruiters and search.
+Replace the PDF (and optional `.txt` companion) in this folder when Clint supplies a new export, then run `./scripts/publish-portfolio.sh`.
+
+## Live stats on the web resume
+
+Operator Control Plane proof on the web resume uses `leadership-proof.html` with `use_live_stats: true`. Counts come from `scripts/portfolio_stats.py` on every publish (same source as the home page and case studies).
+
+## Private source
+
+Resume-advisor skill and `docs/product/YYYY-MM/portfolio/resume/` hold the private master archive.
