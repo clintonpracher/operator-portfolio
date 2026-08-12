@@ -9,7 +9,7 @@ permalink: /prompt-library/
     <div class="page-hero__copy">
       <p class="page-eyebrow">Enterprise product prompts</p>
       <h1>Prompt Library</h1>
-      <p>Enterprise product prompts I design for decision-ready AI workflows. Each spec is structured like product code: typed inputs, explicit constraints, and a defined output schema.</p>
+      <p>Enterprise product prompts I design for decision-ready AI workflows. Each specification is structured like product code: typed inputs, explicit constraints, and a defined output schema.</p>
     </div>
     <div class="page-hero__visual" aria-hidden="true">
       {% include hero-visual-prompt-library.html %}
@@ -22,6 +22,6 @@ permalink: /prompt-library/
 
 ---
 
-## Prompt Specs
+## Prompt Specifications
 
 {% include prompt-catalog-grid.html %}

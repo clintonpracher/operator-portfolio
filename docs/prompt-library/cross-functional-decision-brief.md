@@ -2,14 +2,14 @@
 layout: sectioned
 title: Cross-Functional Decision Brief
 slug: cross-functional-decision-brief
-category: Decision Architecture
+category: Decision Infrastructure
 intent: "Convert ambiguous stakeholder input into a decision-ready brief with explicit tradeoffs and surfaced dissent."
 permalink: /prompt-library/cross-functional-decision-brief/
 ---
 
 <div class="page-hero">
   <div class="page-hero__copy">
-    {% include prompt-library-category-pill.html label="Decision Architecture" variant="hero" %}
+    {% include prompt-library-category-pill.html label="Decision Infrastructure" variant="hero" %}
     <h1>Cross-Functional Decision Brief</h1>
     <p>Convert ambiguous stakeholder input into a decision-ready brief with explicit tradeoffs and surfaced dissent.</p>
     <p class="deck-followup"><a href="/prompt-library/">← Prompt Library</a></p>

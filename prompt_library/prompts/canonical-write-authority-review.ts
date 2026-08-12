@@ -1,7 +1,7 @@
 /**
  * Enterprise Product Prompt - Canonical Write Authority Review
  * @author Clinton Pracher
- * Level: Director+ Product | Domain: Decision Architecture
+ * Level: Director+ Product | Domain: Decision Infrastructure
  */
 
 export interface EnterprisePromptSpec {

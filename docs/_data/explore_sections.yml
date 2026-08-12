@@ -14,7 +14,7 @@ items:
   - title: Prompt Library
     url: /prompt-library/
     icon: architecture
-    description: Enterprise product prompts as typed specs for decision-ready AI workflows.
+    description: Enterprise product prompts as typed specifications for decision-ready AI workflows.
   - title: Thought Leadership
     url: /thought-leadership/
     icon: architecture

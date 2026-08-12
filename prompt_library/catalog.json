@@ -4,7 +4,7 @@
     {
       "slug": "cross-functional-decision-brief",
       "title": "Cross-Functional Decision Brief",
-      "category": "Decision Architecture",
+      "category": "Decision Infrastructure",
       "intent": "Convert ambiguous stakeholder input into a decision-ready brief with explicit tradeoffs and surfaced dissent.",
       "author": "Clinton Pracher",
       "reviewed_date": "2026-08-11",
@@ -58,11 +58,11 @@
     {
       "slug": "canonical-write-authority-review",
       "title": "Canonical Write Authority Review",
-      "category": "Decision Architecture",
+      "category": "Decision Infrastructure",
       "intent": "Name a single canonical writer per task before agents or automations mutate shared records, with collision detection and audit separation.",
       "author": "Clinton Pracher",
       "reviewed_date": "2026-08-12",
-      "status": "published"
+      "status": "draft"
     }
   ]
 }
