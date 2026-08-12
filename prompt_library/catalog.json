@@ -54,6 +54,15 @@
       "author": "Clinton Pracher",
       "reviewed_date": "2026-08-11",
       "status": "published"
+    },
+    {
+      "slug": "canonical-write-authority-review",
+      "title": "Canonical Write Authority Review",
+      "category": "Decision Architecture",
+      "intent": "Name a single canonical writer per task before agents or automations mutate shared records, with collision detection and audit separation.",
+      "author": "Clinton Pracher",
+      "reviewed_date": "2026-08-12",
+      "status": "published"
     }
   ]
 }

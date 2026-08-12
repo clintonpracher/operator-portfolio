@@ -6,7 +6,7 @@ permalink: /work/proof/job-search-os/
 
 # Job Search OS
 
-A governed decision system applied to career search: scoring rubric, Role Radar intake, LinkedIn-first discovery, and a weekly application cap. The same operating logic I use at enterprise scale, run on my own pipeline.
+A governed decision system applied to career search: selectable lanes, admission templates on Role Radar and Job Search Tracker, full apply-to-interview pipeline (outreach + rubric), and a six-application weekly cap.
 
 **Proof points:** Decision Systems, Control Plane  
 **Best for:** Product ops, transformation, platform governance roles

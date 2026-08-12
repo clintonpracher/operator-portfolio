@@ -117,6 +117,28 @@
         "escalationTriggers": "Signals that force re-prioritization",
         "recommendation": "Funded set, deferred set, and alignment sentence"
       }
+    },
+    {
+      "slug": "canonical-write-authority-review",
+      "title": "Canonical Write Authority Review",
+      "category": "Decision Architecture",
+      "intent": "Name a single canonical writer per task before agents or automations mutate shared records, with collision detection and audit separation.",
+      "author": "Clinton Pracher",
+      "reviewed_date": "2026-08-12",
+      "preview": "/**\n * Enterprise Product Prompt - Canonical Write Authority Review\n * @author Clinton Pracher\n * Level: Director+ Product | Domain: Decision Architecture\n */\n\nexport interface EnterprisePromptSpec {\n  id: string;",
+      "source": "/**\n * Enterprise Product Prompt - Canonical Write Authority Review\n * @author Clinton Pracher\n * Level: Director+ Product | Domain: Decision Architecture\n */\n\nexport interface EnterprisePromptSpec {\n  id: string;\n  title: string;\n  intent: string;\n  audience: string;\n  inputs: string[];\n  constraints: string[];\n  system: string;\n  outputSchema: Record<string, string>;\n}\n\nexport const canonicalWriteAuthorityReview: EnterprisePromptSpec = {\n  id: \"canonical-write-authority-review\",\n  title: \"Canonical Write Authority Review\",\n  intent:\n    \"Name a single canonical writer per task before agents or automations mutate shared records, with collision detection and audit separation\",\n  audience:\n    \"Director+ product and platform leaders standing up AI agents, scheduled automations, or multi-runtime workflows against a shared system of record\",\n  inputs: [\n    \"Task or workflow: what runs, on what cadence, and what business outcome it owns\",\n    \"System of record: which database, ledger, or canonical store may be mutated\",\n    \"Current writers: humans, agents, scripts, or integrations that already touch the same records\",\n    \"Mutation scope: create, update, delete, or side effects in downstream systems\",\n    \"Audit requirement: who must reconstruct what happened and on what timeline\",\n  ],\n  constraints: [\n    \"Exactly one canonical writer per task. Parallel writers on the same record class is a defect, not redundancy\",\n    \"Audit and visualization runtimes must not co-write the records they verify\",\n    \"Human-only surfaces stay human-only. Name them explicitly\",\n    \"If ownership is unclear, verdict is HOLD until a named writer and disable path exist\",\n    \"Do not conflate execution host with write authority. Where it runs and who may mutate are separate decisions\",\n  ],\n  system: `You are a senior product operator reviewing write authority before a new agent, automation, or runtime is allowed to mutate shared business records.\n\nMore models and more schedules are not the risk. Unclear ownership is. Two helpful systems updating the same canonical row is how truth drifts without anyone noticing.\n\nReview structure:\n1. Task boundary: one sentence on what this workflow owns and what it must never own.\n2. System of record: which store is canonical for this task. Name the record types at risk.\n3. Writer inventory: every current writer on those records (human, agent, integration). Flag collisions.\n4. Authority assignment: name the single canonical writer for this task. If another runtime must keep running, specify read-only or propose-only mode.\n5. Blast radius: what breaks if this writer fails, double-writes, or runs while disabled. Include rollback or skip behavior.\n6. Audit separation: which runtime verifies outcomes without mutating the same records.\n7. Admission bar: what must be true at create time before a new row enters the system of record (required fields, evidence contract, idempotency).\n8. Verdict: AUTHORIZE, AUTHORIZE WITH GUARDRAILS, or HOLD. HOLD requires the minimum bar to re-run this review.`,\n  outputSchema: {\n    taskBoundary: \"What the workflow owns and must never own\",\n    systemOfRecord: \"Canonical store and record types at risk\",\n    writerInventory: \"Current writers and collision flags\",\n    authorityAssignment: \"Single canonical writer; read-only roles for others\",\n    blastRadius: \"Failure modes, double-write risk, rollback or skip path\",\n    auditSeparation: \"Verifier runtime and what it may not mutate\",\n    admissionBar: \"Required fields and evidence before records are created\",\n    verdict: \"AUTHORIZE | AUTHORIZE WITH GUARDRAILS | HOLD\",\n    minimumBar: \"Required when verdict is HOLD\",\n    guardrails: \"Required when verdict includes guardrails\",\n  },\n};\n",
+      "output_schema": {
+        "taskBoundary": "What the workflow owns and must never own",
+        "systemOfRecord": "Canonical store and record types at risk",
+        "writerInventory": "Current writers and collision flags",
+        "authorityAssignment": "Single canonical writer; read-only roles for others",
+        "blastRadius": "Failure modes, double-write risk, rollback or skip path",
+        "auditSeparation": "Verifier runtime and what it may not mutate",
+        "admissionBar": "Required fields and evidence before records are created",
+        "verdict": "AUTHORIZE | AUTHORIZE WITH GUARDRAILS | HOLD",
+        "minimumBar": "Required when verdict is HOLD",
+        "guardrails": "Required when verdict includes guardrails"
+      }
     }
   ]
 }
