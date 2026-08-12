@@ -14,7 +14,7 @@ This is the public resume for Clinton J. Pracher, a product and platform executi
 
 | Surface | URL / file | Fleet numbers |
 |---------|------------|---------------|
-| **Web resume** | [resume.md](resume.md) → `/resume/resume/` | **Live** at Jekyll build via `site.data.stats` (skills, automations, scheduled tasks) |
+| **Web resume** | [resume.md](resume.md) → `/resume/resume/` | **Live** at Jekyll build via `site.data.stats` (skills, automations, scheduled tasks). Header contact row is four icon links: location (Las Vegas, NV maps search), email, LinkedIn, website. |
 | **PDF download** | [clinton-pracher-platform-data-ai-resume.pdf](clinton-pracher-platform-data-ai-resume.pdf) | **Static** approved Word export until Clint replaces the file |
 | **Plain text** | `clinton-pracher-platform-data-ai-resume.txt` | **Static** companion to the PDF export (not the web resume) |
 

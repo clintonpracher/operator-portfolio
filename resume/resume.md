@@ -11,7 +11,6 @@ permalink: /resume/resume/
 <p class="resume-tagline"><strong>PRODUCT &amp; PLATFORM EXECUTIVE</strong><br><strong>DATA, AI &amp; ENTERPRISE TRANSFORMATION</strong></p>
 
 <div class="resume-contact-row">
-  <span class="resume-contact-row__location">{{ site.data.candidate.location }}</span>
   {% include resume-header-icons.html %}
 </div>
 
