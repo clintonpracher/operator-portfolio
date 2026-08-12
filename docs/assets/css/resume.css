@@ -63,7 +63,29 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 0.65rem 0.85rem;
+  margin: 0 0 0.35rem;
   text-align: center;
+}
+
+.resume-contact-row__location {
+  color: var(--resume-copy-muted);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.resume-header__icons .social-icons__list {
+  gap: 0.5rem;
+}
+
+.resume-header__icons .social-icons__link {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.resume-header__icons .social-icons__icon {
+  width: 1.1rem;
+  height: 1.1rem;
 }
 
 .resume-header-block .resume-header__title {
@@ -228,7 +250,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.75rem 1rem;
-  margin-top: 1.25rem;
+  margin-top: 0.85rem;
 }
 
 .resume-connect__icons {

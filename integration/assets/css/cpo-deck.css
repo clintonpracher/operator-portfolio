@@ -1030,14 +1030,14 @@ a.deck-card.proof-card:hover {
 .resume-tagline {
   font-size: 0.95rem;
   letter-spacing: 0.06em;
-  margin: 0.5rem 0 1rem;
+  margin: 0.35rem 0 0.65rem;
 }
 
 .resume-contact-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.35rem 0.75rem;
+  gap: 0.65rem 0.85rem;
   align-items: center;
   font-size: 0.95rem;
 }
