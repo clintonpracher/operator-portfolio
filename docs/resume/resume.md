@@ -8,7 +8,7 @@ permalink: /resume/resume/
 
 <h1 class="resume-header__title">Clinton J. Pracher</h1>
 
-<p class="resume-tagline"><strong>DIRECTOR · ARTIFICIAL INTELLIGENCE PLATFORM</strong><br><strong>AGENTIC SYSTEMS · ENTERPRISE READINESS</strong></p>
+<p class="resume-tagline"><strong>DIRECTOR · AI/ML PLATFORMS</strong><br><strong>AGENTIC SYSTEMS · ENTERPRISE READINESS</strong></p>
 
 <div class="resume-contact-row">
   {% include resume-header-icons.html %}

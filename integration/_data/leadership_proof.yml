@@ -25,6 +25,6 @@ items:
     icon: control-plane
     use_live_stats: true
     body: >-
-      Agentic artificial intelligence operating system with explicit task ownership, audit trails,
+      Agentic orchestration and AI control-plane operating system with explicit task ownership, audit trails,
       evaluation thresholds, and human approval gates on production workflows. The portfolio and
       supporting case studies show the live control plane in use.
