@@ -15,6 +15,7 @@ Source of truth for the public **Prompt Library** on clintonpracher.com (`/promp
 | Path | Role |
 |------|------|
 | `catalog.json` | Metadata, author attestation, publish status |
+| `index.md` | Landing page copy for `/prompt-library/` (copied to `docs/prompt-library/` at build) |
 | `prompts/<slug>.ts` | TypeScript prompt spec (displayed as code on site) |
 
 ## Publish gate
