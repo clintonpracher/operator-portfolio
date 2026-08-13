@@ -1,37 +1,37 @@
 CLINTON J. PRACHER
-PRODUCT & PLATFORM EXECUTIVE | DATA & AI | ENTERPRISE TRANSFORMATION
+DIRECTOR · ARTIFICIAL INTELLIGENCE PLATFORM · AGENTIC SYSTEMS · ENTERPRISE READINESS
 Las Vegas, NV 89141 | 702-772-0242 | clintonpracher@gmail.com | linkedin.com/in/clinton-pracher | clintonpracher.com
 
 SUMMARY
-Product and platform executive with 12+ years leading complex portfolios across enterprise platforms, data products, AI capabilities, and digital experiences. Owned a portfolio of 13 AI and data products across 100+ global markets, leading 60+ engineers, analysts, and program leads and managing $8M in product investment tied to systems governing $600M in annual spend.
-Builds product organizations as well as products. Four team members coached from business analyst level are now Senior Product Managers at strong companies. At V Shred, built a team of five product managers from the ground up after promotion to Head of Product Management within one year.
-Builds the systems underneath the product: portfolio strategy, KPI frameworks, decision infrastructure, operating models, and governance that connect customer needs and technical investment to measurable outcomes. Results include $60M+ in incremental revenue, 40% faster investment decisions, subscription churn reduced from 75% to under 30%, and global platform scale.
-Most effective in FIX-SCALE environments where platform complexity, fragmented data, unclear decision rights, or AI adoption has outgrown the operating model. Diagnoses the constraint, rebuilds the system, and leaves teams with infrastructure they can run without constant reinvention.
+Director-level platform and artificial intelligence product leader with 12+ years owning complex portfolios across artificial intelligence platforms, data products, and enterprise environments. Owned 13 artificial intelligence and data products across 100+ global markets, leading 60+ engineers, analysts, and program leads with an $8M investment envelope tied to systems governing $600M in annual spend.
+Builds agentic operating systems and machine learning / artificial intelligence platform capabilities that enterprises can trust: ownership models, evaluation and trust thresholds, and human approval gates on production artificial intelligence workflows. In practice today: an Operator Control Plane with 65 skills and 28 governed automations running as a live control plane, not a slide deck.
+Ships enterprise readiness into the product lifecycle: compliance, privacy, artificial intelligence ethics, decision rights, and security-review partnership so platform adoption does not wait on one-off exceptions. Results include 40% faster investment decisions, $60M+ incremental revenue impact, and global platform scale.
+Most effective when artificial intelligence adoption, platform complexity, or unclear ownership has outgrown the operating model. Diagnoses the constraint, rebuilds the control plane, and leaves teams with infrastructure they can run without constant reinvention.
 
 CORE FOCUS AREAS
-- Enterprise Platform & Portfolio Strategy
-- Data Products & Decision Infrastructure
-- AI Product Strategy & Governance
-- Platform Modernization & Integration
-- KPI Frameworks & Operating Models
-- Product Organization & PM Development
-- Executive & Cross-Functional Alignment
-- Budget Ownership & Investment Prioritization
+- Agentic Architecture and Artificial Intelligence Control Planes
+- Machine Learning and Artificial Intelligence Platform Product
+- Enterprise Readiness and Compliance-Ready Capabilities
+- Data Platforms and Decision Infrastructure
+- Platform Governance, Audit Trails, and Evaluation Thresholds
+- Cross-Functional Control Plane Design
+- Product Organization and Product Manager Development
+- Budget Ownership and Investment Prioritization
 
 EXPERIENCE
 FOUNDER & PRINCIPAL ADVISOR | 7/2025 - PRESENT
 CP PRODUCT ADVISORY
-Founded an independent product and AI advisory practice focused on the decision systems, operating models, and product infrastructure required to scale complex organizations
+Founded an independent product and artificial intelligence advisory practice focused on decision systems, operating models, agentic architecture, and enterprise-ready platform infrastructure for complex organizations
 In an engagement with a 60-person engineering organization, reduced requirements clarification cycles from two weeks to two days, eliminated engineering rework from 40% to zero, and redesigned the release model into a business-facing value signal within 30 days
-Built and operate an AI-enabled Operator Control Plane with 65 specialized skills and 28 governed automations, using explicit task ownership and decision controls to run the practice at solo-operator scale
+Built and operate an agentic Operator Control Plane with 65 specialized skills and 28 governed automations, using Claude and Cursor with explicit task ownership, audit trails, and human approval gates on production artificial intelligence workflows
 Diagnosed fragmented planning and prioritization across a scaling engineering organization, rebuilding the roadmap operating model, risk framework, and 2027 strategy and creating the board-level investment case for continued engineering scale
 DIRECTOR, PRODUCT MANAGEMENT | 10/2024 - 10/2025
 DENTSU INC.
-Promoted from Senior Product Manager at Merkle to Director at Dentsu based on performance, taking ownership of 13 AI and data products, an $8M budget, and a distributed team of 60+ engineers, analysts, and program leads across 100+ global markets
-Owned portfolio strategy and execution across customer data, identity, audience activation, content intelligence, production automation, and measurement platforms serving enterprise teams across every major digital channel
-Built KPI frameworks and centralized decision systems connecting platform capabilities to revenue, campaign performance, and operating efficiency, giving leaders a shared basis for investment prioritization across the portfolio
+Promoted from Senior Product Manager at Merkle to Director at Dentsu based on performance, taking ownership of 13 artificial intelligence and data products, an $8M budget, and a distributed team of 60+ engineers, analysts, and program leads across 100+ global markets
+Owned portfolio strategy for artificial intelligence and data platforms spanning customer data, identity, audience activation, content intelligence, production automation, and measurement, with enterprise readiness requirements embedded in delivery
+Built key performance indicator frameworks and centralized decision systems connecting platform capabilities to revenue, campaign performance, and operating efficiency, giving leaders a shared basis for investment prioritization across the portfolio
 Established portfolio governance and operating cadence across product, engineering, data, marketing, finance, privacy, and legal, replacing recurring escalation cycles with clear decision rights and repeatable execution
-Aligned technical and business leaders around a unified platform roadmap, enabling parallel progress across innovation, compliance, and growth while meeting GDPR, CCPA, and AI ethics requirements across 100+ markets
+Embedded General Data Protection Regulation, California Consumer Privacy Act, and artificial intelligence ethics requirements into the product development lifecycle so compliance became a scalable platform capability rather than a deal-by-deal exception process
 Coached product talent across the organization, with four people developed from business analyst level who later advanced into Senior Product Manager roles
 SENIOR PRODUCT MANAGER | 05/2022 - 10/2024
 MERKLE INC., A DENTSU COMPANY | SALESFORCE PLATINUM PARTNER
@@ -69,14 +69,15 @@ Led product turnaround for a subscription platform with a 75% annual cancellatio
 Established a data-driven product roadmap aligned to retention metrics and customer behavior signals, sustaining 10 to 12% annual subscription growth for three consecutive years and demonstrating durable product-market fit after the initial turnaround
 
 SELECT PRODUCT LAUNCHES
+Operator Control Plane (CP Product Advisory, 2025-2026): Built and operate an agentic Operator Control Plane with 65 specialized skills and 28 governed automations, using Claude and Cursor with explicit task ownership, audit trails, and human approval gates on production artificial intelligence workflows.
 AI Powered Marketing Suite (Dentsu, 2024-2025): Directed the strategy and portfolio management for 13 AI products spanning creative intelligence, audience targeting, content production, and measurement across 100+ global markets, enabling privacy-safe consumer connections at enterprise scale
 Media360 Unified Reporting Platform (Merkle, 2023): Built the centralized reporting system that consolidated 95% of a $600M marketing budget across 140 markets for a global streaming client, unifying marketing spend tracking, asset performance, and full-funnel reporting across every major digital channel including CTV, DSP, DV360, and SA360
 V SHRED Mobile App (V SHRED, 2018): As Head of Product Management overseeing a 24-product digital portfolio, led end-to-end product development for a consumer fitness app that hit 100K downloads in its first 24 hours, with sustained engagement and retention improvements post-launch.
 MotoSHOP SMS (Advance Auto Parts, 2014-2018): Owned development of a mobile-first shop management system with VIN Scanner capabilities that cut cancellation rates from 75% to under 30% and drove 10-12% annual subscription growth for three consecutive years
 
 TECHNICAL CAPABILITIES
-Data & Analytics: Snowflake, Databricks, SQL, SQL Server, Looker, Tableau, Google Analytics, ETL, Airflow
-AI & Machine Learning: AI Product Strategy, ML Integration, Generative AI Products, AI Portfolio Governance, Privacy-Safe Data Architecture
+Data & Analytics: Decision Systems and Key Performance Indicator Frameworks, Lineage and Reconciliation, Event Instrumentation, Snowflake, BigQuery, Audit-Ready Reporting
+AI & Machine Learning: Agentic Systems, Machine Learning and Artificial Intelligence Platform Product, Generative Artificial Intelligence Products, Evaluation and Trust Thresholds, Artificial Intelligence Portfolio Governance, Privacy-Safe Data Architecture
 Cloud & Infrastructure: AWS, Google Cloud, Azure, GitHub
 Product & Delivery: JIRA, Confluence, ProductBoard, Miro, Figma, Aha!, Agile, SCRUM, SAFe, Kanban
 

@@ -25,5 +25,6 @@ items:
     icon: control-plane
     use_live_stats: true
     body: >-
-      It applies explicit task ownership, decision controls, and operating rules to run an advisory practice
-      at solo-operator scale. The portfolio and supporting case studies show the system in use.
+      Agentic artificial intelligence operating system with explicit task ownership, audit trails,
+      evaluation thresholds, and human approval gates on production workflows. The portfolio and
+      supporting case studies show the live control plane in use.
