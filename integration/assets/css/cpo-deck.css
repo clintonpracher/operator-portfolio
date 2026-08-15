@@ -240,7 +240,8 @@ a.deck-card.proof-card:hover {
 
 .deck-card--horizontal.proof-card,
 .deck-card--horizontal.case-study-card,
-.deck-card--horizontal.featured-essay-card {
+.deck-card--horizontal.featured-essay-card,
+.deck-card--horizontal.role-card {
   min-height: var(--deck-card-min-height);
   flex: 1;
 }
@@ -276,7 +277,7 @@ a.deck-card.proof-card:hover {
 
 .deck-card-grid--roles,
 .role-cards.deck-card-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   width: 100%;
   max-width: 100%;
 }
@@ -1403,11 +1404,6 @@ a.deck-card.proof-card:hover {
   .deck-card-grid.deck-card-grid--pair {
     max-width: 100%;
     margin-inline: 0;
-  }
-
-  .deck-card-grid--roles,
-  .role-cards.deck-card-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
