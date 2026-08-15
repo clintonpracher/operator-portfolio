@@ -42,9 +42,7 @@ The tools handle the noise. I keep the judgment.
 
 ## Target roles
 
-Director, Principal, or Senior Director of Product roles in **Platform, Data, and AI**.
-
-VP Product roles where the portfolio scope warrants it.
+Principal, Director, or Senior Director of Product roles in **Platform, Data, and AI**.
 
 Product leadership, not project management. Remote US · Based in Las Vegas.
 

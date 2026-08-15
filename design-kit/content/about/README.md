@@ -56,7 +56,7 @@ I currently perform with the Las Vegas Master Singers, the chorus in residence f
 
 ## What I am looking for
 
-I am looking for a full-time Director, Principal, or Senior Director of Product role across **Platform, Data, and AI**. I am also open to VP Product roles where the portfolio scope warrants it.
+I am looking for a full-time Principal, Director, or Senior Director of Product role across **Platform, Data, and AI**.
 
 The right role has real product ownership, consequential decisions, and enough complexity to make systems thinking useful.
 

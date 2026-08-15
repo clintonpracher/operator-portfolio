@@ -4,11 +4,9 @@ This is the public resume for Clinton J. Pracher, a product and platform executi
 
 ## Target roles
 
-- VP Product
-- Head of Product
-- Senior Director, Product Management
-- VP or Head of Platform Product
-- VP or Head of Data and AI Product
+- Principal Product Management (Platform, Data, AI)
+- Director or Senior Director, Product Management
+- Head of Platform / Data / AI Product
 
 ## Formats
 
