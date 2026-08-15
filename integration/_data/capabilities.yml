@@ -107,7 +107,7 @@ audiences:
           - SQL and warehouse-centric analytics design
           - Looker and Tableau product surfaces
           - ETL and orchestration with data engineering
-        stack: Snowflake, Databricks, SQL, Looker, Tableau, Airflow
+        stack: Snowflake, Databricks, Python, SQL, Looker, Tableau, Airflow
       - title: AI/ML
         icon: ai-governance
         judgment: Ships generative and ML-backed products with clear data boundaries, evaluation criteria, and integration paths into existing workflows.
