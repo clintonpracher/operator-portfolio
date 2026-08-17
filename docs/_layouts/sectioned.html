@@ -21,6 +21,7 @@
   {% endif %}
 </head>
 <body class="portfolio-body page-sectioned page-{% if page.page_class %}{{ page.page_class }}{% else %}{{ page.title | downcase | replace: ' ', '-' }}{% endif %}{% if page.url contains '/prompt-library/' %} page-prompt-library{% endif %}">
+  {% include gtm-body.html %}
   <a class="skip-link" href="#main-content">Skip to content</a>
   {% include site-header.html %}
   {% assign sections = content | split: '<hr />' %}

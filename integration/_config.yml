@@ -2,6 +2,9 @@ title: Clinton Pracher
 description: Product leader who builds decision systems, not just products. Operator Control Plane, governed AI ops, platform/data/AI. Principal / Director · Remote US
 url: "https://clintonpracher.com"
 baseurl: ""
+# Personal GTM (My Personal Website). Never GTM-PDFDNM7V (GHL / business).
+# GA4 is configured inside this container, not in the HTML.
+gtm_container_id: "GTM-PGTK2264"
 theme: null
 markdown: kramdown
 permalink: pretty
