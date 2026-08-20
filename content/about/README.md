@@ -77,19 +77,108 @@ The tools handle the noise. I keep the judgment.
 
 ---
 
-## Outside the work
+<div class="about-personal">
 
-I recharge through interior design, time outdoors, and music. I am an Eagle Scout and a classically trained musician with experience as a singer, saxophonist, and pianist.
+<h2 class="about-personal__heading">Outside the work</h2>
 
-I currently perform with the Las Vegas Master Singers, the chorus in residence for the Las Vegas Philharmonic.
+<article class="about-personal__panel">
+  <p class="about-personal__eyebrow">Music</p>
+
+  <p>I am a classically trained musician. I sing, play saxophone, and piano, and I still treat rehearsal like work that has to be done right, not performed for an audience of one.</p>
+
+  <p>I perform with the Las Vegas Master Singers, the chorus in residence for the Las Vegas Philharmonic. Repertoire I have sung with the group includes Handel's Messiah, Orff's Carmina Burana, and Beethoven's Ninth Symphony. Standing in that room keeps my ear honest: balance, timing, and listening matter as much as your own part. That is not a metaphor I force into product work. It is just how I show up.</p>
+
+  <ul class="deck-card-grid deck-card-grid--layout-2x2 about-personal__gallery" aria-label="Performances with Las Vegas Master Singers">
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-music-choir-orchestra.jpg" alt="Choir and full orchestra on stage during a formal concert" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-music-chamber.jpg" alt="Choir with chamber orchestra in concert dress" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-music-holiday.jpg" alt="Holiday concert with choir, orchestra, and festive stage decor" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-music-stage.jpg" alt="View from the stage toward the concert hall during rehearsal" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+  </ul>
+</article>
+
+<article class="about-personal__panel">
+  <p class="about-personal__eyebrow">Interior design</p>
+
+  <p>Away from product, I spend real time on interior design. I like rooms that feel intentional: light, proportion, and the few objects that actually belong in a space. I am not a professional designer. I am someone who notices when a room fights the way people live in it, and I enjoy the slow work of fixing that.</p>
+
+  <p>It is the same instinct as the day job, but personal. Remove what adds noise. Keep what helps people breathe.</p>
+
+  <ul class="deck-card-grid deck-card-grid--layout-2x2 about-personal__gallery" aria-label="Interior design projects">
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-design-kitchen.jpg" alt="Kitchen with black shaker cabinets and white quartz counters" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-design-living.jpg" alt="Open living and dining room with layered lighting and neutral palette" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-design-hallway.jpg" alt="Hallway vignette with mid-century sideboard and abstract art" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-design-patio.jpg" alt="Back patio with stone fire pit and outdoor seating" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+  </ul>
+</article>
+
+<article class="about-personal__panel">
+  <p class="about-personal__eyebrow">Outdoors</p>
+
+  <p>I am an Eagle Scout, and I still get outside when I can. Hiking with my dog and time away from screens are how I reset when I have a long week.</p>
+
+  <ul class="deck-card-grid deck-card-grid--layout-2x2 about-personal__gallery" aria-label="Outdoors near Las Vegas">
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-dog-trail.jpg" alt="Dog on a hiking trail beside a pond at golden hour" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-outdoors-yucca.jpg" alt="Desert yucca in bloom with layered mountains under a clear sky" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-outdoors-redrock.jpg" alt="Red rock peaks and desert scrub on a clear day" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+    <li>
+      <figure class="about-personal__figure">
+        <img src="/assets/about/about-dog-home.jpg" alt="Dog smiling indoors after a hike" width="1200" height="900" loading="lazy">
+      </figure>
+    </li>
+  </ul>
+</article>
+
+</div>
 
 ---
 
-## What I am looking for
+## Let's connect
 
-I am looking for a full-time Principal, Director, or Senior Director of Product role across **Platform, Data, and AI**.
-
-The right role has real product ownership, consequential decisions, and enough complexity to make systems thinking useful.
+I do my best work with leaders who want a clearer decision system underneath a capable team. I help rebuild how decisions get made so priorities hold, ownership is clear, and good work can move without everything passing through the same room. If that is the conversation you want to have, I would like to hear from you.
 
 <div class="cta-row">
   <a class="button button--primary" href="../resume/resume/">View my resume</a>

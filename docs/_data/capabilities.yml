@@ -68,7 +68,7 @@ audiences:
           - Martech and CRM ecosystem integration
           - Vendor strategy aligned to decision rights
         stack: Salesforce ecosystem, Contentful, global martech stacks
-      - title: Product organization and investment
+      - title: Product organization, leadership, and investment
         icon: strategy
         judgment: Builds portfolio governance, KPI frameworks, and PM operating models so teams ship against one investment narrative.
         highlights:

@@ -40,11 +40,15 @@ The tools handle the noise. I keep the judgment.
 
 ---
 
-## Target roles
+## How I can help
 
-Principal, Director, or Senior Director of Product roles in **Platform, Data, and AI**.
+I work with leaders who need clearer decision systems, not another quarter of explanation.
 
-Product leadership, not project management. Remote US · Based in Las Vegas · Open to Local Hybrid.
+**Platform, Data, and AI leadership:** decision systems and operating models when scale outruns the org chart.
+
+**Execution under complexity:** teams shipping without resolving the tradeoffs that should not keep routing to the top.
+
+**Based in Las Vegas:** remote US · open to local hybrid. Reach out if the problem is real.
 
 ---
 

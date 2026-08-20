@@ -1369,6 +1369,105 @@ a.deck-card.proof-card:hover {
   line-height: var(--lh-snug, 1.2);
 }
 
+.about-personal {
+  margin: 1.5rem 0 2rem;
+  width: 100%;
+  max-width: none;
+}
+
+.about-personal__heading {
+  margin: 0 0 1.25rem;
+  color: var(--portfolio-copy, #f7f7f7);
+  font-family: var(--font-display, "Outfit", sans-serif);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: var(--fw-bold, 700);
+  letter-spacing: var(--ls-tight, -0.02em);
+  line-height: var(--lh-snug, 1.2);
+}
+
+.about-personal__panel {
+  margin: 0 0 1.25rem;
+  padding: 2rem 2.25rem 2.1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(214, 214, 214, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.about-personal__panel:last-child {
+  margin-bottom: 0;
+}
+
+.about-personal__eyebrow {
+  margin: 0 0 1rem;
+  color: #b79ae6;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.about-personal__panel p {
+  margin: 0 0 0.875rem;
+  color: rgba(247, 247, 247, 0.88);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  max-width: none;
+}
+
+.about-personal__panel p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-personal__gallery {
+  margin: 1.35rem 0 0;
+}
+
+.about-personal__gallery > li {
+  display: flex;
+  min-width: 0;
+}
+
+.about-personal__figure {
+  margin: 0;
+  width: 100%;
+  padding: 0.45rem;
+  border-radius: 14px;
+  border: 1px solid rgba(214, 214, 214, 0.14);
+  background: linear-gradient(
+    145deg,
+    rgba(47, 61, 82, 0.42),
+    rgba(17, 26, 51, 0.72)
+  );
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.about-personal__figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.page-section .about-personal__gallery,
+.page-section ul.about-personal__gallery {
+  max-width: none;
+  width: 100%;
+  padding-left: 0;
+}
+
+.page-section .about-personal__panel p {
+  max-width: none;
+}
+
+@media (max-width: 48rem) {
+  .about-personal__panel {
+    padding: 1.5rem 1.35rem 1.6rem;
+  }
+}
+
 .page-about .page-section:first-child .page-section__inner:has(.page-hero) {
   display: block;
   grid-template-columns: unset;

@@ -48,19 +48,29 @@ The tools handle the noise. I keep the judgment.
 
 ## Outside the work
 
-I recharge through interior design, time outdoors, and music. I am an Eagle Scout and a classically trained musician with experience as a singer, saxophonist, and pianist.
+### Music
 
-I currently perform with the Las Vegas Master Singers, the chorus in residence for the Las Vegas Philharmonic.
+I am a classically trained musician. I sing, play saxophone, and piano, and I still treat rehearsal like work that has to be done right, not performed for an audience of one.
+
+I perform with the Las Vegas Master Singers, the chorus in residence for the Las Vegas Philharmonic. Repertoire I have sung with the group includes Handel's Messiah, Orff's Carmina Burana, and Beethoven's Ninth Symphony. Standing in that room keeps my ear honest: balance, timing, and listening matter as much as your own part. That is not a metaphor I force into product work. It is just how I show up.
+
+### Interior design
+
+Away from product, I spend real time on interior design. I like rooms that feel intentional: light, proportion, and the few objects that actually belong in a space. I am not a professional designer. I am someone who notices when a room fights the way people live in it, and I enjoy the slow work of fixing that.
+
+It is the same instinct as the day job, but personal. Remove what adds noise. Keep what helps people breathe.
+
+### Outdoors
+
+I am an Eagle Scout, and I still get outside when I can. Hiking with my dog and time away from screens are how I reset when I have a long week.
 
 ---
 
-## What I am looking for
+## Let's connect
 
-I am looking for a full-time Principal, Director, or Senior Director of Product role across **Platform, Data, and AI**.
+I do my best work with leaders who want a clearer decision system underneath a capable team. I help rebuild how decisions get made so priorities hold, ownership is clear, and good work can move without everything passing through the same room. If that is the conversation you want to have, I would like to hear from you.
 
-The right role has real product ownership, consequential decisions, and enough complexity to make systems thinking useful.
-
-Remote US · Based in Las Vegas · Open to Local Hybrid.
+Remote US · Based in Las Vegas · Open to local hybrid.
 
 [**Connect on LinkedIn**](https://www.linkedin.com/in/clinton-pracher/) · [Read my work](../work/README.md) · [View my resume](../resume/resume.md)
 

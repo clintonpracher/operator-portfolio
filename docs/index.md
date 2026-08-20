@@ -33,7 +33,9 @@ The tools handle the noise. I keep the judgment.
 
 ---
 
-## Target roles
+## How I can help
+
+I work with leaders who need clearer decision systems, not another quarter of explanation.
 
 {% include target-roles.html %}
 

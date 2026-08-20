@@ -1,10 +1,10 @@
 items:
-  - title: Principal, Group, Staff Product Management
-    body: IC and lead PM roles in Platform, Data, and AI.
-    icon: career
-  - title: Director or Senior Director
-    body: Team and portfolio leadership in Platform, Data, and AI.
+  - title: Platform, Data, and AI leadership
+    body: Decision systems, operating models, and portfolio clarity when scale outruns the org chart.
     icon: platform
-  - title: Product Leadership
-    body: Not project management. Remote US · Based in Las Vegas · Open to Local Hybrid.
+  - title: Execution under complexity
+    body: Teams shipping without resolving the tradeoffs that should not keep routing to the top.
     icon: leadership
+  - title: Based in Las Vegas
+    body: Remote US · open to local hybrid. Reach out if the problem is real.
+    icon: career
