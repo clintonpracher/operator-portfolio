@@ -1,0 +1,23 @@
+{
+  "name": "Repo Health Monitor (Cursor Automation)",
+  "description": "Per-repo health checks → Sweep Log Repo Health row. Deploy one paste per registered/client workspace.",
+  "task_id": "repo-health-monitor",
+  "agent_id": null,
+  "schedule": {
+    "cron": "CRON_TZ=America/Los_Angeles 8 6 * * *",
+    "timezone": "America/Los_Angeles",
+    "human": "Daily 6:11 AM (stagger per registry)"
+  },
+  "tools": [
+    "Notion"
+  ],
+  "skill": "practice-operations/claude-skills/scheduled/repo-health-monitor/SKILL.md",
+  "paste_card": ".cursor/automations/PASTE-REPO-HEALTH.md",
+  "mutates": [
+    "Sweep Log",
+    "Governance Operations (chronic only)",
+    "Agent Runs (when registered)"
+  ],
+  "prompt": "Run repo-health-monitor using practice-operations/claude-skills/scheduled/repo-health-monitor/SKILL.md. Read .cursor/repo-health.json for slug and profile. Hard gate: Active Writer must be Cursor or SKIPPED_NOT_OWNER.",
+  "notes": "Template JSON — copy to each registered repo via bootstrap-repo-ops.sh. Adjust cron from repo-ops-registry.mjs."
+}
