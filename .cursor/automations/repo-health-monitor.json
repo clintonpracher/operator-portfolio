@@ -6,18 +6,18 @@
   "schedule": {
     "cron": "CRON_TZ=America/Los_Angeles 8 6 * * *",
     "timezone": "America/Los_Angeles",
-    "human": "Daily 6:11 AM (stagger per registry)"
+    "human": "Daily 6:08 AM PT (registry cron)"
   },
   "tools": [
     "Notion"
   ],
-  "skill": "practice-operations/claude-skills/scheduled/repo-health-monitor/SKILL.md",
+  "skill": ".cursor/skills/repo-health-monitor/SKILL.md",
   "paste_card": ".cursor/automations/PASTE-REPO-HEALTH.md",
   "mutates": [
     "Sweep Log",
     "Governance Operations (chronic only)",
     "Agent Runs (when registered)"
   ],
-  "prompt": "Run repo-health-monitor using practice-operations/claude-skills/scheduled/repo-health-monitor/SKILL.md. Read .cursor/repo-health.json for slug and profile. Hard gate: Active Writer must be Cursor or SKIPPED_NOT_OWNER.",
-  "notes": "Template JSON — copy to each registered repo via bootstrap-repo-ops.sh. Adjust cron from repo-ops-registry.mjs."
+  "prompt": "Run repo-health-monitor using .cursor/skills/repo-health-monitor/SKILL.md. Read .cursor/repo-health.json for slug and profile. Hard gate: Active Writer must be Cursor or SKIPPED_NOT_OWNER. Run bash .cursor/scripts/run-repo-health-audit.sh before Notion writes.",
+  "notes": "Satellite template from bootstrap-repo-ops.sh. Cron substituted from repo-ops-registry.mjs."
 }
