@@ -24,8 +24,9 @@ Internal ops truth with full names lives in `docs/product/2026-08/architecture-d
 | File | Used on |
 |------|---------|
 | `architecture-one-glance.svg` | Work, Skills (Operator view), control-plane spec, Operator Control Plane case study |
+| `architecture-control-plane-detail.svg` | Control-plane spec (next layer: registry, harness, systems of record) |
 | `architecture-one-glance.png` | Social / TeeterBeaker (optional) |
 
-Source Mermaid (structure SSOT): `architecture-one-glance.mmd`
+Source Mermaid (structure SSOT): `architecture-one-glance.mmd`, `architecture-control-plane-detail.mmd`
 
 Visual: Imperious Luxury tokens (`midnight-authority`, `imperious-purple`, `slate-clarity`, Outfit/DM Sans).

@@ -256,6 +256,12 @@
   background: rgba(60, 36, 95, 0.55);
 }
 
+.case-study-body .architecture-view__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .case-study-body .site-footer {
   background: var(--cs-hero-a);
 }

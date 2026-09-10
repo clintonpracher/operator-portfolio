@@ -12,3 +12,6 @@ architecture:
   image: "/assets/diagrams/architecture-one-glance.svg"
   source_url: "/work/control-plane-spec/"
   alt: "Operating architecture at a glance: decision maker, business and personal domains, orchestration agent, control plane, specialist agents, and a human judgment loop"
+  detail:
+    image: "/assets/diagrams/architecture-control-plane-detail.svg"
+    alt: "Control plane detail: human control, registry and authority, execution hosts, skills library, script library and desk harness, and systems of record"
