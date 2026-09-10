@@ -1,10 +1,11 @@
+%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 flowchart TB
   DM["Decision maker<br/>Judgment · ownership · one writer per task"]
 
-  subgraph PILLARS[" "]
+  subgraph DOMAINS[" "]
     direction LR
 
-    subgraph BIZ["Business operations"]
+    subgraph BIZ["Business domain"]
       direction TB
       B1["Advisory delivery"]
       B2["Demand / content"]
@@ -12,8 +13,6 @@ flowchart TB
       B4["Marketplace"]
       B5["Practice governance"]
     end
-
-    ORCH["Orchestration agent<br/>Pinned door · lanes on demand"]
 
     subgraph PER["Personal domain"]
       direction TB
@@ -23,6 +22,8 @@ flowchart TB
     end
   end
 
+  ORCH["Orchestration agent<br/>Pinned door · lanes on demand"]
+
   subgraph SHARED["Shared operating substrate"]
     direction TB
     PLANE["Control plane<br/>Registry & identity · Libraries · Agentic control · Audit"]
@@ -30,10 +31,10 @@ flowchart TB
   end
 
   DM --> BIZ
-  DM --> ORCH
   DM --> PER
-  BIZ --> PLANE
+  DM --> ORCH
+  BIZ --> ORCH
+  PER --> ORCH
   ORCH --> PLANE
-  PER --> PLANE
   PLANE --> SPEC
   SPEC -.->|"Human judgment"| DM
