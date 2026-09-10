@@ -79,7 +79,7 @@ The pattern is portable whether the registry is Notion, Salesforce, or an intern
 
 **Proof-lab scale:** **{{ site.data.stats.skills }} skills, {{ site.data.stats.cursor_automations }} governed automations on the agentic control layer, {{ site.data.stats.scheduled_tasks }} scheduled tasks.**
 
-[Architecture diagram](/assets/diagrams/architecture-one-glance.svg)
+{% include architecture-public.html %}
 
 ---
 

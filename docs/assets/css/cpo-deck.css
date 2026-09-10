@@ -1017,6 +1017,63 @@ a.deck-card.proof-card:hover {
   max-width: var(--portfolio-reading, 46rem);
 }
 
+/* Support CTA — Thought Leadership (below Featured essays) */
+.featured-essay-cards + .stripe-support {
+  margin-top: var(--space-8, 64px);
+}
+
+.stripe-support {
+  max-width: var(--portfolio-reading, 46rem);
+  margin: 0 0 var(--space-7, 48px);
+  padding: clamp(2rem, 4vw, 2.75rem) clamp(2rem, 5vw, 3rem);
+  border: 1px solid rgba(214, 214, 214, 0.14);
+  border-radius: var(--radius-lg, 12px);
+  background:
+    radial-gradient(circle at 82% 0%, rgba(81, 53, 122, 0.14), transparent 16rem),
+    rgba(255, 255, 255, 0.03);
+  box-shadow: var(--shadow-ambient, 0 4px 24px rgba(0, 0, 0, 0.15));
+}
+
+.stripe-support h2 {
+  margin: 0 0 var(--space-4, 16px);
+  max-width: none;
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+}
+
+.stripe-support__lead {
+  margin: 0 0 var(--space-4, 16px);
+  line-height: 1.6;
+}
+
+.stripe-support__body {
+  margin: 0 0 var(--space-5, 24px);
+  line-height: 1.65;
+}
+
+.stripe-support__disclaimer {
+  margin: 0 0 var(--space-6, 32px);
+  color: var(--portfolio-copy-muted, rgba(247, 247, 247, 0.62));
+  font-size: var(--fs-body-sm, 0.9375rem);
+  line-height: 1.55;
+}
+
+.stripe-support__cta {
+  margin: 0;
+}
+
+.stripe-support p {
+  margin: 0 0 var(--space-6, 32px);
+  line-height: 1.6;
+}
+
+.stripe-support p:last-child {
+  margin-bottom: 0;
+}
+
+.stripe-support .button {
+  margin-top: var(--space-2, 8px);
+}
+
 .linkedin-connect__intro {
   margin: 0 0 1.25rem;
   color: var(--deck-card-body-color);

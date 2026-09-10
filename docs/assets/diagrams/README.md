@@ -23,7 +23,7 @@ Internal ops truth with full names lives in `docs/product/2026-08/architecture-d
 
 | File | Used on |
 |------|---------|
-| `architecture-one-glance.svg` | Work, Skills (Agent OS), Operator Control Plane case study, control-plane spec |
+| `architecture-one-glance.svg` | Work, Skills (Operator view), control-plane spec, Operator Control Plane case study |
 | `architecture-one-glance.png` | Social / TeeterBeaker (optional) |
 
 Source Mermaid (structure SSOT): `architecture-one-glance.mmd`

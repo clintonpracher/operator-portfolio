@@ -25,7 +25,7 @@ Idempotency Key: `repo-health-monitor:<slug>:<today PT YYYY-MM-DD>`.
 
 Agent Runs contract: load from CP hub `practice-operations/claude-skills/scheduled/_contracts/agent-runs.md` when hub is reachable; otherwise populate all required scalar fields at claim and complete.
 
-## STEP 1 — Run local audit
+## STEP 1 · Run local audit
 
 From this repo root:
 
@@ -45,17 +45,17 @@ Map checks to Clint Action:
 | Path missing, repeated fail, client exposure | Needs you |
 | Monitor could not run or body blank | Broken |
 
-## STEP 2 — Sweep Log (durable record)
+## STEP 2 · Sweep Log (durable record)
 
 Data source: `collection://60d52978-2b8d-4445-a454-bec17e1a699b`
 
-Query for title `Repo Health`, Sweep Date = today (America/Los_Angeles), and **Repository** = slug when property exists. Reuse or create.
+Query for title `Repo Health`, Sweep Date = today (America/Los_Angeles). Dedupe by **Notes** = `Repository: {slug}` (required). Reuse or create.
 
 Properties:
 - **Title** = `Repo Health` (no date in title)
 - **Sweep Date** = today PT
 - **Status** = Active
-- **Repository** = slug
+- **Notes** = `Repository: {slug}`
 - **Lane Focus** = Cross-Lane
 - **Sweep Health** = Light (All clear) | Standard | Heavy (Needs you / Broken)
 
@@ -68,10 +68,10 @@ Body (replace_content on close):
 
 Artifact close: CP hub `practice-operations/claude-skills/scheduled/_contracts/notion-artifact-close.md` when reachable.
 
-## STEP 3 — Governance Operations (chronic only)
+## STEP 3 · Governance Operations (chronic only)
 
 If same check failed on 3+ consecutive days for this slug, admit GO row Finding key `FINDING-KEY: REPO-HEALTH|<slug>|<check-id>`, Tier = august-queue.
 
-## STEP 4 — Complete Agent Runs
+## STEP 4 · Complete Agent Runs
 
 Evidence URL = today's Repo Health Sweep Log page URL. Summary = Clint Action + fail count.

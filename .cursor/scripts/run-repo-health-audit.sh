@@ -22,7 +22,7 @@ resolve_hub() {
       return 0
     fi
   done
-  # Walk up from repo root (covers monorepo marketing-assets/operator-portfolio -> hub at /workspace)
+  # Walk up from repo root (covers monorepo marketing-assets/operator-portfolio -> hub at repo root)
   local dir="$REPO_ROOT"
   local i=0
   while [[ $i -lt 6 ]]; do

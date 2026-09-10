@@ -9,6 +9,6 @@ github: "https://github.com/clintonpracher"
 substack: "https://clintscall.substack.com"
 
 architecture:
-  image: ""
-  source_url: ""
-  alt: "Enterprise operating architecture: decision maker, business and personal domains, orchestration agent, and control plane with registry, agentic control layer, and audit layer"
+  image: "/assets/diagrams/architecture-one-glance.svg"
+  source_url: "/work/control-plane-spec/"
+  alt: "Operating architecture at a glance: decision maker, business and personal domains, orchestration agent, control plane, specialist agents, and a human judgment loop"

@@ -1,0 +1,19 @@
+{% assign stripe = site.data.stripe_commerce %}
+{% if stripe.enabled %}
+{% assign offer = stripe.offers.support %}
+<section class="stripe-support" aria-labelledby="stripe-support-heading">
+  <h2 id="stripe-support-heading">{{ offer.label }}</h2>
+  {% if offer.lead != "" %}<p class="stripe-support__lead">{{ offer.lead }}</p>{% endif %}
+  {% if offer.body != "" %}<p class="stripe-support__body">{{ offer.body }}</p>{% endif %}
+  {% if offer.disclaimer != "" %}<p class="stripe-support__disclaimer">{{ offer.disclaimer }}</p>{% endif %}
+  {% if offer.buy_button.enabled and offer.buy_button.publishable_key != "" and offer.buy_button.payment_link_id != "" %}
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+  <stripe-buy-button
+    buy-button-id="{{ offer.buy_button.payment_link_id }}"
+    publishable-key="{{ offer.buy_button.publishable_key }}"
+  ></stripe-buy-button>
+  {% elsif offer.payment_link_url != "" %}
+  <p class="stripe-support__cta"><a class="button button--primary" href="{{ offer.payment_link_url }}" rel="noopener noreferrer" target="_blank">{{ offer.button_cta | default: offer.label }}</a></p>
+  {% endif %}
+</section>
+{% endif %}

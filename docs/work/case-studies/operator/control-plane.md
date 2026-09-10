@@ -61,4 +61,6 @@ Models are excellent at noise, drafts, options, and scans. Judgment is deciding 
 
 That is the difference between collecting AI tools and running governed AI ops.
 
-[Architecture diagram](/assets/diagrams/architecture-one-glance.svg) · [Operating Model for Multi-Agent AI](/work/control-plane-spec/)
+{% include architecture-public.html %}
+
+[Operating Model for Multi-Agent AI](/work/control-plane-spec/)

@@ -1,0 +1,27 @@
+# Personal brand payments. Disabled on clintonpracher.com while job-hunting.
+# Copy SSOT below is reserved for Substack tip/support block.
+# Re-enable with enabled: true and {% include stripe-support.html %} when ready.
+
+enabled: false
+account_label: "Clint Pracher"
+
+offers:
+  support:
+    label: "Support my writing"
+    lead: "If something I shared was useful, you can leave an optional tip."
+    body: "Your support helps me make time for personal writing about building a business, work, and the sometimes messy experience of figuring out what comes next."
+    disclaimer: "Tips are optional. They are not charitable donations and do not include consulting, advisory services, or other deliverables."
+    button_cta: "Leave a tip"
+    pricing_model: customer_chooses
+    payment_link_url: "https://buy.stripe.com/test_00w28qfwncNHbb9ddzaZi00"
+    buy_button:
+      enabled: false
+      publishable_key: ""
+      payment_link_id: ""
+
+  # Fixed-price digital product example (uncomment when ready)
+  # playbook:
+  #   label: "Decision architecture playbook"
+  #   description: "PDF + templates."
+  #   pricing_model: fixed
+  #   payment_link_url: ""

@@ -41,4 +41,4 @@ permalink: /work/
 
 {% include operator-case-studies.html %}
 
-<p class="deck-followup">View the <a href="/assets/diagrams/architecture-one-glance.svg">architecture diagram</a>.</p>
+{% include architecture-public.html %}
