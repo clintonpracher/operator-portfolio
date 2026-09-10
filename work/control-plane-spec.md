@@ -83,14 +83,6 @@ The pattern is portable whether the registry is Notion, Salesforce, or an intern
 
 ---
 
-## Control plane detail
-
-One layer down from the operating view: how registry, execution hosts, versioned procedures, and the desk harness connect before anything writes a system of record.
-
-{% include architecture-detail-public.html %}
-
----
-
 ## What this proves
 
 - **Enterprise:** 13-product AI/data portfolio, 100+ markets, $8M budget, 60+ team. Same class of problem as "every team bought an AI tool."
