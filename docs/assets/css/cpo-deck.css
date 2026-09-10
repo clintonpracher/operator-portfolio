@@ -1003,6 +1003,17 @@ a.deck-card.proof-card:hover {
   transform: translateX(-50%);
 }
 
+.page-section .architecture-view {
+  background:
+    radial-gradient(circle at 70% 0%, rgba(81, 53, 122, 0.2), transparent 24rem),
+    var(--portfolio-shell-raised);
+}
+
+.page-section .architecture-view__image {
+  background: transparent;
+  border: 0;
+}
+
 .link-pill__icon {
   width: 16px;
   height: 16px;

@@ -214,6 +214,48 @@
   color: #1859c7;
 }
 
+/* Architecture embed: same dark Imperious treatment as /work/control-plane-spec/ */
+.case-study-body .architecture-view {
+  width: min(calc(100vw - 3rem), var(--portfolio-container, 72rem));
+  max-width: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: #f7f7f7;
+}
+
+.case-study-body .architecture-view__header h3 {
+  color: #f7f7f7;
+}
+
+.case-study-body .architecture-view__eyebrow {
+  color: #c8b5e9 !important;
+}
+
+.case-study-body .architecture-view figcaption {
+  color: rgba(247, 247, 247, 0.62);
+}
+
+.case-study-body .architecture-view figcaption a {
+  color: #a9c7ff;
+}
+
+.case-study-body .architecture-view .link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid rgba(106, 77, 154, 0.35);
+  border-radius: 999px;
+  background: rgba(60, 36, 95, 0.42);
+  padding: 0.35rem 0.75rem;
+  color: #c9b6ec;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.case-study-body .architecture-view .link-pill:hover {
+  background: rgba(60, 36, 95, 0.55);
+}
+
 .case-study-body .site-footer {
   background: var(--cs-hero-a);
 }

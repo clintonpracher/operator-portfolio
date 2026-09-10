@@ -5,9 +5,21 @@ flowchart TB
   subgraph DOMAINS[" "]
     direction LR
 
-    BIZ["Business domain<br/>Advisory · demand · pipeline<br/>Marketplace · practice governance"]
+    subgraph BIZ["Business domain"]
+      direction TB
+      B1["Advisory delivery"]
+      B2["Demand / content"]
+      B3["Pipeline / CRM"]
+      B4["Marketplace"]
+      B5["Practice governance"]
+    end
 
-    PER["Personal domain<br/>Job search · admin · governance"]
+    subgraph PER["Personal domain"]
+      direction TB
+      P1["Job search OS"]
+      P2["Personal admin"]
+      P3["Personal governance"]
+    end
   end
 
   ORCH["Orchestration agent<br/>Pinned door · lanes on demand"]
