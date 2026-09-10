@@ -994,6 +994,15 @@ a.deck-card.proof-card:hover {
   background: rgba(60, 36, 95, 0.55);
 }
 
+/* Architecture diagram: break out of narrow prose columns on case studies and long-form pages */
+.cs-prose .architecture-view,
+.page-section .architecture-view {
+  width: min(calc(100vw - 3rem), var(--portfolio-container, 72rem));
+  max-width: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 .link-pill__icon {
   width: 16px;
   height: 16px;

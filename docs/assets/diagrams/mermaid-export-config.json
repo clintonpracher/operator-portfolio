@@ -3,7 +3,7 @@
   "theme": "base",
   "themeVariables": {
     "fontFamily": "Outfit, DM Sans, system-ui, sans-serif",
-    "fontSize": "15px",
+    "fontSize": "18px",
     "primaryColor": "#51357A",
     "primaryTextColor": "#FFFFFF",
     "primaryBorderColor": "#6A4D9A",

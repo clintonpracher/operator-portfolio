@@ -9,7 +9,12 @@
   </div>
 
   {% if architecture.image != "" %}
-  <img class="architecture-view__image" src="{{ architecture.image | relative_url }}" alt="{{ architecture.alt }}">
+  <p class="architecture-view__actions">
+    <a class="link-pill" href="{{ architecture.image | relative_url }}" target="_blank" rel="noopener noreferrer">Open full diagram</a>
+  </p>
+  <div class="architecture-view__scroll">
+    <img class="architecture-view__image" src="{{ architecture.image | relative_url }}" alt="{{ architecture.alt }}">
+  </div>
   {% else %}
   <div class="architecture-map" role="img" aria-label="Human judgment directs a governed control plane, which coordinates execution roles and produces evidence in systems of record.">
     <div class="architecture-node architecture-node--human">
@@ -58,6 +63,6 @@
 
   <figcaption>
     This public view shows the operating logic without exposing internal workflows, agent identities, prompts, or implementation details.
-    {% if architecture.source_url != "" %}<a href="{{ architecture.source_url }}">Open the live diagram</a>.{% endif %}
+    {% if architecture.source_url != "" %}<a href="{{ architecture.source_url | relative_url }}">Operating model brief</a>.{% endif %}
   </figcaption>
 </figure>

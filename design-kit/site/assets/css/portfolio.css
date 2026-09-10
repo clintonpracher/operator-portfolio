@@ -993,7 +993,25 @@ a {
     rgba(9, 14, 29, 0.72);
   padding: clamp(1.25rem, 3vw, 2.25rem);
   box-shadow: var(--shadow-ambient);
-  overflow: hidden;
+}
+
+.architecture-view__actions {
+  margin: 0 0 1rem;
+}
+
+.architecture-view__scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-lg);
+}
+
+.architecture-view__image {
+  width: 100%;
+  min-width: 36rem;
+  display: block;
+  border: 1px solid var(--portfolio-border);
+  border-radius: var(--radius-lg);
+  background: var(--portfolio-shell-raised);
 }
 
 .architecture-view__header {
@@ -1125,14 +1143,6 @@ a {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
-}
-
-.architecture-view__image {
-  width: 100%;
-  display: block;
-  border: 1px solid var(--portfolio-border);
-  border-radius: var(--radius-lg);
-  background: var(--portfolio-shell-raised);
 }
 
 .architecture-view figcaption {
