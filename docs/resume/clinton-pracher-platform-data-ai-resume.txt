@@ -19,7 +19,7 @@ CORE FOCUS AREAS
 - Budget Ownership and Investment Prioritization
 
 EXPERIENCE
-FOUNDER & PRINCIPAL ADVISOR | 7/2025 - PRESENT
+PRODUCT DIRECTOR, AI & DATA PLATFORMS | 7/2025 - PRESENT
 INDEPENDENT PRODUCT & AI ADVISORY
 Founded an independent product and AI advisory practice focused on decision systems, operating models, agentic architecture, and enterprise-ready platform infrastructure for complex organizations
 In an engagement with a 60-person engineering organization, reduced requirements clarification cycles from two weeks to two days, eliminated engineering rework from 40% to zero, and redesigned the release model into a business-facing value signal within 30 days
