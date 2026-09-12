@@ -1,6 +1,6 @@
 heading: "Consistent patterns I've seen"
 items:
-  - title: Decision Architecture
+  - title: Decision rights
     description: How organizations decide what becomes true when multiple systems, teams, and models each claim authority.
     icon: architecture
   - title: Coordination Tax

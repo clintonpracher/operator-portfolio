@@ -4,7 +4,7 @@ Las Vegas, NV 89141 | 702-772-0242 | clintonpracher@gmail.com | linkedin.com/in/
 
 SUMMARY
 Director-level platform and AI product leader with 12+ years owning complex portfolios across AI platforms, data products, and enterprise environments. Owned 13 AI and data products across 100+ global markets, leading 60+ engineers, analysts, and program leads with an $8M investment envelope tied to systems governing $600M in annual spend.
-Builds agentic orchestration and AI control-plane capabilities that enterprises can trust: routing work across agents and tools, ownership models, evaluation and trust thresholds, and human approval gates on production AI workflows. In practice today: an Operator Control Plane with 65 skills and 28 governed automations running as live agentic orchestration and control-plane infrastructure, not a slide deck.
+Builds agentic orchestration and AI control-plane capabilities that enterprises can trust: routing work across agents and tools, ownership models, evaluation and trust thresholds, and human approval gates on production AI workflows. In practice today: an Operator Control Plane with 32 skills, 39 governed automations, and 49 scheduled tasks running as live agentic orchestration and control-plane infrastructure, not a slide deck.
 Ships enterprise readiness into the product lifecycle: compliance, privacy, AI ethics, decision rights, and security-review partnership so platform adoption does not wait on one-off exceptions. Results include 40% faster investment decisions, $60M+ incremental revenue impact, and global platform scale.
 Most effective when AI adoption, platform complexity, or unclear ownership has outgrown the operating model. Diagnoses the constraint, rebuilds the orchestration and control plane, and leaves teams with infrastructure they can run without constant reinvention.
 
@@ -20,10 +20,10 @@ CORE FOCUS AREAS
 
 EXPERIENCE
 FOUNDER & PRINCIPAL ADVISOR | 7/2025 - PRESENT
-CP PRODUCT ADVISORY
+INDEPENDENT PRODUCT & AI ADVISORY
 Founded an independent product and AI advisory practice focused on decision systems, operating models, agentic architecture, and enterprise-ready platform infrastructure for complex organizations
 In an engagement with a 60-person engineering organization, reduced requirements clarification cycles from two weeks to two days, eliminated engineering rework from 40% to zero, and redesigned the release model into a business-facing value signal within 30 days
-Built and operate an agentic orchestration and AI control plane (Operator Control Plane) with 65 specialized skills and 28 governed automations, using Claude and Cursor with explicit task ownership, audit trails, and human approval gates on production AI workflows
+Built and operate an agentic orchestration and AI control plane (Operator Control Plane) with 32 specialized skills and 39 governed automations, using Claude and Cursor with explicit task ownership, audit trails, and human approval gates on production AI workflows
 Diagnosed fragmented planning and prioritization across a scaling engineering organization, rebuilding the roadmap operating model, risk framework, and 2027 strategy and creating the board-level investment case for continued engineering scale
 DIRECTOR, PRODUCT MANAGEMENT | 10/2024 - 10/2025
 DENTSU INC.
@@ -69,7 +69,7 @@ Led product turnaround for a subscription platform with a 75% annual cancellatio
 Established a data-driven product roadmap aligned to retention metrics and customer behavior signals, sustaining 10 to 12% annual subscription growth for three consecutive years and demonstrating durable product-market fit after the initial turnaround
 
 SELECT PRODUCT LAUNCHES
-Operator Control Plane (CP Product Advisory, 2025-2026): Built and operate an agentic orchestration and AI control plane with 65 specialized skills and 28 governed automations, using Claude and Cursor with explicit task ownership, audit trails, and human approval gates on production AI workflows.
+Operator Control Plane (Independent Product & AI Advisory, 2025-2026): Built and operate an agentic orchestration and AI control plane with 32 specialized skills and 39 governed automations, using Claude and Cursor with explicit task ownership, audit trails, and human approval gates on production AI workflows.
 AI Powered Marketing Suite (Dentsu, 2024-2025): Directed the strategy and portfolio management for 13 AI products spanning creative intelligence, audience targeting, content production, and measurement across 100+ global markets, enabling privacy-safe consumer connections at enterprise scale
 Media360 Unified Reporting Platform (Merkle, 2023): Built the centralized reporting system that consolidated 95% of a $600M marketing budget across 140 markets for a global streaming client, unifying marketing spend tracking, asset performance, and full-funnel reporting across every major digital channel including CTV, DSP, DV360, and SA360
 V SHRED Mobile App (V SHRED, 2018): As Head of Product Management overseeing a 24-product digital portfolio, led end-to-end product development for a consumer fitness app that hit 100K downloads in its first 24 hours, with sustained engagement and retention improvements post-launch.

@@ -6,6 +6,6 @@ permalink: /work/case-studies/
 
 # Case studies
 
-Longform narratives imported from Notion (enterprise) and operator proof (solo scale).
+Longform narratives for enterprise product leadership and live operator proof at solo scale.
 
 [← Back to Work](/work/)

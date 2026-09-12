@@ -24,7 +24,7 @@ The goal is not more output. It is better judgment at scale.
 
 I have spent more than a decade building and leading products across SaaS, enterprise platforms, data, and AI.
 
-At Dentsu, I led global product management for a portfolio of 13 AI-powered products deployed across more than 100 markets. I managed an $8 million portfolio and led a 67-person global team spanning product, engineering, strategy, and delivery.
+At Dentsu, I led global product management for a portfolio of 13 AI-powered products deployed across more than 100 markets. I managed an $8 million portfolio and led a 60+ person global team spanning product, engineering, strategy, and delivery.
 
 At Merkle, I architected a unified marketing intelligence platform that consolidated reporting for 95 percent of a $600 million global marketing budget across 140 markets.
 

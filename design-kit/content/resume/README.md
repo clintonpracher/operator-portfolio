@@ -21,7 +21,7 @@
 
 The proof stayed intact: 13-product portfolio, 100+ markets, $8M budget, 60+ team, and systems governing $600M in annual spend.
 
-**Private source of truth:** The CP Product Advisory `resume-advisor` skill. This public version is a published snapshot that updates after content lock.
+**Private source of truth:** resume-advisor skill in the private publish pipeline. This public version is a published snapshot that updates after content lock.
 
 ---
 

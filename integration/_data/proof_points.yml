@@ -4,9 +4,9 @@ items:
     icon: platform
     meta: Data Unification
   - title: Decision Systems
-    url: /work/case-studies/enterprise/data-unification/
+    url: /work/case-studies/enterprise/product-system-stabilization/
     icon: architecture
-    meta: Data Unification
+    meta: Product System Stabilization
   - title: Operating Models
     url: /work/case-studies/enterprise/product-system-stabilization/
     icon: strategy

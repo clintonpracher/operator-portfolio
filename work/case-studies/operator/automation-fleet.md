@@ -7,10 +7,10 @@ proof_points:
   - Operating Model
 decision_shift: "From silent schedule failure to admitted gaps with a self-healing loop."
 at_a_glance:
-  - Cursor automations across six cutover waves
-  - Active Writer registry with SKIPPED_NOT_OWNER discipline
+  - Governed automations across six cutover waves
+  - Active Writer registry with non-owner skip discipline
   - Fleet health monitor and governance chain
-  - ChatGPT to Cursor migration without duplicate runs
+  - Wave-based cutover between execution hosts without duplicate runs
 ---
 
 ## The ops failure mode nobody schedules for
@@ -29,15 +29,15 @@ Scheduled work without ownership is indistinguishable from scheduled work that f
 
 ## What got built
 
-**{{ site.data.stats.cursor_automations }} Cursor automations** across six waves: CRM sync, career pipeline, governance chain, fleet health, content radar, morning brief.
+**{{ site.data.stats.cursor_automations }} governed automations** on the Agent Orchestration Layer across six waves: CRM sync, career pipeline, governance chain, fleet health, content radar, morning brief.
 
-**Active Writer governance.** Each job registered. Non-owners skip with `SKIPPED_NOT_OWNER`. No parallel heroic runs.
+**Active Writer governance.** Each job registered. Non-owners skip under explicit ownership rules. No parallel heroic runs.
 
-**Fleet health monitor.** Daily scan admits gaps to Governance Operations before Clint sits down.
+**Fleet health monitor.** Daily scan admits gaps to governance operations before morning review.
 
 **Governance chain.** Three-night audit cycle plus governance operations scan.
 
-**Wave-based cutover.** ChatGPT tasks migrated to Cursor with explicit ownership transfer, not duplication.
+**Wave-based cutover.** Scheduled work migrated between execution hosts with explicit ownership transfer, not duplication.
 
 | Category | Examples | Cadence |
 |----------|----------|---------|
@@ -48,7 +48,7 @@ Scheduled work without ownership is indistinguishable from scheduled work that f
 
 ## What changed
 
-Silent failure stopped being the default. Gaps surface in Sweep Log and Agent Runs with evidence URLs. Cutover waves completed without breaking single-writer discipline.
+Silent failure stopped being the default. Gaps surface in sweep logs and agent run records with evidence URLs. Cutover waves completed without breaking single-writer discipline.
 
 Fleet health is detection. Governance audit is certification. Together they keep governed AI ops honest as the schedule grows.
 

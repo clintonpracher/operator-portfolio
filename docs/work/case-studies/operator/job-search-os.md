@@ -8,9 +8,9 @@ proof_points:
 decision_shift: "From spray-and-pray applications to a scored pipeline with enforced intake and apply contracts."
 at_a_glance:
   - Selectable search lanes (platform AI / MarTech / both)
-  - Role Radar + Job Search Tracker admission templates (template_id on every create)
+  - Role Radar and Job Search Tracker admission templates on every create
   - Full pipeline: outreach log, contacts, rubric baseline through debrief
-  - Six-application weekly cap with OS-Driven cohort tracking
+  - Six-application weekly cap with OS-driven cohort tracking
   - "@stats:job_search_os_skills integrated skills in one Job Search OS"
 ---
 
@@ -22,26 +22,26 @@ I applied the same operating logic I use at enterprise scale to my own career pi
 
 ## The diagnostic
 
-The constraint was not effort. It was **ungoverned intake and broken handoffs**. Roles entered the tracker without Fit Tier, Search Year, or Role Radar links. Outreach and rubric scoring sat beside the tracker but were not wired through apply. Discovery ran, but nothing enforced admission at create time.
+The constraint was not effort. It was **ungoverned intake and broken handoffs**. Roles entered the tracker without fit tier, search year, or Role Radar links. Outreach and rubric scoring sat beside the tracker but were not wired through apply. Discovery ran, but nothing enforced admission at create time.
 
 ## What got built
 
-**Job Search OS** as a governed product system (reactivated August 2026):
+**Job Search OS** as a governed product system:
 
-- **Selectable lanes**: `platform_ai`, `martech`, or `both`; Clint sets mode, sweep reads config each run
-- **Two-stage gates**: PM function filter, director scope gate, then 0-9 rubric before Role Radar auto-write
-- **Admission templates**: Role Radar and Job Search Tracker rows require `template_id` + read-back verify; tracker template carries OS-Driven apply checklist
-- **Full apply pipeline**: tracker → Pre-Interview Rubric baseline → application-outreach (Outreach Log + Contacts) → interview-debrief post-round rows
-- **Six-application weekly cap** with OS-Driven Net-New / Re-Apply cohort
-- **{{ site.data.stats.job_search_os_skills }} integrated skills** plus daily sweep (Notion + Apify; Gmail drafts retired)
+- **Selectable lanes**: platform AI, MarTech, or both; mode drives each discovery sweep
+- **Two-stage gates**: PM function filter, director scope gate, then scored rubric before Role Radar auto-write
+- **Admission templates**: Role Radar and Job Search Tracker rows require template verification at create time
+- **Full apply pipeline**: tracker, pre-interview rubric baseline, outreach log and contacts, interview debrief rows
+- **Six-application weekly cap** with net-new and re-apply cohort tracking
+- **{{ site.data.stats.job_search_os_skills }} integrated skills** plus daily sweep through the Knowledge Base and registered research integrations
 
-**Overnight automation** at 6 AM runs lane-aware discovery. Clint dispositions Role Radar at desk; brief surfaces queue with lane + resume fit.
+**Overnight automation** at 6 AM runs lane-aware discovery. Morning review surfaces the queue with lane and resume fit.
 
 ## What changed
 
-Applications became a portfolio decision with enforced contracts, not a morale exercise. Low-scoring and wrong-function roles exit at intake. High-scoring roles get resume-advisor depth, rubric baseline, and outreach logging on a single tracker row.
+Applications became a portfolio decision with enforced contracts, not a morale exercise. Low-scoring and wrong-function roles exit at intake. High-scoring roles get resume depth, rubric baseline, and outreach logging on a single tracker row.
 
-The pipeline has one system of record (Notion), one execution host for scheduled work (Cursor), and triple-aligned Template Library rows for admission.
+The pipeline has one system of record in the Knowledge Base, one Agent Orchestration Layer for scheduled work, and aligned admission templates across the registry.
 
 ## If you cannot govern your own search, you cannot sell governance
 

@@ -10,7 +10,7 @@ Most execution problems are not execution problems. They are decision problems w
 
 I find the constraint, name who owns the call, rebuild the operating model, and leave behind a system the team can run without me. I have done that across a $600M media data platform, a 13-product AI portfolio, and the live Operator Control Plane I run today.
 
-At enterprise scale, that meant 13 AI and data products across 100+ markets, an $8M budget, and a 60+ person team. At solo-operator scale, it means Cursor, Claude, ChatGPT, and Codex working under one decision architecture with a single Active Writer for every task across skills, governed automations, and scheduled tasks.
+At enterprise scale, that meant 13 AI and data products across 100+ markets, an $8M budget, and a 60+ person team. At solo-operator scale, it means a governed multi-LLM stack under one decision-rights model with a single Active Writer for every task across skills, governed automations, and scheduled tasks.
 
 The tools handle the noise. I keep the judgment.
 
@@ -33,7 +33,7 @@ The tools handle the noise. I keep the judgment.
 | Pillar | Start here |
 |--------|------------|
 | Platform Architecture | [Data Unification](work/case-studies/enterprise/data-unification.md) |
-| Decision Systems | [Data Unification](work/case-studies/enterprise/data-unification.md) |
+| Decision Systems | [Product System Stabilization](work/case-studies/enterprise/product-system-stabilization.md) |
 | Operating Models | [Product System Stabilization](work/case-studies/enterprise/product-system-stabilization.md) |
 | Martech & Data Platforms | [AI Regulated Markets](work/case-studies/enterprise/ai-regulated-markets.md) |
 | Control Planes | [Operator Control Plane](work/case-studies/operator/control-plane.md) |

@@ -8,7 +8,7 @@ permalink: /work/control-plane-spec/
 
 Most product leaders scaling AI hit the same wall: more models, more agents, more dashboards, and less clarity about what is true. The failure mode is not weak intelligence. It is conflicting writes, duplicate automation, and eroded trust in the system of record.
 
-I have applied the same decision architecture at enterprise scale (13-product AI and data portfolio, 100+ markets, $8M budget, 60+ team) and reproduced it daily in a solo proof lab. This page is a one-page operating brief for leaders evaluating governed multi-agent ops, not a tool review.
+I have applied the same decision-rights model at enterprise scale (13-product AI and data portfolio, 100+ markets, $8M budget, 60+ team) and reproduced it daily in a solo proof lab. This page is a one-page operating brief for leaders evaluating governed multi-agent ops, not a tool review.
 
 ---
 
@@ -16,7 +16,7 @@ I have applied the same decision architecture at enterprise scale (13-product AI
 
 **One owner per workflow's system of record. Separate identity, execution, and audit. Scale by registering agents and automations, not by adding parallel brains.**
 
-In my live proof lab, that maps to a registry and identity layer, an agentic execution host for interactive and scheduled work, and a read-only audit layer.
+In my live proof lab, that maps to a Knowledge Base for registry and identity, an Agent Orchestration Layer for interactive and scheduled work, and a read-only audit layer.
 
 ---
 
@@ -30,7 +30,7 @@ In my live proof lab, that maps to a registry and identity layer, an agentic exe
 | Transformation fatigue | Another tool rollout | Operating model change before tooling expansion |
 | Evidence | Did the agent actually run? | Runs, handoffs, evidence trail |
 
-The pattern is portable whether the registry is Notion, Salesforce, or an internal CMDB, and whether execution runs on Cursor, an internal agent platform, or iPaaS.
+The pattern is portable whether the registry is a Knowledge Base, Salesforce, or an internal CMDB, and whether execution runs on an Agent Orchestration Layer, an internal agent platform, or iPaaS.
 
 ---
 
@@ -41,7 +41,7 @@ The pattern is portable whether the registry is Notion, Salesforce, or an intern
 | **One system of record per workflow** | One runtime mutates each task's system of record; others skip. |
 | **Registry outlives any single tool** | Agent identity stays durable across chat windows and vendor changes. |
 | **Compliance observes; it does not quietly fix** | Shadow audit reports failures; no silent repair. |
-| **Name integration constraints explicitly** | MCP integrations are named; no fake clean topology. |
+| **Name integration constraints explicitly** | Registered integrations are named; no fake clean topology. |
 | **Leaders decide what becomes true** | Agents produce options; judgment picks what is true. |
 
 ---
@@ -69,15 +69,15 @@ The pattern is portable whether the registry is Notion, Salesforce, or an intern
     └─ Agent Runs / Handoffs · evidence trail
 
 2b. Agentic control layer and audit layer
-    ├─ Agentic control layer · preferred schedule host
+    ├─ Agent Orchestration Layer · preferred schedule host
     ├─ Audit layer · read-only verification and render
-    └─ MCP integrations · named integration boundary
+    └─ Registered integrations · named integration boundary
 
 3. Versioned procedures
    └─ Skills library · versioned playbooks
 ```
 
-**Proof-lab scale:** **{{ site.data.stats.skills }} skills, {{ site.data.stats.cursor_automations }} governed automations on the agentic control layer, {{ site.data.stats.scheduled_tasks }} scheduled tasks.**
+**Proof-lab scale:** **{{ site.data.stats.skills }} skills, {{ site.data.stats.cursor_automations }} governed automations on the Agent Orchestration Layer, {{ site.data.stats.scheduled_tasks }} scheduled tasks.**
 
 {% include architecture-public.html %}
 
@@ -89,7 +89,7 @@ The pattern is portable whether the registry is Notion, Salesforce, or an intern
 - **Solo proof lab:** Morning brief, registry, and governance audit cycle run daily so the model is operational, not theoretical.
 - **Meta-proof:** Job Search OS applies the same governance to my own career pipeline.
 
-The pattern holds whether the registry is Notion or Salesforce and whether execution is Cursor or an internal agent platform.
+The same decision-rights model holds whether the registry is a Knowledge Base or Salesforce and whether execution runs on an Agent Orchestration Layer or an internal agent platform.
 
 ---
 

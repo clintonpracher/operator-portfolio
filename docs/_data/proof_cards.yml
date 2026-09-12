@@ -1,6 +1,6 @@
 intro: >-
-  These are short examples of the work I have done at enterprise scale and in my own AI operator projects.
-  I have applied the same decision-system principles across multiple industries and in the systems I run every day.
+  These are short examples of the work I have done at enterprise scale and in the live operating model I run today.
+  I have applied the same decision-rights principles across multiple industries and in the systems I run every day.
 enterprise:
   - title: Data Unification
     url: /work/proof/data-unification/
@@ -21,12 +21,12 @@ enterprise:
   - title: The Product System Stabilization Framework
     url: /work/proof/product-system-stabilization/
     icon: portfolio
-    description: Rebuilt portfolio governance across 13 products so roadmaps, ownership, and investment calls stopped conflicting.
+    description: Rebuilt portfolio governance for a connected-hardware client so roadmaps, ownership, and investment calls stopped conflicting.
 operator:
   - title: Operator Control Plane
     url: /work/proof/control-plane/
     icon: control-plane
-    description: Built the ownership layer that assigns one Active Writer per task across registry, execution host, audit layer, and connectors at solo-operator scale.
+    description: Built the ownership layer with one Active Writer per task across registry, execution, audit, and registered integrations.
   - title: Automation Fleet
     url: /work/proof/automation-fleet/
     icon: automation
@@ -39,4 +39,4 @@ operator:
   - title: Job Search OS
     url: /work/proof/job-search-os/
     icon: career
-    description: "Applying Decision Architecture applied to career search: one pipeline, explicit ownership, and measurable proof artifacts."
+    description: Career pipeline run as a governed product system with one system of record, explicit ownership, and measurable proof artifacts.

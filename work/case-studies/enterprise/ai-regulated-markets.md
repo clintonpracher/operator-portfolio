@@ -28,7 +28,7 @@ It is convenient to describe this as a legal problem, and it lets everybody off 
 
 The blocker was that compliance was being treated as a review gate rather than a design input. When you build first and ask second, every answer is expensive, because a no means rework and a yes takes weeks to obtain. Thirteen times over, that is not a queue. It is a structural tax on the entire AI portfolio.
 
-So the actual problem was a decision-architecture problem. The regulatory call was being made at the wrong point in the process, by the wrong function, for the thirteenth time.
+So the actual problem was a decision-rights problem. The regulatory call was being made at the wrong point in the process, by the wrong function, for the thirteenth time.
 
 ## Three frameworks, built once
 

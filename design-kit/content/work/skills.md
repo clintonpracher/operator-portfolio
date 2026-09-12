@@ -1,21 +1,6 @@
 # Skills
 
-I work across product strategy, portfolio systems, data platforms, and applied AI. The common thread is decision architecture: making ownership, tradeoffs, and execution visible enough to scale.
-
----
-
-## AI platforms
-
-| Platform | Public role in the architecture |
-|----------|---------------------------------|
-| **Cursor** | Primary execution environment for governed agents and scheduled work |
-| **Claude** | Independent review, deep analysis, and bounded audit work |
-| **ChatGPT** | Connected workflows where access or context is platform-specific |
-| **Codex** | Agentic product development, site work, and technical implementation |
-
-This is a governed multi-model system, not a tool collection. Each active task has one accountable writer. Review remains separate from ownership, and human judgment stays on top.
-
-**Integrations:** Notion, Gmail, Calendar, Fathom, GoHighLevel, Apify (MCP stack).
+I work across product strategy, portfolio systems, data platforms, and applied AI. The common thread is decision rights: making ownership, tradeoffs, and execution visible enough to scale.
 
 ---
 
@@ -23,7 +8,16 @@ This is a governed multi-model system, not a tool collection. Each active task h
 
 The public architecture shows how judgment, authority, execution, and evidence fit together. Internal workflows and implementation mechanics stay private.
 
-{% include architecture-public.html %}
+Roles in the stack:
+
+| Layer | Public role |
+|-------|-------------|
+| **Knowledge Base** | Registry, task ownership, and system-of-record rows |
+| **Agent Orchestration Layer** | Interactive and scheduled execution under Active Writer rules |
+| **Audit LLM / review layer** | Read-only verification and independent challenge |
+| **Registered integrations** | CRM, calendar, email, meeting intelligence, research APIs, source control |
+
+This is a governed multi-LLM system, not a tool collection. Each active task has one accountable writer. Review remains separate from ownership, and human judgment stays on top.
 
 [Operating Model for Multi-Agent AI](/work/control-plane-spec/)
 

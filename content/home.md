@@ -15,7 +15,7 @@ Most execution problems are not execution problems. They are decision problems w
 
 I find the constraint, name who owns the call, rebuild the operating model, and leave behind a system the team can run without me. I have done that across a $600M media data platform, a 13-product AI portfolio, and the live Operator Control Plane I run today.
 
-At enterprise scale, that meant 13 AI and data products across 100+ markets, an $8M budget, and a 60+ person team. At solo-operator scale, it means Cursor, Claude, ChatGPT, and Codex working under one decision architecture with a single Active Writer for every task: {{ site.data.stats.skills }} skills, {{ site.data.stats.cursor_automations }} automations, and {{ site.data.stats.scheduled_tasks }} scheduled tasks.
+At enterprise scale, that meant 13 AI and data products across 100+ markets, an $8M budget, and a 60+ person team. At solo-operator scale, it means a governed multi-LLM stack under one decision-rights model with a single Active Writer for every task: {{ site.data.stats.skills }} skills, {{ site.data.stats.cursor_automations }} governed automations, and {{ site.data.stats.scheduled_tasks }} scheduled tasks.
 
 The tools handle the noise. I keep the judgment.
 
@@ -43,6 +43,6 @@ I work with leaders who need clearer decision systems, not another quarter of ex
 
 ## Get in touch with me
 
-I help product leaders in complex organizations unblock execution by fixing the decision architecture behind delivery, so the roadmap you committed to ships without another quarter of explanation.
+I help product leaders in complex organizations unblock execution by fixing decision rights behind delivery, so the roadmap you committed to ships without another quarter of explanation.
 
 {% include home-contact.html %}

@@ -101,7 +101,7 @@
 <path d="M 27 121.5 L -32 121.5 L -32 1009.8000000000001 L 27 1009.8000000000001" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#arrow-dashed)"/>
 <text x="-25.25" y="565.6500000000001" fill="#94A3B8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001" text-anchor="start">model access</text>
 <rect x="21.6" y="764.1" width="1576.8000000000002" height="151.20000000000002" fill="#111A33" stroke="#3C245F" stroke-width="1" rx="6" opacity="0.85"/>
-<text x="37.800000000000004" y="785.7" fill="#94A3B8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">MCP integration side channels · perimeter routing into Productivity &amp; dev</text>
+<text x="37.800000000000004" y="785.7" fill="#94A3B8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Integration side channels · perimeter routing into Productivity &amp; dev</text>
 <path d="M 858.6000000000001 394.2 L 885.6000000000001 394.2 L 885.6000000000001 794.34 L 1636.2000000000003 794.34 L 1636.2000000000003 378 L 1598.3999999999999 378" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#arrow-dashed)"/>
 <path d="M 637.2 542.7 L 664.2 542.7 L 664.2 824.58 L 1636.2000000000003 824.58 L 1636.2000000000003 448.2 L 1598.3999999999999 448.2" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#arrow-dashed)"/>
 <path d="M 1301.3999999999999 483.3 L 1328.3999999999999 483.3 L 1328.3999999999999 854.82 L 1636.2000000000003 854.82 L 1636.2000000000003 518.4000000000001 L 1598.3999999999999 518.4000000000001" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#arrow-dashed)"/>
@@ -116,7 +116,7 @@
 <line x1="1161.0000000000002" y1="1145.8799999999999" x2="1193.4" y2="1145.8799999999999" stroke="#4B5E78" stroke-width="2"/>
 <text x="1204.2000000000003" y="1151.55" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Solid · spine and procedure feed</text>
 <line x1="1161.0000000000002" y1="1170.45" x2="1193.4" y2="1170.45" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="7 5"/>
-<text x="1204.2000000000003" y="1176.12" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Grey dash · MCP side channels and model access</text>
+<text x="1204.2000000000003" y="1176.12" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Grey dash · Integration side channels and model access</text>
 <line x1="1161.0000000000002" y1="1195.02" x2="1193.4" y2="1195.02" stroke="#7DB8A8" stroke-width="1.5" stroke-dasharray="9 4"/>
 <text x="1204.2000000000003" y="1200.69" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Teal dash · feedback loops</text>
 <rect x="1144.8000000000002" y="1251.99" width="459.00000000000006" height="180.36" fill="#0C1226" stroke="#3C245F" stroke-width="1" rx="6" opacity="0.95"/>
@@ -127,7 +127,7 @@
 <text x="1161.0000000000002" y="1342.44" fill="#7DB8A8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001" font-weight="600">2.</text>
 <text x="1182.6000000000001" y="1342.44" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Procedure library + model layer · execution stack</text>
 <text x="1161.0000000000002" y="1367.01" fill="#7DB8A8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001" font-weight="600">3.</text>
-<text x="1182.6000000000001" y="1367.01" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Grey dash · MCP side channels and model access</text>
+<text x="1182.6000000000001" y="1367.01" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Grey dash · Integration side channels and model access</text>
 <text x="1161.0000000000002" y="1391.58" fill="#7DB8A8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001" font-weight="600">4.</text>
 <text x="1182.6000000000001" y="1391.58" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Teal dash · feedback into judgment and procedures</text>
 </svg>

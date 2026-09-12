@@ -10,11 +10,11 @@ Diagrams on the public site use **product-facing labels**, not personal names or
 |----------------------|----------------------|
 | Clinton Pracher / Clint | Decision maker |
 | August Reeve · Chief of Staff | Orchestration agent |
-| CP Product Advisory | Business operations |
+| CP Product Advisory / personal ops | Independent operating model |
 | Personal | Personal domain |
-| Notion identity | Registry & identity |
-| Cursor Automations | Agentic control layer |
-| Claude Shadow | Audit layer |
+| Knowledge Base | Registry and identity |
+| Agent Orchestration Layer | Scheduled and interactive execution |
+| Audit layer | Read-only verification |
 | Specialist agents · on-call | Specialist agents · on-call |
 
 Internal ops truth with full names lives in `docs/product/2026-08/architecture-diagram-current-state.md` (not mirrored to the public site).

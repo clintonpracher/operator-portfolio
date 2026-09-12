@@ -3,7 +3,7 @@ items:
     url: /work/case-studies/operator/control-plane/
     icon: control-plane
     meta: Multi-model governance, Active Writer
-    description: Built the ownership layer that assigns one Active Writer per task across registry, execution host, audit layer, and connectors at solo-operator scale.
+    description: Built the ownership layer with one Active Writer per task across registry, execution, audit, and registered integrations.
   - title: Automation Fleet
     url: /work/case-studies/operator/automation-fleet/
     icon: automation
@@ -19,4 +19,4 @@ items:
     url: /work/case-studies/operator/job-search-os/
     icon: career
     meta: Governed career pipeline
-    description: "Applying Decision Architecture applied to career search: one pipeline, explicit ownership, and measurable proof artifacts."
+    description: Career pipeline run as a governed product system with one system of record, explicit ownership, and measurable proof artifacts.

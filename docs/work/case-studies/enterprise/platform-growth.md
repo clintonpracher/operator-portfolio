@@ -33,7 +33,7 @@ This is the part that took the longest to land with stakeholders, and it is the 
 
 At retail scale, the system that governs product data governs the business. Taxonomy decides what is findable. Attribute structure decides what is comparable. Variant modeling decides what is buyable without friction. Every one of those is a decision made once, upstream, usually years earlier, by someone solving a merchandising problem rather than a discovery problem. And every one of them constrains revenue, traffic, and customer experience downstream, permanently, until somebody goes back and changes it.
 
-The organization was managing the catalog as an operational asset. It was actually the platform's decision architecture.
+The organization was managing the catalog as an operational asset. It was actually the platform's decision system.
 
 ## The four moves
 

@@ -21,7 +21,7 @@ offers:
 
   # Fixed-price digital product example (uncomment when ready)
   # playbook:
-  #   label: "Decision architecture playbook"
+  #   label: "Decision rights playbook"
   #   description: "PDF + templates."
   #   pricing_model: fixed
   #   payment_link_url: ""

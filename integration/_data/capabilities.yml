@@ -140,7 +140,7 @@ audiences:
       eyebrow: Operator systems · Governed AI
       paragraphs:
         - "I run a live operator control plane: skills, automations, scheduled tasks, and registry discipline with one Active Writer per task across models and tools."
-        - "The same decision architecture I use in enterprise product leadership runs at operator scale: explicit ownership, measurable proof, and systems that stay current through certification rhythm."
+        - "The same decision-rights model I use in enterprise product leadership runs at operator scale: explicit ownership, measurable proof, and systems that stay current through certification rhythm."
     proof_footer: Multi-model operator control plane · single-writer governance
     proof_use_stats: true
     capabilities_heading: Operator systems and AI-native practice
@@ -149,12 +149,12 @@ audiences:
     capabilities:
       - title: Governed operator systems
         icon: control-plane
-        judgment: Assigns one Active Writer per task across registry, execution host, audit layer, and MCP integrations at operator scale.
+        judgment: Assigns one Active Writer per task across registry, Agent Orchestration Layer, audit layer, and registered integrations at operator scale.
         highlights:
           - Operator Control Plane design and operation
           - Registry and task ownership discipline
-          - MCP integrations without duplicate writes
-        stack: Cursor, Claude, governed automation registry
+          - Registered integrations without duplicate writes
+        stack: Agent Orchestration Layer, Knowledge Base, governed automation registry
       - title: Automation fleet and certification
         icon: automation
         stats_metric: cursor_automations
@@ -163,20 +163,20 @@ audiences:
           - Scheduled execution at governed scale
           - Certification rhythm for skills and automations
           - Audit cycles that keep the system current
-        stack: Cursor Automations, scheduled task registry
+        stack: Agent Orchestration Layer, scheduled task registry
       - title: AI-native prototyping
         icon: ai-governance
-        judgment: Prototypes products and workflows with AI-native tools while keeping production boundaries and governance explicit.
+        judgment: Prototypes products and workflows with LLM-native tools while keeping production boundaries and governance explicit.
         highlights:
-          - Rapid prototyping with Claude and Cursor
-          - Workflow automation with n8n and agents
+          - Rapid prototyping with execution and audit LLMs
+          - Workflow automation with agents and orchestration
           - HTML/CSS surfaces for proof artifacts
-        stack: Claude, ChatGPT, Cursor, n8n, Lovable
+        stack: Multi-LLM orchestration, agent workflows, proof surfaces
       - title: Decision systems and proof
         icon: architecture
         judgment: "Builds decision systems with one pipeline, explicit ownership, and proof artifacts that show how product and platform choices hold up under scrutiny."
         highlights:
-          - Decision architecture for product and platform work
+          - Decision rights for product and platform work
           - Proof portfolios tied to operating model
           - Cross-session memory and continuity discipline
-        stack: Decision architecture, proof-at-a-glance systems
+        stack: Decision rights, proof-at-a-glance systems
