@@ -13,12 +13,18 @@ This is the public resume for Clinton J. Pracher, a product and platform executi
 | Surface | URL / file | Fleet numbers |
 |---------|------------|---------------|
 | **Web resume** | [resume.md](resume.md) → `/resume/resume/` | **Live** at Jekyll build via `site.data.stats` (skills, automations, scheduled tasks). Header contact row is four icon links: location (Las Vegas, NV maps search), email, LinkedIn, website. |
-| **PDF download** | [clinton-pracher-platform-data-ai-resume.pdf](clinton-pracher-platform-data-ai-resume.pdf) | **Static** Microsoft Word export only (no LibreOffice). Replace when Clint supplies a new approved PDF. |
-| **Plain text** | `clinton-pracher-platform-data-ai-resume.txt` | **Static** companion to the PDF export (not the web resume) |
+| **PDF download** | [clinton-pracher-platform-data-ai-resume.pdf](clinton-pracher-platform-data-ai-resume.pdf) | **Static** approved Word export (primary site download). |
+| **Word download** | [clinton-pracher-platform-data-ai-resume.docx](clinton-pracher-platform-data-ai-resume.docx) | **Static** approved OneDrive master; hosted at direct URL, not linked from the resume page button. |
+| **Plain text** | `clinton-pracher-platform-data-ai-resume.txt` | **Static** companion from repo build (not the web resume). |
 
-The **Download my resume** button on the web resume serves the **PDF only**. Publish does not regenerate the PDF or `.txt` via LibreOffice.
+The **Download my resume** button on the web resume serves the **PDF only**. Publish does not regenerate PDF or DOCX from the anchor unless you pass `--rebuild-resume` (avoid for the public site).
 
-Replace the PDF (and optional `.txt` companion) in this folder when Clint supplies a new Word export, then run `./scripts/publish-portfolio.sh`.
+**Source of truth:** OneDrive `00_Main_Anchor_Resume/` (see `ONEDRIVE_PORTFOLIO_RESUME_DIR` in `scripts/lib/repo-config.sh`).
+
+```bash
+./scripts/sync-portfolio-resume-from-onedrive.sh
+./scripts/publish-portfolio.sh
+```
 
 ## Live stats on the web resume
 
