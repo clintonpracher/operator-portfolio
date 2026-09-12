@@ -149,11 +149,11 @@ audiences:
     capabilities:
       - title: Governed operator systems
         icon: control-plane
-        judgment: Assigns one Active Writer per task across registry, execution host, audit layer, and connector islands at operator scale.
+        judgment: Assigns one Active Writer per task across registry, execution host, audit layer, and MCP integrations at operator scale.
         highlights:
           - Operator Control Plane design and operation
           - Registry and task ownership discipline
-          - Connector islands without duplicate writes
+          - MCP integrations without duplicate writes
         stack: Cursor, Claude, governed automation registry
       - title: Automation fleet and certification
         icon: automation

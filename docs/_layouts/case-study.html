@@ -35,14 +35,11 @@
           <li>
             {%- if item contains '@stats:' -%}
               {%- assign stat_rest = item | split: '@stats:' | last | strip -%}
-              {%- assign stat_parts = stat_rest | split: ' ' -%}
-              {%- assign stat_key = stat_parts | first -%}
-              {%- capture stat_label -%}
-                {%- for part in stat_parts offset: 1 -%}
-                  {{ part }}{% unless forloop.last %} {% endunless %}
-                {%- endfor -%}
-              {%- endcapture -%}
-              {{ site.data.stats[stat_key] }} {{ stat_label | strip }}
+              {%- assign stat_words = stat_rest | split: ' ' -%}
+              {%- assign stat_key = stat_words | first -%}
+              {%- assign stat_label_size = stat_words.size | minus: 1 -%}
+              {%- assign stat_label = stat_words | slice: 1, stat_label_size | join: ' ' -%}
+              {{ site.data.stats[stat_key] }} {{ stat_label }}
             {%- else -%}
               {{ item }}
             {%- endif -%}

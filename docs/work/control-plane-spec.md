@@ -41,7 +41,7 @@ The pattern is portable whether the registry is Notion, Salesforce, or an intern
 | **One system of record per workflow** | One runtime mutates each task's system of record; others skip. |
 | **Registry outlives any single tool** | Agent identity stays durable across chat windows and vendor changes. |
 | **Compliance observes; it does not quietly fix** | Shadow audit reports failures; no silent repair. |
-| **Name integration constraints explicitly** | Connector islands are named; no fake clean topology. |
+| **Name integration constraints explicitly** | MCP integrations are named; no fake clean topology. |
 | **Leaders decide what becomes true** | Agents produce options; judgment picks what is true. |
 
 ---
@@ -71,7 +71,7 @@ The pattern is portable whether the registry is Notion, Salesforce, or an intern
 2b. Agentic control layer and audit layer
     ├─ Agentic control layer · preferred schedule host
     ├─ Audit layer · read-only verification and render
-    └─ Connector island · named integration boundary
+    └─ MCP integrations · named integration boundary
 
 3. Versioned procedures
    └─ Skills library · versioned playbooks

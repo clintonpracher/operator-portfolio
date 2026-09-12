@@ -122,7 +122,7 @@ const READ_ORDER = {
   steps: [
     "Follow the solid spine · canonical write path",
     "Procedure library + model layer · execution stack",
-    "Grey dash · side channels and model access",
+    "Grey dash · MCP integration side channels and model access",
     "Teal dash · feedback into judgment and procedures",
   ],
 };
@@ -444,7 +444,7 @@ function renderProcedureLoop(fromId, toId) {
 function renderIntegrationBand(totalW) {
   return [
     `<rect x="${LAYOUT.padX}" y="${INTEGRATION_BAND_Y}" width="${totalW - LAYOUT.padX * 2}" height="${LAYOUT.integrationBandH}" fill="${COLORS.laneFillB}" stroke="${COLORS.laneStroke}" stroke-width="1" rx="6" opacity="0.85"/>`,
-    `<text x="${LAYOUT.padX + 12 * SCALE}" y="${INTEGRATION_BAND_Y + 16 * SCALE}" fill="${COLORS.dashed}" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="${8.5 * SCALE}">Connector side channels · perimeter routing into Productivity &amp; dev</text>`,
+    `<text x="${LAYOUT.padX + 12 * SCALE}" y="${INTEGRATION_BAND_Y + 16 * SCALE}" fill="${COLORS.dashed}" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="${8.5 * SCALE}">MCP integration side channels · perimeter routing into Productivity &amp; dev</text>`,
   ].join("\n");
 }
 
@@ -486,7 +486,7 @@ function renderLegend(totalW, y) {
     `<line x1="${x + 12 * SCALE}" y1="${y + padTop + lineH * 2.2}" x2="${x + 36 * SCALE}" y2="${y + padTop + lineH * 2.2}" stroke="${COLORS.stroke}" stroke-width="2"/>`,
     `<text x="${x + 44 * SCALE}" y="${y + padTop + lineH * 2.5}" fill="${COLORS.fg}" font-family="${font}" font-size="${fs}">Solid · spine and procedure feed</text>`,
     `<line x1="${x + 12 * SCALE}" y1="${y + padTop + lineH * 3.5}" x2="${x + 36 * SCALE}" y2="${y + padTop + lineH * 3.5}" stroke="${COLORS.dashed}" stroke-width="1.5"${DASH_STYLE}/>`,
-    `<text x="${x + 44 * SCALE}" y="${y + padTop + lineH * 3.8}" fill="${COLORS.fg}" font-family="${font}" font-size="${fs}">Grey dash · side channels and model access</text>`,
+    `<text x="${x + 44 * SCALE}" y="${y + padTop + lineH * 3.8}" fill="${COLORS.fg}" font-family="${font}" font-size="${fs}">Grey dash · MCP integration side channels and model access</text>`,
     `<line x1="${x + 12 * SCALE}" y1="${y + padTop + lineH * 4.8}" x2="${x + 36 * SCALE}" y2="${y + padTop + lineH * 4.8}" stroke="${COLORS.loop}" stroke-width="1.5"${LOOP_STYLE}/>`,
     `<text x="${x + 44 * SCALE}" y="${y + padTop + lineH * 5.1}" fill="${COLORS.fg}" font-family="${font}" font-size="${fs}">Teal dash · feedback loops</text>`,
   ];
