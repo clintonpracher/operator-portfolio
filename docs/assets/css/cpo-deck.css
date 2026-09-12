@@ -1014,6 +1014,21 @@ a.deck-card.proof-card:hover {
   border: 0;
 }
 
+.architecture-view--detail .architecture-view__scroll {
+  overflow-x: visible;
+  overflow-y: visible;
+  padding-inline: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.architecture-view--detail .architecture-view__image {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  height: auto;
+  aspect-ratio: auto;
+  margin-inline: auto;
+}
+
 .link-pill__icon {
   width: 16px;
   height: 16px;

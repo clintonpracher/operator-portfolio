@@ -1017,12 +1017,23 @@ a {
   background: var(--portfolio-shell-raised);
 }
 
+.architecture-view--detail .architecture-view__scroll {
+  overflow-x: visible;
+  padding-inline: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.architecture-view--detail .architecture-view__image {
+  min-width: 0;
+  height: auto;
+  margin-inline: auto;
+}
+
 .architecture-view__header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.35rem;
 }
 
 .architecture-view__eyebrow {
@@ -1041,6 +1052,42 @@ a {
   font-family: var(--font-display);
   font-size: clamp(1.4rem, 3vw, 2rem);
   line-height: var(--lh-snug);
+}
+
+.architecture-view__product-summary {
+  max-width: 42rem;
+  margin: 0 0 1.15rem;
+  padding: 0.95rem 1.15rem 1rem 1.2rem;
+  border-left: 3px solid rgba(200, 181, 233, 0.45);
+  border-radius: 0 var(--radius-md, 0.5rem) var(--radius-md, 0.5rem) 0;
+  background: linear-gradient(90deg, rgba(200, 181, 233, 0.08), transparent 62%);
+}
+
+.architecture-view__product-summary-label {
+  margin: 0 0 0.45rem;
+  color: var(--portfolio-violet-text);
+  font-family: var(--font-display);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.architecture-view__product-summary-text {
+  margin: 0;
+  color: var(--portfolio-copy-soft);
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  font-weight: var(--fw-regular);
+  line-height: 1.65;
+}
+
+.architecture-view__diagram-note {
+  max-width: 50rem;
+  margin: 0 0 1.5rem;
+  color: var(--portfolio-copy-muted);
+  font-size: var(--fs-body-sm);
+  line-height: 1.6;
 }
 
 .architecture-view__status {

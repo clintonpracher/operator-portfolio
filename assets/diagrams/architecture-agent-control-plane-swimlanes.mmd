@@ -1,0 +1,79 @@
+%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
+flowchart LR
+  subgraph L1["Human"]
+    H["Human judgment"]
+  end
+
+  subgraph L2["Client surfaces"]
+    direction TB
+    WS["Agent workspace"]
+    DB["Operations dashboard"]
+    EP["Executive control panel"]
+    DI["Delegation interface"]
+  end
+
+  subgraph L3["Orchestration"]
+    direction TB
+    CTX["Context enrichment"]
+    ORCH["Orchestration agent"]
+    LANES["Specialist lane agents"]
+    SCHED["Scheduled automations"]
+    SWG["Single-writer gate"]
+  end
+
+  subgraph L4["Business systems"]
+    direction TB
+    KB["Knowledge base"]
+    CRM["CRM platform"]
+    WEB["Web data API"]
+    MTG["Meeting intelligence"]
+  end
+
+  subgraph L5["Identity and policy"]
+    direction TB
+    DEC["Decision log"]
+    REG["Agent registry"]
+    TASK["Task registry"]
+  end
+
+  subgraph L6["Evidence and memory"]
+    direction TB
+    DOCS["Document hub"]
+    REPO["Skills · docs repository"]
+    TEL["Operations telemetry"]
+  end
+
+  subgraph L7["Productivity and dev"]
+    direction TB
+    EM["Email"]
+    CAL["Calendar"]
+    DRV["Cloud storage"]
+    GH["Source control · CI"]
+  end
+
+  H --> WS --> CTX --> ORCH --> LANES --> SCHED --> SWG
+  SWG --> KB --> REG --> TEL
+  KB -.-> EM
+  SCHED -.-> CAL
+  DOCS -.-> DRV
+  AUTO -.-> GH
+  TEL -.-> H
+  REPO -.-> SKILLS
+
+  subgraph PROC["Procedure library"]
+    direction LR
+    SKILLS["Skills library"]
+    QA["Quality harness"]
+    AUTO["Automation catalog"]
+  end
+
+  SKILLS --> CTX
+
+  subgraph LLM["Model layer"]
+    direction LR
+    P["Primary LLM"]
+    S["Secondary LLM"]
+    A["Audit model"]
+  end
+
+  P -.-> ORCH

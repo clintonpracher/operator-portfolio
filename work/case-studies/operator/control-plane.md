@@ -63,4 +63,6 @@ That is the difference between collecting AI tools and running governed AI ops.
 
 {% include architecture-public.html %}
 
+{% include architecture-detail-public.html %}
+
 [Operating Model for Multi-Agent AI](/work/control-plane-spec/)

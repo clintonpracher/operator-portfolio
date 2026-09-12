@@ -227,6 +227,22 @@
   color: #f7f7f7;
 }
 
+.case-study-body .architecture-view__product-summary {
+  background: linear-gradient(90deg, rgba(200, 181, 233, 0.1), transparent 62%);
+}
+
+.case-study-body .architecture-view__product-summary-label {
+  color: #c8b5e9;
+}
+
+.case-study-body .architecture-view__product-summary-text {
+  color: rgba(247, 247, 247, 0.82);
+}
+
+.case-study-body .architecture-view__diagram-note {
+  color: rgba(247, 247, 247, 0.62);
+}
+
 .case-study-body .architecture-view__eyebrow {
   color: #c8b5e9 !important;
 }

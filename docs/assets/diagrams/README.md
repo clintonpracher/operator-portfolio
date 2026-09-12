@@ -23,9 +23,13 @@ Internal ops truth with full names lives in `docs/product/2026-08/architecture-d
 
 | File | Used on |
 |------|---------|
-| `architecture-one-glance.svg` | Work, Skills (Operator view), control-plane spec, Operator Control Plane case study |
+| `architecture-one-glance.svg` | Work, Skills (Operator view), control-plane spec, Operator Control Plane case study (summary) |
+| `architecture-agent-control-plane-swimlanes.svg` | Operator Control Plane case study (detail swimlanes) |
+| `architecture-control-plane-detail.svg` | Legacy detail layout (superseded by swimlanes on case study) |
 | `architecture-one-glance.png` | Social / TeeterBeaker (optional) |
 
-Source Mermaid (structure SSOT): `architecture-one-glance.mmd`
+Source Mermaid (structure reference): `architecture-agent-control-plane-swimlanes.mmd`
+
+Public SVG (layout SSOT): run `node marketing-assets/operator-portfolio/scripts/render-control-plane-swimlanes-svg.mjs` after layout changes. Mirrors `.cursor/canvases/cp-control-plane-architecture.canvas.tsx`.
 
 Visual: Imperious Luxury tokens (`midnight-authority`, `imperious-purple`, `slate-clarity`, Outfit/DM Sans).

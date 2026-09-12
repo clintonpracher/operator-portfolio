@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 1780.0000000000002 1452.35" width="1780" height="1452" role="img" aria-label="Agent control plane swimlane architecture">
+<rect x="-80" width="1780.0000000000002" height="100%" fill="#0C1226"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#4B5E78"/></marker><marker id="arrow-dashed" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#94A3B8"/></marker><marker id="arrow-loop" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7DB8A8"/></marker></defs>
+<text x="27" y="29.700000000000003" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="600">Agent control plane · swimlane architecture</text>
+<rect x="21.6" y="51.300000000000004" width="1576.8000000000002" height="105.30000000000001" fill="#0C1226" stroke="#3C245F" stroke-width="1.5" rx="8"/>
+<text x="37.800000000000004" y="75.60000000000001" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="600">Procedure library</text>
+<rect x="21.6" y="939.6" width="1576.8000000000002" height="105.30000000000001" fill="#111A33" stroke="#3C245F" stroke-width="1.5" rx="8"/>
+<text x="37.800000000000004" y="963.9" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="600">Model layer · dashed link from procedure library</text>
+<rect x="21.6" y="226.8" width="172.8" height="513" fill="#0C1226" stroke="#3C245F" stroke-width="1"/>
+<rect x="21.6" y="183.60000000000002" width="172.8" height="37.800000000000004" fill="rgba(60, 36, 95, 0.55)" stroke="#3C245F" stroke-width="1"/>
+<text x="108" y="207.90000000000003" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="600" text-anchor="middle">Human</text>
+<rect x="243" y="226.8" width="172.8" height="513" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<rect x="243" y="183.60000000000002" width="172.8" height="37.800000000000004" fill="rgba(60, 36, 95, 0.55)" stroke="#3C245F" stroke-width="1"/>
+<text x="329.4" y="207.90000000000003" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="600" text-anchor="middle">Client surfaces</text>
+<rect x="464.40000000000003" y="226.8" width="172.8" height="513" fill="#0C1226" stroke="#3C245F" stroke-width="1"/>
+<rect x="464.40000000000003" y="183.60000000000002" width="172.8" height="37.800000000000004" fill="rgba(60, 36, 95, 0.55)" stroke="#3C245F" stroke-width="1"/>
+<text x="550.8000000000001" y="207.90000000000003" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="600" text-anchor="middle">Orchestration</text>
+<rect x="685.8000000000001" y="226.8" width="172.8" height="513" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<rect x="685.8000000000001" y="183.60000000000002" width="172.8" height="37.800000000000004" fill="rgba(60, 36, 95, 0.55)" stroke="#3C245F" stroke-width="1"/>
+<text x="772.2" y="207.90000000000003" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="600" text-anchor="middle">Business systems</text>
+<rect x="907.2" y="226.8" width="172.8" height="513" fill="#0C1226" stroke="#3C245F" stroke-width="1"/>
+<rect x="907.2" y="183.60000000000002" width="172.8" height="37.800000000000004" fill="rgba(60, 36, 95, 0.55)" stroke="#3C245F" stroke-width="1"/>
+<text x="993.6" y="207.90000000000003" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="600" text-anchor="middle">Identity &amp; policy</text>
+<rect x="1128.6" y="226.8" width="172.8" height="513" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<rect x="1128.6" y="183.60000000000002" width="172.8" height="37.800000000000004" fill="rgba(60, 36, 95, 0.55)" stroke="#3C245F" stroke-width="1"/>
+<text x="1215" y="207.90000000000003" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="600" text-anchor="middle">Evidence &amp; memory</text>
+<rect x="1425.6" y="226.8" width="172.8" height="513" fill="#0C1226" stroke="#3C245F" stroke-width="1"/>
+<rect x="1425.6" y="183.60000000000002" width="172.8" height="37.800000000000004" fill="rgba(60, 36, 95, 0.55)" stroke="#3C245F" stroke-width="1"/>
+<text x="1512" y="207.90000000000003" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="600" text-anchor="middle">Productivity &amp; dev</text>
+<line x1="550.8000000000001" y1="387.45000000000005" x2="550.8000000000001" y2="400.95000000000005" stroke="#4B5E78" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="550.8000000000001" y1="446.85" x2="550.8000000000001" y2="460.35" stroke="#4B5E78" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="550.8000000000001" y1="506.25" x2="550.8000000000001" y2="519.75" stroke="#4B5E78" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="550.8000000000001" y1="565.65" x2="550.8000000000001" y2="579.1500000000001" stroke="#4B5E78" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 194.4 483.3 L 218.7 483.3 L 218.7 394.2 L 243 394.2" fill="none" stroke="#4B5E78" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 415.8 394.2 L 440.1 394.2 L 440.1 364.5 L 464.40000000000003 364.5" fill="none" stroke="#4B5E78" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 637.2 602.1000000000001 L 661.5 602.1000000000001 L 661.5 394.2 L 685.8000000000001 394.2" fill="none" stroke="#4B5E78" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 858.6000000000001 394.2 L 882.9000000000001 394.2 L 882.9000000000001 483.3 L 907.2 483.3" fill="none" stroke="#4B5E78" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 1080 483.3 L 1104.3 483.3 L 1104.3 542.7 L 1128.6 542.7" fill="none" stroke="#4B5E78" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 280.80000000000007 143.10000000000002 L 48 143.10000000000002 L 48 175.50000000000003 L 550.8000000000001 175.50000000000003 L 550.8000000000001 341.55" fill="none" stroke="#4B5E78" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="21.6" y="460.35" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#6A4D9A" stroke-width="2"/>
+<text x="32.400000000000006" y="488.70000000000005" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="600">Human judgment</text>
+<rect x="243" y="371.25" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#6A4D9A" stroke-width="2"/>
+<text x="253.8" y="399.6" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="600">Agent workspace</text>
+<rect x="243" y="430.65" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="253.8" y="459" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Operations dashboard</text>
+<rect x="243" y="490.05" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="253.8" y="518.4" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Executive control panel</text>
+<rect x="243" y="549.45" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="253.8" y="577.8000000000001" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Delegation interface</text>
+<rect x="464.40000000000003" y="341.55" width="172.8" height="45.900000000000006" rx="5" fill="#6A4D9A" stroke="#6A4D9A" stroke-width="2"/>
+<text x="475.20000000000005" y="369.90000000000003" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="600">Context enrichment</text>
+<rect x="464.40000000000003" y="400.95000000000005" width="172.8" height="45.900000000000006" rx="5" fill="rgba(60, 36, 95, 0.55)" stroke="#3C245F" stroke-width="1"/>
+<text x="475.20000000000005" y="429.30000000000007" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Orchestration agent</text>
+<rect x="464.40000000000003" y="460.35" width="172.8" height="45.900000000000006" rx="5" fill="rgba(60, 36, 95, 0.55)" stroke="#3C245F" stroke-width="1"/>
+<text x="475.20000000000005" y="488.70000000000005" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Specialist lane agents</text>
+<rect x="464.40000000000003" y="519.75" width="172.8" height="45.900000000000006" rx="5" fill="rgba(60, 36, 95, 0.55)" stroke="#3C245F" stroke-width="1"/>
+<text x="475.20000000000005" y="548.1" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Scheduled automations</text>
+<rect x="464.40000000000003" y="579.1500000000001" width="172.8" height="45.900000000000006" rx="5" fill="rgba(60, 36, 95, 0.55)" stroke="#6A4D9A" stroke-width="2"/>
+<text x="475.20000000000005" y="607.5000000000001" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="600">Single-writer gate</text>
+<rect x="685.8000000000001" y="371.25" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#6A4D9A" stroke-width="2"/>
+<text x="696.6" y="399.6" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="600">Knowledge base</text>
+<rect x="685.8000000000001" y="430.65" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="696.6" y="459" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">CRM platform</text>
+<rect x="685.8000000000001" y="490.05" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="696.6" y="518.4" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Web data API</text>
+<rect x="685.8000000000001" y="549.45" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="696.6" y="577.8000000000001" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Meeting intelligence</text>
+<rect x="907.2" y="400.95" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="918" y="429.3" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Decision log</text>
+<rect x="907.2" y="460.35" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#6A4D9A" stroke-width="2"/>
+<text x="918" y="488.70000000000005" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="600">Agent registry</text>
+<rect x="907.2" y="519.75" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="918" y="548.1" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Task registry</text>
+<rect x="1128.6" y="400.95" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="1139.3999999999999" y="429.3" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Skills · docs repository</text>
+<rect x="1128.6" y="460.35" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="1139.3999999999999" y="488.70000000000005" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Document hub</text>
+<rect x="1128.6" y="519.75" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#6A4D9A" stroke-width="2"/>
+<text x="1139.3999999999999" y="548.1" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="600">Operations telemetry</text>
+<rect x="1425.6" y="355.05" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="1436.3999999999999" y="383.40000000000003" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Email</text>
+<rect x="1425.6" y="425.25" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="1436.3999999999999" y="453.6" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Calendar</text>
+<rect x="1425.6" y="495.45000000000005" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="1436.3999999999999" y="523.8000000000001" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Cloud storage</text>
+<rect x="1425.6" y="565.6500000000001" width="172.8" height="45.900000000000006" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="1436.3999999999999" y="594.0000000000001" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="10.692" font-weight="500">Source control · CI</text>
+<rect x="27" y="99.9" width="507.6000000000001" height="43.2" rx="5" fill="#111A33" stroke="#6A4D9A" stroke-width="2"/>
+<text x="37.8" y="128.25" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="600">Skills library</text>
+<rect x="556.2" y="99.9" width="507.6000000000001" height="43.2" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="567" y="128.25" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="500">Quality harness</text>
+<rect x="1085.4" y="99.9" width="507.6000000000001" height="43.2" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="1096.2" y="128.25" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="500">Automation catalog</text>
+<rect x="27" y="988.2" width="507.6000000000001" height="43.2" rx="5" fill="#111A33" stroke="#6A4D9A" stroke-width="2"/>
+<text x="37.8" y="1016.5500000000001" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="600">Primary LLM</text>
+<rect x="556.2" y="988.2" width="507.6000000000001" height="43.2" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="567" y="1016.5500000000001" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="500">Secondary LLM</text>
+<rect x="1085.4" y="988.2" width="507.6000000000001" height="43.2" rx="5" fill="#111A33" stroke="#3C245F" stroke-width="1"/>
+<text x="1096.2" y="1016.5500000000001" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="9.719999999999999" font-weight="500">Audit model</text>
+<path d="M 27 121.5 L -32 121.5 L -32 1009.8000000000001 L 27 1009.8000000000001" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#arrow-dashed)"/>
+<text x="-25.25" y="565.6500000000001" fill="#94A3B8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001" text-anchor="start">model access</text>
+<rect x="21.6" y="764.1" width="1576.8000000000002" height="151.20000000000002" fill="#111A33" stroke="#3C245F" stroke-width="1" rx="6" opacity="0.85"/>
+<text x="37.800000000000004" y="785.7" fill="#94A3B8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Connector side channels · perimeter routing into Productivity &amp; dev</text>
+<path d="M 858.6000000000001 394.2 L 885.6000000000001 394.2 L 885.6000000000001 794.34 L 1636.2000000000003 794.34 L 1636.2000000000003 378 L 1598.3999999999999 378" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#arrow-dashed)"/>
+<path d="M 637.2 542.7 L 664.2 542.7 L 664.2 824.58 L 1636.2000000000003 824.58 L 1636.2000000000003 448.2 L 1598.3999999999999 448.2" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#arrow-dashed)"/>
+<path d="M 1301.3999999999999 483.3 L 1328.3999999999999 483.3 L 1328.3999999999999 854.82 L 1636.2000000000003 854.82 L 1636.2000000000003 518.4000000000001 L 1598.3999999999999 518.4000000000001" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#arrow-dashed)"/>
+<path d="M 1339.2 143.10000000000002 L 1339.2 885.0600000000001 L 1636.2000000000003 885.0600000000001 L 1636.2000000000003 588.6000000000001 L 1598.3999999999999 588.6000000000001" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="7 5" marker-end="url(#arrow-dashed)"/>
+<path d="M 1215 565.65 L 1215 723.6 L -12 723.6 L -12 483.3 L 21.6 483.3" fill="none" stroke="#7DB8A8" stroke-width="1.5" stroke-dasharray="9 4" marker-end="url(#arrow-loop)"/>
+<text x="-5.25" y="603.45" fill="#7DB8A8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">evidence → judgment</text>
+<path d="M 1215 400.95 L 1215 21.6 L 280.80000000000007 21.6 L 280.80000000000007 99.9" fill="none" stroke="#7DB8A8" stroke-width="1.5" stroke-dasharray="9 4" marker-end="url(#arrow-loop)"/>
+<text x="747.9000000000001" y="13.5" fill="#7DB8A8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001" text-anchor="middle">procedure versioning</text>
+<rect x="1144.8000000000002" y="1080" width="459.00000000000006" height="155.79" fill="#0C1226" stroke="#3C245F" stroke-width="1" rx="6" opacity="0.95"/>
+<text x="1161.0000000000002" y="1104.3" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="12.825000000000001" font-weight="600">Reference flow</text>
+<text x="1161.0000000000002" y="1123.2" fill="#94A3B8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Left to right along spine · feedback loops close the cycle</text>
+<line x1="1161.0000000000002" y1="1145.8799999999999" x2="1193.4" y2="1145.8799999999999" stroke="#4B5E78" stroke-width="2"/>
+<text x="1204.2000000000003" y="1151.55" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Solid · spine and procedure feed</text>
+<line x1="1161.0000000000002" y1="1170.45" x2="1193.4" y2="1170.45" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="1204.2000000000003" y="1176.12" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Grey dash · side channels and model access</text>
+<line x1="1161.0000000000002" y1="1195.02" x2="1193.4" y2="1195.02" stroke="#7DB8A8" stroke-width="1.5" stroke-dasharray="9 4"/>
+<text x="1204.2000000000003" y="1200.69" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Teal dash · feedback loops</text>
+<rect x="1144.8000000000002" y="1251.99" width="459.00000000000006" height="180.36" fill="#0C1226" stroke="#3C245F" stroke-width="1" rx="6" opacity="0.95"/>
+<text x="1161.0000000000002" y="1276.29" fill="#B9A6DF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="12.825000000000001" font-weight="600">Read order</text>
+<text x="1161.0000000000002" y="1295.19" fill="#94A3B8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Trace the diagram in this sequence</text>
+<text x="1161.0000000000002" y="1317.87" fill="#7DB8A8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001" font-weight="600">1.</text>
+<text x="1182.6000000000001" y="1317.87" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Follow the solid spine · canonical write path</text>
+<text x="1161.0000000000002" y="1342.44" fill="#7DB8A8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001" font-weight="600">2.</text>
+<text x="1182.6000000000001" y="1342.44" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Procedure library + model layer · execution stack</text>
+<text x="1161.0000000000002" y="1367.01" fill="#7DB8A8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001" font-weight="600">3.</text>
+<text x="1182.6000000000001" y="1367.01" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Grey dash · side channels and model access</text>
+<text x="1161.0000000000002" y="1391.58" fill="#7DB8A8" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001" font-weight="600">4.</text>
+<text x="1182.6000000000001" y="1391.58" fill="#FFFFFF" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="11.475000000000001">Teal dash · feedback into judgment and procedures</text>
+</svg>
