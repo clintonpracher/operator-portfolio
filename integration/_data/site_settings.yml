@@ -11,7 +11,7 @@ substack: "https://clintscall.substack.com"
 architecture:
   image: "/assets/diagrams/architecture-one-glance.svg"
   source_url: "/work/control-plane-spec/"
-  alt: "Operating architecture at a glance: decision maker, business and personal domains, orchestration agent, control plane, specialist agents, and a human judgment loop"
+  alt: "Operating architecture at a glance: decision maker above business and personal domains, orchestration agent as pinned door, control plane with one active writer before mutation, specialist agents as on-call capacity, and a human judgment loop"
   detail:
     image: "/assets/diagrams/architecture-agent-control-plane-swimlanes.svg"
-    alt: "Agent control plane swimlanes: human judgment, client surfaces, orchestration, business systems, productivity, identity and policy, evidence and memory, procedure library, and model layer"
+    alt: "Agent control plane swimlanes: human judgment, client surfaces, orchestration with single-writer gate, business systems, identity and policy, evidence and memory, procedure library, on-call specialist capacity outside orchestration, integration side channels, and model layer including audit"

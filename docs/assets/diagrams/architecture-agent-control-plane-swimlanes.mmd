@@ -16,7 +16,7 @@ flowchart LR
     direction TB
     CTX["Context enrichment"]
     ORCH["Orchestration agent"]
-    LANES["Specialist lane agents"]
+    LANES["Lane agents · on demand"]
     SCHED["Scheduled automations"]
     SWG["Single-writer gate"]
   end
@@ -33,7 +33,7 @@ flowchart LR
     direction TB
     DEC["Decision log"]
     REG["Agent registry"]
-    TASK["Task registry"]
+    TASK["Task registry · one writer"]
   end
 
   subgraph L6["Evidence and memory"]
@@ -69,6 +69,12 @@ flowchart LR
 
   SKILLS --> CTX
 
+  subgraph CAP["On-call capacity"]
+    SPEC["Specialist agents · on-call"]
+  end
+
+  SPEC -.->|"capacity"| SWG
+
   subgraph LLM["Model layer"]
     direction LR
     P["Primary LLM"]
@@ -77,3 +83,4 @@ flowchart LR
   end
 
   P -.-> ORCH
+  SKILLS -.-> P

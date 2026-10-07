@@ -28,8 +28,12 @@ Internal ops truth with full names lives in `docs/product/2026-08/architecture-d
 | `architecture-control-plane-detail.svg` | Legacy detail layout (superseded by swimlanes on case study) |
 | `architecture-one-glance.png` | Social / TeeterBeaker (optional) |
 
-Source Mermaid (structure reference): `architecture-agent-control-plane-swimlanes.mmd`
+Source Mermaid (structure reference): `architecture-agent-control-plane-swimlanes.mmd`, `architecture-one-glance.mmd`
 
-Public SVG (layout SSOT): run `node marketing-assets/operator-portfolio/scripts/render-control-plane-swimlanes-svg.mjs` after layout changes. Mirrors `.cursor/canvases/cp-control-plane-architecture.canvas.tsx`.
+Public SVG (layout SSOT): run `node marketing-assets/operator-portfolio/scripts/render-control-plane-swimlanes-svg.mjs` after swimlane layout changes. Mirrors `.cursor/canvases/cp-control-plane-architecture.canvas.tsx`.
 
-Visual: Imperious Luxury tokens (`midnight-authority`, `imperious-purple`, `slate-clarity`, Outfit/DM Sans).
+One-glance: edit `architecture-one-glance.mmd` (Imperious `themeVariables` + `classDef`), regenerate SVG with Mermaid CLI, embed Inter `@font-face`, and widen `foreignObject` / node rects so Inter labels are not clipped (SVG-as-img cannot use page fonts; Mermaid sizes for Trebuchet). Sync `assets/` + `docs/` copies.
+
+Specialist agents · on-call sit in the **On-call capacity** band (outside Orchestration / Decision Engine). Lane agents · on demand stay under Orchestration.
+
+Visual: Imperious Luxury tokens (`midnight-authority`, `imperious-purple`, `slate-clarity`, Inter (embedded in one-glance SVG; site also loads Outfit/DM Sans)).

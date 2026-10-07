@@ -31,7 +31,7 @@ const LANES = [
     items: [
       "Context enrichment",
       "Orchestration agent",
-      "Specialist lane agents",
+      "Lane agents · on demand",
       "Scheduled automations",
       "Single-writer gate",
     ],
@@ -49,7 +49,7 @@ const LANES = [
   {
     id: "identity",
     title: "Identity & policy",
-    items: ["Decision log", "Agent registry", "Task registry"],
+    items: ["Decision log", "Agent registry", "Task registry · one writer"],
   },
   {
     id: "evidence",
@@ -68,6 +68,7 @@ const LANES = [
 ];
 
 const REPO_ITEMS = ["Skills library", "Quality harness", "Automation catalog"];
+const CAPACITY_ITEMS = ["Specialist agents · on-call"];
 const MODEL_ITEMS = ["Primary LLM", "Secondary LLM", "Audit model"];
 
 const COLORS = {
@@ -121,7 +122,7 @@ const READ_ORDER = {
   subtitle: "Trace the diagram in this sequence",
   steps: [
     "Follow the solid spine · canonical write path",
-    "Procedure library + model layer · execution stack",
+    "Procedure library · on-call capacity · model layer",
     "Grey dash · Integration side channels and model access",
     "Teal dash · feedback into judgment and procedures",
   ],
@@ -151,15 +152,18 @@ const LAYOUT = {
   titleY: 22 * SCALE,
   procedureY: 38 * SCALE,
   procedureH: 78 * SCALE,
-  laneHeaderY: 136 * SCALE,
-  laneBodyY: 168 * SCALE,
-  laneBodyBottom: 548 * SCALE,
+  capacityPad: 10 * SCALE,
+  capacityH: 52 * SCALE,
+  laneHeaderY: 190 * SCALE,
+  laneBodyY: 222 * SCALE,
+  laneBodyBottom: 602 * SCALE,
   integrationBandPad: 18 * SCALE,
   integrationBandH: 112 * SCALE,
   modelPad: 18 * SCALE,
   modelH: 78 * SCALE,
 };
 
+const CAPACITY_Y = LAYOUT.procedureY + LAYOUT.procedureH + LAYOUT.capacityPad;
 const INTEGRATION_BAND_Y = LAYOUT.laneBodyBottom + LAYOUT.integrationBandPad;
 const MODEL_Y = INTEGRATION_BAND_Y + LAYOUT.integrationBandH + LAYOUT.modelPad;
 const RETURN_RAIL_Y = MODEL_Y + LAYOUT.modelH + 16 * SCALE;
@@ -264,6 +268,18 @@ function buildNodes() {
   );
   nodes.push(
     ...layoutBandRow(
+      CAPACITY_ITEMS,
+      LAYOUT.bandPadX,
+      bandInnerWidth(),
+      CAPACITY_Y,
+      LAYOUT.capacityH,
+      "capacity",
+      "capacity",
+      0,
+    ),
+  );
+  nodes.push(
+    ...layoutBandRow(
       MODEL_ITEMS,
       LAYOUT.bandPadX,
       bandInnerWidth(),
@@ -297,6 +313,9 @@ const ORCH_CHAIN = [
 ];
 
 const SUPPORT = [["repo-0", nid("orchestration", 0)]];
+
+/** On-call specialists sit outside orchestration; dashed capacity link into the gate */
+const CAPACITY_LINK = ["capacity-0", nid("orchestration", 4)];
 
 /** Dashed connector side channels into Productivity & dev */
 const INTEGRATION_LINKS = [
@@ -441,6 +460,22 @@ function renderProcedureLoop(fromId, toId) {
   ].join("\n");
 }
 
+function renderCapacityLink(fromId, toId) {
+  const from = findNode(fromId);
+  const to = findNode(toId);
+  if (!from || !to) return "";
+
+  const start = verticalPoint(from, "bottom");
+  const end = verticalPoint(to, "top");
+  const midY = (start.y + end.y) / 2;
+  const labelX = start.x + 10 * SCALE;
+
+  return [
+    `<path d="M ${start.x} ${start.y} L ${start.x} ${midY} L ${end.x} ${midY} L ${end.x} ${end.y}" fill="none" stroke="${COLORS.dashed}" stroke-width="1.5"${DASH_STYLE} marker-end="url(#arrow-dashed)"/>`,
+    renderLinkLabel(labelX, midY - 4 * SCALE, "capacity"),
+  ].join("\n");
+}
+
 function renderIntegrationBand(totalW) {
   return [
     `<rect x="${LAYOUT.padX}" y="${INTEGRATION_BAND_Y}" width="${totalW - LAYOUT.padX * 2}" height="${LAYOUT.integrationBandH}" fill="${COLORS.laneFillB}" stroke="${COLORS.laneStroke}" stroke-width="1" rx="6" opacity="0.85"/>`,
@@ -536,6 +571,13 @@ function renderSvg() {
   );
 
   parts.push(
+    `<rect x="${LAYOUT.padX}" y="${CAPACITY_Y}" width="${totalW - LAYOUT.padX * 2}" height="${LAYOUT.capacityH}" fill="${COLORS.laneFillB}" stroke="${COLORS.laneStroke}" stroke-width="1.5" rx="8"/>`,
+  );
+  parts.push(
+    `<text x="${LAYOUT.padX + 12 * SCALE}" y="${CAPACITY_Y + 16 * SCALE}" fill="${COLORS.laneTitle}" font-family="Outfit, DM Sans, system-ui, sans-serif" font-size="${headerSize}" font-weight="600">On-call capacity · outside orchestration</text>`,
+  );
+
+  parts.push(
     `<rect x="${LAYOUT.padX}" y="${MODEL_Y}" width="${totalW - LAYOUT.padX * 2}" height="${LAYOUT.modelH}" fill="${COLORS.laneFillB}" stroke="${COLORS.laneStroke}" stroke-width="1.5" rx="8"/>`,
   );
   parts.push(
@@ -581,6 +623,8 @@ function renderSvg() {
     parts.push(renderSupport(fromId, toId));
   }
 
+  parts.push(renderCapacityLink(CAPACITY_LINK[0], CAPACITY_LINK[1]));
+
   for (const node of NODES) {
     const fill = node.accentBar
       ? COLORS.accent
@@ -592,7 +636,9 @@ function renderSvg() {
     const strokeW = node.hub ? 2 : 1;
     const weight = node.hub ? 600 : 500;
     const size =
-      node.laneId === "repo" || node.laneId === "models" ? bandLabelSize : labelSize;
+      node.laneId === "repo" || node.laneId === "models" || node.laneId === "capacity"
+        ? bandLabelSize
+        : labelSize;
     parts.push(
       `<rect x="${node.x}" y="${node.y}" width="${node.w}" height="${node.h}" rx="5" fill="${fill}" stroke="${border}" stroke-width="${strokeW}"/>`,
     );

@@ -1,20 +1,62 @@
-%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "darkMode": true,
+    "background": "#0C1226",
+    "primaryColor": "#111A33",
+    "primaryTextColor": "#FFFFFF",
+    "primaryBorderColor": "#3C245F",
+    "secondaryColor": "#0C1226",
+    "secondaryTextColor": "#B9A6DF",
+    "secondaryBorderColor": "#6A4D9A",
+    "tertiaryColor": "#111A33",
+    "tertiaryTextColor": "#FFFFFF",
+    "tertiaryBorderColor": "#4B5E78",
+    "lineColor": "#94A3B8",
+    "textColor": "#FFFFFF",
+    "mainBkg": "#111A33",
+    "nodeBorder": "#3C245F",
+    "clusterBkg": "#0C1226",
+    "clusterBorder": "#4B5E78",
+    "titleColor": "#B9A6DF",
+    "edgeLabelBackground": "#0C1226",
+    "fontFamily": "Inter, system-ui, sans-serif"
+  },
+  "flowchart": {
+    "defaultRenderer": "elk",
+    "htmlLabels": true,
+    "wrappingWidth": 240,
+    "padding": 16
+  }
+}}%%
 flowchart TB
-  DM["Decision maker<br/>Judgment · ownership · one writer per task"]
+  DM["Decision maker<br/>Judgment · ownership<br/>one writer per task"]
 
   subgraph DOMAINS[" "]
     direction LR
 
-    BIZ["Business domain<br/>Advisory · demand · pipeline<br/>Marketplace · practice governance"]
+    subgraph BIZ["Business domain"]
+      direction TB
+      B1["Advisory delivery"]
+      B2["Demand / content"]
+      B3["Pipeline / CRM"]
+      B4["Marketplace"]
+      B5["Practice governance"]
+    end
 
-    PER["Personal domain<br/>Job search · admin · governance"]
+    subgraph PER["Personal domain"]
+      direction TB
+      P1["Job search OS"]
+      P2["Personal admin"]
+      P3["Personal governance"]
+    end
   end
 
-  ORCH["Orchestration agent<br/>Pinned door · lanes on demand"]
+  ORCH["Orchestration agent<br/>Pinned door<br/>lanes on demand"]
 
   subgraph SHARED["Shared operating substrate"]
     direction TB
-    PLANE["Control plane<br/>Registry & identity · Libraries · Agentic control · Audit"]
+    PLANE["Control plane<br/>Registry · identity · libraries<br/>agentic control · audit<br/>One active writer before mutation"]
     SPEC["Specialist agents · on-call"]
   end
 
@@ -24,5 +66,21 @@ flowchart TB
   BIZ --> ORCH
   PER --> ORCH
   ORCH --> PLANE
-  PLANE --> SPEC
+  PLANE -.-> SPEC
   SPEC -.->|"Human judgment"| DM
+
+  classDef decision fill:#3C245F,stroke:#6A4D9A,color:#FFFFFF,stroke-width:2px
+  classDef orch fill:#51357A,stroke:#6A4D9A,color:#FFFFFF,stroke-width:2px
+  classDef plane fill:#111A33,stroke:#6A4D9A,color:#FFFFFF,stroke-width:2px
+  classDef specialist fill:#0C1226,stroke:#94A3B8,color:#B9A6DF,stroke-width:1.5px,stroke-dasharray:7 5
+  classDef leaf fill:#111A33,stroke:#4B5E78,color:#FFFFFF,stroke-width:1px
+  classDef domain fill:#0C1226,stroke:#3C245F,color:#B9A6DF,stroke-width:1px
+  classDef shared fill:#0C1226,stroke:#4B5E78,color:#B9A6DF,stroke-width:1px
+
+  class DM decision
+  class ORCH orch
+  class PLANE plane
+  class SPEC specialist
+  class B1,B2,B3,B4,B5,P1,P2,P3 leaf
+  class BIZ,PER domain
+  class SHARED,DOMAINS shared

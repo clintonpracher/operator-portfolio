@@ -11,21 +11,24 @@ flowchart TB
   subgraph MID[" "]
     direction LR
 
-    subgraph EXEC["Execution hosts"]
-      CURSOR["Agentic control layer<br/>preferred schedule host"]
-      SHADOW["Audit layer<br/>read-only verification"]
-      SPEC["Specialist agents · on-call"]
-      ISLAND["MCP integrations<br/>named integration boundary"]
+    subgraph EXEC["Execution and verification"]
+      AGENTIC["Agentic control layer<br/>scheduled · bounded work"]
+      AUDIT["Audit layer<br/>read-only · no co-write"]
+      ISLAND["Registered integrations<br/>named integration boundary"]
     end
 
     subgraph IDENTITY["Registry and authority"]
       DEC["Decision log · operating spec"]
       AR["Agent registry"]
-      ATR["Task registry<br/>Active Writer · runtime · mode"]
+      ATR["Task registry<br/>one active writer before mutation"]
       RUNS["Runs · handoffs · evidence"]
       GOV["Governance operations"]
       PLATFORM["Platform libraries · registries"]
     end
+  end
+
+  subgraph CAP["On-call capacity"]
+    SPEC["Specialist agents · on-call"]
   end
 
   subgraph REPO["Versioned procedures · repo governance"]
@@ -38,15 +41,14 @@ flowchart TB
   subgraph SYSTEMS["Systems of record"]
     direction LR
     CRM["CRM · pipeline · pricing"]
-    NOTION["Goals · docs · meetings · career"]
+    SOR["Goals · docs · meetings · career"]
   end
 
   DM --> ORCH
   DM --> CHAT
   DM --> PANEL
   ORCH --> LANES
-  ORCH --> CURSOR
-  ORCH --> SPEC
+  ORCH --> AGENTIC
   CHAT --> ATR
   ORCH --> DEC
   PANEL --> ATR
@@ -56,16 +58,15 @@ flowchart TB
   DEC --> AR
   AR --> ATR
   ATR --> RUNS
-  CURSOR --> ATR
-  CURSOR --> RUNS
-  CURSOR --> GOV
-  SHADOW --> RUNS
-  ISLAND -.->|Active Writer only| ATR
-  SPEC -.->|Canonical guidelines| AR
+  AGENTIC --> ATR
+  AGENTIC --> RUNS
+  AGENTIC --> GOV
+  AUDIT --> RUNS
+  ISLAND -.->|active writer only| ATR
+  SPEC -.->|capacity| AR
 
-  CURSOR --> CRM
-  CURSOR --> NOTION
-  SPEC --> NOTION
+  AGENTIC --> CRM
+  AGENTIC --> SOR
   SKILLS --> ATR
   HARNESS --> SKILLS
   FED --> RUNS
