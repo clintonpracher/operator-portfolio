@@ -153,7 +153,8 @@ const LAYOUT = {
   procedureY: 38 * SCALE,
   procedureH: 78 * SCALE,
   capacityPad: 10 * SCALE,
-  capacityH: 52 * SCALE,
+  // Must fit band title offset (26*SCALE) + bandBoxH with padding (layoutBandRow).
+  capacityH: 60 * SCALE,
   laneHeaderY: 190 * SCALE,
   laneBodyY: 222 * SCALE,
   laneBodyBottom: 602 * SCALE,
