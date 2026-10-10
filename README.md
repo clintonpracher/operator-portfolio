@@ -1,59 +1,94 @@
+<p align="center">
+  <img src="assets/banner-linkedin.png" alt="Data + Platform + AI Transformation = Business Outcomes. clintonpracher.com" width="100%">
+</p>
+
 # Clinton Pracher: Enterprise Product Leader
 
 **I build the decision systems underneath products, so teams can move faster without losing control.**
 
----
+My work spans enterprise platforms, data, and AI. I connect business strategy, investment decisions, and engineering delivery, particularly when the organization has become more complex than the systems supporting it.
 
 ## What I actually build
 
-Most execution problems are not execution problems. They are decision problems wearing an execution costume.
+I've always been the person asking, “Is there a better and easier way to do this?”
 
-I find the constraint, name who owns the call, rebuild the operating model, and leave behind a system the team can run without me. I have done that across a $600M media data platform, a 13-product AI portfolio, and the live Operator Control Plane I run today.
+I'll follow the process and map it out first. I want to understand how things actually work before deciding what needs to change. That includes talking to the people doing the work, not just reading the roadmap or looking at the dashboard.
 
-At enterprise scale, that meant 13 AI and data products across 100+ markets, an $8M budget, and a 60+ person team. At solo-operator scale, it means a governed multi-LLM stack under one decision-rights model with a single Active Writer for every task across skills, governed automations, and scheduled tasks.
+Across my career, I've repeatedly worked where the business grew faster than its systems, responsibilities, and ways of working could keep up. The industries changed. The work underneath them didn't.
 
-The tools handle the noise. I keep the judgment.
+At one organization, that meant bringing 45 fragmented data sources into a shared view of media investment. In another, it meant leading an AI portfolio across more than 100 regulated markets. Elsewhere, product and engineering needed a clearer way to make commitments against a fixed seasonal deadline.
 
----
+Those situations require more than another feature. Teams need agreement on what the numbers mean, what deserves investment, who owns the decision, and what they can realistically deliver.
+
+I work across finance, operations, sales, analytics, engineering, delivery, and product leadership because those questions rarely belong to one function. My job is to connect the business need to the product direction, make the tradeoffs explicit, and give teams a workable path forward.
+
+I also build. In my own operating system, I've implemented versioned skills, governed automations, publishing workflows, and agent execution with defined authority. That work lets me apply the same thinking directly, from the business goal through implementation and verification.
+
+I want to leave behind more than a shipped product. The people running it should understand how it supports the business, what they own, and how to move it forward without every decision returning to the same person.
 
 ## Explore
 
-| Section | What's there |
-|---------|----------------|
-| [**About**](about/README.md) | The person and operating philosophy behind the work |
-| [**Work**](work/README.md) | Enterprise case studies and the operator systems behind the claims |
-| [**Skills**](work/skills.md) | How I work across AI platforms, Agent OS, and technical tooling |
-| [**Thought Leadership**](thought-leadership/) | Essays on decision systems, AI operations, and product leadership |
-| [**Resume**](resume/resume.md) | My full Platform / Data / AI career record |
-
----
+| Section                                       | What you'll find                                                   |
+| --------------------------------------------- | ------------------------------------------------------------------ |
+| [**About**](content/about/README.md)          | My background and approach to leadership                           |
+| [**Work**](work/README.md)                    | Enterprise case studies and systems I've built                     |
+| [**Skills**](work/skills.md)                  | Product, platform, data, AI, and technical capabilities            |
+| [**Thought Leadership**](thought-leadership/) | Writing on product leadership, decision systems, and AI operations |
+| [**Resume**](resume/resume.md)                | My career history and leadership responsibilities                  |
 
 ## Proof points
 
-| Pillar | Start here |
-|--------|------------|
-| Platform Architecture | [Data Unification](work/case-studies/enterprise/data-unification.md) |
-| Decision Systems | [Data Unification](work/case-studies/enterprise/data-unification.md) |
-| Operating Models | [Product System Stabilization](work/case-studies/enterprise/product-system-stabilization.md) |
-| Martech & Data Platforms | [AI Regulated Markets](work/case-studies/enterprise/ai-regulated-markets.md) |
-| Control Planes | [Operator Control Plane](work/case-studies/operator/control-plane.md) |
+These examples show different parts of my work. Each result belongs to the role and context described in its case study.
 
----
+| Work                              | My role                                                                                   | Scale and documented results                                                                                                                                  | Read more                                                                                    |
+| --------------------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Enterprise marketing intelligence | Led product work across data definitions, platform architecture, and reporting governance | 45 data sources consolidated; 95% of $600M in annual media investment unified on one platform; decision time reduced 40%; reporting across 140 markets        | [Data Unification](work/case-studies/enterprise/data-unification.md)                         |
+| Enterprise AI portfolio           | Led portfolio priorities and reusable privacy and go-to-market decision frameworks        | 13 AI products shipped across 100+ regulated markets; $8M budget; 60+ engineers and program leads; no reported regulatory incidents in the documented rollout | [AI in Regulated Markets](work/case-studies/enterprise/ai-regulated-markets.md)              |
+| Connected hardware and software   | Led a 30-day product operating-model diagnostic and redesign                              | $120M line of business; requirements clarification reduced from two weeks to two days; engineering rework reduced from 40% to zero during the observed window | [Product System Stabilization](work/case-studies/enterprise/product-system-stabilization.md) |
+| My operating system               | Personally designed and implemented governed skills, automations, and agent workflows     | An internal system connecting goals, execution ownership, approval boundaries, and recorded evidence                                                          | [Operator Control Plane](work/case-studies/operator/control-plane.md)                        |
+
+## How I put this into practice
+
+My operating system gives me a place to apply and test the principles I use in enterprise leadership.
+
+Work has an owner. Agents have defined permissions. Changes go through version control and checks. Results need evidence, and decisions that require my judgment come back to me.
+
+The purpose is to carry repeatable work without making me the coordinator for every exception. I use GitHub to make that work inspectable through repositories, pull requests, versioned procedures, and publishing workflows.
+
+The diagrams below show the architecture behind it.
+
+<details>
+<summary><strong>Operating architecture at a glance</strong></summary>
+
+<img src="assets/diagrams/architecture-one-glance.svg" alt="Operating architecture showing the decision maker, orchestration, operating domains, and governed specialist execution." width="100%">
+
+[Open the full-size architecture diagram](assets/diagrams/architecture-one-glance.svg)
+
+</details>
+
+<details>
+<summary><strong>How authority and execution flow</strong></summary>
+
+<img src="assets/diagrams/architecture-agent-control-plane-swimlanes.svg" alt="Control-plane swimlanes showing how human judgment, agent execution, business systems, policy, and evidence connect." width="100%">
+
+[Open the full-size swimlane diagram](assets/diagrams/architecture-agent-control-plane-swimlanes.svg)
+
+</details>
 
 ## How I can help
 
-I work with leaders who need clearer decision systems, not another quarter of explanation.
+I help executives at companies built through acquisition achieve numbers nobody argues about, a room they are never surprised in, and a business that is easier to run and easier to sell, so they can stop defending their reporting and start leading with authority.
 
-**Platform, Data, and AI leadership:** decision systems and operating models when scale outruns the org chart.
+The companies may have come together while their reporting, priorities, and ways of working remain separate. I bring product leadership to that problem, connecting what executives need to achieve with the platforms, data, responsibilities, and investment decisions required to get there.
 
-**Execution under complexity:** teams shipping without resolving the tradeoffs that should not keep routing to the top.
+Sometimes the answer is a platform change. Sometimes it is a clearer product direction or agreement on who owns the next decision. I want to understand that before asking a team to build something.
 
-**Based in Las Vegas:** remote US · open to local hybrid. Reach out if the problem is real.
-
----
+That is the work I bring to enterprise platform, data, and AI leadership: helping the organization make better decisions and giving its teams the structure to carry them through.
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/clinton-pracher) · [GitHub](https://github.com/clintonpracher/operator-portfolio) · [Clint's Call (Substack)](https://clintscall.substack.com) · clintonpracher@gmail.com
+Based in Las Vegas. Open to remote US roles and local hybrid opportunities.
 
-**Site:** [clintonpracher.com](https://clintonpracher.com/)
+[LinkedIn](https://www.linkedin.com/in/clinton-pracher) · [Clint's Call](https://clintscall.substack.com) · [Email](mailto:clintonpracher@gmail.com)
+
+**Portfolio:** [clintonpracher.com](https://clintonpracher.com/)
