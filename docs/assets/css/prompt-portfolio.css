@@ -60,16 +60,6 @@
   word-break: break-word;
 }
 
-.page-prompt-library .pp-code-panel,
-.page-prompt-library .pp-code-panel__pre,
-.page-prompt-library .pp-code-panel__pre code,
-.page-prompt-library .prompt-portfolio-card__preview,
-.page-prompt-library .prompt-portfolio-card__preview code {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-}
-
 .prompt-spec-section {
   width: 100%;
   max-width: var(--portfolio-container, 72rem);

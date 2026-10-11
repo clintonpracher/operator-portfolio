@@ -22,7 +22,7 @@ Authoritative factory lives in the private hub at `marketing-assets/operator-por
 | Narrative + Explore links | `README.md` | n/a |
 | Home page body | `content/home.md` | `docs/index.md` |
 | About | `content/about/` | `docs/about/` |
-| Work / case studies / skills templates | `work/` | `docs/work/` |
+| Work / case studies / skills / proof | `work/` | `docs/work/` |
 | Thought leadership index | `thought-leadership/` | `docs/thought-leadership/` |
 | Writing posts | `writing/` | `docs/writing/` |
 | Resume files | `resume/` | `docs/resume/` |
@@ -61,7 +61,3 @@ Current approved public diagrams:
 - `assets/diagrams/architecture-agent-control-plane-swimlanes.svg`
 
 See `assets/diagrams/README.md` for generation limits (including the swimlane on-call band). Legacy detail SVG may remain for history; do not treat it as the README source.
-
-## Privacy baseline
-
-Website chrome may include phone via site_settings (About contact, home call link, footer when present), plus Las Vegas, email, LinkedIn, and website. Public resume downloads may include phone. Residential ZIP stays out of the public package. Private resume masters remain on the hub / OneDrive anchor.

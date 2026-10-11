@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-"""Portfolio stats helper published with operator-portfolio.
+"""Print pre-generated portfolio fleet stats from docs/_generated/stats.json.
 
-Canonical generator runs from the CP Product Advisory monorepo:
-  scripts/portfolio_stats.py
+Authoritative generation runs from the CP Product Advisory monorepo:
+  python3 scripts/portfolio_stats.py
 
-This package copy is a thin reader for pre-generated
-`docs/_generated/stats.json` (local inspect / CI smoke). It is not the
-authoritative counter and is not meant to drive GitHub linguist bars.
+This package copy is a local inspect helper after publish/sync. It does not
+compute counts.
 """
 
 from __future__ import annotations
@@ -19,7 +18,7 @@ STATS_PATH = Path(__file__).resolve().parents[1] / "docs/_generated/stats.json"
 
 def main() -> int:
     if not STATS_PATH.is_file():
-        print("stats.json not found; run monorepo portfolio_stats.py before publish")
+        print("stats.json not found; run monorepo scripts/portfolio_stats.py before publish")
         return 1
     data = json.loads(STATS_PATH.read_text(encoding="utf-8"))
     print(json.dumps(data, indent=2))
