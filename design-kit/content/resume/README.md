@@ -19,7 +19,7 @@
 
 `Platform_Data_AI` is based on Product Leadership V2_2 and retargeted from a MarTech default to Platform, Data, and AI product leadership.
 
-The proof stayed intact: 13-product portfolio, 100+ markets, $8M budget, 60+ team, and systems governing $600M in annual spend.
+The proof stayed intact: Dentsu 13-product portfolio, 100+ markets, $8M budget, and 60+ team; Merkle systems used for $600M in annual media spend.
 
 **Private source of truth:** resume-advisor skill in the private publish pipeline. This public version is a published snapshot that updates after content lock.
 

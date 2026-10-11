@@ -9,8 +9,8 @@ permalink: /work/
     <div class="page-hero__copy">
       <h1>My Work</h1>
       <p>Enterprise product leadership and operator proof for Platform, Data, and AI roles.</p>
-      <p><strong>$600M</strong> decision infrastructure. <strong>13</strong> AI products across <strong>100+</strong> markets. A live operator control plane under single-writer governance.</p>
-      <p>Enterprise case studies show the rebuild. Operator proof shows the same architecture running live.</p>
+      <p><strong>$600M</strong> media investment decision infrastructure at Merkle. <strong>13</strong> AI products across <strong>100+</strong> markets at Dentsu. A live personal operator control plane under single-writer governance.</p>
+      <p>Enterprise case studies show the rebuild. Operator proof shows related decision-rights principles running live at personal scale.</p>
     </div>
     <div class="page-hero__visual" aria-hidden="true">
       {% include hero-visual-work.html %}

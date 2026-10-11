@@ -9,7 +9,9 @@
       <a href="{{ contact.linkedin }}">LinkedIn</a>
       <a href="{{ contact.github }}">GitHub</a>
       <a href="mailto:{{ contact.email }}">Email</a>
+      {% if contact.phone_href != blank and contact.phone_display != blank %}
       <a href="tel:{{ contact.phone_href }}">{{ contact.phone_display }}</a>
+      {% endif %}
     </nav>
   </div>
 </footer>

@@ -2,5 +2,13 @@
   "skills": 35,
   "scheduled_tasks": 54,
   "cursor_automations": 41,
-  "job_search_os_skills": 9
+  "ai_agents": 12,
+  "job_search_os_skills": 9,
+  "as_of": "2026-10-10",
+  "definitions": {
+    "skills": "Interactive SKILL.md packages under practice-operations/claude-skills (excludes scheduled/)",
+    "cursor_automations": "JSON files under .cursor/automations (excludes README.json)",
+    "scheduled_tasks": "Directories under practice-operations/claude-skills/scheduled with SKILL.md",
+    "ai_agents": "Active Agent Registry durable/worker rows excluding Marblism specialists and advise-only Sparring Partner"
+  }
 }

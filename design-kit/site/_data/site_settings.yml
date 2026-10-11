@@ -1,10 +1,17 @@
 phone_display: "702.772.0242"
 phone_href: "+17027720242"
 email: "clintonpracher@gmail.com"
-linkedin: "https://www.linkedin.com/in/clinton-pracher"
-github: "https://github.com/clintonpracher/operator-portfolio"
+linkedin: "https://www.linkedin.com/in/clinton-pracher/"
+resume_location_label: "Las Vegas, NV"
+resume_location_url: "https://www.google.com/maps/search/?api=1&query=Las+Vegas,+NV"
+resume_pdf: "/resume/clinton-pracher-platform-data-ai-resume.pdf"
+github: "https://github.com/clintonpracher"
+substack: "https://clintscall.substack.com"
 
 architecture:
-  image: ""
-  source_url: ""
-  alt: "Public view of Clinton Pracher's product and AI control plane architecture"
+  image: "/assets/diagrams/architecture-one-glance.svg"
+  source_url: "/work/control-plane-spec/"
+  alt: "Operating architecture at a glance: decision maker, business and personal domains, orchestration agent, control plane, specialist agents, and a human judgment loop"
+  detail:
+    image: "/assets/diagrams/architecture-agent-control-plane-swimlanes.svg"
+    alt: "Agent control plane swimlanes: human judgment, client surfaces, orchestration, business systems, productivity, identity and policy, evidence and memory, procedure library, and model layer"

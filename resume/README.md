@@ -10,26 +10,24 @@ This is the public resume for Clinton J. Pracher, a product and platform executi
 
 ## Formats
 
-| Surface | URL / file | Fleet numbers |
-|---------|------------|---------------|
-| **Web resume** | [resume.md](resume.md) → `/resume/resume/` | **Live** at Jekyll build via `site.data.stats` (skills, automations, scheduled tasks). Header contact row is four icon links: location (Las Vegas, NV maps search), email, LinkedIn, website. |
-| **PDF download** | [clinton-pracher-platform-data-ai-resume.pdf](clinton-pracher-platform-data-ai-resume.pdf) | **Static** approved Word export (primary site download). |
-| **Word download** | [clinton-pracher-platform-data-ai-resume.docx](clinton-pracher-platform-data-ai-resume.docx) | **Static** approved OneDrive master; hosted at direct URL, not linked from the resume page button. |
-| **Plain text** | `clinton-pracher-platform-data-ai-resume.txt` | **Static** companion from repo build (not the web resume). |
+| Surface | URL / file | Notes |
+|---------|------------|-------|
+| **Web resume** | [resume.md](resume.md) → `/resume/resume/` | **Live** fleet counts via `site.data.stats` with `as_of`. Contact icons (header + bottom connect): phone, location/email/LinkedIn/website as configured in site_settings. |
+| **PDF download** | [clinton-pracher-platform-data-ai-resume.pdf](clinton-pracher-platform-data-ai-resume.pdf) | **Static** public export. Includes phone; no residential ZIP. |
+| **Word download** | [clinton-pracher-platform-data-ai-resume.docx](clinton-pracher-platform-data-ai-resume.docx) | **Static** public export; not the private master. Includes phone; no residential ZIP. |
+| **Plain text** | `clinton-pracher-platform-data-ai-resume.txt` | **Static** companion from public resume build. |
 
-The **Download my resume** button on the web resume serves the **PDF only**. Publish does not regenerate PDF or DOCX from the anchor unless you pass `--rebuild-resume` (avoid for the public site).
+The **Download my resume** button on the web resume serves the **PDF only**.
 
-**Source of truth:** OneDrive `00_Main_Anchor_Resume/` (see `ONEDRIVE_PORTFOLIO_RESUME_DIR` in `scripts/lib/repo-config.sh`).
+Public resume patches: `practice-operations/claude-skills/resume-builder/references/patches_platform_portfolio_site.json`. Rebuild from the hub:
 
 ```bash
-./scripts/sync-portfolio-resume-from-onedrive.sh
-./scripts/publish-portfolio.sh
+./scripts/build-portfolio-resume.sh
+./scripts/lint-portfolio-privacy.sh
 ```
 
-## Live stats on the web resume
-
-Operator Control Plane proof on the web resume uses `leadership-proof.html` with `use_live_stats: true`. Counts come from `scripts/portfolio_stats.py` on every publish (same source as the home page and case studies). Do not hardcode skill or automation counts in web summary copy.
+Do **not** hardcode skill / automation / scheduled-task counts in static resume copy. Website surfaces use live stats with an as-of date.
 
 ## Private source
 
-Resume-advisor skill and `docs/product/YYYY-MM/portfolio/resume/` hold the private master archive.
+Resume-advisor skill, OneDrive anchors, and `docs/product/YYYY-MM/portfolio/resume/` hold the private master archive (may retain private contact details).

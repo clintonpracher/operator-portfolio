@@ -9,7 +9,7 @@
   {% if key != default_audience %}hidden{% endif %}
 >
   <div class="proof-strip proof-strip--compact" aria-label="{{ audience.label }} proof at a glance">
-    <ul class="metric-tiles metric-tiles--hero-proof metric-tiles--count-3">
+    <ul class="metric-tiles metric-tiles--hero-proof metric-tiles--count-4">
       {% if audience.proof_use_stats %}
       <li class="metric-tile">
         <span class="metric-tile__value">{{ stats.skills }}</span>
@@ -30,6 +30,13 @@
         <span class="metric-tile__label">
           <span class="metric-tile__icon" aria-hidden="true">{% include proof-icon.html icon="control-plane" %}</span>
           <span class="metric-tile__label-text">Scheduled tasks</span>
+        </span>
+      </li>
+      <li class="metric-tile">
+        <span class="metric-tile__value">{{ stats.ai_agents }}</span>
+        <span class="metric-tile__label">
+          <span class="metric-tile__icon" aria-hidden="true">{% include proof-icon.html icon="ai-governance" %}</span>
+          <span class="metric-tile__label-text">AI agents</span>
         </span>
       </li>
       {% else %}

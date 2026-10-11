@@ -7,7 +7,7 @@
         {% include deck-card-linked-title.html icon=item.icon title=item.title %}
       </div>
       <div class="deck-card__row deck-card__row--meta">
-        <p class="deck-card__body">{{ item.meta }}</p>
+        <p class="deck-card__body">{{ item.description | default: item.meta }}</p>
       </div>
     </a>
   </li>

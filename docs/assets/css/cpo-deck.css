@@ -383,6 +383,11 @@ a.deck-card.proof-card:hover {
   margin: 0 auto;
 }
 
+.metric-tiles--count-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: min(100%, 44rem);
+}
+
 .metric-tiles--count-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   width: min(100%, 34rem);
@@ -512,6 +517,7 @@ a.deck-card.proof-card:hover {
 
   .metric-tiles--hero-proof,
   .proof-strip--compact .metric-tiles--hero-proof,
+  .metric-tiles--count-4,
   .metric-tiles--count-3,
   .metric-tiles--count-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));

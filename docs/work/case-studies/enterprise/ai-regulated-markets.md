@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: "Scaling AI Products With Clear Decision Boundaries for Privacy and Risk"
-subtitle: "Thirteen AI products. More than 100 regulatory environments. Zero incidents."
+subtitle: "Thirteen AI products. More than 100 regulatory environments. Documented rollout without reported incidents."
 proof_points:
   - "Platform Architecture"
   - "Martech / Data Platform"
@@ -9,7 +9,7 @@ proof_points:
 decision_shift: "From thirteen teams solving compliance thirteen times to one decision inherited by all of them."
 at_a_glance:
   - "13 AI products shipped across 100+ regulated markets"
-  - "Zero regulatory incidents or legal challenges"
+  - "No reported regulatory incidents in the documented rollout"
   - "$8M budget, 60+ engineers and program leads"
   - "Privacy-first architectural pattern reused across the full portfolio"
 ---
@@ -42,7 +42,7 @@ Underneath all three sat portfolio governance: thirteen products, one budget, on
 
 ## What shipped
 
-All thirteen AI products went live across more than 100 regulated markets. No regulatory incidents. No legal challenges.
+All thirteen AI products went live across more than 100 regulated markets. In the documented rollout window, there were no reported regulatory incidents or legal challenges tied to those launches.
 
 The privacy-first architecture became the default for new AI product development, which means the pattern outlived the products it was built for.
 

@@ -21,7 +21,9 @@ Most product leaders scaling AI hit the same wall: more models, more agents, mor
 
 The failure mode is not weak intelligence. It is conflicting state, duplicate writes, and eroded trust in the system of record.
 
-At enterprise scale I owned that problem directly: a 13-product AI and data portfolio across 100+ markets, $8M budget, 60+ team, systems governing $600M in annual spend. The blast radius was portfolio-wide. The question was always the same: which system owns this write today.
+At enterprise scale I owned that problem directly in separate engagements: a 13-product AI and data portfolio across 100+ markets with an $8M budget and 60+ person team at Dentsu, and earlier measurement systems at Merkle used for $600M in annual media investment decisions across 140 markets. The blast radius was portfolio-wide. The question was always the same: which system owns this write today.
+
+The Operator Control Plane I run today applies related decision-rights principles at personal scale. It is not a redeployment of those enterprise platforms.
 
 When I started building my operating model, I did not want another pile of AI tools. I wanted one system I could trust to run revenue, delivery, and operating cadence as scope grew. So I built an **Operator Control Plane** on one spine: a versioned skills library, {{ site.data.stats.cursor_automations }} governed automations on an Agent Orchestration Layer, registry-led identity in a Knowledge Base, and an orchestration agent coordinating business and personal operations.
 

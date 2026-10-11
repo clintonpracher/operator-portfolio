@@ -27,28 +27,13 @@ Select diagrams by **source + publish lineage**, not filename or mtime alone.
 | One-glance | `architecture-one-glance.mmd` (public labels) | Mermaid export with `mermaid-export-config.json` / Imperious theme | `architecture-one-glance.svg` (+ optional `.png` for social) |
 | Swimlanes | Layout SSOT: `.cursor/canvases/cp-control-plane-architecture.canvas.tsx` · structure ref: `architecture-agent-control-plane-swimlanes.mmd` | `node marketing-assets/operator-portfolio/scripts/render-control-plane-swimlanes-svg.mjs` | `architecture-agent-control-plane-swimlanes.svg` |
 
-Internal ops truth with full names lives in `docs/product/2026-08/architecture-diagram-current-state.md` (not mirrored to the public site).
+Private hub docs hold ops-only diagram notes. They are not part of this public package.
 
-**Drift note (2026-10-10):** Monorepo `assets/diagrams/` had fallen behind the last publish to `clintonpracher/operator-portfolio` (Oct 7 sync). README work restored the published SVG/MMD pair into `assets/diagrams/`.
+**Swimlane generator limit:** The render script and canvas labels use approved public wording (`Lane agents · on demand`, `Task registry · one writer`, `Orchestration agent`). Regenerating still does **not** emit the published on-call capacity band (`On-call capacity · outside orchestration` / `Specialist agents · on-call`). Do **not** overwrite `architecture-agent-control-plane-swimlanes.svg` from the generator until that band is restored.
 
-**Generator label fix (2026-10-10):** `render-control-plane-swimlanes-svg.mjs` and canvas `LANES` labels updated to approved public wording: `Lane agents · on demand`, `Task registry · one writer`, `Orchestration agent`. Temp regen still **does not** emit the published on-call capacity band (`On-call capacity · outside orchestration` / `Specialist agents · on-call`). That is a layout feature beyond label correction. Do **not** overwrite `assets/diagrams/architecture-agent-control-plane-swimlanes.svg` from the generator until that band is restored in the generator/canvas layout.
+## Public labeling
 
-## Enterprise public labeling
-
-Diagrams on the public site use **product-facing labels**, not personal names or solo-operator org-chart titles.
-
-| Internal / ops label | Public diagram label |
-|----------------------|----------------------|
-| Clinton Pracher / Clint | Decision maker |
-| August Reeve · Chief of Staff | Orchestration agent |
-| CP Product Advisory / personal ops | Independent operating model |
-| Personal | Personal domain |
-| Knowledge Base | Registry and identity |
-| Agent Orchestration Layer | Scheduled and interactive execution |
-| Audit layer | Read-only verification |
-| Specialist agents · on-call | Specialist agents · on-call |
-
-Repository transfers alone do not change agent roles or runtime authority on these diagrams.
+Diagrams use **product-facing labels** (for example Decision maker, Orchestration agent, Independent operating model). They do not publish private persona names or hub operating-manual titles.
 
 ## Files
 

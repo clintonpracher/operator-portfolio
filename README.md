@@ -8,7 +8,7 @@
 
 My work spans enterprise platforms, data, and AI. I connect business strategy, investment decisions, and engineering delivery, particularly when the organization has become more complex than the systems supporting it.
 
-## What I actually build
+## What I build
 
 I've always been the person asking, “Is there a better and easier way to do this?”
 
@@ -28,13 +28,15 @@ I want to leave behind more than a shipped product. The people running it should
 
 ## Explore
 
-| Section                                       | What you'll find                                                   |
-| --------------------------------------------- | ------------------------------------------------------------------ |
-| [**About**](content/about/README.md)          | My background and approach to leadership                           |
-| [**Work**](work/README.md)                    | Enterprise case studies and systems I've built                     |
-| [**Skills**](work/skills.md)                  | Product, platform, data, AI, and technical capabilities            |
-| [**Thought Leadership**](thought-leadership/) | Writing on product leadership, decision systems, and AI operations |
-| [**Resume**](resume/resume.md)                | My career history and leadership responsibilities                  |
+Rendered site pages assemble Liquid templates that GitHub does not render. Use the website for complete pages; use the repo paths for case studies, resume downloads, and source.
+
+| Section | Best destination | Repo source |
+| ------- | ---------------- | ----------- |
+| [**About**](https://clintonpracher.com/about/) | Website | `content/about/` |
+| [**Work**](https://clintonpracher.com/work/) | Website | [Case studies](work/case-studies/) |
+| [**Skills**](https://clintonpracher.com/work/skills/) | Website | `work/skills.md` (site template) |
+| [**Thought Leadership**](https://clintonpracher.com/thought-leadership/) | Website | `thought-leadership/` · `writing/` |
+| [**Resume**](https://clintonpracher.com/resume/) | Website · [downloads](resume/README.md) | PDF / DOCX / TXT in `resume/` |
 
 ## Proof points
 

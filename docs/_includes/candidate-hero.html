@@ -17,8 +17,10 @@
     <p class="candidate-hero__positioning">{{ c.positioning }}</p>
     <div class="candidate-hero__contact">
       <span>{{ c.location }}</span>
+      {% if contact.phone_href != blank and contact.phone_display != blank %}
       <span class="candidate-hero__contact-sep" aria-hidden="true">·</span>
       <a href="tel:{{ contact.phone_href }}">{{ contact.phone_display }}</a>
+      {% endif %}
       <span class="candidate-hero__contact-sep" aria-hidden="true">·</span>
       <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
       <span class="candidate-hero__contact-sep" aria-hidden="true">·</span>
