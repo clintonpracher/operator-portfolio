@@ -44,10 +44,12 @@ Do not edit `docs/` as the standing path for content changes. Edit package sourc
 
 | Path | Role |
 |------|------|
-| `scripts/` (hub) | `mirror-portfolio-docs.sh`, `publish-portfolio.sh`, `sync-portfolio.sh`, lints, resume build |
-| `.cursor/` | Minimal public-safe repo-health monitor config for this workspace |
+| Hub scripts | `mirror-portfolio-docs.sh`, `publish-portfolio.sh`, `sync-portfolio.sh`, lints, resume build (private hub only) |
+| `scripts/` (package) | Small public helpers (for example reading pre-generated stats). Not the private ops control plane. |
 | `design-kit/` | Locked visual kit; not a second content SSOT |
 | `integration/` | Site data and include overlays on top of the kit |
+
+Cursor Automations, paste cards, and repo-health monitor config stay in the private hub factory and are **not** published. Portfolio health monitoring runs against the hub `marketing-assets/operator-portfolio` path via the repo-ops registry.
 
 Private publish notes for hub operators: `PUBLISH.md` in the factory (not synced to the public clone).
 

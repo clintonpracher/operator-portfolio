@@ -4,8 +4,9 @@
 Canonical generator runs from the CP Product Advisory monorepo:
   scripts/portfolio_stats.py
 
-This copy exists in the public portfolio repo for transparency and
-GitHub language detection. It reads pre-generated stats when present.
+This package copy is a thin reader for pre-generated
+`docs/_generated/stats.json` (local inspect / CI smoke). It is not the
+authoritative counter and is not meant to drive GitHub linguist bars.
 """
 
 from __future__ import annotations

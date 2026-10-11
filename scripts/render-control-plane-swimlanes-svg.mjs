@@ -3,13 +3,16 @@
  * Render the control-plane swimlane diagram as a static SVG.
  * Layout SSOT mirrors .cursor/canvases/cp-control-plane-architecture.canvas.tsx
  */
-import { writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT_DIR = join(__dirname, "../assets/diagrams");
 const OUT_FILE = join(OUT_DIR, "architecture-agent-control-plane-swimlanes.svg");
+
+/** Marker present in the approved published SVG (on-call capacity band). */
+const APPROVED_ON_CALL_MARKER = "On-call capacity";
 
 const SCALE = 1.35;
 
@@ -614,5 +617,24 @@ function renderSvg() {
   return parts.join("\n");
 }
 
-writeFileSync(OUT_FILE, renderSvg(), "utf8");
-console.log(`Wrote ${OUT_FILE}`);
+function main() {
+  const force = process.argv.includes("--force");
+  const svg = renderSvg();
+  if (!force && existsSync(OUT_FILE)) {
+    const existing = readFileSync(OUT_FILE, "utf8");
+    const existingHasBand = existing.includes(APPROVED_ON_CALL_MARKER);
+    const generatedHasBand = svg.includes(APPROVED_ON_CALL_MARKER);
+    if (existingHasBand && !generatedHasBand) {
+      console.error(
+        "Refusing to overwrite approved swimlane SVG: generator still omits the on-call capacity band.\n" +
+          `  existing: ${OUT_FILE}\n` +
+          "  Pass --force only after restoring that band in the generator and visually verifying.",
+      );
+      process.exit(1);
+    }
+  }
+  writeFileSync(OUT_FILE, svg, "utf8");
+  console.log(`Wrote ${OUT_FILE}`);
+}
+
+main();
